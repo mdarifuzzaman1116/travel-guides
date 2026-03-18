@@ -3,1010 +3,983 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Puerto Plata Travel Guide · April 8–13, 2026</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<title>Washington State Travel Guide — April 10–17, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <style>
-:root {
-  --bg:#0f1117; --bg2:#161b27; --bg3:#1e2535; --bg4:#252d3d;
-  --border:#2a3347; --border2:#374057;
-  --text:#e8eaf0; --text2:#a8b0c8; --text3:#6b7596;
-  --teal:#1fb89a; --teal-dim:#0e6b5a; --teal-glow:rgba(31,184,154,0.15);
-  --amber:#f59e0b; --amber-dim:#78490a;
-  --green:#22c55e; --green-dim:#14532d; --green-glow:rgba(34,197,94,0.12);
-  --red:#ef4444; --red-dim:#7f1d1d;
-  --blue:#60a5fa; --blue-dim:#1e3a5f;
-  --purple:#a78bfa; --purple-dim:#3b1f6e;
-  --radius:12px; --radius-sm:8px;
+:root{
+  --bg:#0f1117;--bg2:#161b27;--bg3:#1e2535;--bg4:#252d3d;
+  --border:#2a3347;--border2:#374057;
+  --text:#e8eaf0;--text2:#a8b0c8;--text3:#6b7596;
+  --teal:#1fb89a;--teal-dim:#0e6b5a;--teal-glow:rgba(31,184,154,0.15);
+  --amber:#f59e0b;--amber-dim:#78490a;
+  --green:#22c55e;--green-dim:#14532d;--green-glow:rgba(34,197,94,0.12);
+  --red:#ef4444;--red-dim:#7f1d1d;
+  --blue:#60a5fa;--blue-dim:#1e3a5f;
+  --purple:#a78bfa;--purple-dim:#3b1f6e;
+  --pink:#f472b6;
+  --radius:12px;--radius-sm:8px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:15px;line-height:1.6}
-a{color:var(--teal);text-decoration:none}
-a:hover{text-decoration:underline}
-
-/* HERO */
-.hero{background:linear-gradient(135deg,#0a1628 0%,#162040 50%,#0d2235 100%);padding:60px 24px 48px;text-align:center;border-bottom:1px solid var(--border);position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1400&q=60') center/cover;opacity:0.08}
-.hero-inner{position:relative;z-index:1;max-width:800px;margin:0 auto}
-.flag{font-size:56px;display:block;margin-bottom:16px}
-.hero h1{font-family:'Playfair Display',serif;font-size:clamp(28px,5vw,48px);font-weight:700;color:#fff;margin-bottom:8px;line-height:1.2}
-.hero .subtitle{font-size:18px;color:var(--text2);margin-bottom:20px}
-.hero-tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px}
-.hero-tag{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:20px;padding:6px 16px;font-size:13px;color:var(--text2)}
-.hero-tag.accent{background:var(--teal-glow);border-color:var(--teal);color:var(--teal)}
-
-/* SAFE BANNER */
-.safe-banner{background:linear-gradient(135deg,var(--amber-dim),#5a3708);border:1px solid var(--amber);border-radius:var(--radius);padding:20px 28px;max-width:900px;margin:28px auto;display:flex;align-items:center;gap:16px}
-.safe-icon{font-size:32px;flex-shrink:0}
-.safe-text strong{color:var(--amber);font-size:17px;display:block}
-.safe-text span{color:var(--text2);font-size:14px}
-
-/* CONTAINER */
-.container{max-width:960px;margin:0 auto;padding:0 20px}
-
-/* SECTION */
-section{padding:40px 0}
-.section-title{font-family:'Playfair Display',serif;font-size:22px;color:var(--teal);margin-bottom:20px;display:flex;align-items:center;gap:10px}
-.section-title::after{content:'';flex:1;height:1px;background:var(--border)}
-
-/* CURRENCY CONVERTER */
-.converter-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-bottom:32px}
-.converter-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
-.converter-input{background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius-sm);padding:10px 16px;font-size:18px;color:var(--text);width:160px;font-family:'DM Sans',sans-serif}
-.converter-result{font-size:24px;color:var(--teal);font-weight:600}
-.quick-btns{display:flex;flex-wrap:wrap;gap:8px}
-.quick-btn{background:var(--bg3);border:1px solid var(--border);border-radius:20px;padding:5px 14px;font-size:13px;color:var(--text2);cursor:pointer;transition:all .2s}
-.quick-btn:hover{border-color:var(--teal);color:var(--teal)}
-.rate-note{font-size:12px;color:var(--text3);margin-top:8px}
-
-/* SNAPSHOT GRID */
-.snap-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
-.snap-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:18px;text-align:center}
-.snap-card .snap-icon{font-size:28px;margin-bottom:8px}
-.snap-card .snap-label{font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.6px}
-.snap-card .snap-value{font-size:15px;color:var(--text);font-weight:600;margin-top:4px}
-
-/* WEATHER */
-.weather-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px}
-.weather-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:14px;text-align:center}
-.weather-card .w-date{font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px}
-.weather-card .w-icon{font-size:26px;margin:6px 0}
-.weather-card .w-hi{color:var(--amber);font-weight:600;font-size:15px}
-.weather-card .w-lo{color:var(--text3);font-size:12px}
-.weather-card .w-desc{font-size:11px;color:var(--text2);margin-top:4px}
-.weather-verdict{margin-top:16px;background:var(--green-glow);border:1px solid var(--green);border-radius:var(--radius-sm);padding:12px 16px;display:inline-block;color:var(--green);font-size:14px;font-weight:500}
-
-/* ADVISORY / ENTRY / INFO CARDS */
-.info-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:22px;margin-bottom:16px}
-.info-card h3{color:var(--text);font-size:16px;margin-bottom:10px;display:flex;align-items:center;gap:8px}
-.info-card p, .info-card li{color:var(--text2);font-size:14px;margin-bottom:6px}
-.info-card ul{padding-left:18px}
-.badge{display:inline-block;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
-.badge.amber{background:var(--amber-dim);color:var(--amber)}
-.badge.green{background:var(--green-dim);color:var(--green)}
-.badge.red{background:var(--red-dim);color:var(--red)}
-.badge.blue{background:var(--blue-dim);color:var(--blue)}
-
-/* FLIGHTS */
-.flight-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-@media(max-width:600px){.flight-grid{grid-template-columns:1fr}}
-.flight-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:22px}
-.flight-card.best{border-color:var(--teal)}
-.flight-card .airline{font-size:18px;font-weight:700;color:var(--text);margin-bottom:4px}
-.flight-route{font-size:13px;color:var(--teal);margin-bottom:12px}
-.flight-row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border);font-size:13px}
-.flight-row:last-of-type{border:none}
-.flight-row .fl{color:var(--text3)}
-.flight-row .fv{color:var(--text2);text-align:right}
-.flight-links{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
-.flight-link{background:var(--teal-glow);border:1px solid var(--teal);color:var(--teal);padding:6px 14px;border-radius:20px;font-size:12px}
-
-/* CAR RENTAL */
-.car-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-@media(max-width:600px){.car-grid{grid-template-columns:1fr}}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);padding-bottom:60px;-webkit-font-smoothing:antialiased}
+.hero{background:linear-gradient(135deg,#0d1a2e 0%,#1a2744 50%,#162240 100%);padding:52px 24px 40px;border-bottom:1px solid rgba(96,165,250,0.2);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-80px;right:-80px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(244,114,182,0.06) 0%,transparent 70%)}
+.hero::after{content:'';position:absolute;bottom:-60px;left:20%;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(96,165,250,0.04) 0%,transparent 70%)}
+.hero-flag{font-size:46px;margin-bottom:14px;display:block}
+.hero-title{font-family:'Playfair Display',serif;font-size:36px;font-weight:700;color:#fff;line-height:1.2;margin-bottom:8px}
+.hero-sub{font-size:14px;color:rgba(255,255,255,0.6);margin-bottom:22px}
+.hero-tags{display:flex;gap:8px;flex-wrap:wrap}
+.hero-tag{background:rgba(244,114,182,0.12);color:#f9a8d4;font-size:11.5px;font-weight:500;padding:5px 12px;border-radius:20px;border:1px solid rgba(244,114,182,0.25)}
+.hero-tag.blue{background:rgba(96,165,250,0.12);color:#93c5fd;border-color:rgba(96,165,250,0.25)}
+.wrapper{max-width:960px;margin:0 auto;padding:0 20px}
+.section-label{font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--pink);margin:32px 0 12px;display:flex;align-items:center;gap:8px}
+.section-label::after{content:'';flex:1;height:1px;background:var(--border)}
+.safe-banner{background:var(--green-glow);border:1px solid rgba(34,197,94,0.3);border-radius:var(--radius);padding:16px 20px;display:flex;align-items:flex-start;gap:14px;margin-top:20px}
+.safe-dot{width:12px;height:12px;border-radius:50%;background:var(--green);flex-shrink:0;margin-top:3px;box-shadow:0 0 8px var(--green)}
+.safe-title{font-size:15px;font-weight:600;color:var(--green)}
+.safe-sub{font-size:13px;color:#86efac;margin-top:3px;line-height:1.55}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px}
+.card+.card{margin-top:10px}
+.card.featured{border-color:rgba(244,114,182,0.4);box-shadow:0 0 0 1px rgba(244,114,182,0.15) inset}
+.g2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.g4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+@media(max-width:700px){.g4,.g3{grid-template-columns:repeat(2,minmax(0,1fr))}.g2{grid-template-columns:1fr}}
+.metric{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 16px}
+.metric-label{font-size:11px;color:var(--text3);margin-bottom:4px}
+.metric-value{font-size:20px;font-weight:600;color:var(--text)}
+.metric-sub{font-size:11px;color:var(--text3);margin-top:2px}
+.badge{display:inline-block;font-size:11px;font-weight:500;padding:3px 9px;border-radius:20px;white-space:nowrap}
+.b-green{background:rgba(34,197,94,.15);color:#86efac;border:1px solid rgba(34,197,94,.2)}
+.b-amber{background:rgba(245,158,11,.15);color:#fcd34d;border:1px solid rgba(245,158,11,.2)}
+.b-blue{background:rgba(96,165,250,.15);color:#93c5fd;border:1px solid rgba(96,165,250,.2)}
+.b-purple{background:rgba(167,139,250,.15);color:#c4b5fd;border:1px solid rgba(167,139,250,.2)}
+.b-pink{background:rgba(244,114,182,.15);color:#fbcfe8;border:1px solid rgba(244,114,182,.2)}
+.b-teal{background:var(--teal-glow);color:#5ee8c8;border:1px solid rgba(31,184,154,.25)}
+.row{display:flex;align-items:flex-start;gap:10px;padding:7px 0;border-bottom:1px solid var(--border);font-size:13.5px}
+.row:last-child{border-bottom:none}
+.row-label{color:var(--text3);width:148px;flex-shrink:0;font-size:13px;padding-top:1px}
+.row-val{color:var(--text2);flex:1;line-height:1.55}
+.tip{background:var(--blue-dim);border-left:3px solid var(--blue);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:10px 14px;font-size:13px;color:#bfdbfe;line-height:1.55;margin-top:10px}
+.ok-tip{background:var(--green-dim);border-left:3px solid var(--green);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:10px 14px;font-size:13px;color:#bbf7d0;line-height:1.55;margin-top:10px}
+.warn-tip{background:var(--amber-dim);border-left:3px solid var(--amber);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:10px 14px;font-size:13px;color:#fde68a;line-height:1.55;margin-top:10px}
+.pink-tip{background:rgba(244,114,182,.1);border-left:3px solid var(--pink);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:10px 14px;font-size:13px;color:#fbcfe8;line-height:1.55;margin-top:10px}
+.weather-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.wday{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius-sm);padding:8px 10px;text-align:center;flex:1;min-width:74px}
+.wdate{font-size:10px;color:var(--text3)}
+.wtemp{font-size:16px;font-weight:600;color:var(--text);margin:3px 0 2px}
+.wrain{font-size:10px;color:var(--text3)}
+.weather-meta{display:flex;gap:16px;margin-top:12px;flex-wrap:wrap}
+.weather-meta span{font-size:13px;color:var(--text2)}
+.weather-meta b{color:var(--text);font-weight:500}
+/* Currency */
+.currency-box{background:linear-gradient(135deg,#0d1a2e,#1a2744);border:1px solid rgba(96,165,250,0.25);border-radius:var(--radius);padding:20px 24px;margin-top:4px}
+.currency-title{font-size:15px;font-weight:600;color:var(--blue);margin-bottom:4px}
+.currency-sub{font-size:12px;color:var(--text3);margin-bottom:16px}
+.currency-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.currency-input-wrap{display:flex;flex-direction:column;background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius-sm);padding:10px 14px;flex:1;min-width:140px}
+.currency-label{font-size:12px;color:var(--text3);margin-bottom:4px}
+.currency-input{background:none;border:none;outline:none;font-family:'DM Sans',sans-serif;font-size:22px;font-weight:600;color:var(--text);width:100%;-moz-appearance:textfield}
+.currency-input::-webkit-outer-spin-button,.currency-input::-webkit-inner-spin-button{-webkit-appearance:none}
+.currency-arrow{font-size:22px;color:var(--blue);flex-shrink:0}
+.currency-result-wrap{background:var(--bg3);border:1px solid rgba(96,165,250,0.3);border-radius:var(--radius-sm);padding:10px 14px;flex:1;min-width:140px}
+.currency-result{font-size:22px;font-weight:700;color:var(--blue)}
+.currency-rate{font-size:11px;color:var(--text3);margin-top:4px}
+.quick-amounts{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.quick-btn{background:var(--bg3);border:1px solid var(--border);border-radius:20px;padding:5px 12px;font-size:12px;color:var(--text2);cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .15s}
+.quick-btn:hover{border-color:var(--blue);color:var(--blue)}
+/* Car rental */
 .car-card{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px}
-.car-card.best{border-color:var(--teal)}
-.car-card h4{color:var(--text);font-size:15px;margin-bottom:12px}
-.car-row{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:7px 0;border-bottom:1px solid var(--border)}
+.car-card.best{border-color:var(--teal);box-shadow:0 0 20px rgba(31,184,154,.06)}
+.car-title{font-size:15px;font-weight:600;color:var(--text);margin-bottom:14px;display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.car-row{display:flex;justify-content:space-between;align-items:flex-start;padding:7px 0;border-bottom:1px solid var(--border);gap:12px}
 .car-row:last-child{border-bottom:none}
 .car-lbl{font-size:12.5px;color:var(--text3);flex-shrink:0}
 .car-val{font-size:13px;color:var(--text2);text-align:right;line-height:1.45}
-
-/* HOTELS GRID */
-.hotels-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
-.hotel-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
-.hotel-img{width:100%;height:170px;object-fit:cover;display:block}
-.hotel-body{padding:16px}
-.hotel-body h4{color:var(--text);font-size:15px;margin-bottom:6px}
-.hotel-body .hotel-price{color:var(--teal);font-weight:600;font-size:16px;margin-bottom:6px}
-.hotel-body .hotel-note{color:var(--text3);font-size:12px;margin-bottom:10px}
-.hotel-links{display:flex;gap:8px;flex-wrap:wrap}
-.hotel-link{font-size:11px;color:var(--teal);border:1px solid var(--teal-dim);border-radius:10px;padding:3px 10px}
-
-/* SLIDER */
-.slider-wrap{position:relative;overflow:hidden;border-radius:var(--radius) var(--radius) 0 0}
-.slider-track{display:flex;transition:transform .35s ease}
-.slider-track img{width:100%;flex-shrink:0;height:180px;object-fit:cover}
-.slide-fallback{width:100%;height:180px;display:flex;align-items:center;justify-content:center;background:var(--bg3);font-size:40px}
-.slider-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.55);border:none;color:#fff;font-size:18px;padding:6px 12px;cursor:pointer;border-radius:6px;z-index:2;transition:background .2s}
-.slider-btn:hover{background:rgba(0,0,0,.8)}
-.slider-btn.prev{left:8px}
-.slider-btn.next{right:8px}
-.slider-dots{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);display:flex;gap:5px}
-.slider-dot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.4);cursor:pointer;border:none;transition:.2s}
+.car-price{font-size:19px;font-weight:700;color:var(--teal);margin:6px 0 2px}
+/* Slider */
+.slider-wrap{position:relative;background:var(--bg4);border-radius:var(--radius-sm) var(--radius-sm) 0 0;overflow:hidden;height:180px}
+.slider-track{display:flex;height:100%;transition:transform .45s cubic-bezier(.4,0,.2,1)}
+.slide{min-width:100%;height:100%;flex-shrink:0}
+.slide img{width:100%;height:100%;object-fit:cover;display:block}
+.slide-fallback{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--bg4);font-size:42px;gap:6px}
+.slide-fallback span{font-size:11px;color:var(--text3)}
+.slider-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.55);border:none;color:#fff;width:28px;height:28px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;z-index:5;transition:background .15s;padding:0}
+.slider-btn:hover{background:rgba(0,0,0,0.8)}
+.slider-btn.prev{left:6px}
+.slider-btn.next{right:6px}
+.slider-dots{position:absolute;bottom:6px;left:50%;transform:translateX(-50%);display:flex;gap:4px;z-index:5}
+.slider-dot{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);cursor:pointer;transition:background .2s}
 .slider-dot.active{background:#fff}
-.slide-count{position:absolute;top:8px;right:10px;background:rgba(0,0,0,.5);color:#fff;font-size:11px;padding:2px 7px;border-radius:10px}
-
-/* ACTIVITIES */
-.act-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
-.act-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
-.act-body{padding:14px}
-.act-body h4{color:var(--text);font-size:14px;margin-bottom:4px}
-.act-body .act-price{color:var(--teal);font-size:13px;font-weight:600}
-.act-body .act-note{color:var(--text3);font-size:12px;margin-top:4px}
-.act-links{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
-.act-link{font-size:11px;color:var(--text2);border:1px solid var(--border2);border-radius:10px;padding:2px 8px}
-
-/* RESTAURANTS */
-.rest-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
-.rest-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
-.rest-body{padding:14px}
-.rest-body h4{color:var(--text);font-size:14px;margin-bottom:4px}
-.rest-body .rest-price{color:var(--amber);font-size:13px;font-weight:600}
-.rest-body .rest-cuisine{color:var(--text3);font-size:12px}
-.rest-body .rest-note{color:var(--text2);font-size:12px;margin-top:6px}
-.rest-links{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
-.rest-link{font-size:11px;color:var(--text2);border:1px solid var(--border2);border-radius:10px;padding:2px 8px}
-
-/* FOOD TABLE */
-.food-table{width:100%;border-collapse:collapse}
-.food-table th{background:var(--bg3);color:var(--text3);font-size:12px;text-transform:uppercase;letter-spacing:.5px;padding:10px 14px;text-align:left;border-bottom:1px solid var(--border)}
-.food-table td{padding:10px 14px;border-bottom:1px solid var(--border);font-size:14px;color:var(--text2)}
-.food-table tr:last-child td{border:none}
-.food-table tr:hover td{background:var(--bg3)}
-
-/* TIPS */
-.tips-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
-.tip-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px}
-.tip-card .tip-icon{font-size:22px;margin-bottom:8px}
-.tip-card p{color:var(--text2);font-size:13px}
-
-/* INFANT */
-.infant-card{background:linear-gradient(135deg,var(--purple-dim),#2a1a50);border:1px solid var(--purple);border-radius:var(--radius);padding:22px}
-.infant-card h3{color:var(--purple);margin-bottom:12px;font-size:16px}
-.infant-card ul{padding-left:18px}
-.infant-card li{color:var(--text2);font-size:14px;margin-bottom:7px}
-
-/* COST ESTIMATE */
-.cost-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-bottom:16px}
-.cost-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px}
-.cost-card .cost-label{font-size:12px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
-.cost-card .cost-val{font-size:18px;font-weight:600;color:var(--text)}
-.total-card{background:linear-gradient(135deg,var(--teal-dim),#0a4a3a);border:1px solid var(--teal);border-radius:var(--radius);padding:20px;text-align:center}
-.total-card .total-label{color:var(--teal);font-size:13px;text-transform:uppercase;letter-spacing:.6px}
-.total-card .total-val{font-size:32px;font-weight:700;color:#fff;margin-top:6px}
-
-/* CHECKLIST */
-.checklist{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:4px}
-.checklist li{display:flex;align-items:flex-start;gap:10px;padding:10px;border-radius:var(--radius-sm);cursor:pointer;transition:background .15s}
-.checklist li:hover{background:var(--bg3)}
-.checklist input[type=checkbox]{width:17px;height:17px;accent-color:var(--teal);flex-shrink:0;margin-top:2px;cursor:pointer}
-.checklist span{font-size:13px;color:var(--text2);transition:.2s}
-.checklist input:checked + span{color:var(--text3);text-decoration:line-through}
-
-/* FOOTER */
-footer{background:var(--bg2);border-top:1px solid var(--border);text-align:center;padding:28px;color:var(--text3);font-size:13px;margin-top:48px}
-
-/* DIVIDER */
-.divider{height:1px;background:var(--border);margin:8px 0}
+.slide-count{position:absolute;top:8px;right:8px;background:rgba(0,0,0,0.55);color:rgba(255,255,255,0.85);font-size:10px;padding:2px 7px;border-radius:20px;z-index:5}
+/* Activity */
+.act-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin-top:10px}
+.act-card{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:border-color .2s,transform .15s}
+.act-card:hover{border-color:var(--border2);transform:translateY(-1px)}
+.act-body{padding:13px;flex:1;display:flex;flex-direction:column}
+.act-name{font-size:13.5px;font-weight:600;color:var(--text);margin-bottom:5px}
+.act-note{font-size:11.5px;color:var(--text3);line-height:1.5;flex:1;margin-bottom:7px}
+.act-price{font-size:11.5px;color:var(--blue);font-weight:500;margin-bottom:7px}
+.bucket-pill{display:inline-block;font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px;background:rgba(244,114,182,.15);color:#fbcfe8;border:1px solid rgba(244,114,182,.2);margin-bottom:6px;width:fit-content}
+.act-links{display:flex;gap:5px;flex-wrap:wrap;margin-top:auto}
+.act-link{font-size:10.5px;padding:3px 8px;border-radius:20px;text-decoration:none;font-weight:500;transition:opacity .15s;white-space:nowrap}
+.act-link:hover{opacity:.75}
+.link-g{background:rgba(96,165,250,.12);color:#93c5fd;border:1px solid rgba(96,165,250,.2)}
+.link-yt{background:rgba(239,68,68,.12);color:#fca5a5;border:1px solid rgba(239,68,68,.2)}
+.link-tt{background:rgba(167,139,250,.12);color:#c4b5fd;border:1px solid rgba(167,139,250,.2)}
+.link-wiki{background:rgba(161,161,170,.12);color:#a1a1aa;border:1px solid rgba(161,161,170,.2)}
+/* Hotel */
+.hotel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:10px;margin-top:10px}
+.hotel-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.hotel-card.feat{border-color:rgba(244,114,182,0.4)}
+.hotel-body{padding:14px 16px}
+.hotel-hdr{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:6px}
+.hotel-name{font-size:14px;font-weight:600;color:var(--text)}
+.hotel-loc{font-size:11.5px;color:var(--text3);margin-top:1px}
+.hotel-price{font-size:14px;font-weight:600;color:var(--pink);margin:6px 0 4px}
+.hotel-note{font-size:12px;color:var(--text3);line-height:1.5;margin-bottom:8px}
+.hotel-links{display:flex;gap:5px;flex-wrap:wrap}
+.hlink{font-size:10.5px;padding:3px 8px;border-radius:20px;text-decoration:none;font-weight:500;color:#93c5fd;background:rgba(96,165,250,.1);border:1px solid rgba(96,165,250,.2);white-space:nowrap}
+.hlink:hover{background:rgba(96,165,250,.2)}
+/* Restaurant */
+.rest-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin-top:10px}
+.rest-card{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.rest-body{padding:12px;flex:1;display:flex;flex-direction:column}
+.rest-name{font-size:13.5px;font-weight:600;color:var(--text);margin-bottom:2px}
+.rest-loc{font-size:11px;color:var(--text3)}
+.rest-price{font-size:12px;color:var(--blue);margin:5px 0 3px;font-weight:500}
+.rest-note{font-size:12px;color:var(--text3);line-height:1.5;flex:1;margin-bottom:7px}
+.rest-links{display:flex;gap:5px;flex-wrap:wrap;margin-top:auto}
+.rlink{font-size:10.5px;padding:3px 8px;border-radius:20px;text-decoration:none;font-weight:500;white-space:nowrap}
+.rlink-g{background:rgba(96,165,250,.1);color:#93c5fd;border:1px solid rgba(96,165,250,.2)}
+.rlink-m{background:rgba(34,197,94,.1);color:#86efac;border:1px solid rgba(34,197,94,.2)}
+.rlink-t{background:rgba(245,158,11,.1);color:#fcd34d;border:1px solid rgba(245,158,11,.2)}
+/* Food */
+.food-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);font-size:13.5px}
+.food-row:last-child{border-bottom:none}
+/* Insider tips */
+.pro-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
+.pro-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 16px}
+.pro-icon{font-size:18px;margin-bottom:6px}
+.pro-title{font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px}
+.pro-body{font-size:12px;color:var(--text3);line-height:1.55}
+/* Cost total */
+.cost-total{background:linear-gradient(135deg,#0d1a2e,#1a2744);border:1px solid rgba(244,114,182,0.3);border-radius:var(--radius);padding:22px 24px;margin-top:10px}
+.cost-total-label{font-size:13px;color:var(--text3);margin-bottom:6px}
+.cost-total-value{font-family:'Playfair Display',serif;font-size:34px;font-weight:700;color:var(--pink)}
+.cost-total-note{font-size:12px;color:var(--text3);margin-top:8px;line-height:1.5}
+/* Checklist */
+.check-item{display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-bottom:1px solid var(--border)}
+.check-item:last-child{border-bottom:none}
+.check-box{width:18px;height:18px;border:2px solid var(--border2);border-radius:4px;flex-shrink:0;margin-top:1px;cursor:pointer;transition:all .15s;display:flex;align-items:center;justify-content:center}
+.check-box.done{background:var(--pink);border-color:var(--pink)}
+.check-box.done::after{content:'✓';font-size:11px;color:#000;font-weight:700}
+.check-label{flex:1;font-size:13.5px;color:var(--text2)}
+.check-label b{color:var(--text)}
+.check-label.done{color:var(--text3);text-decoration:line-through}
+.check-label.done b{color:var(--text3)}
+.check-desc{font-size:11.5px;color:var(--text3);margin-top:2px;line-height:1.4}
+/* Flight */
+.flight-detail{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;margin:12px 0;padding:14px;background:var(--bg3);border-radius:var(--radius-sm)}
+.flight-city{font-size:22px;font-weight:700;color:var(--text)}
+.flight-code{font-size:11px;color:var(--text3);margin-top:1px}
+.flight-arrow{font-size:20px;color:var(--pink);text-align:center}
+.flight-duration{font-size:11px;color:var(--text3);text-align:center;margin-top:2px}
+/* Festival highlight */
+.festival-banner{background:linear-gradient(135deg,rgba(244,114,182,0.1),rgba(167,139,250,0.08));border:1px solid rgba(244,114,182,0.3);border-radius:var(--radius);padding:16px 20px;margin-top:10px}
+.festival-title{font-size:16px;font-weight:600;color:var(--pink);margin-bottom:6px}
+.festival-body{font-size:13px;color:var(--text2);line-height:1.6}
+.footer{text-align:center;padding:32px 20px 0;font-size:12px;color:var(--text3)}
+.footer b{color:var(--pink)}
+a{color:inherit;text-decoration:none}
 </style>
 </head>
 <body>
 
 <!-- HERO -->
 <div class="hero">
-  <div class="hero-inner">
-    <span class="flag">🇩🇴</span>
-    <h1>Puerto Plata Travel Guide</h1>
-    <p class="subtitle">April 8–13, 2026 · Dominican Republic</p>
-    <div class="hero-tags">
-      <span class="hero-tag">✈️ JFK → POP Nonstop</span>
-      <span class="hero-tag">👨‍👩‍👧 2 Adults + Infant</span>
-      <span class="hero-tag accent">👶 Baby: 8 Months</span>
-      <span class="hero-tag">🏖️ Amber Coast</span>
-      <span class="hero-tag">☀️ 85°F / End of Dry Season</span>
-    </div>
+  <span class="hero-flag">🌸</span>
+  <div class="hero-title">Washington State Travel Guide</div>
+  <div class="hero-sub">April 10–17, 2026 &nbsp;·&nbsp; 2 Adults + 1 Infant (born Aug 5, 2025 — 8 months) &nbsp;·&nbsp; Departing JFK, New York</div>
+  <div class="hero-tags">
+    <span class="hero-tag">✈ JFK → SEA Nonstop</span>
+    <span class="hero-tag">🌷 Peak Tulip Season</span>
+    <span class="hero-tag">🌸 Cherry Blossoms</span>
+    <span class="hero-tag">👶 Lap Infant — 8 months</span>
+    <span class="hero-tag blue">🇺🇸 Domestic — No Passport</span>
+    <span class="hero-tag blue">💵 USD Only</span>
   </div>
 </div>
+
+<div class="wrapper">
 
 <!-- SAFE BANNER -->
-<div class="container">
-  <div class="safe-banner">
-    <div class="safe-icon">🟡</div>
-    <div class="safe-text">
-      <strong>AMBER — Level 2: Exercise Increased Caution</strong>
-      <span>Same level as France, Italy & Germany. Resort zones are well-policed. Safe with smart precautions — great choice for families.</span>
-    </div>
+<div class="safe-banner" style="margin-top:20px">
+  <div class="safe-dot"></div>
+  <div>
+    <div class="safe-title">✅ Completely Safe — Domestic US Travel</div>
+    <div class="safe-sub">Washington State is domestic travel — no passport, no visa, no travel advisory, no foreign currency. Seattle and the Skagit Valley are safe, well-developed tourist destinations with world-class infrastructure, medical care, and family-friendly services. April 10–17 is the single best week of the year to visit — peak tulip fields in Skagit Valley and cherry blossoms still lingering in Seattle.</div>
   </div>
 </div>
 
-<!-- CURRENCY CONVERTER -->
-<div class="container">
-  <section>
-    <div class="section-title">💱 Currency Converter</div>
-    <div class="converter-card">
-      <div class="converter-row">
-        <span style="color:var(--text3);font-size:14px">$</span>
-        <input class="converter-input" id="usd-input" type="number" placeholder="100" value="100">
-        <span style="color:var(--text3)">→</span>
-        <span class="converter-result" id="local-result">DOP 6,000</span>
-      </div>
-      <div class="quick-btns">
-        <button class="quick-btn" onclick="setAmt(20)">$20</button>
-        <button class="quick-btn" onclick="setAmt(50)">$50</button>
-        <button class="quick-btn" onclick="setAmt(100)">$100</button>
-        <button class="quick-btn" onclick="setAmt(200)">$200</button>
-        <button class="quick-btn" onclick="setAmt(500)">$500</button>
-      </div>
-      <p class="rate-note" id="rate-note">1 USD = 60 Dominican Peso (DOP)</p>
-    </div>
-  </section>
+<!-- FESTIVAL HIGHLIGHT -->
+<div class="section-label">Why April 10–17 is Perfect</div>
+<div class="festival-banner">
+  <div class="festival-title">🌷 Skagit Valley Tulip Festival — April 1–30, 2026</div>
+  <div class="festival-body">
+    Mid-April (your exact dates) is consistently the peak bloom window for tulips across all four farms — RoozenGaarde, Tulip Town, Tulip Valley Farms, and Garden Rosalyn. Over 1 million visitors come every April to see 250 acres of tulip fields in Mount Vernon, just 60 miles north of Seattle. <b>RoozenGaarde</b> alone plants 1 million bulbs across nearly 200 varieties. Buy tickets per farm in advance at tulipfestival.org — they sell out on weekends.
+    <br><br>
+    🌸 <b>UW Cherry Blossoms</b> — peaked March 20, 2026. Some blossoms and pink petals carpeting the Quad walkways will still be visible April 10 (gorgeous "petal fall" phase).
+    <br>🌼 <b>Wildflowers</b> — March through August statewide. Columbia River Gorge balsamroot peak: early April to May.
+    <br>🎉 <b>Seattle Cherry Blossom &amp; Cultural Festival</b> at Seattle Center: April 10–12, 2026 — rides your travel dates perfectly.
+  </div>
 </div>
 
-<!-- TRIP SNAPSHOT -->
-<div class="container">
-  <section>
-    <div class="section-title">📋 Trip Snapshot</div>
-    <div class="snap-grid">
-      <div class="snap-card"><div class="snap-icon">🌍</div><div class="snap-label">Destination</div><div class="snap-value">Puerto Plata, DR</div></div>
-      <div class="snap-card"><div class="snap-icon">✈️</div><div class="snap-label">Airport</div><div class="snap-value">POP (Gregorio Luperón)</div></div>
-      <div class="snap-card"><div class="snap-icon">📅</div><div class="snap-label">Trip Duration</div><div class="snap-value">Apr 8–13 · 5 Nights</div></div>
-      <div class="snap-card"><div class="snap-icon">👨‍👩‍👧</div><div class="snap-label">Travelers</div><div class="snap-value">2 Adults + 1 Lap Infant</div></div>
-      <div class="snap-card"><div class="snap-icon">🌡️</div><div class="snap-label">Avg Temp</div><div class="snap-value">85°F / 68°F</div></div>
-      <div class="snap-card"><div class="snap-icon">💵</div><div class="snap-label">Currency</div><div class="snap-value">~60 DOP = $1 USD</div></div>
-      <div class="snap-card"><div class="snap-icon">🕐</div><div class="snap-label">Time Zone</div><div class="snap-value">AST (UTC-4)</div></div>
-      <div class="snap-card"><div class="snap-icon">🗣️</div><div class="snap-label">Language</div><div class="snap-value">Spanish</div></div>
+<!-- CURRENCY -->
+<div class="section-label">Currency</div>
+<div class="currency-box">
+  <div class="currency-title">USD — US Dollars Only</div>
+  <div class="currency-sub">Washington State is domestic travel — all prices are in US dollars. No conversion needed. For reference: Washington has no state income tax, but does charge 10.25% sales tax in Seattle.</div>
+  <div class="currency-row">
+    <div class="currency-input-wrap">
+      <div class="currency-label">💵 Enter your budget (USD)</div>
+      <input class="currency-input" id="usd-input" type="number" value="100" min="0">
     </div>
-  </section>
+    <div class="currency-arrow">→</div>
+    <div class="currency-result-wrap">
+      <div class="currency-label">🧾 After Seattle sales tax (10.25%)</div>
+      <div class="currency-result" id="local-result">$110.25</div>
+      <div class="currency-rate" id="rate-note">Add 10.25% for purchases in Seattle city limits</div>
+    </div>
+  </div>
+  <div class="quick-amounts">
+    <span style="font-size:12px;color:var(--text3);padding:5px 0">Quick check:</span>
+    <button class="quick-btn" onclick="setAmt(20)">$20</button>
+    <button class="quick-btn" onclick="setAmt(50)">$50</button>
+    <button class="quick-btn" onclick="setAmt(100)">$100</button>
+    <button class="quick-btn" onclick="setAmt(200)">$200</button>
+    <button class="quick-btn" onclick="setAmt(500)">$500</button>
+    <button class="quick-btn" onclick="setAmt(1000)">$1,000</button>
+  </div>
+</div>
+
+<!-- SNAPSHOT -->
+<div class="section-label">Trip Snapshot</div>
+<div class="g4">
+  <div class="metric"><div class="metric-label">Passport Required</div><div class="metric-value" style="color:var(--green)">None</div><div class="metric-sub">Domestic US travel</div></div>
+  <div class="metric"><div class="metric-label">Nonstop Flight</div><div class="metric-value">~6.5 hrs</div><div class="metric-sub">JFK → SEA (Alaska / Delta)</div></div>
+  <div class="metric"><div class="metric-label">Currency</div><div class="metric-value">USD</div><div class="metric-sub">No conversion needed</div></div>
+  <div class="metric"><div class="metric-label">Language</div><div class="metric-value">English</div><div class="metric-sub">Pacific Northwest</div></div>
+  <div class="metric"><div class="metric-label">Time Zone</div><div class="metric-value">PDT</div><div class="metric-sub">3 hrs behind NYC</div></div>
+  <div class="metric"><div class="metric-label">Power Plugs</div><div class="metric-value">110V</div><div class="metric-sub">Same as home — no adapter</div></div>
+  <div class="metric"><div class="metric-label">Infant Age</div><div class="metric-value">8 months</div><div class="metric-sub">Lap infant on flights</div></div>
+  <div class="metric"><div class="metric-label">Flower Season</div><div class="metric-value" style="color:var(--pink)">Peak</div><div class="metric-sub">Tulips + cherry blossoms</div></div>
 </div>
 
 <!-- WEATHER -->
-<div class="container">
-  <section>
-    <div class="section-title">🌤️ Weather · April 8–13, 2026</div>
-    <div class="weather-grid">
-      <div class="weather-card"><div class="w-date">Apr 8 · Wed</div><div class="w-icon">☀️</div><div class="w-hi">85°F</div><div class="w-lo">70°F Low</div><div class="w-desc">Sunny Arrival</div></div>
-      <div class="weather-card"><div class="w-date">Apr 9 · Thu</div><div class="w-icon">⛅</div><div class="w-hi">84°F</div><div class="w-lo">69°F Low</div><div class="w-desc">Partly Cloudy</div></div>
-      <div class="weather-card"><div class="w-date">Apr 10 · Fri</div><div class="w-icon">☀️</div><div class="w-hi">86°F</div><div class="w-lo">70°F Low</div><div class="w-desc">Full Sun</div></div>
-      <div class="weather-card"><div class="w-date">Apr 11 · Sat</div><div class="w-icon">🌦️</div><div class="w-hi">84°F</div><div class="w-lo">68°F Low</div><div class="w-desc">PM Shower Possible</div></div>
-      <div class="weather-card"><div class="w-date">Apr 12 · Sun</div><div class="w-icon">☀️</div><div class="w-hi">85°F</div><div class="w-lo">70°F Low</div><div class="w-desc">Sunny</div></div>
-      <div class="weather-card"><div class="w-date">Apr 13 · Mon</div><div class="w-icon">⛅</div><div class="w-hi">84°F</div><div class="w-lo">69°F Low</div><div class="w-desc">Departure Day</div></div>
-    </div>
-    <div style="margin-top:16px">
-      <span class="weather-verdict">✅ End of Dry Season · Mostly Sunny · Sea Temp 79°F · Pack a Light Rain Layer</span>
-    </div>
-  </section>
+<div class="section-label">Weather — April 10–17, 2026 (Seattle / Skagit Valley)</div>
+<div class="card">
+  <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+    <span class="badge b-green" style="font-size:12px;padding:5px 14px">Good — Classic Pacific Northwest Spring</span>
+    <span style="font-size:13px;color:var(--text3)">Mild, mostly cloudy, light showers — pack layers and a light rain jacket</span>
+  </div>
+  <div class="weather-row">
+    <div class="wday"><div class="wdate">Apr 10</div><div class="wtemp">57°F</div><div class="wrain">Cloudy 40%</div></div>
+    <div class="wday"><div class="wdate">Apr 11</div><div class="wtemp">58°F</div><div class="wrain">Showers 55%</div></div>
+    <div class="wday"><div class="wdate">Apr 12</div><div class="wtemp">56°F</div><div class="wrain">Rain 60%</div></div>
+    <div class="wday"><div class="wdate">Apr 13</div><div class="wtemp">59°F</div><div class="wrain">Partly sunny 30%</div></div>
+    <div class="wday"><div class="wdate">Apr 14</div><div class="wtemp">61°F</div><div class="wrain">Mostly sunny 20%</div></div>
+    <div class="wday"><div class="wdate">Apr 15</div><div class="wtemp">62°F</div><div class="wrain">Partly cloudy 25%</div></div>
+    <div class="wday"><div class="wdate">Apr 16</div><div class="wtemp">60°F</div><div class="wrain">Showers 45%</div></div>
+    <div class="wday"><div class="wdate">Apr 17</div><div class="wtemp">58°F</div><div class="wrain">Cloudy 35%</div></div>
+  </div>
+  <div class="weather-meta">
+    <span><b>Lows:</b> 44–48°F (chilly evenings)</span>
+    <span><b>Rain:</b> Light and intermittent — rarely all-day</span>
+    <span><b>UV:</b> Moderate — still apply sunscreen for baby</span>
+    <span><b>Tulip fields:</b> Beautiful even on cloudy days — soft light = better photos</span>
+  </div>
+  <div class="ok-tip">Pack waterproof shoes and a light rain jacket — this is the PNW. Rain is brief and light in April. The tulip fields are gorgeous in overcast conditions — diffused light makes colors pop. Dress your infant in warm layers; evenings drop into the mid-40s.</div>
 </div>
 
-<!-- STATE DEPT ADVISORY -->
-<div class="container">
-  <section>
-    <div class="section-title">🛡️ U.S. State Dept Travel Advisory</div>
-    <div class="info-card">
-      <h3><span class="badge amber">Level 2</span> Exercise Increased Caution — Dominican Republic</h3>
-      <p>Violent crime (robbery, assault) is a concern throughout the DR. However, tourist resort zones are generally better policed and more secure. Same advisory level as France, Italy & Germany.</p>
-      <ul style="margin-top:10px">
-        <li>🚨 Emergency: <strong>911</strong></li>
-        <li>👮 Tourist Police (POLITUR): <strong>809-222-2026</strong></li>
-        <li>🇺🇸 U.S. Embassy: <strong>809-567-7775</strong></li>
-        <li>📱 Register your trip: <a href="https://step.state.gov" target="_blank">STEP Program</a></li>
-      </ul>
-      <p style="margin-top:12px;color:var(--text3);font-size:13px">Don't display valuables, avoid using phones openly on streets, travel with a partner.</p>
-    </div>
-  </section>
+<!-- SAFETY -->
+<div class="section-label">Safety — Domestic Travel Notes</div>
+<div class="card">
+  <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px">
+    <span class="badge b-green" style="font-size:12px;padding:5px 14px">Domestic US — No State Dept Advisory</span>
+    <span style="font-size:11.5px;color:var(--text3)">Seattle and Skagit Valley are safe for families with infants</span>
+  </div>
+  <div class="row"><span class="row-label">Overall safety</span><span class="row-val">Safe. Well-developed city with excellent infrastructure, hospitals, and family services throughout.</span></div>
+  <div class="row"><span class="row-label">Seattle Downtown</span><span class="row-val">Pioneer Square and parts of 3rd Ave have some homeless encampments — exercise normal city awareness. Pike Place, waterfront, Queen Anne, Capitol Hill, and Belltown are safe for tourists.</span></div>
+  <div class="row"><span class="row-label">Skagit Valley</span><span class="row-val">Mount Vernon and La Conner are rural and entirely safe. Tulip farms are family-friendly destinations.</span></div>
+  <div class="row"><span class="row-label">Emergency</span><span class="row-val">911 (all emergencies) — hospitals throughout Seattle. Seattle Children's Hospital for pediatric care.</span></div>
+  <div class="row"><span class="row-label">Road conditions</span><span class="row-val">Check WSDOT real-time map (wsdot.wa.gov) before driving. April rains can cause minor road issues in rural areas.</span></div>
+  <div class="tip">No passport, no visa, no foreign travel advisory. Standard domestic travel rules apply. Your US health insurance is valid here. No medical evacuation concerns.</div>
 </div>
 
-<!-- CDC HEALTH -->
-<div class="container">
-  <section>
-    <div class="section-title">🏥 CDC Health Advisory</div>
-    <div class="info-card">
-      <h3>Health — Dominican Republic</h3>
-      <ul>
-        <li>✅ <strong>No vaccinations required</strong> from the U.S.</li>
-        <li>💉 Recommended: Hepatitis A, Typhoid, routine vaccines up to date</li>
-        <li>🦟 Mosquito risks: Dengue, Zika, Chikungunya — use DEET repellent</li>
-        <li>💧 Drink bottled water only — avoid ice outside of resorts</li>
-        <li>🏥 Travel insurance with emergency medical evacuation strongly recommended</li>
-        <li>👶 <strong>Infant Zika note:</strong> Dress baby in long sleeves at dawn/dusk, use mosquito nets over stroller/bassinet</li>
-      </ul>
-    </div>
-  </section>
-</div>
-
-<!-- ENTRY REQUIREMENTS -->
-<div class="container">
-  <section>
-    <div class="section-title">📋 Entry Requirements</div>
-    <div class="info-card">
-      <h3>U.S. Citizens Entering Dominican Republic</h3>
-      <ul>
-        <li>✅ <strong>No visa required</strong> for stays under 30 days</li>
-        <li>📘 Passport valid for 6 months from arrival date</li>
-        <li>🎟️ $10 Tourist Card — included in airfare</li>
-        <li>🛫 $20 Departure tax — included in airfare</li>
-        <li>🔄 Round-trip ticket required at boarding (airlines verify)</li>
-      </ul>
-      <div style="margin-top:16px;background:var(--bg3);border:1px solid var(--teal);border-radius:var(--radius-sm);padding:14px">
-        <strong style="color:var(--teal)">🎫 eTicket — MANDATORY (FREE)</strong>
-        <p style="margin-top:8px;font-size:14px;color:var(--text2)">Complete at <a href="https://eticket.migracion.gob.do" target="_blank">eticket.migracion.gob.do</a> before departure. One QR code covers your whole family (list all 3 travelers including baby). You need <strong>one for arrival AND one for departure</strong>. Never pay a third-party site — it is 100% free.</p>
-      </div>
-      <p style="margin-top:10px;font-size:13px;color:var(--text3)">👶 Infants and children must be included on an eTicket — can be listed under parent's form.</p>
-    </div>
-  </section>
+<!-- ENTRY -->
+<div class="section-label">What You Need</div>
+<div class="card">
+  <div class="row"><span class="row-label">ID required</span><span class="row-val">Valid driver's license or state ID for adults. Baby does not need ID for domestic flights under 2.</span></div>
+  <div class="row"><span class="row-label">TSA — infant</span><span class="row-val">Infants under 2 fly free as lap infants on domestic flights. ~10% of adult fare (~$30–$50 each way) if airline charges. Many domestic carriers include lap infant at no charge — verify at booking.</span></div>
+  <div class="row"><span class="row-label">REAL ID note</span><span class="row-val">As of May 2025, REAL ID is required for domestic air travel. Ensure your driver's license is REAL ID compliant (gold star on card) or use passport.</span></div>
+  <div class="row"><span class="row-label">Car seat</span><span class="row-val">Washington state requires car seats for children under 8. Request infant car seat from rental agency at booking.</span></div>
+  <div class="row"><span class="row-label">Cannabis</span><span class="row-val">Legal in Washington State for adults 21+. Not permitted in public or while driving.</span></div>
+  <div class="warn-tip">REAL ID is now enforced for domestic air travel. Check your driver's license for the gold star before heading to JFK. If your license is not REAL ID compliant, bring your US passport as backup.</div>
 </div>
 
 <!-- FLIGHTS -->
-<div class="container">
-  <section>
-    <div class="section-title">✈️ Flights — JFK → POP</div>
-    <p style="color:var(--text3);font-size:13px;margin-bottom:16px">👶 Baby = 8 months · LAP INFANT · ~10% of adult fare each way</p>
-    <div class="flight-grid">
-      <div class="flight-card best">
-        <div class="airline">✅ JetBlue Airways</div>
-        <div class="flight-route">JFK (T5) → POP · NONSTOP · Preferred</div>
-        <div class="flight-row"><span class="fl">Flight #</span><span class="fv">B6227 / B6627</span></div>
-        <div class="flight-row"><span class="fl">Departure</span><span class="fv">~11:05 AM JFK</span></div>
-        <div class="flight-row"><span class="fl">Duration</span><span class="fv">~3h 48m</span></div>
-        <div class="flight-row"><span class="fl">Est. RT (per adult)</span><span class="fv">~$313–$373</span></div>
-        <div class="flight-row"><span class="fl">Lap infant (each way)</span><span class="fv">~$100</span></div>
-        <div class="flight-row"><span class="fl">Est. total (2A + infant)</span><span class="fv">~$700–$950</span></div>
-        <div class="flight-links">
-          <a class="flight-link" href="https://www.jetblue.com" target="_blank">JetBlue.com</a>
-          <a class="flight-link" href="https://www.expedia.com/lp/flights/jfk/pop/new-york-to-puerto-plata" target="_blank">Expedia</a>
-          <a class="flight-link" href="https://www.google.com/travel/flights" target="_blank">Google Flights</a>
-        </div>
-      </div>
-      <div class="flight-card">
-        <div class="airline">🔁 American Airlines (Backup)</div>
-        <div class="flight-route">JFK → MIA → POP · 1 Stop</div>
-        <div class="flight-row"><span class="fl">Via</span><span class="fv">Miami (MIA)</span></div>
-        <div class="flight-row"><span class="fl">Total Duration</span><span class="fv">~5h 24m</span></div>
-        <div class="flight-row"><span class="fl">Frequency</span><span class="fv">~7 flights/week</span></div>
-        <div class="flight-row"><span class="fl">Est. RT (per adult)</span><span class="fv">~$193–$350</span></div>
-        <div class="flight-row"><span class="fl">Recommended?</span><span class="fv">Only if JetBlue full</span></div>
-        <div class="flight-links">
-          <a class="flight-link" href="https://www.aa.com" target="_blank">AA.com</a>
-          <a class="flight-link" href="https://www.expedia.com" target="_blank">Expedia</a>
-        </div>
-      </div>
+<div class="section-label">Flights — JFK to SEA (Apr 10 Depart · Apr 17 Return)</div>
+<div style="font-size:13px;color:var(--text3);margin-bottom:10px">JFK preferred · No EWR · After 10 AM · Nonstop first · Afternoon/evening preferred</div>
+<div class="g2">
+  <div class="card featured">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+      <div style="font-size:16px;font-weight:600">Alaska Airlines — Nonstop ✈</div>
+      <span class="badge b-pink">Best pick</span>
     </div>
-    <p style="color:var(--teal);font-size:13px;margin-top:12px">💡 Request a bulkhead/bassinet seat when booking — essential for a 3h 48m flight with an 8-month-old.</p>
-  </section>
+    <div class="flight-detail">
+      <div><div class="flight-city">JFK</div><div class="flight-code">New York T7</div></div>
+      <div><div class="flight-arrow">→</div><div class="flight-duration">~6h 25m direct</div></div>
+      <div style="text-align:right"><div class="flight-city">SEA</div><div class="flight-code">Seattle-Tacoma</div></div>
+    </div>
+    <div class="row"><span class="row-label">Departure</span><span class="row-val">Multiple daily nonstops — choose 10 AM or later departure (afternoon preferred)</span></div>
+    <div class="row"><span class="row-label">2 adults RT</span><span class="row-val"><b style="color:var(--pink)">~$500–$800 total</b></span></div>
+    <div class="row"><span class="row-label">Infant lap</span><span class="row-val">Often free on domestic Alaska flights — confirm at booking</span></div>
+    <div class="row"><span class="row-label">Frequency</span><span class="row-val">31 nonstop flights/week from JFK</span></div>
+    <div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap">
+      <a href="https://www.alaskaair.com/content/flights/jfk-sea" target="_blank" class="hlink">Alaska Airlines ↗</a>
+      <a href="https://www.google.com/travel/flights/search?tfs=CBwQAhopEgoyMDI2LTA0LTEwagcIARIDSkZLcgwIAxIIL20vMGQ5anIQAhopEgoyMDI2LTA0LTE3agwIAxIIL20vMGQ5anJyBwgBEgNKRksYAXABggELCP___________wGYAQE" target="_blank" class="hlink" style="background:rgba(245,158,11,.1);color:#fcd34d;border-color:rgba(245,158,11,.2)">Google Flights ↗</a>
+      <a href="https://www.kayak.com/flights/JFK-SEA/2026-04-10/2026-04-17/2adults/lap1" target="_blank" class="hlink" style="background:rgba(34,197,94,.1);color:#86efac;border-color:rgba(34,197,94,.2)">KAYAK ↗</a>
+    </div>
+    <div class="tip">Alaska Airlines is the dominant carrier on JFK-SEA and typically the most reliable. Book nonstop afternoon departure. Lap infant is often free — select when booking.</div>
+  </div>
+  <div class="card">
+    <div style="font-size:16px;font-weight:600;margin-bottom:12px">Delta Air Lines — Nonstop (Backup)</div>
+    <div class="flight-detail">
+      <div><div class="flight-city">JFK</div><div class="flight-code">New York T4</div></div>
+      <div><div class="flight-arrow">→</div><div class="flight-duration">~6h 23m direct</div></div>
+      <div style="text-align:right"><div class="flight-city">SEA</div><div class="flight-code">Seattle-Tacoma</div></div>
+    </div>
+    <div class="row"><span class="row-label">Departure</span><span class="row-val">4:20 PM and other afternoon departures from JFK T4</span></div>
+    <div class="row"><span class="row-label">2 adults RT</span><span class="row-val">~$600–$900 total (April pricing)</span></div>
+    <div class="row"><span class="row-label">Infant lap</span><span class="row-val">~10% of adult fare — confirm at booking</span></div>
+    <div class="row"><span class="row-label">Frequency</span><span class="row-val">21 nonstop flights/week from JFK</span></div>
+    <div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap">
+      <a href="https://www.delta.com/us/en/flight-search/book-a-flight?tripType=ROUND_TRIP&fromAirportCode=JFK&toAirportCode=SEA" target="_blank" class="hlink">Delta.com ↗</a>
+      <a href="https://www.kayak.com/flights/JFK-SEA/2026-04-10/2026-04-17/2adults/lap1" target="_blank" class="hlink" style="background:rgba(245,158,11,.1);color:#fcd34d;border-color:rgba(245,158,11,.2)">KAYAK ↗</a>
+    </div>
+    <div class="warn-tip">JetBlue also flies JFK-SEA nonstop — check jetblue.com for fares. Avoid early morning departures before 10 AM.</div>
+  </div>
 </div>
 
 <!-- CAR RENTAL -->
-<div class="container">
-  <section>
-    <div class="section-title">🚗 Car Rental — POP Airport · Apr 8–13 (5 Days)</div>
-    <div class="car-grid">
-      <div class="car-card best">
-        <h4>⭐ Europcar — Best Value</h4>
-        <div class="car-row"><span class="car-lbl">Type</span><span class="car-val">Economy/Compact</span></div>
-        <div class="car-row"><span class="car-lbl">Rate/Day</span><span class="car-val">~$26/day</span></div>
-        <div class="car-row"><span class="car-lbl">5-Day Est.</span><span class="car-val">~$130</span></div>
-        <div class="car-row"><span class="car-lbl">Location</span><span class="car-val">POP Airport Terminal</span></div>
-      </div>
-      <div class="car-card">
-        <h4>🚙 Alamo — Family SUV</h4>
-        <div class="car-row"><span class="car-lbl">Type</span><span class="car-val">Compact SUV</span></div>
-        <div class="car-row"><span class="car-lbl">Rate/Day</span><span class="car-val">~$43/day</span></div>
-        <div class="car-row"><span class="car-lbl">5-Day Est.</span><span class="car-val">~$215</span></div>
-        <div class="car-row"><span class="car-lbl">Rating</span><span class="car-val">8.8 ⭐</span></div>
-      </div>
-      <div class="car-card">
-        <h4>🏆 Enterprise — Full SUV</h4>
-        <div class="car-row"><span class="car-lbl">Type</span><span class="car-val">Full-Size SUV</span></div>
-        <div class="car-row"><span class="car-lbl">Rate/Day</span><span class="car-val">~$66/day</span></div>
-        <div class="car-row"><span class="car-lbl">5-Day Est.</span><span class="car-val">~$330</span></div>
-        <div class="car-row"><span class="car-lbl">Best for</span><span class="car-val">Luggage + Baby gear</span></div>
-      </div>
+<div class="section-label">Car Rental — SEA Airport (Apr 10–17, 7 Days)</div>
+<div class="g3">
+  <div class="car-card">
+    <div class="car-title">Economy / Compact</div>
+    <div class="car-row"><span class="car-lbl">Daily rate</span><span class="car-val">~$40–$65/day</span></div>
+    <div class="car-row"><span class="car-lbl">7-day total</span><span class="car-val"><span class="car-price">~$280–$455</span></span></div>
+    <div class="car-row"><span class="car-lbl">Note</span><span class="car-val">Fine for city and highway. Tight for tulip farm visits with infant gear.</span></div>
+  </div>
+  <div class="car-card best">
+    <div class="car-title">SUV / Minivan — Recommended <span class="badge b-teal">Best for family</span></div>
+    <div class="car-row"><span class="car-lbl">Daily rate</span><span class="car-val">~$70–$110/day</span></div>
+    <div class="car-row"><span class="car-lbl">7-day total</span><span class="car-val"><span class="car-price">~$490–$770</span></span></div>
+    <div class="car-row"><span class="car-lbl">Best providers</span><span class="car-val">Enterprise, Hertz, National — all at SEA airport</span></div>
+    <div style="display:flex;gap:6px;margin-top:12px;flex-wrap:wrap">
+      <a href="https://www.enterprise.com/en/car-rental/locations/us/wa/seattle-tacoma-intl-airport-93m.html" target="_blank" class="hlink">Enterprise ↗</a>
+      <a href="https://www.kayak.com/Seattle-Tacoma-Intl-Airport-Car-Rentals.SEA.cap.ksp" target="_blank" class="hlink" style="background:rgba(245,158,11,.1);color:#fcd34d;border-color:rgba(245,158,11,.2)">KAYAK ↗</a>
     </div>
-    <p style="color:var(--text3);font-size:12px;margin-top:12px">⚠️ Must be 25+. Book in advance — prices can double at the desk. Get written rate confirmation. Avoid night driving on rural roads.</p>
-    <p style="margin-top:6px"><a href="https://www.kayak.com/Puerto-Plata-La-Union-Airport-Car-Rentals.POP.cap.ksp" target="_blank" style="font-size:13px">→ Compare on Kayak</a></p>
-  </section>
+  </div>
+  <div class="car-card">
+    <div class="car-title">Key Notes</div>
+    <div class="car-row"><span class="car-lbl">Car seat</span><span class="car-val">WA law requires for under 8 — request infant seat at booking</span></div>
+    <div class="car-row"><span class="car-lbl">Drive side</span><span class="car-val">Right — same as home</span></div>
+    <div class="car-row"><span class="car-lbl">Parking</span><span class="car-val">Seattle meters $2–$4/hr. Tulip farm parking free at most fields.</span></div>
+    <div class="car-row"><span class="car-lbl">Traffic</span><span class="car-val">I-5 to Skagit Valley: allow extra time on weekends during tulip festival</span></div>
+    <div class="car-row"><span class="car-lbl">Ferry</span><span class="car-val">WA State Ferries — can drive car on. Great for Bainbridge Island day trip.</span></div>
+  </div>
 </div>
+<div class="tip" style="margin-top:10px">Drive from Seattle to Skagit Valley (Mount Vernon) takes ~60–75 minutes on I-5 North. Leave early — tulip festival weekends back up traffic significantly. Weekday visits highly recommended. GPS works well throughout.</div>
 
 <!-- HOTELS -->
-<div class="container">
-  <section>
-    <div class="section-title">🏨 Hotels · 4-Star & 5-Star + Airbnb</div>
-    <div class="hotels-grid">
+<div class="section-label">4-Star &amp; 5-Star Hotels + Airbnb</div>
+<div class="hotel-grid">
 
-      <!-- Hotel 1 -->
-      <div class="hotel-card">
-        <div class="slider-wrap" id="hw1">
-          <div class="slider-track" id="ht1">
-            <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=80" alt="Casa Colonial" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🏛️</span></div>'">
-            <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?w=600&q=80" alt="Resort pool" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🏊</span></div>'">
-          </div>
-          <button class="slider-btn prev" onclick="slide('hw1','ht1',-1)">‹</button>
-          <button class="slider-btn next" onclick="slide('hw1','ht1',1)">›</button>
-          <div class="slider-dots"><button class="slider-dot active"></button><button class="slider-dot"></button></div>
-          <span class="slide-count">1 / 2</span>
-        </div>
-        <div class="hotel-body">
-          <span class="badge blue" style="margin-bottom:6px">5-Star · Boutique</span>
-          <h4>Casa Colonial Beach & Spa</h4>
-          <div class="hotel-price">~$250–$350 / night</div>
-          <div class="hotel-note">Playa Dorada · Elegant boutique luxury · World-class spa · Baby welcome</div>
-          <div class="hotel-links">
-            <a class="hotel-link" href="https://www.expedia.com/Puerto-Plata-Hotels-Luxury-Hotel.0-0-d6048790-tLuxuryHotel.Travel-Guide-Filter-Hotels" target="_blank">Expedia</a>
-            <a class="hotel-link" href="https://www.tripadvisor.com/Hotels-g147290-Puerto_Plata_Puerto_Plata_Province_Dominican_Republic-Hotels.html" target="_blank">Tripadvisor</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Hotel 2 -->
-      <div class="hotel-card">
-        <div class="slider-wrap" id="hw2">
-          <div class="slider-track" id="ht2">
-            <img src="https://images.unsplash.com/photo-1555993539-1732b0258235?w=600&q=80" alt="All-inclusive resort" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌴</span></div>'">
-            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80" alt="Beach resort" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🏖️</span></div>'">
-          </div>
-          <button class="slider-btn prev" onclick="slide('hw2','ht2',-1)">‹</button>
-          <button class="slider-btn next" onclick="slide('hw2','ht2',1)">›</button>
-          <div class="slider-dots"><button class="slider-dot active"></button><button class="slider-dot"></button></div>
-          <span class="slide-count">1 / 2</span>
-        </div>
-        <div class="hotel-body">
-          <span class="badge green" style="margin-bottom:6px">4-Star · ⭐ Top Family Pick</span>
-          <h4>Iberostar Waves Costa Dorada</h4>
-          <div class="hotel-price">~$180–$250 / night (All-Inclusive)</div>
-          <div class="hotel-note">Playa Dorada · Multiple pools · Strong family/baby amenities · VIP options</div>
-          <div class="hotel-links">
-            <a class="hotel-link" href="https://www.iberostar.com" target="_blank">Iberostar.com</a>
-            <a class="hotel-link" href="https://www.expedia.com" target="_blank">Expedia</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Hotel 3 -->
-      <div class="hotel-card">
-        <div class="slider-wrap" id="hw3">
-          <div class="slider-track" id="ht3">
-            <img src="https://images.unsplash.com/photo-1586500036706-41963de24d8b?w=600&q=80" alt="Beach resort" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌊</span></div>'">
-            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Tropical resort" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🏝️</span></div>'">
-          </div>
-          <button class="slider-btn prev" onclick="slide('hw3','ht3',-1)">‹</button>
-          <button class="slider-btn next" onclick="slide('hw3','ht3',1)">›</button>
-          <div class="slider-dots"><button class="slider-dot active"></button><button class="slider-dot"></button></div>
-          <span class="slide-count">1 / 2</span>
-        </div>
-        <div class="hotel-body">
-          <span class="badge amber" style="margin-bottom:6px">All-Inclusive · Beachfront</span>
-          <h4>Cofresi Palm Beach & Spa Resort</h4>
-          <div class="hotel-price">~$160–$230 / night</div>
-          <div class="hotel-note">328 ft from Cofresi Beach · Spa + pool + tennis · Calm waters for babies</div>
-          <div class="hotel-links">
-            <a class="hotel-link" href="https://www.expedia.com" target="_blank">Expedia</a>
-            <a class="hotel-link" href="https://www.tripadvisor.com" target="_blank">Tripadvisor</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Airbnb -->
-      <div class="hotel-card">
-        <div class="slider-wrap" id="hw4">
-          <div class="slider-track" id="ht4">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="Villa pool" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🏡</span></div>'">
-            <img src="https://images.unsplash.com/photo-1502444330042-d1a1ddf9bb5b?w=600&q=80" alt="Pool villa" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🏊</span></div>'">
-          </div>
-          <button class="slider-btn prev" onclick="slide('hw4','ht4',-1)">‹</button>
-          <button class="slider-btn next" onclick="slide('hw4','ht4',1)">›</button>
-          <div class="slider-dots"><button class="slider-dot active"></button><button class="slider-dot"></button></div>
-          <span class="slide-count">1 / 2</span>
-        </div>
-        <div class="hotel-body">
-          <span class="badge" style="background:#1a1f2e;color:var(--text2);margin-bottom:6px">🏠 Airbnb Villa Option</span>
-          <h4>Private Villa — Costambar / Cofresi</h4>
-          <div class="hotel-price">~$150–$250 / night</div>
-          <div class="hotel-note">Private pool + full kitchen — ideal for a family with a baby. Space to spread out.</div>
-          <div class="hotel-links">
-            <a class="hotel-link" href="https://www.airbnb.com/s/Puerto-Plata--Dominican-Republic/homes?amenities%5B%5D=7" target="_blank">Airbnb Search</a>
-          </div>
-        </div>
-      </div>
-
+  <div class="hotel-card feat">
+    <div style="height:160px;overflow:hidden">
+      <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=600&q=80" style="width:100%;height:100%;object-fit:cover" alt="Four Seasons Seattle" onerror="this.parentElement.style.background='var(--bg4)';this.style.display='none'">
     </div>
-  </section>
+    <div class="hotel-body">
+      <div class="hotel-hdr"><div><div class="hotel-name">Four Seasons Hotel Seattle</div><div class="hotel-loc">📍 Downtown — Waterfront views, Pike Place 2 min walk</div></div><span class="badge b-purple">5-Star</span></div>
+      <div class="hotel-price">~$450–$750/night</div>
+      <div class="hotel-note">Rooftop pool, spa, stunning Elliott Bay views. Walking distance to Pike Place Market. Family-friendly with cribs and rollaway beds. Best luxury option in Seattle.</div>
+      <div class="hotel-links">
+        <a href="https://www.fourseasons.com/seattle/" target="_blank" class="hlink">Website ↗</a>
+        <a href="https://www.expedia.com/Seattle-Hotels-Four-Seasons-Hotel-Seattle.h17218.Hotel-Information" target="_blank" class="hlink">Expedia ↗</a>
+        <a href="https://www.google.com/search?q=Four+Seasons+Hotel+Seattle" target="_blank" class="hlink">Google ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hotel-card">
+    <div style="height:160px;overflow:hidden">
+      <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&q=80" style="width:100%;height:100%;object-fit:cover" alt="1 Hotel Seattle" onerror="this.parentElement.style.background='var(--bg4)';this.style.display='none'">
+    </div>
+    <div class="hotel-body">
+      <div class="hotel-hdr"><div><div class="hotel-name">1 Hotel Seattle</div><div class="hotel-loc">📍 Pike Place — Eco-luxury, waterfront</div></div><span class="badge b-purple">5-Star</span></div>
+      <div class="hotel-price">~$400–$600/night</div>
+      <div class="hotel-note">Nature-inspired luxury at Pike Place. Rooftop bar with Olympic Mountain views, spa, farm-to-table dining. Sustainably built. One of the most talked-about hotels in Seattle right now.</div>
+      <div class="hotel-links">
+        <a href="https://www.1hotels.com/seattle" target="_blank" class="hlink">Website ↗</a>
+        <a href="https://www.expedia.com/Seattle-Hotels-1-Hotel-Seattle.h65740688.Hotel-Information" target="_blank" class="hlink">Expedia ↗</a>
+        <a href="https://www.google.com/search?q=1+Hotel+Seattle" target="_blank" class="hlink">Google ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hotel-card">
+    <div style="height:160px;overflow:hidden">
+      <img src="https://images.unsplash.com/photo-1444464666168-49d633b86797?w=600&q=80" style="width:100%;height:100%;object-fit:cover" alt="Fairmont Olympic Hotel" onerror="this.parentElement.style.background='var(--bg4)';this.style.display='none'">
+    </div>
+    <div class="hotel-body">
+      <div class="hotel-hdr"><div><div class="hotel-name">Fairmont Olympic Hotel</div><div class="hotel-loc">📍 Downtown Seattle — Historic landmark</div></div><span class="badge b-purple">5-Star</span></div>
+      <div class="hotel-price">~$350–$550/night</div>
+      <div class="hotel-note">Grand historic hotel built in 1924. Ballroom dining, pool, and spa. Central downtown location. Classic Pacific Northwest luxury — beloved by locals and visitors alike.</div>
+      <div class="hotel-links">
+        <a href="https://www.fairmont.com/seattle/" target="_blank" class="hlink">Website ↗</a>
+        <a href="https://www.expedia.com/Seattle-Hotels-Fairmont-Olympic-Hotel.h13521.Hotel-Information" target="_blank" class="hlink">Expedia ↗</a>
+        <a href="https://www.google.com/search?q=Fairmont+Olympic+Hotel+Seattle" target="_blank" class="hlink">Google ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hotel-card feat">
+    <div style="height:160px;overflow:hidden">
+      <img src="https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?w=600&q=80" style="width:100%;height:100%;object-fit:cover" alt="Thompson Seattle" onerror="this.parentElement.style.background='var(--bg4)';this.style.display='none'">
+    </div>
+    <div class="hotel-body">
+      <div class="hotel-hdr"><div><div class="hotel-name">Thompson Seattle</div><div class="hotel-loc">📍 Belltown — Rooftop bar, Puget Sound views</div></div><span class="badge b-amber">4-Star</span></div>
+      <div class="hotel-price">~$250–$420/night</div>
+      <div class="hotel-note">Boutique luxury steps from Pike Place. Brilliant rooftop bar with panoramic Puget Sound and mountain views. Sleek modern design. Excellent service. Great base for exploring the city.</div>
+      <div class="hotel-links">
+        <a href="https://www.hyatt.com/thompson-hotels/en-US/seath-thompson-seattle" target="_blank" class="hlink">Website ↗</a>
+        <a href="https://www.expedia.com/Seattle-Hotels-Thompson-Seattle.h7256003.Hotel-Information" target="_blank" class="hlink">Expedia ↗</a>
+        <a href="https://www.google.com/search?q=Thompson+Seattle+hotel" target="_blank" class="hlink">Google ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hotel-card">
+    <div style="height:160px;overflow:hidden">
+      <img src="https://images.unsplash.com/photo-1438401171849-74ac270044ee?w=600&q=80" style="width:100%;height:100%;object-fit:cover" alt="Hotel Sorrento Seattle" onerror="this.parentElement.style.background='var(--bg4)';this.style.display='none'">
+    </div>
+    <div class="hotel-body">
+      <div class="hotel-hdr"><div><div class="hotel-name">Hotel Sorrento</div><div class="hotel-loc">📍 First Hill — Century-old Italian palazzo</div></div><span class="badge b-amber">4-Star</span></div>
+      <div class="hotel-price">~$180–$320/night</div>
+      <div class="hotel-note">Seattle's most charming boutique hotel — 1909 Italianate architecture, original elevators, intimate fireplace lobby. Quiet and elegant. Best value luxury in Seattle. Walking distance to downtown.</div>
+      <div class="hotel-links">
+        <a href="https://www.hotelsorrento.com" target="_blank" class="hlink">Website ↗</a>
+        <a href="https://www.expedia.com/Seattle-Hotels-Hotel-Sorrento.h13520.Hotel-Information" target="_blank" class="hlink">Expedia ↗</a>
+        <a href="https://www.google.com/search?q=Hotel+Sorrento+Seattle" target="_blank" class="hlink">Google ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hotel-card">
+    <div style="height:160px;overflow:hidden">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" style="width:100%;height:100%;object-fit:cover" alt="Airbnb Seattle" onerror="this.parentElement.style.background='var(--bg4)';this.style.display='none'">
+    </div>
+    <div class="hotel-body">
+      <div class="hotel-hdr"><div><div class="hotel-name">Airbnb — Seattle or Skagit Valley</div><div class="hotel-loc">📍 Capitol Hill, Queen Anne, or near tulip farms</div></div><span class="badge b-blue">Airbnb</span></div>
+      <div class="hotel-price">~$120–$350/night</div>
+      <div class="hotel-note">Excellent option with infant — full kitchen, more space, often quieter neighborhoods. Near Skagit Valley gives fast access to tulip farms without festival traffic delays.</div>
+      <div class="hotel-links">
+        <a href="https://www.airbnb.com/s/Seattle--WA/homes?adults=2&infants=1&amenities%5B%5D=8" target="_blank" class="hlink">Seattle Airbnb ↗</a>
+        <a href="https://www.airbnb.com/s/Mount-Vernon--WA/homes?adults=2&infants=1" target="_blank" class="hlink">Skagit Valley Airbnb ↗</a>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <!-- THINGS TO DO -->
-<div class="container">
-  <section>
-    <div class="section-title">🎯 Things To Do</div>
-    <div class="act-grid">
+<div class="section-label">Things To Do — Flowers, Nature &amp; Seattle Classics</div>
+<div class="act-grid">
 
-      <div class="act-card">
-        <div class="slider-wrap" id="aw1">
-          <div class="slider-track" id="at1">
-            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" alt="Playa Dorada" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🏖️</span></div>'">
-          </div>
-        </div>
-        <div class="act-body">
-          <h4>🏖️ Playa Dorada</h4>
-          <div class="act-price">Free (resort access)</div>
-          <div class="act-note">Most popular Amber Coast beach · Calm water · Baby-friendly · Palm-lined</div>
-          <div class="act-links">
-            <a class="act-link" href="https://www.google.com/search?q=Playa+Dorada+Puerto+Plata&tbm=isch" target="_blank">Photos</a>
-            <a class="act-link" href="https://www.youtube.com/results?search_query=Playa+Dorada+Puerto+Plata" target="_blank">YouTube</a>
-          </div>
-        </div>
+  <div class="act-card">
+    <div class="slider-wrap" id="s0">
+      <div class="slider-track" id="t0">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1549877452-9c387954fbc2?w=600&q=80" alt="Tulip fields" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌷</span><span>Tulip Festival</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=600&q=80" alt="Colorful flowers" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌸</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1573108037329-37aa135a142e?w=600&q=80" alt="Spring flowers" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌺</span></div>'"></div>
       </div>
-
-      <div class="act-card">
-        <div class="slider-wrap" id="aw2">
-          <div class="slider-track" id="at2">
-            <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&q=80" alt="Beach" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌊</span></div>'">
-          </div>
-        </div>
-        <div class="act-body">
-          <h4>🌊 Cofresi Beach</h4>
-          <div class="act-price">Free</div>
-          <div class="act-note">Calm, sheltered bay · Great for babies · Less crowded than Playa Dorada</div>
-          <div class="act-links">
-            <a class="act-link" href="https://www.google.com/search?q=Cofresi+Beach+Puerto+Plata&tbm=isch" target="_blank">Photos</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="act-card">
-        <div class="slider-wrap" id="aw3">
-          <div class="slider-track" id="at3">
-            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Cable car mountain" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🚡</span></div>'">
-          </div>
-        </div>
-        <div class="act-body">
-          <h4>🚡 Puerto Plata Cable Car (Teleférico)</h4>
-          <div class="act-price">~$10/adult</div>
-          <div class="act-note">Ride to 800m peak · Panoramic Amber Coast views · Botanical garden at top · Only cable car in Caribbean</div>
-          <div class="act-links">
-            <a class="act-link" href="https://www.google.com/search?q=Puerto+Plata+Cable+Car&tbm=isch" target="_blank">Photos</a>
-            <a class="act-link" href="https://www.youtube.com/results?search_query=Puerto+Plata+Cable+Car+Teleferico" target="_blank">YouTube</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="act-card">
-        <div class="slider-wrap" id="aw4">
-          <div class="slider-track" id="at4">
-            <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?w=600&q=80" alt="Ocean World" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🐬</span></div>'">
-          </div>
-        </div>
-        <div class="act-body">
-          <h4>🐬 Ocean World Adventure Park</h4>
-          <div class="act-price">~$60–$120/person</div>
-          <div class="act-note">Swim with dolphins · Sea lions · Sharks · Water slides · Tropical rainforest · World's largest dolphin habitat</div>
-          <div class="act-links">
-            <a class="act-link" href="https://www.getyourguide.com/puerto-plata-l475/family-friendly-activities-tc1094/" target="_blank">Book Tour</a>
-            <a class="act-link" href="https://www.youtube.com/results?search_query=Ocean+World+Puerto+Plata" target="_blank">YouTube</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="act-card">
-        <div class="slider-wrap" id="aw5">
-          <div class="slider-track" id="at5">
-            <img src="https://images.unsplash.com/photo-1586500036706-41963de24d8b?w=600&q=80" alt="Waterfalls" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>💧</span></div>'">
-          </div>
-        </div>
-        <div class="act-body">
-          <h4>💧 27 Charcos de Damajagua</h4>
-          <div class="act-price">~$10 entry</div>
-          <div class="act-note">27 incredible waterfalls · Adults-only adventure · Hire a babysitter at resort for this one</div>
-          <div class="act-links">
-            <a class="act-link" href="https://www.youtube.com/results?search_query=27+waterfalls+Damajagua" target="_blank">YouTube</a>
-            <a class="act-link" href="https://www.google.com/search?q=Damajagua+waterfalls&tbm=isch" target="_blank">Photos</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="act-card">
-        <div class="slider-wrap" id="aw6">
-          <div class="slider-track" id="at6">
-            <img src="https://images.unsplash.com/photo-1555993539-1732b0258235?w=600&q=80" alt="Fort" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🏰</span></div>'">
-          </div>
-        </div>
-        <div class="act-body">
-          <h4>🏰 Fort San Felipe</h4>
-          <div class="act-price">~$5/person</div>
-          <div class="act-note">16th-century Caribbean fortress · Ocean views · Stroller-accessible · Quick 45-min visit</div>
-          <div class="act-links">
-            <a class="act-link" href="https://www.google.com/search?q=Fort+San+Felipe+Puerto+Plata&tbm=isch" target="_blank">Photos</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="act-card">
-        <div class="slider-wrap" id="aw7">
-          <div class="slider-track" id="at7">
-            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80" alt="Umbrella Street" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>☂️</span></div>'">
-          </div>
-        </div>
-        <div class="act-body">
-          <h4>☂️ Umbrella Street (Calle Beller)</h4>
-          <div class="act-price">Free</div>
-          <div class="act-note">Colorful Victorian street · Stroller-friendly · Amazing photos · Chocolate museum nearby</div>
-          <div class="act-links">
-            <a class="act-link" href="https://www.google.com/search?q=Umbrella+Street+Puerto+Plata&tbm=isch" target="_blank">Photos</a>
-            <a class="act-link" href="https://www.tiktok.com/search?q=Umbrella+Street+Puerto+Plata" target="_blank">TikTok</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="act-card">
-        <div class="slider-wrap" id="aw8">
-          <div class="slider-track" id="at8">
-            <img src="https://images.unsplash.com/photo-1502444330042-d1a1ddf9bb5b?w=600&q=80" alt="Chocolate" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🍫</span></div>'">
-          </div>
-        </div>
-        <div class="act-body">
-          <h4>🍫 Del Oro Chocolate Factory</h4>
-          <div class="act-price">Free–$5</div>
-          <div class="act-note">See how Dominican chocolate is made · Free tastings · Souvenirs · Air-conditioned</div>
-          <div class="act-links">
-            <a class="act-link" href="https://www.youtube.com/results?search_query=Del+Oro+Chocolate+Puerto+Plata" target="_blank">YouTube</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="act-card">
-        <div class="slider-wrap" id="aw9">
-          <div class="slider-track" id="at9">
-            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" alt="Malecon" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌅</span></div>'">
-          </div>
-        </div>
-        <div class="act-body">
-          <h4>🌅 El Malecón Boardwalk</h4>
-          <div class="act-price">Free</div>
-          <div class="act-note">Stroller-friendly waterfront promenade · Cafes · Sunset views · Lively Sunday crowds</div>
-          <div class="act-links">
-            <a class="act-link" href="https://www.google.com/search?q=Malecon+Puerto+Plata&tbm=isch" target="_blank">Photos</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="act-card">
-        <div class="slider-wrap" id="aw10">
-          <div class="slider-track" id="at10">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="Amber Museum" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>💎</span></div>'">
-          </div>
-        </div>
-        <div class="act-body">
-          <h4>💎 Amber Museum</h4>
-          <div class="act-price">~$5/adult</div>
-          <div class="act-note">World's largest amber collection · Air-conditioned · Quick 30-min visit · Great if it rains</div>
-          <div class="act-links">
-            <a class="act-link" href="https://www.tripadvisor.com" target="_blank">Tripadvisor</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="act-card">
-        <div class="slider-wrap" id="aw11">
-          <div class="slider-track" id="at11">
-            <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=80" alt="Rum tour" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🥃</span></div>'">
-          </div>
-        </div>
-        <div class="act-body">
-          <h4>🥃 Brugal Rum Factory Tour</h4>
-          <div class="act-price">Free</div>
-          <div class="act-note">15-min factory tour · Tastings for adults · Often included in city tours</div>
-          <div class="act-links">
-            <a class="act-link" href="https://www.youtube.com/results?search_query=Brugal+Rum+Factory+Puerto+Plata" target="_blank">YouTube</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="act-card">
-        <div class="slider-wrap" id="aw12">
-          <div class="slider-track" id="at12">
-            <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&q=80" alt="Beach" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌴</span></div>'">
-          </div>
-        </div>
-        <div class="act-body">
-          <h4>🌴 Cabarete Beach Day Trip</h4>
-          <div class="act-price">Free (30-min drive)</div>
-          <div class="act-note">Kitesurfing mecca · Chill beach bars · Great restaurants · Easy day trip from Puerto Plata</div>
-          <div class="act-links">
-            <a class="act-link" href="https://www.google.com/search?q=Cabarete+Beach&tbm=isch" target="_blank">Photos</a>
-            <a class="act-link" href="https://www.tiktok.com/search?q=Cabarete+Beach+Dominican" target="_blank">TikTok</a>
-          </div>
-        </div>
-      </div>
-
+      <button class="slider-btn prev" onclick="slide('s0','t0',-1)">‹</button>
+      <button class="slider-btn next" onclick="slide('s0','t0',1)">›</button>
+      <div class="slider-dots" id="d0"><span class="slider-dot active"></span><span class="slider-dot"></span><span class="slider-dot"></span></div>
+      <div class="slide-count">1 / 3</div>
     </div>
-  </section>
+    <div class="act-body">
+      <div class="bucket-pill">Once in a Lifetime</div>
+      <div class="act-name">Skagit Valley Tulip Festival</div>
+      <div class="act-note">250 acres of tulip fields 60 miles north of Seattle. Four farms: RoozenGaarde (1 million bulbs), Tulip Town (trolley rides), Tulip Valley Farms (U-Pick, stroller friendly), Garden Rosalyn. Mid-April = peak bloom.</div>
+      <div class="act-price">$15–$20/adult per farm · Under 2 free · Buy tickets at tulipfestival.org</div>
+      <div class="act-links">
+        <a href="https://www.google.com/search?q=Skagit+Valley+Tulip+Festival+Washington&tbm=isch" target="_blank" class="act-link link-g">📷 Images</a>
+        <a href="https://www.youtube.com/results?search_query=Skagit+Valley+Tulip+Festival+2026" target="_blank" class="act-link link-yt">▶ YouTube</a>
+        <a href="https://www.tiktok.com/search?q=Skagit+Valley+tulip+festival" target="_blank" class="act-link link-tt">TikTok</a>
+        <a href="https://tulipfestival.org" target="_blank" class="act-link link-wiki">Official Site</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="act-card">
+    <div class="slider-wrap" id="s1">
+      <div class="slider-track" id="t1">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1598135753163-6167c1a1ad65?w=600&q=80" alt="Cherry blossoms" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌸</span><span>Cherry Blossoms</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1550159930-40066082a4fc?w=600&q=80" alt="Pink blossoms" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌸</span></div>'"></div>
+      </div>
+      <button class="slider-btn prev" onclick="slide('s1','t1',-1)">‹</button>
+      <button class="slider-btn next" onclick="slide('s1','t1',1)">›</button>
+      <div class="slider-dots" id="d1"><span class="slider-dot active"></span><span class="slider-dot"></span></div>
+      <div class="slide-count">1 / 2</div>
+    </div>
+    <div class="act-body">
+      <div class="bucket-pill">Once in a Lifetime</div>
+      <div class="act-name">UW Cherry Blossom Quad</div>
+      <div class="act-note">29 Yoshino cherry trees — each 90 years old — form a canopy over the UW Quad. Peak bloom was March 20. In April 10 you'll see the stunning "petal fall" phase — pink petals carpeting the ground. Magical with an infant.</div>
+      <div class="act-price">Free · Take bus 44, 48, 65, 67, or 372 to avoid parking</div>
+      <div class="act-links">
+        <a href="https://www.google.com/search?q=UW+Cherry+Blossoms+Seattle+Quad&tbm=isch" target="_blank" class="act-link link-g">📷 Images</a>
+        <a href="https://www.youtube.com/results?search_query=UW+cherry+blossoms+Seattle+2026" target="_blank" class="act-link link-yt">▶ YouTube</a>
+        <a href="https://www.tiktok.com/search?q=UW+cherry+blossoms+Seattle" target="_blank" class="act-link link-tt">TikTok</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="act-card">
+    <div class="slider-wrap" id="s2">
+      <div class="slider-track" id="t2">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=600&q=80" alt="Pike Place Market Seattle" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🐟</span><span>Pike Place Market</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Market food" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🍽️</span></div>'"></div>
+      </div>
+      <button class="slider-btn prev" onclick="slide('s2','t2',-1)">‹</button>
+      <button class="slider-btn next" onclick="slide('s2','t2',1)">›</button>
+      <div class="slider-dots" id="d2"><span class="slider-dot active"></span><span class="slider-dot"></span></div>
+      <div class="slide-count">1 / 2</div>
+    </div>
+    <div class="act-body">
+      <div class="act-name">Pike Place Market</div>
+      <div class="act-note">America's oldest farmers market. Watch fishmongers throw 60-lb salmon, buy fresh tulips for $5, taste award-winning clam chowder, and find handmade crafts. 10 million visitors/year — 33rd most visited attraction worldwide.</div>
+      <div class="act-price">Free to enter · Food $2–$30</div>
+      <div class="act-links">
+        <a href="https://www.google.com/search?q=Pike+Place+Market+Seattle&tbm=isch" target="_blank" class="act-link link-g">📷 Images</a>
+        <a href="https://www.youtube.com/results?search_query=Pike+Place+Market+Seattle" target="_blank" class="act-link link-yt">▶ YouTube</a>
+        <a href="https://www.tiktok.com/search?q=Pike+Place+Market+Seattle" target="_blank" class="act-link link-tt">TikTok</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="act-card">
+    <div class="slider-wrap" id="s3">
+      <div class="slider-track" id="t3">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80" alt="Mount Rainier Washington" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🏔️</span><span>Mount Rainier</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Mountain landscape" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌄</span></div>'"></div>
+      </div>
+      <button class="slider-btn prev" onclick="slide('s3','t3',-1)">‹</button>
+      <button class="slider-btn next" onclick="slide('s3','t3',1)">›</button>
+      <div class="slider-dots" id="d3"><span class="slider-dot active"></span><span class="slider-dot"></span></div>
+      <div class="slide-count">1 / 2</div>
+    </div>
+    <div class="act-body">
+      <div class="bucket-pill">Once in a Lifetime</div>
+      <div class="act-name">Mount Rainier View — Kerry Park</div>
+      <div class="act-note">Kerry Park in Queen Anne offers the most iconic view in Seattle — Space Needle framed by the entire skyline with Mount Rainier (14,411 ft) visible behind on clear days. Free, stroller accessible, stunning at golden hour.</div>
+      <div class="act-price">Free · Queen Anne neighborhood</div>
+      <div class="act-links">
+        <a href="https://www.google.com/search?q=Kerry+Park+Seattle+view&tbm=isch" target="_blank" class="act-link link-g">📷 Images</a>
+        <a href="https://www.youtube.com/results?search_query=Kerry+Park+Seattle+view+Mount+Rainier" target="_blank" class="act-link link-yt">▶ YouTube</a>
+        <a href="https://www.tiktok.com/search?q=Kerry+Park+Seattle" target="_blank" class="act-link link-tt">TikTok</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="act-card">
+    <div class="slider-wrap" id="s4">
+      <div class="slider-track" id="t4">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1444464666168-49d633b86797?w=600&q=80" alt="Space Needle Seattle" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🗼</span><span>Space Needle</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=600&q=80" alt="Seattle skyline" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌆</span></div>'"></div>
+      </div>
+      <button class="slider-btn prev" onclick="slide('s4','t4',-1)">‹</button>
+      <button class="slider-btn next" onclick="slide('s4','t4',1)">›</button>
+      <div class="slider-dots" id="d4"><span class="slider-dot active"></span><span class="slider-dot"></span></div>
+      <div class="slide-count">1 / 2</div>
+    </div>
+    <div class="act-body">
+      <div class="act-name">Space Needle + Chihuly Garden</div>
+      <div class="act-note">Seattle's icon — 605 ft tall with revolving glass floor observation deck. Next door: Chihuly Garden and Glass, a spectacular installation of blown-glass sculptures in a stunning garden. Baby will be mesmerized by the colors.</div>
+      <div class="act-price">Space Needle: ~$38/adult · Chihuly: ~$32/adult · Combo ~$60</div>
+      <div class="act-links">
+        <a href="https://www.google.com/search?q=Space+Needle+Seattle+Chihuly+Garden&tbm=isch" target="_blank" class="act-link link-g">📷 Images</a>
+        <a href="https://www.youtube.com/results?search_query=Space+Needle+Seattle+Chihuly" target="_blank" class="act-link link-yt">▶ YouTube</a>
+        <a href="https://www.tiktok.com/search?q=Space+Needle+Seattle" target="_blank" class="act-link link-tt">TikTok</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="act-card">
+    <div class="slider-wrap" id="s5">
+      <div class="slider-track" id="t5">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80" alt="Forest hiking Pacific Northwest" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌲</span><span>Rainforest</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1458682625221-3a45f8a844c7?w=600&q=80" alt="Forest waterfall" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌿</span></div>'"></div>
+      </div>
+      <button class="slider-btn prev" onclick="slide('s5','t5',-1)">‹</button>
+      <button class="slider-btn next" onclick="slide('s5','t5',1)">›</button>
+      <div class="slider-dots" id="d5"><span class="slider-dot active"></span><span class="slider-dot"></span></div>
+      <div class="slide-count">1 / 2</div>
+    </div>
+    <div class="act-body">
+      <div class="act-name">Olympic Peninsula Day Trip</div>
+      <div class="act-note">Take the Washington State Ferry from Seattle waterfront to Bainbridge Island (35 min), then drive to Olympic National Park's temperate rainforest. Nurse logs, emerald moss, ancient cedar trees. Otherworldly scenery.</div>
+      <div class="act-price">Ferry: ~$20/car round trip · Park entry: $35/vehicle</div>
+      <div class="act-links">
+        <a href="https://www.google.com/search?q=Olympic+National+Park+Hoh+Rainforest+Washington&tbm=isch" target="_blank" class="act-link link-g">📷 Images</a>
+        <a href="https://www.youtube.com/results?search_query=Olympic+National+Park+rainforest" target="_blank" class="act-link link-yt">▶ YouTube</a>
+        <a href="https://www.tiktok.com/search?q=Olympic+National+Park+Washington" target="_blank" class="act-link link-tt">TikTok</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="act-card">
+    <div class="slider-wrap" id="s6">
+      <div class="slider-track" id="t6">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1499678329028-101435549a4e?w=600&q=80" alt="Waterfront ferry Seattle" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>⛴️</span><span>Puget Sound Ferry</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&q=80" alt="Water view" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌊</span></div>'"></div>
+      </div>
+      <button class="slider-btn prev" onclick="slide('s6','t6',-1)">‹</button>
+      <button class="slider-btn next" onclick="slide('s6','t6',1)">›</button>
+      <div class="slider-dots" id="d6"><span class="slider-dot active"></span><span class="slider-dot"></span></div>
+      <div class="slide-count">1 / 2</div>
+    </div>
+    <div class="act-body">
+      <div class="act-name">Bainbridge Island Ferry + Village</div>
+      <div class="act-note">35-minute ferry ride from downtown Seattle waterfront — stunning views of the skyline from the water with Mount Rainier behind. Bainbridge is a charming artsy village with galleries, cafes, and a lovely stroll. Great with baby stroller.</div>
+      <div class="act-price">Walk-on: ~$10/adult round trip · baby free</div>
+      <div class="act-links">
+        <a href="https://www.google.com/search?q=Bainbridge+Island+ferry+Seattle&tbm=isch" target="_blank" class="act-link link-g">📷 Images</a>
+        <a href="https://www.youtube.com/results?search_query=Bainbridge+Island+Seattle+ferry" target="_blank" class="act-link link-yt">▶ YouTube</a>
+        <a href="https://www.tiktok.com/search?q=Bainbridge+Island+Seattle" target="_blank" class="act-link link-tt">TikTok</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="act-card">
+    <div class="slider-wrap" id="s7">
+      <div class="slider-track" id="t7">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=600&q=80" alt="Wildflower meadow" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌼</span><span>Wildflowers</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1573108037329-37aa135a142e?w=600&q=80" alt="Spring bloom" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌻</span></div>'"></div>
+      </div>
+      <button class="slider-btn prev" onclick="slide('s7','t7',-1)">‹</button>
+      <button class="slider-btn next" onclick="slide('s7','t7',1)">›</button>
+      <div class="slider-dots" id="d7"><span class="slider-dot active"></span><span class="slider-dot"></span></div>
+      <div class="slide-count">1 / 2</div>
+    </div>
+    <div class="act-body">
+      <div class="act-name">Washington Park Arboretum</div>
+      <div class="act-note">Free 230-acre botanical garden in Seattle with azaleas, cherry trees, and flowering magnolias in peak April bloom. Stroller-friendly paths along Lake Washington. Quiet, beautiful, and a 15-minute drive from downtown.</div>
+      <div class="act-price">Free entry · Open dawn to dusk</div>
+      <div class="act-links">
+        <a href="https://www.google.com/search?q=Washington+Park+Arboretum+Seattle+spring+bloom&tbm=isch" target="_blank" class="act-link link-g">📷 Images</a>
+        <a href="https://www.youtube.com/results?search_query=Washington+Park+Arboretum+Seattle" target="_blank" class="act-link link-yt">▶ YouTube</a>
+        <a href="https://www.tiktok.com/search?q=Washington+Park+Arboretum+Seattle" target="_blank" class="act-link link-tt">TikTok</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="act-card">
+    <div class="slider-wrap" id="s8">
+      <div class="slider-track" id="t8">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1540202404-1b927e27fa8b?w=600&q=80" alt="Whale watching Pacific NW" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🐋</span><span>Whale Watching</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1559494007-9f5847c49d94?w=600&q=80" alt="Ocean sound" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌊</span></div>'"></div>
+      </div>
+      <button class="slider-btn prev" onclick="slide('s8','t8',-1)">‹</button>
+      <button class="slider-btn next" onclick="slide('s8','t8',1)">›</button>
+      <div class="slider-dots" id="d8"><span class="slider-dot active"></span><span class="slider-dot"></span></div>
+      <div class="slide-count">1 / 2</div>
+    </div>
+    <div class="act-body">
+      <div class="act-name">San Juan Islands Whale Watching</div>
+      <div class="act-note">April is peak season for orcas (killer whales) and humpbacks in Puget Sound. Day trips from Seattle or Anacortes. Some operators allow infants onboard — verify minimum age (usually 2+ for safety harness requirements).</div>
+      <div class="act-price">~$80–$120/adult · Tours from Seattle waterfront</div>
+      <div class="act-links">
+        <a href="https://www.google.com/search?q=San+Juan+Islands+whale+watching+Washington&tbm=isch" target="_blank" class="act-link link-g">📷 Images</a>
+        <a href="https://www.youtube.com/results?search_query=San+Juan+Islands+whale+watching+Washington" target="_blank" class="act-link link-yt">▶ YouTube</a>
+        <a href="https://www.tiktok.com/search?q=whale+watching+Washington+state" target="_blank" class="act-link link-tt">TikTok</a>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <!-- RESTAURANTS -->
-<div class="container">
-  <section>
-    <div class="section-title">🍽️ Restaurants</div>
-    <div class="rest-grid">
+<div class="section-label">Restaurants — Where To Eat</div>
+<div class="rest-grid">
 
-      <div class="rest-card">
-        <div class="slider-wrap" id="rw1">
-          <div class="slider-track" id="rt1">
-            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Fine dining" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🍽️</span></div>'">
-          </div>
-        </div>
-        <div class="rest-body">
-          <h4>La Casita Azul</h4>
-          <div class="rest-price">$$$ · Fine Dining</div>
-          <div class="rest-cuisine">Dominican / International · Historic Victorian home</div>
-          <div class="rest-note">Most iconic fine dining on the North Coast · Romantic patio · Top 3 in city</div>
-          <div class="rest-links">
-            <a class="rest-link" href="https://www.google.com/search?q=La+Casita+Azul+Puerto+Plata" target="_blank">Google</a>
-            <a class="rest-link" href="https://www.tripadvisor.com/Restaurants-g147290-Puerto_Plata_Puerto_Plata_Province_Dominican_Republic.html" target="_blank">Tripadvisor</a>
-          </div>
-        </div>
+  <div class="rest-card">
+    <div class="slider-wrap" id="r0">
+      <div class="slider-track" id="rt0">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Fine dining" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🦞</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80" alt="Restaurant ambiance" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🍷</span></div>'"></div>
       </div>
-
-      <div class="rest-card">
-        <div class="slider-wrap" id="rw2">
-          <div class="slider-track" id="rt2">
-            <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&q=80" alt="Seafood" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🦐</span></div>'">
-          </div>
-        </div>
-        <div class="rest-body">
-          <h4>Los Tres Cocos</h4>
-          <div class="rest-price">$$ · 4.8 ⭐</div>
-          <div class="rest-cuisine">Caribbean / International · Cofresi area</div>
-          <div class="rest-note">Beloved by locals — coconut sea bass, seared tuna, fresh seafood. A must-visit.</div>
-          <div class="rest-links">
-            <a class="rest-link" href="https://www.google.com/search?q=Los+Tres+Cocos+Puerto+Plata" target="_blank">Google</a>
-            <a class="rest-link" href="https://www.tripadvisor.com" target="_blank">Tripadvisor</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="rest-card">
-        <div class="slider-wrap" id="rw3">
-          <div class="slider-track" id="rt3">
-            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Mexican Caribbean" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌮</span></div>'">
-          </div>
-        </div>
-        <div class="rest-body">
-          <h4>Charros CaribeMex</h4>
-          <div class="rest-price">$$ · 4.8 ⭐</div>
-          <div class="rest-cuisine">Mexican-Caribbean fusion · Outdoor terrace</div>
-          <div class="rest-note">Great cocktails · Ocean views · Gluten-free menu · Family-friendly atmosphere</div>
-          <div class="rest-links">
-            <a class="rest-link" href="https://www.google.com/search?q=Charros+CaribeMex+Puerto+Plata" target="_blank">Google</a>
-            <a class="rest-link" href="https://www.tripadvisor.com" target="_blank">Tripadvisor</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="rest-card">
-        <div class="slider-wrap" id="rw4">
-          <div class="slider-track" id="rt4">
-            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Italian" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🍝</span></div>'">
-          </div>
-        </div>
-        <div class="rest-body">
-          <h4>Ristorante Passatore</h4>
-          <div class="rest-price">$$ · 4.8 ⭐</div>
-          <div class="rest-cuisine">Italian / Seafood · Playa Dorada</div>
-          <div class="rest-note">Hidden gem · Fresh pasta · Wood-fired pizza · Authentic Italian with a Caribbean touch</div>
-          <div class="rest-links">
-            <a class="rest-link" href="https://www.google.com/search?q=Ristorante+Passatore+Puerto+Plata" target="_blank">Google</a>
-            <a class="rest-link" href="https://www.tripadvisor.com" target="_blank">Tripadvisor</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="rest-card">
-        <div class="slider-wrap" id="rw5">
-          <div class="slider-track" id="rt5">
-            <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&q=80" alt="Casa 40" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🥗</span></div>'">
-          </div>
-        </div>
-        <div class="rest-body">
-          <h4>Casa 40</h4>
-          <div class="rest-price">$$ · Mediterranean</div>
-          <div class="rest-cuisine">International / Mediterranean · Historic District</div>
-          <div class="rest-note">Excellent Angus burgers, creative salads, Pesto Burrata — artsy and chill vibe</div>
-          <div class="rest-links">
-            <a class="rest-link" href="https://www.google.com/search?q=Casa+40+Puerto+Plata" target="_blank">Google</a>
-            <a class="rest-link" href="https://www.tripadvisor.com" target="_blank">Tripadvisor</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="rest-card">
-        <div class="slider-wrap" id="rw6">
-          <div class="slider-track" id="rt6">
-            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" alt="Beach restaurant" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🐟</span></div>'">
-          </div>
-        </div>
-        <div class="rest-body">
-          <h4>Cosita Rica Beach</h4>
-          <div class="rest-price">$ · Local Dominican</div>
-          <div class="rest-cuisine">Dominican classics · Malecón beachfront</div>
-          <div class="rest-note">Where locals go — rice, fried breaded fish, tostones · Casual · Baby-friendly</div>
-          <div class="rest-links">
-            <a class="rest-link" href="https://www.google.com/search?q=Cosita+Rica+Puerto+Plata" target="_blank">Google</a>
-          </div>
-        </div>
-      </div>
-
+      <button class="slider-btn prev" onclick="slide('r0','rt0',-1)">‹</button>
+      <button class="slider-btn next" onclick="slide('r0','rt0',1)">›</button>
+      <div class="slider-dots" id="rd0"><span class="slider-dot active"></span><span class="slider-dot"></span></div>
+      <div class="slide-count">1 / 2</div>
     </div>
-  </section>
+    <div class="rest-body">
+      <div class="rest-name">The Pink Door</div>
+      <div class="rest-loc">📍 Pike Place Market — Post Alley</div>
+      <div class="rest-price">$$$ · ~$30–$55/person</div>
+      <div class="rest-note">Hidden Italian-American gem in Post Alley. Trapeze artists perform over your dinner. Outstanding pappardelle bolognese and lasagna. Water views from the patio. Book 30 days in advance — tables go fast.</div>
+      <div class="rest-links">
+        <a href="https://www.google.com/search?q=The+Pink+Door+Seattle+Pike+Place" target="_blank" class="rlink rlink-g">Google ↗</a>
+        <a href="https://www.tripadvisor.com/Restaurant_Review-g60878-d370395-Reviews-The_Pink_Door-Seattle_Washington.html" target="_blank" class="rlink rlink-m">Tripadvisor ↗</a>
+        <a href="https://www.google.com/search?q=Pink+Door+Seattle+food+menu&tbm=isch" target="_blank" class="rlink rlink-t">Photos ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="rest-card">
+    <div class="slider-wrap" id="r1">
+      <div class="slider-track" id="rt1">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Clam chowder Seattle" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🦪</span></div>'"></div>
+      </div>
+      <div class="slide-count">1 / 1</div>
+    </div>
+    <div class="rest-body">
+      <div class="rest-name">Pike Place Chowder</div>
+      <div class="rest-loc">📍 Pike Place Market — Post Alley</div>
+      <div class="rest-price">$$ · ~$10–$18/person</div>
+      <div class="rest-note">Award-winning clam chowder — voted America's best multiple times. Eight flavor options including New England, Smoked Salmon, and Shrimp Louie. Must-eat on your first day. Order online to skip the line.</div>
+      <div class="rest-links">
+        <a href="https://www.google.com/search?q=Pike+Place+Chowder+Seattle" target="_blank" class="rlink rlink-g">Google ↗</a>
+        <a href="https://www.tripadvisor.com/Restaurant_Review-g60878-d435122-Reviews-Pike_Place_Chowder-Seattle_Washington.html" target="_blank" class="rlink rlink-m">Tripadvisor ↗</a>
+        <a href="https://www.pikeplacemarket.org" target="_blank" class="rlink rlink-t">Order Online ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="rest-card">
+    <div class="slider-wrap" id="r2">
+      <div class="slider-track" id="rt2">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80" alt="Upscale seafood" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🐟</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Dining view" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌊</span></div>'"></div>
+      </div>
+      <button class="slider-btn prev" onclick="slide('r2','rt2',-1)">‹</button>
+      <button class="slider-btn next" onclick="slide('r2','rt2',1)">›</button>
+      <div class="slider-dots" id="rd2"><span class="slider-dot active"></span><span class="slider-dot"></span></div>
+      <div class="slide-count">1 / 2</div>
+    </div>
+    <div class="rest-body">
+      <div class="rest-name">Canlis</div>
+      <div class="rest-loc">📍 Queen Anne — Iconic Seattle fine dining</div>
+      <div class="rest-price">$$$$ · ~$100–$150/person</div>
+      <div class="rest-note">Seattle's most storied fine dining restaurant since 1950. Cantilevered over Lake Union with stunning views. Pacific Northwest cuisine at its finest — Dungeness crab, Wagyu, seasonal tasting menu. Reserve months ahead.</div>
+      <div class="rest-links">
+        <a href="https://www.google.com/search?q=Canlis+Restaurant+Seattle" target="_blank" class="rlink rlink-g">Google ↗</a>
+        <a href="https://www.tripadvisor.com/Restaurant_Review-g60878-d332023-Reviews-Canlis-Seattle_Washington.html" target="_blank" class="rlink rlink-m">Tripadvisor ↗</a>
+        <a href="https://canlis.com" target="_blank" class="rlink rlink-t">Reserve ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="rest-card">
+    <div class="slider-wrap" id="r3">
+      <div class="slider-track" id="rt3">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80" alt="Rooftop bar Seattle" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🍸</span></div>'"></div>
+      </div>
+      <div class="slide-count">1 / 1</div>
+    </div>
+    <div class="rest-body">
+      <div class="rest-name">Radiator Whiskey</div>
+      <div class="rest-loc">📍 Pike Place Market — Main Arcade</div>
+      <div class="rest-price">$$$ · ~$25–$45/person</div>
+      <div class="rest-note">Whiskey bar with incredible cocktails and even better food. House-smoked meats, wood-fired dishes, and a wildly curated bourbon selection. Cozy warm space — perfect for a rainy Seattle evening.</div>
+      <div class="rest-links">
+        <a href="https://www.google.com/search?q=Radiator+Whiskey+Seattle+Pike+Place" target="_blank" class="rlink rlink-g">Google ↗</a>
+        <a href="https://www.tripadvisor.com/Restaurant_Review-g60878-d4536534-Reviews-Radiator_Whiskey-Seattle_Washington.html" target="_blank" class="rlink rlink-m">Tripadvisor ↗</a>
+        <a href="https://www.google.com/search?q=Radiator+Whiskey+Seattle+food&tbm=isch" target="_blank" class="rlink rlink-t">Photos ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="rest-card">
+    <div class="slider-wrap" id="r4">
+      <div class="slider-track" id="rt4">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Artisan food Seattle" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🧀</span></div>'"></div>
+      </div>
+      <div class="slide-count">1 / 1</div>
+    </div>
+    <div class="rest-body">
+      <div class="rest-name">Beecher's Handmade Cheese</div>
+      <div class="rest-loc">📍 Pike Place Market — Corner shop</div>
+      <div class="rest-price">$ · ~$8–$15/person</div>
+      <div class="rest-note">Watch cheese being made through the window, then order the "World's Best Mac and Cheese" — a blend of Flagship and Just Jack cheeses with penne pasta. Under $10 and better than any mac you've ever had. Baby-friendly quick stop.</div>
+      <div class="rest-links">
+        <a href="https://www.google.com/search?q=Beecher%27s+Handmade+Cheese+Seattle+Pike+Place" target="_blank" class="rlink rlink-g">Google ↗</a>
+        <a href="https://www.tripadvisor.com/Restaurant_Review-g60878-d1176505-Reviews-Beecher_s_Handmade_Cheese-Seattle_Washington.html" target="_blank" class="rlink rlink-m">Tripadvisor ↗</a>
+        <a href="https://www.beechershandmadecheese.com" target="_blank" class="rlink rlink-t">Website ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="rest-card">
+    <div class="slider-wrap" id="r5">
+      <div class="slider-track" id="rt5">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80" alt="Tulip farm restaurant La Conner" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌷</span></div>'"></div>
+      </div>
+      <div class="slide-count">1 / 1</div>
+    </div>
+    <div class="rest-body">
+      <div class="rest-name">Nell Thorn (La Conner)</div>
+      <div class="rest-loc">📍 La Conner — Skagit Valley waterfront</div>
+      <div class="rest-price">$$$ · ~$25–$45/person</div>
+      <div class="rest-note">Award-winning waterfront restaurant in the charming town of La Conner, 6 miles from the tulip farms. Pacific Northwest seasonal cuisine with local produce. Perfect for a post-tulip festival lunch or dinner overlooking the Swinomish Channel.</div>
+      <div class="rest-links">
+        <a href="https://www.google.com/search?q=Nell+Thorn+La+Conner+Washington" target="_blank" class="rlink rlink-g">Google ↗</a>
+        <a href="https://www.tripadvisor.com/Restaurant_Review-g58832-d431929-Reviews-Nell_Thorn_Restaurant_Bar-La_Conner_Washington.html" target="_blank" class="rlink rlink-m">Tripadvisor ↗</a>
+        <a href="https://www.nellthorn.com" target="_blank" class="rlink rlink-t">Reserve ↗</a>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <!-- FOOD COSTS -->
-<div class="container">
-  <section>
-    <div class="section-title">🍌 Food Costs at a Glance</div>
-    <div class="info-card">
-      <table class="food-table">
-        <thead>
-          <tr><th>Item</th><th>Est. Cost</th><th>Notes</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Street food / empanada</td><td>$2–5/person</td><td>Try chimis (Dominican street burger)</td></tr>
-          <tr><td>Local café breakfast</td><td>$5–10/person</td><td>Mangú with eggs & salami</td></tr>
-          <tr><td>Casual lunch</td><td>$10–20/2 adults</td><td>La Bandera (national dish)</td></tr>
-          <tr><td>Mid-range dinner</td><td>$30–60/2 adults</td><td>Los Tres Cocos, Charros CaribeMex</td></tr>
-          <tr><td>Fine dining</td><td>$80–120/2 adults</td><td>La Casita Azul, Le Papillon</td></tr>
-          <tr><td>Presidente beer</td><td>$2–4</td><td>Dominican national beer — excellent</td></tr>
-          <tr><td>Fresh coconut water</td><td>$1–2</td><td>From street vendors</td></tr>
-          <tr><td>Dominican coffee</td><td>$1–2</td><td>World-class beans, always fresh</td></tr>
-          <tr><td><strong>Daily budget (2 adults, mid-range)</strong></td><td><strong>~$60–100</strong></td><td>Outside of all-inclusive</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
+<div class="section-label">Food Costs at a Glance</div>
+<div class="card">
+  <div class="food-row"><span style="color:var(--text2)">Pike Place quick bite (piroshky, chowder cup, crumpet)</span><span style="font-weight:600;color:var(--text)">$4–$12</span></div>
+  <div class="food-row"><span style="color:var(--text2)">Coffee (Starbucks original Pike Place location)</span><span style="font-weight:600;color:var(--text)">$5–$8</span></div>
+  <div class="food-row"><span style="color:var(--text2)">Casual lunch per person (market, food hall)</span><span style="font-weight:600;color:var(--text)">$15–$25</span></div>
+  <div class="food-row"><span style="color:var(--text2)">Mid-range dinner for 2 adults</span><span style="font-weight:600;color:var(--text)">$80–$130</span></div>
+  <div class="food-row"><span style="color:var(--text2)">Upscale dinner for 2 (Canlis, Pink Door)</span><span style="font-weight:600;color:var(--text)">$180–$300</span></div>
+  <div class="food-row"><span style="color:var(--text2)">Fresh tulip bouquet at Skagit farm (take home)</span><span style="font-weight:600;color:var(--text)">$10–$20</span></div>
+  <div class="food-row"><span style="color:var(--text2)">Local craft beer (Seattle has 100+ breweries)</span><span style="font-weight:600;color:var(--text)">$7–$10</span></div>
+  <div class="food-row"><span style="color:var(--text2);font-weight:600">Daily food budget — 2 adults, mid-range</span><span style="font-weight:700;color:var(--pink)">$100–$180/day</span></div>
 </div>
+<div class="tip" style="margin-top:10px">Seattle sales tax is 10.25% — factor into restaurant budgets. Tipping: 18–20% standard in Seattle. Pike Place Market fresh flowers are an incredible deal — buy tulips straight from the Skagit farms at the market for $5–$10 a bunch.</div>
 
-<!-- INSIDER TIPS -->
-<div class="container">
-  <section>
-    <div class="section-title">💡 Insider Tips</div>
-    <div class="tips-grid">
-      <div class="tip-card"><div class="tip-icon">✈️</div><p><strong>Book JetBlue early.</strong> It's the only nonstop from JFK to POP. April is peak season and seats fill fast.</p></div>
-      <div class="tip-card"><div class="tip-icon">🏨</div><p><strong>All-inclusive is ideal with an infant.</strong> Eliminates stress of finding safe food/water for baby — everything is handled.</p></div>
-      <div class="tip-card"><div class="tip-icon">👮</div><p><strong>POLITUR tourist police</strong> are visible in resort zones — friendly and helpful. Don't hesitate to approach them.</p></div>
-      <div class="tip-card"><div class="tip-icon">📱</div><p><strong>Pocket your phone</strong> when walking city streets. Don't use it openly — pickpocket risk. Fine inside resorts.</p></div>
-      <div class="tip-card"><div class="tip-icon">💵</div><p><strong>Tip in USD.</strong> $1–2 for housekeeping daily, $5 for tours. Small bills are highly appreciated by staff.</p></div>
-      <div class="tip-card"><div class="tip-icon">🦟</div><p><strong>Mosquito-proof baby</strong> at dawn/dusk. Long sleeves, baby-safe DEET wipes, and mosquito net over the stroller.</p></div>
-      <div class="tip-card"><div class="tip-icon">🚗</div><p><strong>Hire a local driver</strong> for day trips (Damajagua, Cabarete). Often safer and cheaper than self-driving unfamiliar roads.</p></div>
-      <div class="tip-card"><div class="tip-icon">🌅</div><p><strong>Best sunrise:</strong> Malecón boardwalk at 6:30 AM — serene, stroller-friendly, and magical before crowds arrive.</p></div>
-      <div class="tip-card"><div class="tip-icon">☀️</div><p><strong>April timing is excellent.</strong> End of the dry season — mostly sunny before the May/June rainy period kicks in.</p></div>
-      <div class="tip-card"><div class="tip-icon">🍫</div><p><strong>Buy Dominican cacao, coffee & cigars</strong> as souvenirs — all world-class and inexpensive. Del Oro is great for chocolate.</p></div>
-    </div>
-  </section>
+<!-- PRO TIPS -->
+<div class="section-label">Insider Tips — Pacific Northwest</div>
+<div class="pro-grid">
+  <div class="pro-card"><div class="pro-icon">🌧️</div><div class="pro-title">It Rains (Briefly)</div><div class="pro-body">April PNW rain is usually light and intermittent — not all-day downpours. Pack a compact rain jacket and waterproof shoes. Never cancel plans for Seattle drizzle — locals ignore it entirely.</div></div>
+  <div class="pro-card"><div class="pro-icon">🌷</div><div class="pro-title">Tulip Farm Tips</div><div class="pro-body">Go on a weekday — weekend I-5 traffic to Skagit Valley backs up for hours. Buy farm tickets online before you go. Dress in layers — fields can be 15 degrees colder than Seattle. Waterproof footwear essential (muddy paths).</div></div>
+  <div class="pro-card"><div class="pro-icon">☕</div><div class="pro-title">The Original Starbucks</div><div class="pro-body">The very first Starbucks is at 1912 Pike Place — line is always long but moves fast. Worth visiting once. Seattle also has excellent independent coffee: Victrola, Espresso Vivace, and Caffe Ladro are locals' favorites.</div></div>
+  <div class="pro-card"><div class="pro-icon">🚇</div><div class="pro-title">Getting Around Seattle</div><div class="pro-body">Seattle Link Light Rail connects the airport to downtown in 38 minutes ($3.50). Within the city: Lyft/Uber are reliable. Light Rail and buses cover most tourist areas. Parking downtown is $3–$6/hr.</div></div>
+  <div class="pro-card"><div class="pro-icon">⛴️</div><div class="pro-title">Washington State Ferries</div><div class="pro-body">The ferry system is part of life here. Walk-on is easy and cheap. The Bainbridge Island crossing gives the single best view of the Seattle skyline from the water — do it at least once. Stroller rolls right on.</div></div>
+  <div class="pro-card"><div class="pro-icon">🐟</div><div class="pro-title">Fish Throwing at Pike Place</div><div class="pro-body">Pike Place Fish Co. — the famous fish throwing spot — performs on demand. Get there early for a front-row spot. Crowds are manageable on weekday mornings. This is one of those experiences that's worth the tourist factor.</div></div>
+  <div class="pro-card"><div class="pro-icon">📱</div><div class="pro-title">No SIM Card Needed</div><div class="pro-body">Domestic travel — your current phone plan works everywhere in Washington State. No roaming charges. Seattle has excellent 5G coverage throughout the city and on I-5 to Skagit Valley.</div></div>
+  <div class="pro-card"><div class="pro-icon">👶</div><div class="pro-title">Baby Changing</div><div class="pro-body">Seattle is very family-friendly with changing stations in most restaurants and attractions. Pike Place Market has family restrooms. The Four Seasons and 1 Hotel have excellent baby amenities including cribs and bottle warmers.</div></div>
+  <div class="pro-card"><div class="pro-icon">🏥</div><div class="pro-title">Medical — Top Tier</div><div class="pro-body">Seattle has world-class medical care. UW Medical Center, Swedish Medical Center, and Seattle Children's Hospital are all nationally ranked. Your US health insurance is fully valid. No concerns traveling with infant here.</div></div>
+  <div class="pro-card"><div class="pro-icon">🌲</div><div class="pro-title">REAL ID Check</div><div class="pro-body">Required for domestic flights since May 2025. Look for the gold star on your driver's license. If not compliant, bring your US passport. No other ID issues — this is domestic travel.</div></div>
 </div>
 
 <!-- INFANT NOTES -->
-<div class="container">
-  <section>
-    <div class="section-title">👶 Infant Travel Notes</div>
-    <div class="infant-card">
-      <h3>👶 Your Daughter · 8 Months Old at Travel Time</h3>
-      <ul>
-        <li>✅ <strong>Lap infant</strong> on all flights — under 24 months, no seat purchase required</li>
-        <li>💺 JetBlue lap infant fee: ~$100 each way (international) → ~$200 round trip total for baby</li>
-        <li>🛏️ Request a <strong>bassinet seat (bulkhead row)</strong> when booking — essential for 3h 48m nonstop</li>
-        <li>🏨 All-inclusive resorts typically have <strong>cribs/pack-n-plays available on request</strong> — confirm at booking</li>
-        <li>🎫 <strong>Baby needs to be on the eTicket</strong> — list her under your family entry form</li>
-        <li>🌡️ Apply <strong>baby SPF 50+</strong> — she's old enough for sunscreen at 8 months</li>
-        <li>🦟 Dress her in <strong>long sleeves at dawn/dusk</strong> for Zika/Dengue mosquito protection</li>
-        <li>💧 Use <strong>bottled water only</strong> for formula mixing — even at resorts</li>
-        <li>🧳 Pack: travel crib, lightweight stroller, baby carrier, formula/baby food (declare at customs), basic infant first-aid kit</li>
-        <li>📘 Baby needs her own <strong>U.S. Passport</strong> — apply early if not done!</li>
-      </ul>
-    </div>
-  </section>
+<div class="section-label">Infant Travel Notes — April 2026 (8 Months · DOB Aug 5, 2025)</div>
+<div class="card">
+  <div class="row"><span class="row-label">Flights</span><span class="row-val">Domestic lap infant — often free on Alaska Airlines. Confirm at booking. Nurse or pacifier during takeoff/landing for ear pressure.</span></div>
+  <div class="row"><span class="row-label">Car seat</span><span class="row-val">Washington state requires for under 8. Request infant seat from rental at booking.</span></div>
+  <div class="row"><span class="row-label">Weather / layers</span><span class="row-val">April evenings drop to mid-40s — bring warm layers and a light waterproof cover for the stroller. Baby carrier for flower fields and market crowds.</span></div>
+  <div class="row"><span class="row-label">Stroller</span><span class="row-val">Lightweight stroller works great. Tulip Valley Farms specifically designed for strollers — wide walkable rows. Pike Place has some uneven brick sections.</span></div>
+  <div class="row"><span class="row-label">Medical</span><span class="row-val">Your US health insurance is fully valid. Seattle Children's Hospital is one of the best pediatric hospitals in the country — no concerns.</span></div>
+  <div class="row"><span class="row-label">Changing</span><span class="row-val">Abundant changing stations throughout Seattle. Tulip farms have portable restrooms — bring your own portable changing mat as backup.</span></div>
+  <div class="row"><span class="row-label">Time zone</span><span class="row-val">Seattle is 3 hours behind NYC (PDT). Baby will likely wake earlier local time — use this to beat the tulip farm crowds on weekday mornings.</span></div>
+  <div class="ok-tip">Washington State is one of the most baby-friendly domestic destinations you can choose. Excellent infrastructure, top-tier hospitals, stroller-accessible everything, and the tulip farms are designed for families. No health concerns beyond standard infant care.</div>
 </div>
 
 <!-- COST ESTIMATE -->
-<div class="container">
-  <section>
-    <div class="section-title">💰 Full Trip Cost Estimate · 5 Nights</div>
-    <div class="cost-grid">
-      <div class="cost-card"><div class="cost-label">✈️ Flights</div><div class="cost-val">$700–$950</div></div>
-      <div class="cost-card"><div class="cost-label">🏨 Hotel (5 nights)</div><div class="cost-val">$900–$1,500</div></div>
-      <div class="cost-card"><div class="cost-label">🚗 Car Rental (5 days)</div><div class="cost-val">$130–$220</div></div>
-      <div class="cost-card"><div class="cost-label">🍽️ Food & Dining</div><div class="cost-val">$200–$400</div></div>
-      <div class="cost-card"><div class="cost-label">🎯 Activities & Tours</div><div class="cost-val">$150–$300</div></div>
-      <div class="cost-card"><div class="cost-label">💼 Tips, Shopping, Misc</div><div class="cost-val">$100–$200</div></div>
-    </div>
-    <div class="total-card">
-      <div class="total-label">Estimated Total Trip Cost · 2 Adults + Infant</div>
-      <div class="total-val">$2,200 – $3,500</div>
-    </div>
-    <p style="color:var(--text3);font-size:12px;margin-top:12px;text-align:center">Lower end = all-inclusive resort + economy car. Upper end = boutique hotel + SUV + dining out daily.</p>
-  </section>
+<div class="section-label">Full Trip Cost Estimate — 7 Nights, 2 Adults + Lap Infant</div>
+<div class="g2">
+  <div class="metric"><div class="metric-label">Flights — Alaska Airlines RT (2 adults + infant)</div><div class="metric-value">~$500–$800</div><div class="metric-sub">Infant often free domestic</div></div>
+  <div class="metric"><div class="metric-label">Car Rental — SUV, 7 days</div><div class="metric-value">~$490–$770</div><div class="metric-sub">Enterprise / Hertz at SEA</div></div>
+  <div class="metric"><div class="metric-label">4-Star Hotel — 7 nights</div><div class="metric-value">~$1,750–$3,000</div><div class="metric-sub">Thompson, Hotel Sorrento</div></div>
+  <div class="metric"><div class="metric-label">5-Star Hotel — 7 nights</div><div class="metric-value">~$2,800–$5,250</div><div class="metric-sub">Four Seasons, 1 Hotel, Fairmont</div></div>
+  <div class="metric"><div class="metric-label">Airbnb — Seattle or Skagit, 7 nights</div><div class="metric-value">~$840–$2,450</div><div class="metric-sub">Capitol Hill or near tulip farms</div></div>
+  <div class="metric"><div class="metric-label">Food — 7 days, mid-range</div><div class="metric-value">~$700–$1,260</div><div class="metric-sub">$100–$180/day for 2 adults</div></div>
+  <div class="metric"><div class="metric-label">Activities (Tulip Festival + Space Needle + more)</div><div class="metric-value">~$300–$600</div><div class="metric-sub">Mix of free and ticketed</div></div>
+  <div class="metric"><div class="metric-label">Extras (parking, ferry, tips, snacks)</div><div class="metric-value">~$150–$300</div><div class="metric-sub">Parking, ferry rides, market treats</div></div>
+</div>
+<div class="cost-total">
+  <div class="cost-total-label">Estimated Trip Total — 4-Star Hotel + Mid-Range Dining</div>
+  <div class="cost-total-value">~$3,890 – $6,730</div>
+  <div class="cost-total-note">No travel insurance required (domestic US · your health insurance is valid) &nbsp;·&nbsp; No passport fees &nbsp;·&nbsp; No visa costs &nbsp;·&nbsp; Significantly lower overhead than international travel &nbsp;·&nbsp; April 2026 pricing</div>
 </div>
 
 <!-- CHECKLIST -->
-<div class="container">
-  <section>
-    <div class="section-title">✅ Pre-Departure Checklist</div>
-    <div class="info-card">
-      <ul class="checklist">
-        <li><input type="checkbox" id="c1"><span>Book JetBlue nonstop JFK → POP (request bulkhead/bassinet row)</span></li>
-        <li><input type="checkbox" id="c2"><span>Complete DR eTicket (arrival) at eticket.migracion.gob.do — FREE · All 3 travelers</span></li>
-        <li><input type="checkbox" id="c3"><span>Book hotel — confirm crib / baby amenities available</span></li>
-        <li><input type="checkbox" id="c4"><span>Reserve car rental at POP airport in advance</span></li>
-        <li><input type="checkbox" id="c5"><span>Get travel insurance with emergency medical evacuation coverage</span></li>
-        <li><input type="checkbox" id="c6"><span>Enroll in STEP program at step.state.gov</span></li>
-        <li><input type="checkbox" id="c7"><span>Baby's U.S. Passport valid? Confirm before flying</span></li>
-        <li><input type="checkbox" id="c8"><span>Pack baby-safe DEET repellent + SPF 50 sunscreen</span></li>
-        <li><input type="checkbox" id="c9"><span>Pack baby formula/food (declare at Dominican customs)</span></li>
-        <li><input type="checkbox" id="c10"><span>Notify bank/credit cards of travel dates</span></li>
-        <li><input type="checkbox" id="c11"><span>Download JetBlue app — manage bassinet/seat request</span></li>
-        <li><input type="checkbox" id="c12"><span>Complete DR eTicket (departure) 48–72 hrs before flying home</span></li>
-        <li><input type="checkbox" id="c13"><span>Pack oral rehydration salts + infant first-aid kit</span></li>
-        <li><input type="checkbox" id="c14"><span>Bring small USD bills for tips ($1–5 denominations)</span></li>
-        <li><input type="checkbox" id="c15"><span>Arrange babysitter at resort if planning Damajagua waterfalls</span></li>
-      </ul>
-    </div>
-  </section>
+<div class="section-label">Pre-Departure Checklist</div>
+<div class="card">
+  <div class="check-item"><div class="check-box" onclick="toggle(this)"></div><div class="check-label"><b>REAL ID or passport</b><div class="check-desc">Check your license for the gold star. Required for domestic flights since May 2025.</div></div></div>
+  <div class="check-item"><div class="check-box" onclick="toggle(this)"></div><div class="check-label"><b>Flights booked — Alaska Airlines nonstop</b><div class="check-desc">JFK → SEA · Afternoon departure · Lap infant selected at checkout</div></div></div>
+  <div class="check-item"><div class="check-box" onclick="toggle(this)"></div><div class="check-label"><b>Tulip farm tickets purchased</b><div class="check-desc">Buy at tulipfestival.org — each farm sells separately. Weekday visit recommended.</div></div></div>
+  <div class="check-item"><div class="check-box" onclick="toggle(this)"></div><div class="check-label"><b>Hotel or Airbnb booked</b><div class="check-desc">Skagit Valley hotels fill quickly in April — book at least 4–6 weeks ahead</div></div></div>
+  <div class="check-item"><div class="check-box" onclick="toggle(this)"></div><div class="check-label"><b>Car rental reserved</b><div class="check-desc">SUV + infant car seat requested at SEA airport. Enterprise or Hertz.</div></div></div>
+  <div class="check-item"><div class="check-box" onclick="toggle(this)"></div><div class="check-label"><b>Restaurant reservations</b><div class="check-desc">The Pink Door and Canlis both need reservations — book 2–4 weeks ahead</div></div></div>
+  <div class="check-item"><div class="check-box" onclick="toggle(this)"></div><div class="check-label"><b>Rain jacket packed</b><div class="check-desc">Lightweight waterproof jacket for adults. Stroller rain cover for baby.</div></div></div>
+  <div class="check-item"><div class="check-box" onclick="toggle(this)"></div><div class="check-label"><b>Waterproof shoes</b><div class="check-desc">Tulip field paths get muddy — waterproof footwear for all adults</div></div></div>
+  <div class="check-item"><div class="check-box" onclick="toggle(this)"></div><div class="check-label"><b>Baby layers packed</b><div class="check-desc">Evenings drop to mid-40s. Warm sleeper, hat, and extra layers for outdoor activities.</div></div></div>
+  <div class="check-item"><div class="check-box" onclick="toggle(this)"></div><div class="check-label"><b>Baby carrier / stroller</b><div class="check-desc">Carrier for market crowds and farm fields. Stroller for flat paths and hotel.</div></div></div>
+  <div class="check-item"><div class="check-box" onclick="toggle(this)"></div><div class="check-label"><b>Check UW bloom tracker</b><div class="check-desc">washington.edu/cherryblossoms — check status a few days before your visit</div></div></div>
+  <div class="check-item"><div class="check-box" onclick="toggle(this)"></div><div class="check-label"><b>Download offline maps</b><div class="check-desc">Google Maps offline for Seattle + Mount Vernon area. I-5 North to Skagit Valley.</div></div></div>
 </div>
 
-<!-- FOOTER -->
-<footer>
-  <p>🇩🇴 Puerto Plata, Dominican Republic · April 8–13, 2026</p>
-  <p style="margin-top:6px">2 Adults + 1 Lap Infant (8 months) · Built with ❤️ for Arif's family</p>
-  <p style="margin-top:6px;font-size:11px;color:var(--text3)">Emergency: 911 · POLITUR: 809-222-2026 · U.S. Embassy: 809-567-7775</p>
-</footer>
+<div class="footer">
+  Generated for <b>Arif</b> &nbsp;·&nbsp; Washington State — Seattle + Skagit Valley &nbsp;·&nbsp; April 10–17, 2026 &nbsp;·&nbsp; Baby DOB: Aug 5, 2025 &nbsp;·&nbsp; Data: Washington State Tourism, Skagit Valley Tulip Festival, UW Cherry Blossom Tracker, Tripadvisor, Alaska Airlines, Expedia &nbsp;·&nbsp; All prices in USD
+</div>
+
+</div>
 
 <script>
-// Currency Converter
-const RATE = 60;
-const SYMBOL = 'DOP ';
-const CURRENCY_NAME = 'Dominican Peso (DOP)';
-const input = document.getElementById('usd-input');
-const result = document.getElementById('local-result');
-const rateNote = document.getElementById('rate-note');
-function convert() {
-  const val = parseFloat(input.value) || 0;
-  result.textContent = SYMBOL + (val * RATE).toLocaleString();
+// CHECKLIST
+function toggle(el){
+  el.classList.toggle('done');
+  el.nextElementSibling.classList.toggle('done');
 }
-rateNote.textContent = '1 USD = ' + RATE + ' ' + CURRENCY_NAME;
-input.addEventListener('input', convert);
-function setAmt(v) { input.value = v; convert(); }
-convert();
 
-// Image Slider
-const sliderState = {};
-function slide(wrapId, trackId, dir) {
-  const wrap = document.getElementById(wrapId);
-  const track = document.getElementById(trackId);
-  const total = track.children.length;
-  if (!sliderState[wrapId]) sliderState[wrapId] = 0;
-  sliderState[wrapId] = (sliderState[wrapId] + dir + total) % total;
-  const idx = sliderState[wrapId];
-  track.style.transform = `translateX(-${idx * 100}%)`;
-  const dotsEl = wrap.querySelector('.slider-dots');
-  if (dotsEl) dotsEl.querySelectorAll('.slider-dot').forEach((d,i) => d.classList.toggle('active', i===idx));
-  const countEl = wrap.querySelector('.slide-count');
-  if (countEl) countEl.textContent = `${idx+1} / ${total}`;
+// SLIDER
+const sliderState={};
+function slide(wrapId,trackId,dir){
+  const wrap=document.getElementById(wrapId);
+  const track=document.getElementById(trackId);
+  const total=track.children.length;
+  if(!sliderState[wrapId])sliderState[wrapId]=0;
+  sliderState[wrapId]=(sliderState[wrapId]+dir+total)%total;
+  const idx=sliderState[wrapId];
+  track.style.transform=`translateX(-${idx*100}%)`;
+  const dotsEl=wrap.querySelector('.slider-dots');
+  if(dotsEl)dotsEl.querySelectorAll('.slider-dot').forEach((d,i)=>d.classList.toggle('active',i===idx));
+  const countEl=wrap.querySelector('.slide-count');
+  if(countEl)countEl.textContent=`${idx+1} / ${total}`;
 }
-document.querySelectorAll('.slider-dot').forEach(dot => {
-  dot.addEventListener('click', function() {
-    const wrap = this.closest('.slider-wrap');
-    const track = wrap.querySelector('.slider-track');
-    const allDots = wrap.querySelectorAll('.slider-dot');
-    const targetIdx = Array.from(allDots).indexOf(this);
-    slide(wrap.id, track.id, targetIdx - (sliderState[wrap.id] || 0));
+document.querySelectorAll('.slider-dot').forEach(dot=>{
+  dot.addEventListener('click',function(){
+    const wrap=this.closest('.slider-wrap');
+    const track=wrap.querySelector('.slider-track');
+    const allDots=wrap.querySelectorAll('.slider-dot');
+    const targetIdx=Array.from(allDots).indexOf(this);
+    slide(wrap.id,track.id,targetIdx-(sliderState[wrap.id]||0));
   });
 });
+
+// CURRENCY — Seattle sales tax calculator
+const RATE=1.1025;
+const input=document.getElementById('usd-input');
+const result=document.getElementById('local-result');
+function convert(){
+  const val=parseFloat(input.value)||0;
+  result.textContent='$'+(val*RATE).toFixed(2);
+}
+input.addEventListener('input',convert);
+function setAmt(v){input.value=v;convert();}
+convert();
 </script>
 </body>
 </html>
