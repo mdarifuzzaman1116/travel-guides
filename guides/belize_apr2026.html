@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Belize Travel Guide — April 8–15, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0f1117;--bg2:#161b27;--bg3:#1e2535;--bg4:#252d3d;
+  --border:#2a3347;--border2:#374057;
+  --text:#e8eaf0;--text2:#a8b0c8;--text3:#6b7596;
+  --teal:#1fb89a;--teal-dim:#0e6b5a;--teal-glow:rgba(31,184,154,0.15);
+  --amber:#f59e0b;--amber-dim:#78490a;
+  --green:#22c55e;--green-dim:#14532d;--green-glow:rgba(34,197,94,0.12);
+  --red:#ef4444;--red-dim:#7f1d1d;
+  --blue:#60a5fa;--blue-dim:#1e3a5f;
+  --purple:#a78bfa;--purple-dim:#3b1f6e;
+  --radius:12px;--radius-sm:8px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);padding-bottom:60px;-webkit-font-smoothing:antialiased}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#071a14 0%,#0a2e24 50%,#0d3d31 100%);padding:52px 24px 40px;border-bottom:1px solid var(--teal-dim);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-80px;right:-80px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(31,184,154,0.07) 0%,transparent 70%)}
+.hero-flag{font-size:46px;margin-bottom:14px;display:block}
+.hero-title{font-family:'Playfair Display',serif;font-size:36px;font-weight:700;color:#fff;line-height:1.2;margin-bottom:8px}
+.hero-sub{font-size:14px;color:rgba(255,255,255,0.6);margin-bottom:22px}
+.hero-tags{display:flex;gap:8px;flex-wrap:wrap}
+.hero-tag{background:rgba(31,184,154,0.12);color:#5ee8c8;font-size:11.5px;font-weight:500;padding:5px 12px;border-radius:20px;border:1px solid rgba(31,184,154,0.25)}
+
+/* LAYOUT */
+.wrapper{max-width:960px;margin:0 auto;padding:0 20px}
+.section-label{font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);margin:32px 0 12px;display:flex;align-items:center;gap:8px}
+.section-label::after{content:'';flex:1;height:1px;background:var(--border)}
+
+/* SAFE BANNER */
+.safe-banner{background:var(--green-glow);border:1px solid rgba(34,197,94,0.3);border-radius:var(--radius);padding:16px 20px;display:flex;align-items:flex-start;gap:14px;margin-top:20px}
+.safe-dot{width:12px;height:12px;border-radius:50%;background:var(--green);flex-shrink:0;margin-top:3px;box-shadow:0 0 8px var(--green)}
+.safe-title{font-size:15px;font-weight:600;color:var(--green)}
+.safe-sub{font-size:13px;color:#86efac;margin-top:3px;line-height:1.55}
+
+/* CARDS */
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px}
+.card+.card{margin-top:10px}
+.card.featured{border-color:var(--teal-dim);box-shadow:0 0 0 1px var(--teal-dim) inset}
+
+/* GRIDS */
+.g2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.g4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+@media(max-width:700px){.g4,.g3{grid-template-columns:repeat(2,minmax(0,1fr))}.g2{grid-template-columns:1fr}}
+
+/* METRIC */
+.metric{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 16px}
+.metric-label{font-size:11px;color:var(--text3);margin-bottom:4px}
+.metric-value{font-size:20px;font-weight:600;color:var(--text)}
+.metric-sub{font-size:11px;color:var(--text3);margin-top:2px}
+
+/* BADGES */
+.badge{display:inline-block;font-size:11px;font-weight:500;padding:3px 9px;border-radius:20px;white-space:nowrap}
+.b-green{background:rgba(34,197,94,.15);color:#86efac;border:1px solid rgba(34,197,94,.2)}
+.b-amber{background:rgba(245,158,11,.15);color:#fcd34d;border:1px solid rgba(245,158,11,.2)}
+.b-red{background:rgba(239,68,68,.15);color:#fca5a5;border:1px solid rgba(239,68,68,.2)}
+.b-blue{background:rgba(96,165,250,.15);color:#93c5fd;border:1px solid rgba(96,165,250,.2)}
+.b-purple{background:rgba(167,139,250,.15);color:#c4b5fd;border:1px solid rgba(167,139,250,.2)}
+.b-teal{background:var(--teal-glow);color:#5ee8c8;border:1px solid rgba(31,184,154,.25)}
+
+/* ROWS */
+.row{display:flex;align-items:flex-start;gap:10px;padding:7px 0;border-bottom:1px solid var(--border);font-size:13.5px}
+.row:last-child{border-bottom:none}
+.row-label{color:var(--text3);width:148px;flex-shrink:0;font-size:13px;padding-top:1px}
+.row-val{color:var(--text2);flex:1;line-height:1.55}
+
+/* TIP BOXES */
+.tip{background:var(--blue-dim);border-left:3px solid var(--blue);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:10px 14px;font-size:13px;color:#bfdbfe;line-height:1.55;margin-top:10px}
+.warn-tip{background:var(--amber-dim);border-left:3px solid var(--amber);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:10px 14px;font-size:13px;color:#fde68a;line-height:1.55;margin-top:10px}
+.ok-tip{background:var(--green-dim);border-left:3px solid var(--green);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:10px 14px;font-size:13px;color:#bbf7d0;line-height:1.55;margin-top:10px}
+
+/* WEATHER */
+.weather-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.wday{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius-sm);padding:8px 10px;text-align:center;flex:1;min-width:74px}
+.wdate{font-size:10px;color:var(--text3)}
+.wtemp{font-size:16px;font-weight:600;color:var(--text);margin:3px 0 2px}
+.wrain{font-size:10px;color:var(--text3)}
+.weather-meta{display:flex;gap:16px;margin-top:12px;flex-wrap:wrap}
+.weather-meta span{font-size:13px;color:var(--text2)}
+.weather-meta b{color:var(--text);font-weight:500}
+
+/* CAR RENTAL */
+.car-card{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px}
+.car-card.best{border-color:var(--teal);box-shadow:0 0 20px rgba(31,184,154,.06)}
+.car-title{font-size:15px;font-weight:600;color:var(--text);margin-bottom:14px;display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.car-row{display:flex;justify-content:space-between;align-items:flex-start;padding:7px 0;border-bottom:1px solid var(--border);gap:12px}
+.car-row:last-child{border-bottom:none}
+.car-lbl{font-size:12.5px;color:var(--text3);flex-shrink:0}
+.car-val{font-size:13px;color:var(--text2);text-align:right;line-height:1.45}
+.car-price{font-size:19px;font-weight:700;color:var(--teal);margin:6px 0 2px}
+
+/* IMAGE SLIDER */
+.slider-wrap{position:relative;background:var(--bg4);border-radius:var(--radius-sm) var(--radius-sm) 0 0;overflow:hidden;height:180px}
+.slider-track{display:flex;height:100%;transition:transform .45s cubic-bezier(.4,0,.2,1)}
+.slide{min-width:100%;height:100%;position:relative;flex-shrink:0}
+.slide img{width:100%;height:100%;object-fit:cover;display:block}
+.slide-fallback{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--bg4);font-size:42px;gap:6px}
+.slide-fallback span{font-size:11px;color:var(--text3)}
+.slider-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.55);border:none;color:#fff;width:28px;height:28px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;z-index:5;transition:background .15s;padding:0}
+.slider-btn:hover{background:rgba(0,0,0,0.8)}
+.slider-btn.prev{left:6px}
+.slider-btn.next{right:6px}
+.slider-dots{position:absolute;bottom:6px;left:50%;transform:translateX(-50%);display:flex;gap:4px;z-index:5}
+.slider-dot{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,0.35);cursor:pointer;transition:background .2s}
+.slider-dot.active{background:#fff}
+.slide-count{position:absolute;top:8px;right:8px;background:rgba(0,0,0,0.55);color:rgba(255,255,255,0.85);font-size:10px;padding:2px 7px;border-radius:20px;z-index:5}
+
+/* ACTIVITY CARD */
+.act-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin-top:10px}
+.act-card{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:border-color .2s,transform .15s}
+.act-card:hover{border-color:var(--border2);transform:translateY(-1px)}
+.act-body{padding:13px;flex:1;display:flex;flex-direction:column}
+.act-name{font-size:13.5px;font-weight:600;color:var(--text);margin-bottom:5px}
+.act-note{font-size:11.5px;color:var(--text3);line-height:1.5;flex:1;margin-bottom:7px}
+.act-price{font-size:11.5px;color:var(--blue);font-weight:500;margin-bottom:7px}
+.bucket-pill{display:inline-block;font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px;background:rgba(167,139,250,.15);color:#c4b5fd;border:1px solid rgba(167,139,250,.2);margin-bottom:6px;width:fit-content}
+.act-links{display:flex;gap:5px;flex-wrap:wrap;margin-top:auto}
+.act-link{font-size:10.5px;padding:3px 8px;border-radius:20px;text-decoration:none;font-weight:500;transition:opacity .15s;white-space:nowrap}
+.act-link:hover{opacity:.75}
+.link-g{background:rgba(96,165,250,.12);color:#93c5fd;border:1px solid rgba(96,165,250,.2)}
+.link-yt{background:rgba(239,68,68,.12);color:#fca5a5;border:1px solid rgba(239,68,68,.2)}
+.link-tt{background:rgba(167,139,250,.12);color:#c4b5fd;border:1px solid rgba(167,139,250,.2)}
+.link-wiki{background:rgba(161,161,170,.12);color:#a1a1aa;border:1px solid rgba(161,161,170,.2)}
+
+/* HOTEL */
+.hotel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:10px;margin-top:10px}
+.hotel-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.hotel-card.feat{border-color:var(--teal-dim)}
+.hotel-body{padding:14px 16px}
+.hotel-hdr{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:6px}
+.hotel-name{font-size:14px;font-weight:600;color:var(--text)}
+.hotel-loc{font-size:11.5px;color:var(--text3);margin-top:1px}
+.hotel-price{font-size:14px;font-weight:600;color:var(--teal);margin:6px 0 4px}
+.hotel-note{font-size:12px;color:var(--text3);line-height:1.5;margin-bottom:8px}
+.hotel-links{display:flex;gap:5px;flex-wrap:wrap}
+.hlink{font-size:10.5px;padding:3px 8px;border-radius:20px;text-decoration:none;font-weight:500;color:#93c5fd;background:rgba(96,165,250,.1);border:1px solid rgba(96,165,250,.2);white-space:nowrap}
+.hlink:hover{background:rgba(96,165,250,.2)}
+
+/* RESTAURANT */
+.rest-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin-top:10px}
+.rest-card{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.rest-body{padding:12px;flex:1;display:flex;flex-direction:column}
+.rest-name{font-size:13.5px;font-weight:600;color:var(--text);margin-bottom:2px}
+.rest-loc{font-size:11px;color:var(--text3)}
+.rest-price{font-size:12px;color:var(--blue);margin:5px 0 3px;font-weight:500}
+.rest-note{font-size:12px;color:var(--text3);line-height:1.5;flex:1;margin-bottom:7px}
+.rest-links{display:flex;gap:5px;flex-wrap:wrap;margin-top:auto}
+.rlink{font-size:10.5px;padding:3px 8px;border-radius:20px;text-decoration:none;font-weight:500;white-space:nowrap}
+.rlink-g{background:rgba(96,165,250,.1);color:#93c5fd;border:1px solid rgba(96,165,250,.2)}
+.rlink-m{background:rgba(34,197,94,.1);color:#86efac;border:1px solid rgba(34,197,94,.2)}
+.rlink-t{background:rgba(245,158,11,.1);color:#fcd34d;border:1px solid rgba(245,158,11,.2)}
+
+/* FOOD TABLE */
+.food-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);font-size:13.5px}
+.food-row:last-child{border-bottom:none}
+.food-row-label{color:var(--text2)}
+.food-row-val{font-weight:600;color:var(--text)}
+
+/* CURRENCY CONVERTER */
+.currency-box{background:linear-gradient(135deg,#0a2e24,#0d3d31);border:1px solid var(--teal-dim);border-radius:var(--radius);padding:20px 24px;margin-top:4px}
+.currency-title{font-size:15px;font-weight:600;color:var(--teal);margin-bottom:4px}
+.currency-sub{font-size:12px;color:var(--text3);margin-bottom:16px}
+.currency-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.currency-input-wrap{display:flex;align-items:center;gap:8px;background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius-sm);padding:10px 14px;flex:1;min-width:140px}
+.currency-flag{font-size:20px}
+.currency-label{font-size:12px;color:var(--text3);margin-bottom:2px}
+.currency-input{background:none;border:none;outline:none;font-family:'DM Sans',sans-serif;font-size:22px;font-weight:600;color:var(--text);width:100%;-moz-appearance:textfield}
+.currency-input::-webkit-outer-spin-button,.currency-input::-webkit-inner-spin-button{-webkit-appearance:none}
+.currency-arrow{font-size:22px;color:var(--teal);flex-shrink:0}
+.currency-result-wrap{background:var(--bg3);border:1px solid var(--teal-dim);border-radius:var(--radius-sm);padding:10px 14px;flex:1;min-width:140px}
+.currency-result{font-size:22px;font-weight:700;color:var(--teal)}
+.currency-rate{font-size:11px;color:var(--text3);margin-top:4px}
+.quick-amounts{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.quick-btn{background:var(--bg3);border:1px solid var(--border);border-radius:20px;padding:5px 12px;font-size:12px;color:var(--text2);cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .15s}
+.quick-btn:hover{border-color:var(--teal);color:var(--teal)}
+
+/* PRO TIPS */
+.pro-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
+.pro-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 16px}
+.pro-icon{font-size:18px;margin-bottom:6px}
+.pro-title{font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px}
+.pro-body{font-size:12px;color:var(--text3);line-height:1.55}
+
+/* COST TOTAL */
+.cost-total{background:linear-gradient(135deg,#071a14,#0d2e25);border:1px solid var(--teal-dim);border-radius:var(--radius);padding:22px 24px;margin-top:10px}
+.cost-total-label{font-size:13px;color:var(--text3);margin-bottom:6px}
+.cost-total-value{font-family:'Playfair Display',serif;font-size:34px;font-weight:700;color:var(--teal)}
+.cost-total-note{font-size:12px;color:var(--text3);margin-top:8px;line-height:1.5}
+
+/* CHECKLIST */
+.check-item{display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-bottom:1px solid var(--border)}
+.check-item:last-child{border-bottom:none}
+.check-box{width:18px;height:18px;border:2px solid var(--border2);border-radius:4px;flex-shrink:0;margin-top:1px;cursor:pointer;transition:all .15s;display:flex;align-items:center;justify-content:center}
+.check-box.done{background:var(--teal);border-color:var(--teal)}
+.check-box.done::after{content:'✓';font-size:11px;color:#000;font-weight:700}
+.check-label{flex:1;font-size:13.5px;color:var(--text2)}
+.check-label b{color:var(--text)}
+.check-label.done{color:var(--text3);text-decoration:line-through}
+.check-label.done b{color:var(--text3)}
+.check-desc{font-size:11.5px;color:var(--text3);margin-top:2px;line-height:1.4}
+
+/* FLIGHT DETAIL */
+.flight-detail{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;margin:12px 0;padding:14px;background:var(--bg3);border-radius:var(--radius-sm)}
+.flight-city{font-size:22px;font-weight:700;color:var(--text)}
+.flight-code{font-size:11px;color:var(--text3);margin-top:1px}
+.flight-arrow{font-size:20px;color:var(--teal);text-align:center}
+.flight-duration{font-size:11px;color:var(--text3);text-align:center;margin-top:2px}
+
+/* FOOTER */
+.footer{text-align:center;padding:32px 20px 0;font-size:12px;color:var(--text3)}
+.footer b{color:var(--teal)}
+a{color:inherit;text-decoration:none}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <span class="hero-flag">🇧🇿</span>
+  <div class="hero-title">Belize Travel Guide</div>
+  <div class="hero-sub">April 8–15, 2026 &nbsp;·&nbsp; 2 Adults + 1 Infant (born Aug 5, 2025 — 8 months) &nbsp;·&nbsp; Departing JFK, New York</div>
+  <div class="hero-tags">
+    <span class="hero-tag">✈ JFK → BZE Nonstop</span>
+    <span class="hero-tag">🌤 Peak Dry Season</span>
+    <span class="hero-tag">🏖 7 Nights</span>
+    <span class="hero-tag">👶 Lap Infant — 8 months</span>
+    <span class="hero-tag">🇺🇸 English Spoken</span>
+    <span class="hero-tag">💵 $1 USD = $2 BZD</span>
+  </div>
+</div>
+
+<div class="wrapper">
+
+<!-- SAFE BANNER -->
+<div class="safe-banner" style="margin-top:20px">
+  <div class="safe-dot"></div>
+  <div>
+    <div class="safe-title">✅ Safe to Travel — with Awareness</div>
+    <div class="safe-sub">April is the best weather window of the year. Zero hurricane risk. Crime is location-specific — tourist areas (Ambergris Caye, Placencia, San Ignacio, Caye Caulker) are calm and family-friendly. Avoid the south side of Belize City entirely. Same advisory level as France, Germany, and the UK (Level 2).</div>
+  </div>
+</div>
+
+<!-- CURRENCY CONVERTER -->
+<div class="section-label">Currency Converter</div>
+<div class="currency-box">
+  <div class="currency-title">USD ↔ Belize Dollar (BZD)</div>
+  <div class="currency-sub">Fixed rate: $1 USD = $2.00 BZD &nbsp;·&nbsp; Most businesses accept USD directly</div>
+  <div class="currency-row">
+    <div class="currency-input-wrap">
+      <div>
+        <div class="currency-label">🇺🇸 US Dollars (USD)</div>
+        <input class="currency-input" id="usd-input" type="number" value="100" min="0" placeholder="Enter USD">
+      </div>
+    </div>
+    <div class="currency-arrow">→</div>
+    <div class="currency-result-wrap">
+      <div class="currency-label">🇧🇿 Belize Dollars (BZD)</div>
+      <div class="currency-result" id="bzd-result">BZ$200.00</div>
+      <div class="currency-rate" id="rate-note">1 USD = 2.00 BZD · Fixed rate</div>
+    </div>
+  </div>
+  <div class="quick-amounts">
+    <span style="font-size:12px;color:var(--text3);padding:5px 0">Quick amounts:</span>
+    <button class="quick-btn" onclick="setAmt(5)">$5</button>
+    <button class="quick-btn" onclick="setAmt(10)">$10</button>
+    <button class="quick-btn" onclick="setAmt(20)">$20</button>
+    <button class="quick-btn" onclick="setAmt(50)">$50</button>
+    <button class="quick-btn" onclick="setAmt(100)">$100</button>
+    <button class="quick-btn" onclick="setAmt(200)">$200</button>
+    <button class="quick-btn" onclick="setAmt(500)">$500</button>
+  </div>
+</div>
+
+<!-- SNAPSHOT -->
+<div class="section-label">Trip Snapshot</div>
+<div class="g4">
+  <div class="metric"><div class="metric-label">Visa Required</div><div class="metric-value">None</div><div class="metric-sub">30-day stamp on arrival</div></div>
+  <div class="metric"><div class="metric-label">Nonstop Flight</div><div class="metric-value">~5 hrs</div><div class="metric-sub">JetBlue JFK→BZE</div></div>
+  <div class="metric"><div class="metric-label">Currency</div><div class="metric-value">BZD</div><div class="metric-sub">Fixed: $1 USD = $2 BZD</div></div>
+  <div class="metric"><div class="metric-label">Language</div><div class="metric-value">English</div><div class="metric-sub">Official. Spanish also spoken.</div></div>
+  <div class="metric"><div class="metric-label">Time Zone</div><div class="metric-value">CST</div><div class="metric-sub">No daylight saving time</div></div>
+  <div class="metric"><div class="metric-label">Power Plugs</div><div class="metric-value">110V</div><div class="metric-sub">Same as US — no adapter</div></div>
+  <div class="metric"><div class="metric-label">Infant Age</div><div class="metric-value">8 months</div><div class="metric-sub">Lap infant — no seat needed</div></div>
+  <div class="metric"><div class="metric-label">Hurricane Risk</div><div class="metric-value" style="color:var(--green)">Zero</div><div class="metric-sub">Season: June–November</div></div>
+</div>
+
+<!-- WEATHER -->
+<div class="section-label">Weather — April 8–15, 2026</div>
+<div class="card">
+  <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+    <span class="badge b-green" style="font-size:12px;padding:5px 14px">Excellent — Peak Dry Season</span>
+    <span style="font-size:13px;color:var(--text3)">Sunny, warm, minimal rain, zero storm risk</span>
+  </div>
+  <div class="weather-row">
+    <div class="wday"><div class="wdate">Apr 8</div><div class="wtemp">91°F</div><div class="wrain">10% rain</div></div>
+    <div class="wday"><div class="wdate">Apr 9</div><div class="wtemp">90°F</div><div class="wrain">10% rain</div></div>
+    <div class="wday"><div class="wdate">Apr 10</div><div class="wtemp">91°F</div><div class="wrain">12% rain</div></div>
+    <div class="wday"><div class="wdate">Apr 11</div><div class="wtemp">90°F</div><div class="wrain">10% rain</div></div>
+    <div class="wday"><div class="wdate">Apr 12</div><div class="wtemp">91°F</div><div class="wrain">8% rain</div></div>
+    <div class="wday"><div class="wdate">Apr 13</div><div class="wtemp">92°F</div><div class="wrain">10% rain</div></div>
+    <div class="wday"><div class="wdate">Apr 14</div><div class="wtemp">90°F</div><div class="wrain">10% rain</div></div>
+    <div class="wday"><div class="wdate">Apr 15</div><div class="wtemp">91°F</div><div class="wrain">8% rain</div></div>
+  </div>
+  <div class="weather-meta">
+    <span><b>Lows:</b> 72–76°F</span>
+    <span><b>Sea temp:</b> 80–82°F</span>
+    <span><b>UV:</b> Very High — reapply every 2 hrs</span>
+    <span><b>Hurricanes:</b> <span class="badge b-green">Zero risk</span></span>
+  </div>
+  <div class="ok-tip">Best time of the year to visit. Trade winds keep coastal areas comfortable. Clear skies and calm seas — ideal for snorkeling and all outdoor activities.</div>
+</div>
+
+<!-- ADVISORY -->
+<div class="section-label">U.S. State Dept Travel Advisory</div>
+<div class="card">
+  <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px">
+    <span class="badge b-amber" style="font-size:12px;padding:5px 14px">Level 2 — Exercise Increased Caution</span>
+    <span style="font-size:11.5px;color:var(--text3)">Updated March 12, 2026 · <a href="https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/belizetravel-advisory.html" target="_blank" style="color:var(--blue)">travel.state.gov ↗</a></span>
+  </div>
+  <div class="row"><span class="row-label">Primary concern</span><span class="row-val">Crime — mostly gang-related in Belize City</span></div>
+  <div class="row"><span class="row-label">Avoid entirely</span><span class="row-val"><span class="badge b-red">Level 3 Zone</span> &nbsp;South side of Belize City — south of Haulover Creek to Fabers Road</span></div>
+  <div class="row"><span class="row-label">Safe tourist areas</span><span class="row-val">Ambergris Caye, Caye Caulker, Placencia, San Ignacio, Hopkins &nbsp;<span class="badge b-green">Family safe</span></span></div>
+  <div class="row"><span class="row-label">Medical</span><span class="row-val">Limited outside cities. Serious injuries may need evacuation. Travel insurance essential.</span></div>
+  <div class="row"><span class="row-label">No driving after dark</span><span class="row-val">U.S. Embassy explicitly warns against inter-city driving at night</span></div>
+  <div class="row"><span class="row-label">U.S. Embassy</span><span class="row-val">Belmopan — +501-822-4011 (24/7) · <a href="https://step.state.gov/" target="_blank" style="color:var(--blue)">Enroll in STEP ↗</a></span></div>
+</div>
+
+<!-- CDC -->
+<div class="section-label">CDC Health Advisory</div>
+<div class="card">
+  <div class="row"><span class="row-label">Malaria</span><span class="row-val"><span class="badge b-green">Malaria-free</span> &nbsp;WHO certified 2023. No antimalarials needed for tourist areas.</span></div>
+  <div class="row"><span class="row-label">Dengue</span><span class="row-val"><span class="badge b-amber">Active monitoring</span> &nbsp;232 cases Jan–Mar 2026. Use DEET repellent daily.</span></div>
+  <div class="row"><span class="row-label">Zika</span><span class="row-val">Low risk but present. Extra caution with infant.</span></div>
+  <div class="row"><span class="row-label">Vaccinations required</span><span class="row-val">None required to enter Belize</span></div>
+  <div class="row"><span class="row-label">CDC recommended</span><span class="row-val">Hepatitis A, Hepatitis B, Typhoid, MMR, Tdap, COVID-19 up to date</span></div>
+  <div class="row"><span class="row-label">For infant</span><span class="row-val">Picaridin 20% repellent — safe for 2 months+. Apply to clothing only. See pediatrician 4 weeks before.</span></div>
+  <div class="warn-tip">Bring all infant supplies from home. Bottled water only — no tap water. Infant Tylenol, thermometer, and rehydration sachets are hard to find in rural areas.</div>
+</div>
+
+<!-- ENTRY REQUIREMENTS -->
+<div class="section-label">Entry Requirements</div>
+<div class="card">
+  <div class="row"><span class="row-label">Passports</span><span class="row-val">All 3 travelers including infant. Min. 6 months validity beyond April 15, 2026.</span></div>
+  <div class="row"><span class="row-label">Visa</span><span class="row-val"><span class="badge b-green">Not required</span> &nbsp;30-day tourist stamp on arrival automatically</span></div>
+  <div class="row"><span class="row-label">Exit fee</span><span class="row-val">~$40 USD/person (usually in ticket — confirm before travel)</span></div>
+  <div class="row"><span class="row-label">Minor travel</span><span class="row-val">Both parents present — no extra docs. If one stays home, bring notarized consent letter.</span></div>
+  <div class="row"><span class="row-label">Infant on flights</span><span class="row-val">8 months = lap infant (~10% of adult fare each way, no seat needed)</span></div>
+  <div class="tip">Bring a portable CO detector — many Belize hotels lack them. Carbon monoxide poisoning has been reported in tourist properties.</div>
+</div>
+
+<!-- FLIGHTS -->
+<div class="section-label">Flights — JFK to BZE (Apr 8 Depart · Apr 15 Return)</div>
+<div style="font-size:13px;color:var(--text3);margin-bottom:10px">Preferred: JFK or LGA only · No EWR · After 10 AM · Direct flights first</div>
+<div class="g2">
+  <div class="card featured">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+      <div style="font-size:16px;font-weight:600">JetBlue — Nonstop ✈</div>
+      <span class="badge b-teal">Best pick</span>
+    </div>
+    <div class="flight-detail">
+      <div><div class="flight-city">JFK</div><div class="flight-code">New York T5</div></div>
+      <div><div class="flight-arrow">→</div><div class="flight-duration">~4h 57m direct</div></div>
+      <div style="text-align:right"><div class="flight-city">BZE</div><div class="flight-code">Belize City</div></div>
+    </div>
+    <div class="row"><span class="row-label">Flight</span><span class="row-val">B6 1641 · Afternoon departure</span></div>
+    <div class="row"><span class="row-label">2 adults RT</span><span class="row-val"><b style="color:var(--teal)">~$1,038–$1,200 total</b></span></div>
+    <div class="row"><span class="row-label">Infant lap RT</span><span class="row-val">~$100–$130 (10% of fare, no seat)</span></div>
+    <div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap">
+      <a href="https://www.jetblue.com/en/flights-from-new-york-to-belize-city" target="_blank" class="hlink">JetBlue.com ↗</a>
+      <a href="https://www.google.com/travel/flights/search?tfs=CBwQAhopEgoyMDI2LTA0LTA4agcIARIDSkZLcgwIAxIIL20vMDFqcHQQAhopEgoyMDI2LTA0LTE1agwIAxIIL20vMDFqcHRyBwgBEgNKRksYAXABggELCP___________wGYAQE" target="_blank" class="hlink" style="background:rgba(245,158,11,.1);color:#fcd34d;border-color:rgba(245,158,11,.2)">Google Flights ↗</a>
+    </div>
+    <div class="tip">Select "lap infant" at checkout. No seat needed at 8 months. Best option — no layover stress with infant.</div>
+  </div>
+  <div class="card">
+    <div style="font-size:16px;font-weight:600;margin-bottom:12px">American Airlines — 1 Stop (Backup)</div>
+    <div class="flight-detail">
+      <div><div class="flight-city">JFK</div><div class="flight-code">New York</div></div>
+      <div><div class="flight-arrow">→</div><div class="flight-duration">~6h + layover</div></div>
+      <div style="text-align:right"><div class="flight-city">BZE</div><div class="flight-code">Belize City</div></div>
+    </div>
+    <div class="row"><span class="row-label">Route</span><span class="row-val">JFK → MIA or DFW → BZE</span></div>
+    <div class="row"><span class="row-label">2 adults RT</span><span class="row-val">~$710–$900 total</span></div>
+    <div class="row"><span class="row-label">Infant lap RT</span><span class="row-val">~$80–$100 total</span></div>
+    <div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap">
+      <a href="https://www.aa.com/booking/find-flights" target="_blank" class="hlink">AA.com ↗</a>
+      <a href="https://www.kayak.com/flights/JFK-BZE/2026-04-08/2026-04-15/2adults/lap1" target="_blank" class="hlink" style="background:rgba(245,158,11,.1);color:#fcd34d;border-color:rgba(245,158,11,.2)">KAYAK ↗</a>
+    </div>
+    <div class="warn-tip">Layover adds stress with infant. Use only if JetBlue is sold out.</div>
+  </div>
+</div>
+
+<!-- CAR RENTAL -->
+<div class="section-label">Car Rental — BZE Airport (Apr 8–15, 7 Days)</div>
+<div class="g3">
+  <div class="car-card">
+    <div class="car-title">Economy / Small Car</div>
+    <div class="car-row"><span class="car-lbl">Daily rate</span><span class="car-val">~$51–$70/day</span></div>
+    <div class="car-row"><span class="car-lbl">7-day total</span><span class="car-val"><span class="car-price">~$357–$490</span></span></div>
+    <div class="car-row"><span class="car-lbl">Best for</span><span class="car-val">Coastal/flat roads only. Tight with infant gear.</span></div>
+  </div>
+  <div class="car-card best">
+    <div class="car-title">SUV — Recommended <span class="badge b-teal">Best for family</span></div>
+    <div class="car-row"><span class="car-lbl">Daily rate</span><span class="car-val">~$67–$90/day</span></div>
+    <div class="car-row"><span class="car-lbl">7-day total</span><span class="car-val"><span class="car-price">~$469–$630</span></span></div>
+    <div class="car-row"><span class="car-lbl">Providers</span><span class="car-val">Budget, Alamo, AQ Belize (local, from $29/day)</span></div>
+    <div style="display:flex;gap:6px;margin-top:12px;flex-wrap:wrap">
+      <a href="https://www.budget.com/en/locations/BZ/BZE" target="_blank" class="hlink">Budget BZE ↗</a>
+      <a href="https://aqbelizecarrental.com/" target="_blank" class="hlink" style="background:rgba(34,197,94,.1);color:#86efac;border-color:rgba(34,197,94,.2)">AQ Belize ↗</a>
+      <a href="https://www.kayak.com/Belize-City-Philip-S-W-Goldson-Airport-Car-Rentals.BZE.cap.ksp" target="_blank" class="hlink" style="background:rgba(245,158,11,.1);color:#fcd34d;border-color:rgba(245,158,11,.2)">KAYAK ↗</a>
+    </div>
+  </div>
+  <div class="car-card">
+    <div class="car-title">Key Notes</div>
+    <div class="car-row"><span class="car-lbl">Deposit</span><span class="car-val">$1,000–$1,500 card hold</span></div>
+    <div class="car-row"><span class="car-lbl">Car seat</span><span class="car-val">Request at booking — confirm before arrival</span></div>
+    <div class="car-row"><span class="car-lbl">Border rule</span><span class="car-val">No crossing into Guatemala with rental</span></div>
+    <div class="car-row"><span class="car-lbl">Drive side</span><span class="car-val">Right — same as US</span></div>
+    <div class="car-row"><span class="car-lbl">Cards</span><span class="car-val">Visa / Mastercard only — no Discover</span></div>
+  </div>
+</div>
+
+<!-- HOTELS -->
+<div class="section-label">4-Star &amp; 5-Star Hotels + Airbnb</div>
+<div class="hotel-grid">
+
+  <div class="hotel-card feat">
+    <div style="height:160px;overflow:hidden;position:relative">
+      <img src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=600&q=80" style="width:100%;height:100%;object-fit:cover" alt="Victoria House Resort" onerror="this.parentElement.style.background='var(--bg4)';this.style.display='none'">
+    </div>
+    <div class="hotel-body">
+      <div class="hotel-hdr"><div><div class="hotel-name">Victoria House Resort &amp; Spa</div><div class="hotel-loc">📍 Ambergris Caye — Beachfront</div></div><span class="badge b-purple">5-Star</span></div>
+      <div class="hotel-price">~$350–$600/night</div>
+      <div class="hotel-note">Iconic beachfront resort. Overwater dock, pool, white sand beach. Family suites. Staff arranges all island tours. Top pick for families with infants.</div>
+      <div class="hotel-links">
+        <a href="https://www.victoria-house.com" target="_blank" class="hlink">Website ↗</a>
+        <a href="https://www.expedia.com/Ambergris-Caye-Hotels-Victoria-House.h25899.Hotel-Information" target="_blank" class="hlink">Expedia ↗</a>
+        <a href="https://www.google.com/search?q=Victoria+House+Resort+Spa+Ambergris+Caye+Belize" target="_blank" class="hlink">Google ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hotel-card">
+    <div style="height:160px;overflow:hidden">
+      <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&q=80" style="width:100%;height:100%;object-fit:cover" alt="Chaa Creek Lodge" onerror="this.parentElement.style.background='var(--bg4)';this.style.display='none'">
+    </div>
+    <div class="hotel-body">
+      <div class="hotel-hdr"><div><div class="hotel-name">Chaa Creek Lodge</div><div class="hotel-loc">📍 Cayo District — Jungle Riverside</div></div><span class="badge b-purple">5-Star</span></div>
+      <div class="hotel-price">~$400–$700/night</div>
+      <div class="hotel-note">Howler monkeys, toucans, butterfly exhibit on property. Best base for ruins and cave tours. "Wildly civilized."</div>
+      <div class="hotel-links">
+        <a href="https://www.chaacreek.com" target="_blank" class="hlink">Website ↗</a>
+        <a href="https://www.expedia.com/Cayo-District-Hotels-The-Lodge-At-Chaa-Creek.h13462.Hotel-Information" target="_blank" class="hlink">Expedia ↗</a>
+        <a href="https://www.google.com/search?q=Chaa+Creek+Lodge+Belize" target="_blank" class="hlink">Google ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hotel-card">
+    <div style="height:160px;overflow:hidden">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" style="width:100%;height:100%;object-fit:cover" alt="Turtle Inn" onerror="this.parentElement.style.background='var(--bg4)';this.style.display='none'">
+    </div>
+    <div class="hotel-body">
+      <div class="hotel-hdr"><div><div class="hotel-name">Turtle Inn</div><div class="hotel-loc">📍 Placencia — Private Beach Villas</div></div><span class="badge b-purple">5-Star</span></div>
+      <div class="hotel-price">~$500–$900/night</div>
+      <div class="hotel-note">Indonesian-style villas by Francis Ford Coppola. Private beach, award-winning spa and dining. Most unique luxury stay in Central America.</div>
+      <div class="hotel-links">
+        <a href="https://www.turtleinn.com" target="_blank" class="hlink">Website ↗</a>
+        <a href="https://www.expedia.com/Placencia-Hotels-Turtle-Inn.h65729.Hotel-Information" target="_blank" class="hlink">Expedia ↗</a>
+        <a href="https://www.google.com/search?q=Turtle+Inn+Belize+Placencia" target="_blank" class="hlink">Google ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hotel-card feat">
+    <div style="height:160px;overflow:hidden">
+      <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80" style="width:100%;height:100%;object-fit:cover" alt="Ka'ana Resort" onerror="this.parentElement.style.background='var(--bg4)';this.style.display='none'">
+    </div>
+    <div class="hotel-body">
+      <div class="hotel-hdr"><div><div class="hotel-name">Ka'ana Resort</div><div class="hotel-loc">📍 San Ignacio — Jungle Boutique</div></div><span class="badge b-amber">4-Star</span></div>
+      <div class="hotel-price">~$250–$450/night</div>
+      <div class="hotel-note">15-room jungle resort. Private pool villas, cooking classes, Maya tours. Prince Harry stayed here. Exceptional personalized service.</div>
+      <div class="hotel-links">
+        <a href="https://www.kaanabelize.com" target="_blank" class="hlink">Website ↗</a>
+        <a href="https://www.expedia.com/San-Ignacio-Hotels-Kaana-Resort.h6124015.Hotel-Information" target="_blank" class="hlink">Expedia ↗</a>
+        <a href="https://www.google.com/search?q=Ka%27ana+Resort+San+Ignacio+Belize" target="_blank" class="hlink">Google ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hotel-card">
+    <div style="height:160px;overflow:hidden">
+      <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80" style="width:100%;height:100%;object-fit:cover" alt="Hamanasi Resort" onerror="this.parentElement.style.background='var(--bg4)';this.style.display='none'">
+    </div>
+    <div class="hotel-body">
+      <div class="hotel-hdr"><div><div class="hotel-name">Hamanasi Adventure &amp; Dive</div><div class="hotel-loc">📍 Hopkins Village — Beachfront</div></div><span class="badge b-amber">4-Star</span></div>
+      <div class="hotel-price">~$300–$550/night</div>
+      <div class="hotel-note">5/5 on Tripadvisor for years. Top-ranked dive resort. Treehouse suites, direct reef access, Garifuna village base.</div>
+      <div class="hotel-links">
+        <a href="https://www.hamanasi.com" target="_blank" class="hlink">Website ↗</a>
+        <a href="https://www.expedia.com/Hopkins-Hotels-Hamanasi-Adventure-And-Dive-Resort.h2064527.Hotel-Information" target="_blank" class="hlink">Expedia ↗</a>
+        <a href="https://www.google.com/search?q=Hamanasi+Resort+Hopkins+Belize" target="_blank" class="hlink">Google ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hotel-card">
+    <div style="height:160px;overflow:hidden">
+      <img src="https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?w=600&q=80" style="width:100%;height:100%;object-fit:cover" alt="Airbnb Belize" onerror="this.parentElement.style.background='var(--bg4)';this.style.display='none'">
+    </div>
+    <div class="hotel-body">
+      <div class="hotel-hdr"><div><div class="hotel-name">Airbnb — Private Villa</div><div class="hotel-loc">📍 Ambergris Caye or Placencia</div></div><span class="badge b-blue">Airbnb</span></div>
+      <div class="hotel-price">~$200–$500/night</div>
+      <div class="hotel-note">Best for families with infants — full kitchen, private pool, extra space. Filter: pool + full kitchen + 2 adults + 1 infant.</div>
+      <div class="hotel-links">
+        <a href="https://www.airbnb.com/s/Ambergris-Caye--Belize/homes?amenities%5B%5D=7&amenities%5B%5D=8&adults=2&infants=1" target="_blank" class="hlink">Ambergris Airbnb ↗</a>
+        <a href="https://www.airbnb.com/s/Placencia--Belize/homes?amenities%5B%5D=7&amenities%5B%5D=8&adults=2&infants=1" target="_blank" class="hlink">Placencia Airbnb ↗</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- THINGS TO DO with IMAGE SLIDERS -->
+<div class="section-label">Things To Do — All Categories</div>
+<div class="act-grid">
+
+  <!-- Great Blue Hole -->
+  <div class="act-card">
+    <div class="slider-wrap" id="s0">
+      <div class="slider-track" id="t0">
+        <div class="slide"><img src="https://eoimages.gsfc.nasa.gov/images/imagerecords/147000/147158/belize_oli_2020064_lrg.jpg" alt="Great Blue Hole from space" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌀</span><span>Great Blue Hole</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1559494007-9f5847c49d94?w=600&q=80" alt="Ocean aerial reef" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌊</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1540202404-1b927e27fa8b?w=600&q=80" alt="Coral reef diving" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🤿</span></div>'"></div>
+      </div>
+      <button class="slider-btn prev" onclick="slide('s0','t0',-1)">‹</button>
+      <button class="slider-btn next" onclick="slide('s0','t0',1)">›</button>
+      <div class="slider-dots" id="d0"><span class="slider-dot active"></span><span class="slider-dot"></span><span class="slider-dot"></span></div>
+      <div class="slide-count" id="c0">1 / 3</div>
+    </div>
+    <div class="act-body">
+      <div class="bucket-pill">Once in a Lifetime</div>
+      <div class="act-name">Great Blue Hole — Fly Over</div>
+      <div class="act-note">World's largest marine sinkhole. 1,000 ft across, 400 ft deep. Perfect circle visible from space. Made famous by Jacques Cousteau. #1 on Discovery Channel's Most Amazing Places.</div>
+      <div class="act-price">~$292–$350/adult · Tropic Air scenic flight</div>
+      <div class="act-links">
+        <a href="https://www.google.com/search?q=Great+Blue+Hole+Belize&tbm=isch" target="_blank" class="act-link link-g">📷 Images</a>
+        <a href="https://www.youtube.com/results?search_query=great+blue+hole+belize+flyover" target="_blank" class="act-link link-yt">▶ YouTube</a>
+        <a href="https://www.tiktok.com/search?q=great+blue+hole+belize" target="_blank" class="act-link link-tt">TikTok</a>
+        <a href="https://en.wikipedia.org/wiki/Great_Blue_Hole" target="_blank" class="act-link link-wiki">Wiki</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ATM Cave -->
+  <div class="act-card">
+    <div class="slider-wrap" id="s1">
+      <div class="slider-track" id="t1">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=600&q=80" alt="Cave exploration" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>💀</span><span>ATM Cave</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=600&q=80" alt="Underground cave" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🏔</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1533240332313-0db49b459ad6?w=600&q=80" alt="Cave river" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌊</span></div>'"></div>
+      </div>
+      <button class="slider-btn prev" onclick="slide('s1','t1',-1)">‹</button>
+      <button class="slider-btn next" onclick="slide('s1','t1',1)">›</button>
+      <div class="slider-dots" id="d1"><span class="slider-dot active"></span><span class="slider-dot"></span><span class="slider-dot"></span></div>
+      <div class="slide-count" id="c1">1 / 3</div>
+    </div>
+    <div class="act-body">
+      <div class="bucket-pill">Once in a Lifetime</div>
+      <div class="act-name">ATM Cave (Actun Tunichil Muknal)</div>
+      <div class="act-note">Swim and wade into a 3,000-year-old Maya ceremonial cave. Human skeletons and intact pottery still exactly in place. Nothing like it on earth.</div>
+      <div class="act-price">~$100–$130/adult · Guided tour required</div>
+      <div class="act-links">
+        <a href="https://www.google.com/search?q=ATM+Cave+Belize+inside&tbm=isch" target="_blank" class="act-link link-g">📷 Images</a>
+        <a href="https://www.youtube.com/results?search_query=ATM+cave+Belize+tour" target="_blank" class="act-link link-yt">▶ YouTube</a>
+        <a href="https://www.tiktok.com/search?q=ATM+cave+Belize" target="_blank" class="act-link link-tt">TikTok</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bioluminescence -->
+  <div class="act-card">
+    <div class="slider-wrap" id="s2">
+      <div class="slider-track" id="t2">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&q=80" alt="Bioluminescence night water" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>✨</span><span>Bioluminescence</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1504019347908-b45f9b0b8dd5?w=600&q=80" alt="Kayaking night" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🚣</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Dark ocean night" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌊</span></div>'"></div>
+      </div>
+      <button class="slider-btn prev" onclick="slide('s2','t2',-1)">‹</button>
+      <button class="slider-btn next" onclick="slide('s2','t2',1)">›</button>
+      <div class="slider-dots" id="d2"><span class="slider-dot active"></span><span class="slider-dot"></span><span class="slider-dot"></span></div>
+      <div class="slide-count" id="c2">1 / 3</div>
+    </div>
+    <div class="act-body">
+      <div class="bucket-pill">Once in a Lifetime</div>
+      <div class="act-name">Bioluminescence Night Tour</div>
+      <div class="act-note">Kayak in water that glows neon blue-green when you move. Plankton lights up your every stroke in complete darkness. Hopkins and Placencia are the best spots.</div>
+      <div class="act-price">~$50–$80/adult · Evening tour</div>
+      <div class="act-links">
+        <a href="https://www.google.com/search?q=bioluminescence+kayak+belize&tbm=isch" target="_blank" class="act-link link-g">📷 Images</a>
+        <a href="https://www.youtube.com/results?search_query=bioluminescence+belize+kayak" target="_blank" class="act-link link-yt">▶ YouTube</a>
+        <a href="https://www.tiktok.com/search?q=bioluminescence+belize" target="_blank" class="act-link link-tt">TikTok</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hol Chan -->
+  <div class="act-card">
+    <div class="slider-wrap" id="s3">
+      <div class="slider-track" id="t3">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1682687982501-1e58ab814714?w=600&q=80" alt="Snorkeling coral reef" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🐠</span><span>Hol Chan Reef</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1540202404-1b927e27fa8b?w=600&q=80" alt="Tropical fish" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🐟</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=600&q=80" alt="Caribbean sea" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌊</span></div>'"></div>
+      </div>
+      <button class="slider-btn prev" onclick="slide('s3','t3',-1)">‹</button>
+      <button class="slider-btn next" onclick="slide('s3','t3',1)">›</button>
+      <div class="slider-dots" id="d3"><span class="slider-dot active"></span><span class="slider-dot"></span><span class="slider-dot"></span></div>
+      <div class="slide-count" id="c3">1 / 3</div>
+    </div>
+    <div class="act-body">
+      <div class="act-name">Hol Chan Marine Reserve</div>
+      <div class="act-note">Snorkel the world's 2nd-largest barrier reef with sea turtles, nurse sharks, and stingrays. Baby stays on boat with one parent.</div>
+      <div class="act-price">~$40–$60/adult</div>
+      <div class="act-links">
+        <a href="https://www.google.com/search?q=Hol+Chan+snorkeling+Belize&tbm=isch" target="_blank" class="act-link link-g">📷 Images</a>
+        <a href="https://www.youtube.com/results?search_query=hol+chan+marine+reserve+belize" target="_blank" class="act-link link-yt">▶ YouTube</a>
+        <a href="https://www.tiktok.com/search?q=Hol+Chan+Belize" target="_blank" class="act-link link-tt">TikTok</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Xunantunich -->
+  <div class="act-card">
+    <div class="slider-wrap" id="s4">
+      <div class="slider-track" id="t4">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1559494007-9f5847c49d94?w=600&q=80" alt="Jungle ruins" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🏛️</span><span>Xunantunich</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&q=80" alt="Ancient pyramid" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌿</span></div>'"></div>
+      </div>
+      <button class="slider-btn prev" onclick="slide('s4','t4',-1)">‹</button>
+      <button class="slider-btn next" onclick="slide('s4','t4',1)">›</button>
+      <div class="slider-dots" id="d4"><span class="slider-dot active"></span><span class="slider-dot"></span></div>
+      <div class="slide-count" id="c4">1 / 2</div>
+    </div>
+    <div class="act-body">
+      <div class="act-name">Xunantunich Maya Ruins</div>
+      <div class="act-note">Cross the Mopan River by hand-cranked ferry. Climb a 130-ft pyramid with panoramic views into Guatemala. Most accessible major ruin in Belize.</div>
+      <div class="act-price">~$10/adult · Free under 12</div>
+      <div class="act-links">
+        <a href="https://www.google.com/search?q=Xunantunich+Belize&tbm=isch" target="_blank" class="act-link link-g">📷 Images</a>
+        <a href="https://www.youtube.com/results?search_query=xunantunich+belize+ruins" target="_blank" class="act-link link-yt">▶ YouTube</a>
+        <a href="https://www.tiktok.com/search?q=Xunantunich+belize" target="_blank" class="act-link link-tt">TikTok</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Secret Beach -->
+  <div class="act-card">
+    <div class="slider-wrap" id="s5">
+      <div class="slider-track" id="t5">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&q=80" alt="Tropical beach clear water" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🏖️</span><span>Secret Beach</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" alt="Caribbean beach" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>☀️</span></div>'"></div>
+      </div>
+      <button class="slider-btn prev" onclick="slide('s5','t5',-1)">‹</button>
+      <button class="slider-btn next" onclick="slide('s5','t5',1)">›</button>
+      <div class="slider-dots" id="d5"><span class="slider-dot active"></span><span class="slider-dot"></span></div>
+      <div class="slide-count" id="c5">1 / 2</div>
+    </div>
+    <div class="act-body">
+      <div class="act-name">Secret Beach, Ambergris Caye</div>
+      <div class="act-note">Shallow, crystal-clear, calm water perfect for babies. Beach bars, inflatable water park, and The Truck Stop food trucks all nearby.</div>
+      <div class="act-price">Free access · Golf cart ~$40–$60/day</div>
+      <div class="act-links">
+        <a href="https://www.google.com/search?q=Secret+Beach+Ambergris+Caye&tbm=isch" target="_blank" class="act-link link-g">📷 Images</a>
+        <a href="https://www.youtube.com/results?search_query=secret+beach+ambergris+caye" target="_blank" class="act-link link-yt">▶ YouTube</a>
+        <a href="https://www.tiktok.com/search?q=Secret+Beach+Belize" target="_blank" class="act-link link-tt">TikTok</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cockscomb -->
+  <div class="act-card">
+    <div class="slider-wrap" id="s6">
+      <div class="slider-track" id="t6">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80" alt="Jungle wildlife" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🦁</span><span>Cockscomb</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=600&q=80" alt="Rainforest" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌿</span></div>'"></div>
+      </div>
+      <button class="slider-btn prev" onclick="slide('s6','t6',-1)">‹</button>
+      <button class="slider-btn next" onclick="slide('s6','t6',1)">›</button>
+      <div class="slider-dots" id="d6"><span class="slider-dot active"></span><span class="slider-dot"></span></div>
+      <div class="slide-count" id="c6">1 / 2</div>
+    </div>
+    <div class="act-body">
+      <div class="act-name">Cockscomb Jaguar Reserve</div>
+      <div class="act-note">World's first jaguar sanctuary. Jungle trails, waterfall pools, dense birdlife. Even without spotting a jaguar, the experience is extraordinary.</div>
+      <div class="act-price">~$10/adult entry</div>
+      <div class="act-links">
+        <a href="https://www.google.com/search?q=Cockscomb+Basin+Belize&tbm=isch" target="_blank" class="act-link link-g">📷 Images</a>
+        <a href="https://www.youtube.com/results?search_query=cockscomb+jaguar+reserve+belize" target="_blank" class="act-link link-yt">▶ YouTube</a>
+        <a href="https://www.tiktok.com/search?q=Cockscomb+Belize" target="_blank" class="act-link link-tt">TikTok</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Garifuna -->
+  <div class="act-card">
+    <div class="slider-wrap" id="s7">
+      <div class="slider-track" id="t7">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80" alt="Cultural dance" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🥁</span><span>Garifuna Culture</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Local food" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🍲</span></div>'"></div>
+      </div>
+      <button class="slider-btn prev" onclick="slide('s7','t7',-1)">‹</button>
+      <button class="slider-btn next" onclick="slide('s7','t7',1)">›</button>
+      <div class="slider-dots" id="d7"><span class="slider-dot active"></span><span class="slider-dot"></span></div>
+      <div class="slide-count" id="c7">1 / 2</div>
+    </div>
+    <div class="act-body">
+      <div class="act-name">Garifuna Cultural Tour — Hopkins</div>
+      <div class="act-note">Drumming, traditional Garifuna cooking, and dance. Hopkins is the cultural heart of Belize's Afro-indigenous Garifuna people. Deeply authentic.</div>
+      <div class="act-price">~$40–$60/adult</div>
+      <div class="act-links">
+        <a href="https://www.google.com/search?q=Garifuna+culture+Hopkins+Belize&tbm=isch" target="_blank" class="act-link link-g">📷 Images</a>
+        <a href="https://www.youtube.com/results?search_query=garifuna+drumming+belize+hopkins" target="_blank" class="act-link link-yt">▶ YouTube</a>
+        <a href="https://www.tiktok.com/search?q=Garifuna+Belize" target="_blank" class="act-link link-tt">TikTok</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- RESTAURANTS with IMAGE SLIDERS -->
+<div class="section-label">Restaurants — Where To Eat</div>
+<div class="rest-grid">
+
+  <div class="rest-card">
+    <div class="slider-wrap" id="r0">
+      <div class="slider-track" id="rt0">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Restaurant dining" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🍽️</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Belizean food" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌮</span></div>'"></div>
+      </div>
+      <button class="slider-btn prev" onclick="slide('r0','rt0',-1)">‹</button>
+      <button class="slider-btn next" onclick="slide('r0','rt0',1)">›</button>
+      <div class="slider-dots" id="rd0"><span class="slider-dot active"></span><span class="slider-dot"></span></div>
+      <div class="slide-count" id="rc0">1 / 2</div>
+    </div>
+    <div class="rest-body">
+      <div class="rest-name">Elvi's Kitchen</div>
+      <div class="rest-loc">📍 Ambergris Caye — San Pedro</div>
+      <div class="rest-price">$$$ · ~$20–$40/person</div>
+      <div class="rest-note">Belizean institution with a sandy floor. Mayan-inspired dishes. Prince Harry dined here. Friday Mayan buffet is unmissable. Book ahead.</div>
+      <div class="rest-links">
+        <a href="https://www.google.com/search?q=Elvi%27s+Kitchen+San+Pedro+Belize" target="_blank" class="rlink rlink-g">Google ↗</a>
+        <a href="https://www.tripadvisor.com/Restaurant_Review-g291989-d444029-Reviews-Elvi_s_Kitchen-San_Pedro_Ambergris_Caye.html" target="_blank" class="rlink rlink-m">Tripadvisor ↗</a>
+        <a href="https://www.google.com/search?q=Elvi%27s+Kitchen+Belize+menu+food&tbm=isch" target="_blank" class="rlink rlink-t">Menu Photos ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="rest-card">
+    <div class="slider-wrap" id="r1">
+      <div class="slider-track" id="rt1">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80" alt="Bar dock drinks" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🍻</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" alt="Ocean bar" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌊</span></div>'"></div>
+      </div>
+      <button class="slider-btn prev" onclick="slide('r1','rt1',-1)">‹</button>
+      <button class="slider-btn next" onclick="slide('r1','rt1',1)">›</button>
+      <div class="slider-dots" id="rd1"><span class="slider-dot active"></span><span class="slider-dot"></span></div>
+      <div class="slide-count" id="rc1">1 / 2</div>
+    </div>
+    <div class="rest-body">
+      <div class="rest-name">Palapa Bar &amp; Grill</div>
+      <div class="rest-loc">📍 Ambergris Caye — Over Water Dock</div>
+      <div class="rest-price">$$ · ~$15–$30/person</div>
+      <div class="rest-note">Float in inner tubes at the dock with Belikin beers sent down on a zip line. The most uniquely Belizean bar experience. Best at sunset.</div>
+      <div class="rest-links">
+        <a href="https://www.google.com/search?q=Palapa+Bar+Grill+San+Pedro+Belize" target="_blank" class="rlink rlink-g">Google ↗</a>
+        <a href="https://www.tripadvisor.com/Restaurant_Review-g291989-d1098478-Reviews-Palapa_Bar_and_Grill-San_Pedro_Ambergris_Caye.html" target="_blank" class="rlink rlink-m">Tripadvisor ↗</a>
+        <a href="https://www.google.com/search?q=Palapa+Bar+Belize+beer+zip+line&tbm=isch" target="_blank" class="rlink rlink-t">Photos ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="rest-card">
+    <div class="slider-wrap" id="r2">
+      <div class="slider-track" id="rt2">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80" alt="Beach bar food" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🦞</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&q=80" alt="Placencia beach" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🏖️</span></div>'"></div>
+      </div>
+      <button class="slider-btn prev" onclick="slide('r2','rt2',-1)">‹</button>
+      <button class="slider-btn next" onclick="slide('r2','rt2',1)">›</button>
+      <div class="slider-dots" id="rd2"><span class="slider-dot active"></span><span class="slider-dot"></span></div>
+      <div class="slide-count" id="rc2">1 / 2</div>
+    </div>
+    <div class="rest-body">
+      <div class="rest-name">Barefoot Bar</div>
+      <div class="rest-loc">📍 Placencia Village — Beachside</div>
+      <div class="rest-price">$$ · ~$15–$30/person</div>
+      <div class="rest-note">Famous for lobster grilled cheese. $3 drink specials. Locals, expats, and travelers all mix here. Best casual beachside meal in Placencia.</div>
+      <div class="rest-links">
+        <a href="https://www.google.com/search?q=Barefoot+Bar+Placencia+Belize" target="_blank" class="rlink rlink-g">Google ↗</a>
+        <a href="https://www.tripadvisor.com/Restaurant_Review-g292007-d1490543-Reviews-Barefoot_Bar-Placencia_Stann_Creek_District.html" target="_blank" class="rlink rlink-m">Tripadvisor ↗</a>
+        <a href="https://www.google.com/search?q=Barefoot+Bar+Placencia+food+menu&tbm=isch" target="_blank" class="rlink rlink-t">Photos ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="rest-card">
+    <div class="slider-wrap" id="r3">
+      <div class="slider-track" id="rt3">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Fine dining" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🍷</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Gourmet food" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🥗</span></div>'"></div>
+      </div>
+      <button class="slider-btn prev" onclick="slide('r3','rt3',-1)">‹</button>
+      <button class="slider-btn next" onclick="slide('r3','rt3',1)">›</button>
+      <div class="slider-dots" id="rd3"><span class="slider-dot active"></span><span class="slider-dot"></span></div>
+      <div class="slide-count" id="rc3">1 / 2</div>
+    </div>
+    <div class="rest-body">
+      <div class="rest-name">Mambo Restaurant</div>
+      <div class="rest-loc">📍 Ambergris Caye — Matachica Resort</div>
+      <div class="rest-price">$$$$ · ~$40–$70/person</div>
+      <div class="rest-note">Voted best restaurant in Belize. Mediterranean-Belizean fusion over the ocean. Salmon, fillet, lobster. Worth the splurge.</div>
+      <div class="rest-links">
+        <a href="https://www.google.com/search?q=Mambo+Restaurant+Matachica+Belize" target="_blank" class="rlink rlink-g">Google ↗</a>
+        <a href="https://www.tripadvisor.com/Restaurant_Review-g291989-d2234003-Reviews-Mambo_Restaurant-San_Pedro_Ambergris_Caye.html" target="_blank" class="rlink rlink-m">Tripadvisor ↗</a>
+        <a href="https://www.matachica.com/mambo" target="_blank" class="rlink rlink-t">Menu ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="rest-card">
+    <div class="slider-wrap" id="r4">
+      <div class="slider-track" id="rt4">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Indian food curry" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🍛</span></div>'"></div>
+      </div>
+      <div class="slide-count" id="rc4">1 / 1</div>
+    </div>
+    <div class="rest-body">
+      <div class="rest-name">Sumathi Indian Restaurant</div>
+      <div class="rest-loc">📍 Belize City</div>
+      <div class="rest-price">$$ · ~$12–$20/person</div>
+      <div class="rest-note">Belizeans drive from other districts for this. Lunch buffet is the best deal in Belize City. Curries, biryani, dosas. Great for vegetarians.</div>
+      <div class="rest-links">
+        <a href="https://www.google.com/search?q=Sumathi+Indian+Restaurant+Belize+City" target="_blank" class="rlink rlink-g">Google ↗</a>
+        <a href="https://www.tripadvisor.com/Restaurant_Review-g291968-d788093-Reviews-Sumathi_Restaurant-Belize_City_Belize_District.html" target="_blank" class="rlink rlink-m">Tripadvisor ↗</a>
+        <a href="https://www.google.com/search?q=Sumathi+Belize+food&tbm=isch" target="_blank" class="rlink rlink-t">Photos ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="rest-card">
+    <div class="slider-wrap" id="r5">
+      <div class="slider-track" id="rt5">
+        <div class="slide"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80" alt="Outdoor food trucks" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌮</span></div>'"></div>
+        <div class="slide"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80" alt="Food truck" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🍔</span></div>'"></div>
+      </div>
+      <button class="slider-btn prev" onclick="slide('r5','rt5',-1)">‹</button>
+      <button class="slider-btn next" onclick="slide('r5','rt5',1)">›</button>
+      <div class="slider-dots" id="rd5"><span class="slider-dot active"></span><span class="slider-dot"></span></div>
+      <div class="slide-count" id="rc5">1 / 2</div>
+    </div>
+    <div class="rest-body">
+      <div class="rest-name">The Truck Stop</div>
+      <div class="rest-loc">📍 Ambergris Caye — near Secret Beach</div>
+      <div class="rest-price">$$ · ~$10–$20/person</div>
+      <div class="rest-note">Outdoor food truck complex. Multiple cuisines, outdoor games, live music. Easy with a stroller or carrier. Perfect post-beach family dinner.</div>
+      <div class="rest-links">
+        <a href="https://www.google.com/search?q=The+Truck+Stop+Ambergris+Caye+Belize" target="_blank" class="rlink rlink-g">Google ↗</a>
+        <a href="https://www.tripadvisor.com/Restaurant_Review-g291989-d8702064-Reviews-Truck_Stop-San_Pedro_Ambergris_Caye.html" target="_blank" class="rlink rlink-m">Tripadvisor ↗</a>
+        <a href="https://www.google.com/search?q=Truck+Stop+San+Pedro+Belize+food&tbm=isch" target="_blank" class="rlink rlink-t">Photos ↗</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOD COSTS -->
+<div class="section-label">Food Costs at a Glance</div>
+<div class="card">
+  <div class="food-row"><span class="food-row-label">Street food / local market</span><span class="food-row-val">$3–$7 USD</span></div>
+  <div class="food-row"><span class="food-row-label">Fry jacks / meat pies (local breakfast)</span><span class="food-row-val">$2–$4 USD</span></div>
+  <div class="food-row"><span class="food-row-label">Casual restaurant — per person</span><span class="food-row-val">$12–$25 USD</span></div>
+  <div class="food-row"><span class="food-row-label">Mid-range dinner for 2 adults</span><span class="food-row-val">$50–$80 USD</span></div>
+  <div class="food-row"><span class="food-row-label">Upscale / resort dinner for 2</span><span class="food-row-val">$100–$160 USD</span></div>
+  <div class="food-row"><span class="food-row-label">Local Belikin beer</span><span class="food-row-val">$3–$5 USD</span></div>
+  <div class="food-row"><span class="food-row-label">Fresh coconut water (roadside)</span><span class="food-row-val">$1–$2 USD</span></div>
+  <div class="food-row"><span class="food-row-label" style="font-weight:600;color:var(--text)">Daily food budget — 2 adults, mid-range</span><span class="food-row-val" style="color:var(--teal)">$80–$130 USD/day</span></div>
+</div>
+<div class="tip" style="margin-top:10px">Tipping: 10–15% if service charge not already added. Cash preferred. USD and BZD both accepted everywhere.</div>
+
+<!-- PRO TIPS -->
+<div class="section-label">Insider Tips</div>
+<div class="pro-grid">
+  <div class="pro-card"><div class="pro-icon">💳</div><div class="pro-title">Cards &amp; Cash</div><div class="pro-body">Visa/Mastercard widely accepted. Discover not accepted anywhere. Card machines fail on spotty internet — carry $200–$300 USD cash. Credit cards may add a surcharge; ask upfront.</div></div>
+  <div class="pro-card"><div class="pro-icon">📱</div><div class="pro-title">Phone / SIM</div><div class="pro-body">Buy an eSIM at <a href="https://www.airalo.com/belize-esim" target="_blank" style="color:var(--blue)">Airalo.com</a> before departure (~$9.50/1GB/7 days). Works on iPhone XS and newer. Or pick up SmartBelize / Digicell SIM in Belize City — bring passport.</div></div>
+  <div class="pro-card"><div class="pro-icon">🌙</div><div class="pro-title">No Night Driving</div><div class="pro-body">U.S. Embassy warns against driving between cities after dark. No road lighting, speed bumps without warning, animals on roads. All inter-city travel must be done before sunset.</div></div>
+  <div class="pro-card"><div class="pro-icon">🏥</div><div class="pro-title">Medical Reality</div><div class="pro-body">Advanced care is scarce even in Belize City. Serious injuries often require evacuation to Mexico or US. Travel insurance with evacuation is non-negotiable with an infant.</div></div>
+  <div class="pro-card"><div class="pro-icon">🪸</div><div class="pro-title">Reef-Safe Sunscreen</div><div class="pro-body">Zinc oxide or titanium dioxide only near the water. Chemical sunscreens (oxybenzone) damage coral and are restricted near the reef.</div></div>
+  <div class="pro-card"><div class="pro-icon">🚗</div><div class="pro-title">No Uber / Lyft</div><div class="pro-body">No ride-share apps in Belize. Use licensed taxis (agree price before getting in), water taxis for inter-caye travel, or Tropic Air / Maya Island Air domestic flights.</div></div>
+  <div class="pro-card"><div class="pro-icon">🌊</div><div class="pro-title">Seagrass Beaches</div><div class="pro-body">The reef breaks waves offshore — beaches are calm but often have seagrass. Secret Beach and Placencia are cleanest. Swim off docks for clearest water.</div></div>
+  <div class="pro-card"><div class="pro-icon">🦟</div><div class="pro-title">Bug Protection Daily</div><div class="pro-body">Dengue is the concern in 2026. DEET or Picaridin every morning and at dusk. For infant: Picaridin 20% on clothing only. Never use DEET directly on infant skin.</div></div>
+  <div class="pro-card"><div class="pro-icon">🛫</div><div class="pro-title">Build Buffer Time</div><div class="pro-body">Domestic flights and water taxis run on a relaxed schedule. Allow 2–3 hours buffer after your international arrival before any connecting transport to islands.</div></div>
+  <div class="pro-card"><div class="pro-icon">⚡</div><div class="pro-title">Power Outages</div><div class="pro-body">Brief outages can happen in dry season but are less common in April. All 4-star and 5-star resorts have generators. Bring a portable power bank.</div></div>
+</div>
+
+<!-- INFANT NOTES -->
+<div class="section-label">Infant Travel Notes — April 2026 (8 Months · DOB Aug 5, 2025)</div>
+<div class="card">
+  <div class="row"><span class="row-label">Flights</span><span class="row-val">Lap infant — no seat needed. ~10% of adult fare. Nurse or pacifier during takeoff/landing for ear pressure.</span></div>
+  <div class="row"><span class="row-label">Car seat</span><span class="row-val">No Belize law but always use one. Request from rental at booking. Confirm before arrival.</span></div>
+  <div class="row"><span class="row-label">Sun</span><span class="row-val">Mineral sunscreen SPF 50+. Keep baby shaded 10am–3pm. UV is very high in April.</span></div>
+  <div class="row"><span class="row-label">Bug repellent</span><span class="row-val">Picaridin 20% on clothing only — safe 2 months+. Never DEET on infant. Critical for dengue.</span></div>
+  <div class="row"><span class="row-label">Stroller</span><span class="row-val">Lightweight umbrella stroller. Baby carrier for ruins, caves, and jungle paths.</span></div>
+  <div class="row"><span class="row-label">Water / formula</span><span class="row-val">Bottled water only for mixing formula — never tap. Bring extra supply from home.</span></div>
+  <div class="row"><span class="row-label">CO detector</span><span class="row-val">Bring portable CO detector — many Belize hotels lack them.</span></div>
+  <div class="warn-tip">Bring everything from home: Tylenol, thermometer, nasal saline, rehydration sachets, diaper cream, Picaridin, extra formula. Don't rely on finding infant products in Belize.</div>
+</div>
+
+<!-- COST ESTIMATE -->
+<div class="section-label">Full Trip Cost Estimate — 7 Nights</div>
+<div class="g2">
+  <div class="metric"><div class="metric-label">Flights — JetBlue RT (2 adults + infant)</div><div class="metric-value">~$1,150–$1,350</div><div class="metric-sub">Infant adds ~$100–$130</div></div>
+  <div class="metric"><div class="metric-label">Car Rental — SUV, 7 days</div><div class="metric-value">~$470–$630</div><div class="metric-sub">Budget / Alamo at BZE</div></div>
+  <div class="metric"><div class="metric-label">4-Star Resort — 7 nights</div><div class="metric-value">~$1,750–$3,500</div><div class="metric-sub">Victoria House, Ka'ana, Hamanasi</div></div>
+  <div class="metric"><div class="metric-label">5-Star Resort — 7 nights</div><div class="metric-value">~$3,500–$6,300</div><div class="metric-sub">Turtle Inn, Chaa Creek</div></div>
+  <div class="metric"><div class="metric-label">Airbnb — villa + pool, 7 nights</div><div class="metric-value">~$1,400–$3,500</div><div class="metric-sub">Ambergris Caye or Placencia</div></div>
+  <div class="metric"><div class="metric-label">Food — 7 days mid-range</div><div class="metric-value">~$560–$910</div><div class="metric-sub">$80–$130/day, 2 adults</div></div>
+  <div class="metric"><div class="metric-label">Activities — 4 to 5 experiences</div><div class="metric-value">~$400–$800</div><div class="metric-sub">Mix of free and premium</div></div>
+  <div class="metric"><div class="metric-label">Extras (taxis, tips, transfers)</div><div class="metric-value">~$150–$300</div><div class="metric-sub">Water taxis, SIM, tips</div></div>
+</div>
+<div class="cost-total">
+  <div class="cost-total-label">Estimated Total — 4-Star Hotel + Mid-Range Dining</div>
+  <div class="cost-total-value">~$4,480 – $8,290</div>
+  <div class="cost-total-note">Add ~$1,500–$3,000 for 5-star upgrade &nbsp;·&nbsp; Travel insurance ~$200–$350 (buy at booking) &nbsp;·&nbsp; April 2026 data</div>
+</div>
+
+<!-- CHECKLIST -->
+<div class="section-label">Pre-Departure Checklist</div>
+<div class="card">
+  <div class="check-item"><div class="check-box" onclick="toggle(this)"></div><div class="check-label"><b>All 3 passports valid</b><div class="check-desc">Including infant's — min. 6 months past April 15, 2026</div></div></div>
+  <div class="check-item"><div class="check-box" onclick="toggle(this)"></div><div class="check-label"><b>Return flight confirmed</b><div class="check-desc">Digital/printed copy of all 3 tickets for immigration</div></div></div>
+  <div class="check-item"><div class="check-box" onclick="toggle(this)"></div><div class="check-label"><b>STEP enrollment</b><div class="check-desc"><a href="https://step.state.gov/" target="_blank" style="color:var(--blue)">step.state.gov</a> — free, 5 minutes</div></div></div>
+  <div class="check-item"><div class="check-box" onclick="toggle(this)"></div><div class="check-label"><b>Travel insurance purchased</b><div class="check-desc">Must include medical evacuation. ~$200–$350. Buy at time of booking.</div></div></div>
+  <div class="check-item"><div class="check-box" onclick="toggle(this)"></div><div class="check-label"><b>Travel medicine doctor visit</b><div class="check-desc">At least 4 weeks before. Hep A + Typhoid for adults. Pediatrician for infant.</div></div></div>
+  <div class="check-item"><div class="check-box" onclick="toggle(this)"></div><div class="check-label"><b>Infant car seat reserved</b><div class="check-desc">Confirm with rental agency — not guaranteed without advance request</div></div></div>
+  <div class="check-item"><div class="check-box" onclick="toggle(this)"></div><div class="check-label"><b>eSIM or phone plan</b><div class="check-desc"><a href="https://www.airalo.com/belize-esim" target="_blank" style="color:var(--blue)">Airalo.com</a> — $9.50/1GB/7 days before departure</div></div></div>
+  <div class="check-item"><div class="check-box" onclick="toggle(this)"></div><div class="check-label"><b>Reef-safe sunscreen</b><div class="check-desc">Zinc oxide or titanium dioxide only — SPF 50+ for infant</div></div></div>
+  <div class="check-item"><div class="check-box" onclick="toggle(this)"></div><div class="check-label"><b>Bug repellent packed</b><div class="check-desc">DEET 30% for adults · Picaridin 20% for infant (2 months+)</div></div></div>
+  <div class="check-item"><div class="check-box" onclick="toggle(this)"></div><div class="check-label"><b>Infant medical kit</b><div class="check-desc">Tylenol, thermometer, saline, rehydration sachets, diaper cream, extra formula</div></div></div>
+  <div class="check-item"><div class="check-box" onclick="toggle(this)"></div><div class="check-label"><b>Portable CO detector</b><div class="check-desc">Many Belize hotels lack CO detectors — bring one for infant's room</div></div></div>
+  <div class="check-item"><div class="check-box" onclick="toggle(this)"></div><div class="check-label"><b>Cards + cash ready</b><div class="check-desc">Visa/Mastercard + $200–$300 USD cash. No Discover in Belize.</div></div></div>
+  <div class="check-item"><div class="check-box" onclick="toggle(this)"></div><div class="check-label"><b>Activities booked</b><div class="check-desc">ATM Cave, Great Blue Hole flight, and Hol Chan fill up fast — book 2–4 weeks ahead</div></div></div>
+</div>
+
+<div class="footer">
+  Generated for <b>Arif</b> &nbsp;·&nbsp; Belize April 8–15, 2026 &nbsp;·&nbsp; Baby DOB: Aug 5, 2025 &nbsp;·&nbsp; Data: U.S. State Dept, CDC, JetBlue, KAYAK, Tripadvisor, Unsplash, NASA Earth Observatory &nbsp;·&nbsp; Prices subject to change
+</div>
+
+</div><!-- end wrapper -->
+
+<script>
+// CHECKLIST
+function toggle(el){
+  el.classList.toggle('done');
+  const lbl=el.nextElementSibling;
+  lbl.classList.toggle('done');
+}
+
+// IMAGE SLIDER
+const sliderState={};
+function slide(wrapId,trackId,dir){
+  const wrap=document.getElementById(wrapId);
+  const track=document.getElementById(trackId);
+  const slides=track.children;
+  const total=slides.length;
+  if(!sliderState[wrapId])sliderState[wrapId]=0;
+  sliderState[wrapId]=(sliderState[wrapId]+dir+total)%total;
+  const idx=sliderState[wrapId];
+  track.style.transform=`translateX(-${idx*100}%)`;
+  // Update dots
+  const dotsEl=wrap.querySelector('.slider-dots');
+  if(dotsEl){
+    const dots=dotsEl.querySelectorAll('.slider-dot');
+    dots.forEach((d,i)=>d.classList.toggle('active',i===idx));
+  }
+  // Update count
+  const countEl=document.getElementById(wrapId.replace('r','rc').replace('s','c'));
+  if(countEl)countEl.textContent=`${idx+1} / ${total}`;
+}
+// Dot click
+document.querySelectorAll('.slider-dot').forEach((dot,i)=>{
+  dot.addEventListener('click',function(){
+    const dotsContainer=this.parentElement;
+    const wrap=dotsContainer.closest('.slider-wrap');
+    const track=wrap.querySelector('.slider-track');
+    if(!wrap||!track)return;
+    const allDots=dotsContainer.querySelectorAll('.slider-dot');
+    const targetIdx=Array.from(allDots).indexOf(this);
+    const wrapId=wrap.id;
+    const trackId=track.id;
+    if(!sliderState[wrapId])sliderState[wrapId]=0;
+    const diff=targetIdx-sliderState[wrapId];
+    slide(wrapId,trackId,diff);
+  });
+});
+
+// CURRENCY CONVERTER — BZD fixed rate
+const RATE=2.00;
+const input=document.getElementById('usd-input');
+const result=document.getElementById('bzd-result');
+function convert(){
+  const val=parseFloat(input.value)||0;
+  result.textContent=`BZ$${(val*RATE).toFixed(2)}`;
+}
+input.addEventListener('input',convert);
+function setAmt(v){input.value=v;convert();}
+convert();
+</script>
+</body>
+</html>
