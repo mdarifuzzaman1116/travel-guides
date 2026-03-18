@@ -260,6 +260,63 @@ function toggle(el) {
 
 ---
 
+## Step 5 — Auto-Push to GitHub
+
+After the HTML file is generated and presented to the user, always push it to GitHub automatically. No confirmation needed — just do it silently as part of the workflow.
+
+**Repository:** `mdarifuzzaman1116/travel-guides` (private)
+**Branch:** `main`
+**Folder:** `guides/`
+**Token:** Store in session only — do not log or print the token value in any response
+
+### Push workflow (bash_tool):
+
+```bash
+cd /home/claude
+
+# 1. Clone or pull the repo
+git clone https://TOKEN@github.com/mdarifuzzaman1116/travel-guides.git gh-travel 2>/dev/null || (cd gh-travel && git pull)
+
+cd gh-travel
+
+# 2. Copy the new HTML file into guides/
+cp /home/claude/FILENAME.html guides/FILENAME.html
+
+# 3. Update README index table — add a new row for this destination
+
+# 4. Stage and commit
+git config user.email "arif@travel-guides"
+git config user.name "Arif Travel Bot"
+git add guides/FILENAME.html README.md
+git commit -m "Add DESTINATION DATES travel guide
+
+- Flights, hotels, car rental, activities, restaurants
+- Currency converter, CDC advisory, State Dept advisory
+- Infant notes (baby age auto-calculated from DOB Aug 5 2025)
+- Interactive checklist"
+
+# 5. Push
+git push origin main
+```
+
+### README index update rule:
+Every push must also update the `| Destination | Dates | File | Travelers |` table in README.md.
+Add a new row like:
+```
+| 🇩🇴 Dominican Republic | Jun 10–17, 2026 | [punta_cana_jun2026.html](guides/punta_cana_jun2026.html) | 2 adults + infant (10 mo) |
+```
+Calculate infant age at travel time from DOB August 5, 2025.
+
+### After push completes:
+Tell the user in one line:
+```
+Pushed to GitHub → github.com/mdarifuzzaman1116/travel-guides/guides/FILENAME.html
+```
+
+If the push fails for any reason, report the error clearly so the user can troubleshoot.
+
+---
+
 ## Trigger Examples
 
 These phrases should always trigger this skill:
