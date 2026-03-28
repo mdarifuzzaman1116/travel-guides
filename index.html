@@ -3,28 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Belize Travel Guide — September 2026</title>
+<title>Barbados Travel Guide — September 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-:root {
-  --bg:#0f1117; --bg2:#161b27; --bg3:#1e2535; --bg4:#252d3d;
-  --border:#2a3347; --border2:#374057;
-  --text:#e8eaf0; --text2:#a8b0c8; --text3:#6b7596;
-  --teal:#1fb89a; --teal-dim:#0e6b5a; --teal-glow:rgba(31,184,154,0.15);
-  --amber:#f59e0b; --amber-dim:#78490a;
-  --green:#22c55e; --green-dim:#14532d; --green-glow:rgba(34,197,94,0.12);
-  --red:#ef4444; --red-dim:#7f1d1d;
-  --blue:#60a5fa; --blue-dim:#1e3a5f;
-  --purple:#a78bfa; --purple-dim:#3b1f6e;
-  --radius:12px; --radius-sm:8px;
-}
+:root{--bg:#0f1117;--bg2:#161b27;--bg3:#1e2535;--bg4:#252d3d;--border:#2a3347;--border2:#374057;--text:#e8eaf0;--text2:#a8b0c8;--text3:#6b7596;--teal:#1fb89a;--teal-dim:#0e6b5a;--teal-glow:rgba(31,184,154,0.15);--amber:#f59e0b;--amber-dim:#78490a;--green:#22c55e;--green-dim:#14532d;--green-glow:rgba(34,197,94,0.12);--red:#ef4444;--red-dim:#7f1d1d;--blue:#60a5fa;--blue-dim:#1e3a5f;--purple:#a78bfa;--purple-dim:#3b1f6e;--radius:12px;--radius-sm:8px;}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:15px;line-height:1.6}
 a{color:var(--teal);text-decoration:none}a:hover{text-decoration:underline}
 .container{max-width:1060px;margin:0 auto;padding:0 18px}
-/* HERO */
 .hero{background:linear-gradient(135deg,#0a1628 0%,#0f2240 50%,#0a1a30 100%);padding:60px 18px 48px;text-align:center;border-bottom:1px solid var(--border)}
 .hero-flag{font-size:52px;margin-bottom:12px}
 .hero h1{font-family:'Playfair Display',serif;font-size:clamp(28px,5vw,46px);font-weight:700;color:#fff;margin-bottom:8px}
@@ -32,21 +20,16 @@ a{color:var(--teal);text-decoration:none}a:hover{text-decoration:underline}
 .hero-tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
 .tag{background:var(--bg3);border:1px solid var(--border2);color:var(--text2);padding:5px 14px;border-radius:20px;font-size:12.5px}
 .tag.teal{background:var(--teal-glow);border-color:var(--teal);color:var(--teal)}
-/* SAFE BANNER */
+.tag.green{background:var(--green-glow);border-color:var(--green);color:var(--green)}
 .safe-banner{padding:14px 20px;display:flex;align-items:center;gap:14px;font-weight:600;font-size:15px}
-.safe-banner.amber{background:rgba(245,158,11,0.12);border-bottom:2px solid var(--amber);color:var(--amber)}
+.safe-banner.green{background:var(--green-glow);border-bottom:2px solid var(--green);color:var(--green)}
 .safe-icon{font-size:22px}
-/* SECTION */
 .section{padding:36px 0}
 .section-title{font-family:'Playfair Display',serif;font-size:22px;font-weight:600;color:var(--text);margin-bottom:20px;display:flex;align-items:center;gap:10px}
 .section-title::after{content:'';flex:1;height:1px;background:var(--border)}
-/* CARDS */
 .card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:22px}
-.card h3{font-size:15px;font-weight:600;color:var(--text);margin-bottom:12px}
 .card p,.card li{color:var(--text2);font-size:14px;line-height:1.65}
-.card ul{padding-left:16px}
-.card ul li{margin-bottom:4px}
-/* CURRENCY */
+.card ul{padding-left:16px}.card ul li{margin-bottom:4px}
 .currency-card{background:var(--bg2);border:1px solid var(--teal);border-radius:var(--radius);padding:24px}
 .currency-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
 .currency-input{background:var(--bg3);border:1px solid var(--border2);color:var(--text);padding:10px 14px;border-radius:var(--radius-sm);font-size:16px;width:140px;font-family:inherit}
@@ -55,13 +38,11 @@ a{color:var(--teal);text-decoration:none}a:hover{text-decoration:underline}
 .quick-btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
 .qbtn{background:var(--bg3);border:1px solid var(--border2);color:var(--text2);padding:6px 14px;border-radius:20px;cursor:pointer;font-size:13px;font-family:inherit}
 .qbtn:hover{border-color:var(--teal);color:var(--teal)}
-/* SNAPSHOT GRID */
 .snap-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px}
 .snap-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px}
 .snap-label{font-size:11.5px;color:var(--text3);text-transform:uppercase;letter-spacing:.7px;margin-bottom:6px}
 .snap-value{font-size:19px;font-weight:600;color:var(--text)}
 .snap-note{font-size:12px;color:var(--text3);margin-top:3px}
-/* WEATHER */
 .weather-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
 .weather-day{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;text-align:center}
 .w-date{font-size:12px;color:var(--text3);margin-bottom:6px}
@@ -69,28 +50,24 @@ a{color:var(--teal);text-decoration:none}a:hover{text-decoration:underline}
 .w-temp{font-size:16px;font-weight:600;color:var(--text)}
 .w-rain{font-size:12px;color:var(--text3);margin-top:4px}
 .verdict-badge{display:inline-block;padding:6px 18px;border-radius:20px;font-size:13px;font-weight:600;margin-top:16px}
-.verdict-badge.amber{background:rgba(245,158,11,0.15);border:1px solid var(--amber);color:var(--amber)}
-/* ADVISORY */
+.verdict-badge.green{background:var(--green-glow);border:1px solid var(--green);color:var(--green)}
 .adv-level{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:20px;font-weight:600;font-size:14px;margin-bottom:14px}
 .adv-level.amber{background:rgba(245,158,11,0.15);border:1px solid var(--amber);color:var(--amber)}
-/* FLIGHT */
 .flight-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 @media(max-width:640px){.flight-grid{grid-template-columns:1fr}}
 .flight-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:20px}
 .flight-card.featured{border-color:var(--teal)}
 .flight-badge{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;padding:3px 10px;border-radius:10px;display:inline-block;margin-bottom:10px}
 .flight-badge.nonstop{background:var(--teal-glow);color:var(--teal);border:1px solid var(--teal)}
-.flight-badge.onestop{background:rgba(96,165,250,0.12);color:var(--blue);border:1px solid var(--blue)}
+.flight-badge.alt{background:rgba(96,165,250,0.12);color:var(--blue);border:1px solid var(--blue)}
 .flight-row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border);font-size:13.5px}
 .flight-row:last-of-type{border:none}
-.flight-lbl{color:var(--text3)}
-.flight-val{color:var(--text2);font-weight:500}
+.flight-lbl{color:var(--text3)}.flight-val{color:var(--text2);font-weight:500}
 .btn-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
 .btn{padding:7px 16px;border-radius:var(--radius-sm);font-size:13px;font-weight:500;display:inline-block;border:1px solid}
 .btn-teal{background:var(--teal-glow);border-color:var(--teal);color:var(--teal)}
 .btn-blue{background:rgba(96,165,250,0.1);border-color:var(--blue);color:var(--blue)}
 .btn-gray{background:var(--bg3);border-color:var(--border2);color:var(--text2)}
-/* CAR RENTAL */
 .car-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
 @media(max-width:640px){.car-grid{grid-template-columns:1fr}}
 .car-card{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px}
@@ -99,7 +76,6 @@ a{color:var(--teal);text-decoration:none}a:hover{text-decoration:underline}
 .car-row:last-child{border-bottom:none}
 .car-lbl{font-size:12.5px;color:var(--text3);flex-shrink:0}
 .car-val{font-size:13px;color:var(--text2);text-align:right;line-height:1.45}
-/* HOTELS */
 .hotels-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
 .hotel-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
 .hotel-img{width:100%;height:170px;object-fit:cover}
@@ -112,57 +88,43 @@ a{color:var(--teal);text-decoration:none}a:hover{text-decoration:underline}
 .hotel-badge.airbnb{background:rgba(239,68,68,0.12);border:1px solid var(--red);color:var(--red)}
 .hotel-price{font-size:18px;font-weight:600;color:var(--teal);margin-bottom:6px}
 .hotel-note{font-size:13px;color:var(--text3);margin-bottom:12px}
-/* SLIDER */
 .slider-wrap{position:relative;overflow:hidden;border-radius:var(--radius) var(--radius) 0 0}
 .slider-track{display:flex;transition:transform .35s ease}
 .slider-track img{width:100%;height:200px;object-fit:cover;flex-shrink:0}
 .slider-track .slide-fallback{min-width:100%;height:200px;flex-shrink:0}
 .slider-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.55);border:none;color:#fff;font-size:18px;padding:6px 12px;cursor:pointer;border-radius:6px;z-index:2}
-.slider-btn.prev{left:6px}
-.slider-btn.next{right:6px}
-.slider-dots{display:flex;gap:5px;justify-content:center;margin-top:8px}
-.slider-dot{width:7px;height:7px;border-radius:50%;background:var(--border2);cursor:pointer;border:none}
-.slider-dot.active{background:var(--teal)}
+.slider-btn.prev{left:6px}.slider-btn.next{right:6px}
 .slide-count{position:absolute;bottom:8px;right:10px;background:rgba(0,0,0,.6);color:#fff;font-size:11px;padding:2px 7px;border-radius:10px}
-/* ACTIVITIES */
 .activities-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:18px}
 .act-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
 .act-body{padding:14px}
 .act-name{font-size:14.5px;font-weight:600;color:var(--text);margin-bottom:4px}
 .act-price{font-size:13px;color:var(--teal);margin-bottom:6px}
 .act-note{font-size:13px;color:var(--text3);margin-bottom:10px;line-height:1.5}
-/* RESTAURANTS */
 .resto-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:18px}
 .resto-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
 .resto-body{padding:14px}
 .resto-name{font-size:14.5px;font-weight:600;color:var(--text);margin-bottom:4px}
 .resto-price{font-size:13px;color:var(--amber);margin-bottom:6px}
 .resto-note{font-size:13px;color:var(--text3);margin-bottom:10px}
-/* FOOD TABLE */
 .food-table{width:100%;border-collapse:collapse}
 .food-table th,.food-table td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);font-size:13.5px}
 .food-table th{color:var(--text3);font-weight:500;font-size:12px;text-transform:uppercase;letter-spacing:.6px}
-.food-table td{color:var(--text2)}
-.food-table tr:last-child td{border-bottom:none}
-/* TIPS GRID */
+.food-table td{color:var(--text2)}.food-table tr:last-child td{border-bottom:none}
 .tips-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
 .tip-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px}
 .tip-icon{font-size:22px;margin-bottom:8px}
 .tip-title{font-size:13.5px;font-weight:600;color:var(--text);margin-bottom:4px}
 .tip-text{font-size:13px;color:var(--text3);line-height:1.55}
-/* INFANT */
 .infant-card{background:var(--bg2);border:1px solid var(--teal);border-radius:var(--radius);padding:22px}
 .infant-card h3{color:var(--teal);margin-bottom:12px;font-size:16px}
-/* COST */
 .cost-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin-bottom:16px}
 .cost-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px}
 .cost-label{font-size:12px;color:var(--text3);text-transform:uppercase;letter-spacing:.6px;margin-bottom:6px}
 .cost-val{font-size:17px;font-weight:600;color:var(--text)}
 .cost-note{font-size:12px;color:var(--text3);margin-top:3px}
 .total-card{background:var(--teal-glow);border:1px solid var(--teal);border-radius:var(--radius);padding:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
-.total-label{font-size:14px;color:var(--teal)}
-.total-val{font-size:26px;font-weight:700;color:var(--teal)}
-/* CHECKLIST */
+.total-label{font-size:14px;color:var(--teal)}.total-val{font-size:26px;font-weight:700;color:var(--teal)}
 .checklist{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:8px}
 .check-item{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-sm);cursor:pointer;transition:border-color .2s}
 .check-item:hover{border-color:var(--teal)}
@@ -170,50 +132,40 @@ a{color:var(--teal);text-decoration:none}a:hover{text-decoration:underline}
 .check-box.done{background:var(--teal);border-color:var(--teal);color:#fff}
 .check-label{font-size:13.5px;color:var(--text2);line-height:1.4}
 .check-label.done{text-decoration:line-through;color:var(--text3)}
-/* ENTRY */
 .entry-list{list-style:none;padding:0}
 .entry-list li{padding:8px 0;border-bottom:1px solid var(--border);font-size:14px;color:var(--text2);display:flex;gap:10px}
 .entry-list li:last-child{border:none}
-.entry-list li::before{content:'✓';color:var(--teal);font-weight:700;flex-shrink:0}
-/* FOOTER */
+.entry-list li::before{content:'checkmark';color:var(--teal);font-weight:700;flex-shrink:0}
 footer{background:var(--bg2);border-top:1px solid var(--border);padding:24px;text-align:center;color:var(--text3);font-size:13px}
 </style>
 </head>
 <body>
-
-<!-- HERO -->
 <div class="hero">
-  <div class="hero-flag">🇧🇿</div>
-  <h1>BELIZE Travel Guide</h1>
-  <div class="hero-sub">September 2026 &nbsp;|&nbsp; 2 Adults + 1 Infant &nbsp;|&nbsp; JFK / LGA Departure</div>
+  <div class="hero-flag">&#127463;&#127463;</div>
+  <h1>BARBADOS Travel Guide</h1>
+  <div class="hero-sub">September 2026 | 2 Adults + 1 Infant | JFK Nonstop</div>
   <div class="hero-tags">
-    <span class="tag teal">🧒 Baby: 13 months (lap infant)</span>
-    <span class="tag">🌧️ Rainy / Hurricane Season</span>
-    <span class="tag">🇺🇸 No Visa Required</span>
-    <span class="tag">🗣️ English Official Language</span>
-    <span class="tag">💱 BZD = 2:1 USD</span>
+    <span class="tag green">Low Hurricane Risk</span>
+    <span class="tag teal">Nonstop JFK to BGI 4h 50m</span>
+    <span class="tag teal">Baby: 13 months lap infant</span>
+    <span class="tag">No Visa Required</span>
+    <span class="tag">English Official Language</span>
+    <span class="tag">Sep = Half-Price Hotels</span>
   </div>
 </div>
-
-<!-- SAFE BANNER -->
-<div class="safe-banner amber">
-  <span class="safe-icon">⚠️</span>
-  <div>
-    <div>AMBER — PLAN CAREFULLY: U.S. Level 2 "Exercise Increased Caution" + September is peak hurricane season. Doable with preparation, travel insurance mandatory, flexible bookings essential.</div>
-  </div>
+<div class="safe-banner green">
+  <span class="safe-icon">&#10003;</span>
+  <div>GREEN - GOOD TO GO: Barbados is one of the Caribbean's safest picks in September. No direct hurricane hit since 1955. U.S. Level 2 advisory (same as France and Italy). Nonstop JFK flights on JetBlue, AA, and Delta. English everywhere. Extremely baby-friendly.</div>
 </div>
-
 <div class="container">
-
-<!-- CURRENCY CONVERTER -->
 <div class="section">
-  <div class="section-title">💱 Currency Converter</div>
+  <div class="section-title">Currency Converter</div>
   <div class="currency-card">
     <div class="currency-row">
       <span style="font-size:18px;color:var(--text3)">$</span>
       <input class="currency-input" type="number" id="usd-input" value="100" placeholder="USD">
       <span style="color:var(--text3);font-size:18px">=</span>
-      <span class="currency-result" id="local-result">BZ$200.00</span>
+      <span class="currency-result" id="local-result">BDS$200.00</span>
     </div>
     <div class="quick-btns">
       <button class="qbtn" onclick="setAmt(20)">$20</button>
@@ -222,751 +174,388 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:24px;tex
       <button class="qbtn" onclick="setAmt(200)">$200</button>
       <button class="qbtn" onclick="setAmt(500)">$500</button>
     </div>
-    <div class="currency-rate" id="rate-note">1 USD = 2.00 Belize Dollar (BZD)</div>
+    <div class="currency-rate" id="rate-note">1 USD = 2.00 Barbadian Dollar (BBD)</div>
   </div>
 </div>
-
-<!-- TRIP SNAPSHOT -->
 <div class="section">
-  <div class="section-title">📊 Trip Snapshot</div>
+  <div class="section-title">Trip Snapshot</div>
   <div class="snap-grid">
-    <div class="snap-card"><div class="snap-label">Destination</div><div class="snap-value">Belize</div><div class="snap-note">Central America / Caribbean coast</div></div>
-    <div class="snap-card"><div class="snap-label">Travel Month</div><div class="snap-value">September 2026</div><div class="snap-note">Exact dates TBD</div></div>
-    <div class="snap-card"><div class="snap-label">Baby's Age</div><div class="snap-value">~13 months</div><div class="snap-note">Lap infant — no seat needed</div></div>
-    <div class="snap-card"><div class="snap-label">State Dept</div><div class="snap-value">Level 2</div><div class="snap-note">Exercise Increased Caution</div></div>
-    <div class="snap-card"><div class="snap-label">Weather</div><div class="snap-value">82–87°F</div><div class="snap-note">High rain + hurricane risk</div></div>
-    <div class="snap-card"><div class="snap-label">Currency</div><div class="snap-value">BZD (2:1)</div><div class="snap-note">$1 USD = BZ$2.00 fixed rate</div></div>
-    <div class="snap-card"><div class="snap-label">Language</div><div class="snap-value">English</div><div class="snap-note">Official language, no barrier</div></div>
-    <div class="snap-card"><div class="snap-label">Season</div><div class="snap-value">Low Season</div><div class="snap-note">Big discounts, fewer crowds</div></div>
+    <div class="snap-card"><div class="snap-label">Destination</div><div class="snap-value">Barbados</div><div class="snap-note">Eastern Caribbean, low hurricane zone</div></div>
+    <div class="snap-card"><div class="snap-label">Travel Month</div><div class="snap-value">September 2026</div><div class="snap-note">Low season - best prices</div></div>
+    <div class="snap-card"><div class="snap-label">Baby Age</div><div class="snap-value">~13 months</div><div class="snap-note">Lap infant, no seat needed</div></div>
+    <div class="snap-card"><div class="snap-label">State Dept</div><div class="snap-value">Level 2</div><div class="snap-note">Same as France and Italy</div></div>
+    <div class="snap-card"><div class="snap-label">Weather</div><div class="snap-value">84-88F</div><div class="snap-note">8 hrs sunshine/day, brief showers</div></div>
+    <div class="snap-card"><div class="snap-label">Currency</div><div class="snap-value">BBD 2:1</div><div class="snap-note">Fixed $1 USD = BDS$2.00</div></div>
+    <div class="snap-card"><div class="snap-label">Language</div><div class="snap-value">English</div><div class="snap-note">Official - zero language barrier</div></div>
+    <div class="snap-card"><div class="snap-label">Hurricane Risk</div><div class="snap-value">Very Low</div><div class="snap-note">No direct hit since 1955</div></div>
   </div>
 </div>
-
-<!-- WEATHER -->
 <div class="section">
-  <div class="section-title">🌤️ Weather in September</div>
+  <div class="section-title">Weather in September</div>
   <div class="weather-grid">
-    <div class="weather-day"><div class="w-date">Early Sep (1–10)</div><div class="w-icon">⛅</div><div class="w-temp">84–87°F / 29–31°C</div><div class="w-rain">Rain 60% | Humid 85%</div></div>
-    <div class="weather-day"><div class="w-date">Mid Sep (11–20)</div><div class="w-icon">🌧️</div><div class="w-temp">82–86°F / 28–30°C</div><div class="w-rain">Rain 70% | Peak hurricane window</div></div>
-    <div class="weather-day"><div class="w-date">Late Sep (21–30)</div><div class="w-icon">🌦️</div><div class="w-temp">82–85°F / 28–29°C</div><div class="w-rain">Rain 65% | Morning rain, sunny afternoons</div></div>
-    <div class="weather-day"><div class="w-date">Avg Temp</div><div class="w-icon">🌡️</div><div class="w-temp">~84°F / 29°C</div><div class="w-rain">Warmest coastal temps</div></div>
-    <div class="weather-day"><div class="w-date">Rainfall</div><div class="w-icon">🌊</div><div class="w-temp">Sep = Wettest Month</div><div class="w-rain">South gets 10–15 in. / month</div></div>
-    <div class="weather-day"><div class="w-date">Hurricane Risk</div><div class="w-icon">🌀</div><div class="w-temp">HIGH — Peak Month</div><div class="w-rain">Direct hits rare; storms track nearby</div></div>
+    <div class="weather-day"><div class="w-date">Early Sep 1-10</div><div class="w-icon">&#9925;</div><div class="w-temp">86-88F / 30-31C</div><div class="w-rain">Brief showers, 8 hrs sun/day</div></div>
+    <div class="weather-day"><div class="w-date">Mid Sep 11-20</div><div class="w-icon">&#127782;</div><div class="w-temp">85-88F / 29-31C</div><div class="w-rain">Short afternoon showers, sunny AM</div></div>
+    <div class="weather-day"><div class="w-date">Late Sep 21-30</div><div class="w-icon">&#127780;</div><div class="w-temp">84-87F / 29-31C</div><div class="w-rain">Morning clears, beach days likely</div></div>
+    <div class="weather-day"><div class="w-date">Temperature</div><div class="w-icon">&#127777;</div><div class="w-temp">Hottest month of year</div><div class="w-rain">Lows ~77F / 25C overnight</div></div>
+    <div class="weather-day"><div class="w-date">Sunshine</div><div class="w-icon">&#9728;</div><div class="w-temp">~8 hours per day</div><div class="w-rain">Still plenty of beach time</div></div>
+    <div class="weather-day"><div class="w-date">Hurricane</div><div class="w-icon">&#128737;</div><div class="w-temp">Very Low Risk</div><div class="w-rain">Storms veer north of island</div></div>
   </div>
-  <div style="margin-top:18px">
-    <span class="verdict-badge amber">⚠️ September = Wettest + highest hurricane risk — plan flexible itinerary, buy insurance, watch NOAA</span>
-  </div>
+  <div style="margin-top:18px"><span class="verdict-badge green">Expect sunny mornings and brief afternoon showers - plenty of beach and pool time</span></div>
 </div>
-
-<!-- STATE DEPT ADVISORY -->
 <div class="section">
-  <div class="section-title">🇺🇸 U.S. State Dept Travel Advisory</div>
+  <div class="section-title">U.S. State Dept Travel Advisory</div>
   <div class="card">
-    <div class="adv-level amber">⚠️ Level 2 — Exercise Increased Caution</div>
-    <p style="margin-bottom:12px">Crime is the primary concern, not terrorism. Same advisory level as Costa Rica, Paris, and London — it's location-specific risk, not country-wide.</p>
-    <ul style="color:var(--text2);font-size:14px;padding-left:16px;line-height:1.9">
-      <li><strong>Avoid:</strong> South side of Belize City (south of Haulover Creek) — highest violent crime concentration</li>
-      <li><strong>Safe tourist zones:</strong> Ambergris Caye, Caye Caulker, Placencia, Hopkins, San Ignacio</li>
-      <li><strong>Crime types:</strong> Armed robbery, sexual assault, home invasion — mostly gang-related</li>
-      <li><strong>Local police:</strong> Under-resourced; most crimes go unresolved</li>
-      <li><strong>Emergency medical:</strong> Severely limited — serious illness requires medevac to another country</li>
-      <li><strong>Advisory updated:</strong> March 12, 2026 — level unchanged</li>
+    <div class="adv-level amber">Level 2 - Exercise Increased Caution</div>
+    <p style="margin-bottom:12px;color:var(--text2)">Level 2 is the same rating as France, Italy, and Costa Rica. Crime is the concern, not terrorism. Tourist areas are safe and welcoming.</p>
+    <ul class="entry-list">
+      <li>Crime: Petty theft in Bridgetown; violent crime rare in tourist areas</li>
+      <li>Beach safety: Atlantic east coast has strong riptides - swim on the calm Caribbean west side only</li>
+      <li>Road safety: Drive on the left; roundabouts common; roads slippery after rain</li>
+      <li>Medical: Queen Elizabeth Hospital in Bridgetown - best in the region for a Caribbean island</li>
+      <li>LGBTQ+: Same-sex relations decriminalized in 2022 - generally welcoming atmosphere</li>
     </ul>
     <div class="btn-links" style="margin-top:16px">
-      <a class="btn btn-teal" href="https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/belizetravel-advisory.html" target="_blank">Full Advisory</a>
+      <a class="btn btn-teal" href="https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/barbados-travel-advisory.html" target="_blank">Full Advisory</a>
       <a class="btn btn-gray" href="https://step.state.gov" target="_blank">Register STEP</a>
     </div>
   </div>
 </div>
-
-<!-- CDC HEALTH -->
 <div class="section">
-  <div class="section-title">🏥 CDC Health Advisory</div>
+  <div class="section-title">CDC Health Advisory</div>
   <div class="card">
     <ul class="entry-list">
-      <li><strong>Malaria:</strong> Risk in rural/jungle areas — consult doctor for prophylaxis before travel</li>
-      <li><strong>Dengue:</strong> Present year-round, higher risk in rainy season — use DEET religiously</li>
-      <li><strong>Zika:</strong> Active in Belize — critical for anyone planning future pregnancies</li>
-      <li><strong>Hepatitis A:</strong> Vaccine recommended for all travelers</li>
-      <li><strong>Typhoid:</strong> Recommended, especially outside major resorts</li>
-      <li><strong>Measles (MMR):</strong> Must be up to date — global measles advisory active May 2025</li>
-      <li><strong>New World Screwworm:</strong> Reported in Belize — avoid contact with livestock wounds</li>
-      <li><strong>Water:</strong> Drink bottled water only — tap unsafe for visitors</li>
-      <li><strong>Infant note:</strong> At 13 months, baby needs age-appropriate mosquito protection, pediatrician consult before travel</li>
+      <li>Hepatitis A: Recommended for all travelers</li>
+      <li>Typhoid: Recommended especially eating outside resorts</li>
+      <li>Dengue: Present - use DEET repellent at dawn and dusk</li>
+      <li>Zika: Low but present - consult doctor if planning future pregnancies</li>
+      <li>NO MALARIA RISK in Barbados - major advantage over other Caribbean islands</li>
+      <li>Tap water: SAFE to drink - one of very few Caribbean islands where this is true</li>
+      <li>Infant: Use Picaridin on clothing not DEET directly on skin; pediatrician consult before travel</li>
     </ul>
     <div class="btn-links" style="margin-top:14px">
-      <a class="btn btn-teal" href="https://wwwnc.cdc.gov/travel/destinations/traveler/none/belize" target="_blank">CDC Belize Page</a>
+      <a class="btn btn-teal" href="https://wwwnc.cdc.gov/travel/destinations/traveler/none/barbados" target="_blank">CDC Barbados Page</a>
     </div>
   </div>
 </div>
-
-<!-- ENTRY REQUIREMENTS -->
 <div class="section">
-  <div class="section-title">🛂 Entry Requirements</div>
+  <div class="section-title">Entry Requirements</div>
   <div class="card">
     <ul class="entry-list">
-      <li><strong>Visa:</strong> No visa required for U.S. citizens — up to 30 days free, extendable</li>
-      <li><strong>Passport:</strong> Valid for 6 months beyond departure date</li>
-      <li><strong>Proof of return:</strong> Onward/return ticket required at check-in</li>
-      <li><strong>Infant:</strong> Birth certificate required; if only one parent traveling, bring notarized letter of consent from non-traveling parent</li>
-      <li><strong>Departure tax:</strong> ~$40 USD per person included in most airline tickets — verify at booking</li>
-      <li><strong>Medications:</strong> Bring prescription documentation; bring ALL medications from home — shortages common in Belize</li>
-      <li><strong>No HIV/AIDS entry restrictions</strong> for U.S. visitors</li>
+      <li>Visa: No visa required for U.S. citizens - up to 6 months allowed</li>
+      <li>Passport: Valid for duration of stay; 6 months validity recommended</li>
+      <li>Return ticket: Proof of onward/return travel required at check-in</li>
+      <li>Infant: Birth certificate required; if one parent travels solo bring notarized consent letter</li>
+      <li>Tap water: Safe to drink - less bottled water stress with a baby</li>
+      <li>Airport departure tax: Typically included in airline ticket - verify at booking</li>
     </ul>
   </div>
 </div>
-
-<!-- FLIGHTS -->
 <div class="section">
-  <div class="section-title">✈️ Flights from JFK / LGA</div>
+  <div class="section-title">Nonstop Flights - JFK to Bridgetown BGI</div>
   <div class="flight-grid">
     <div class="flight-card featured">
-      <span class="flight-badge nonstop">⭐ Nonstop — Best Option</span>
-      <div class="flight-row"><span class="flight-lbl">Route</span><span class="flight-val">JFK → BZE (Belize City)</span></div>
-      <div class="flight-row"><span class="flight-lbl">Airlines</span><span class="flight-val">American Airlines (via MIA nonstop from MIA), United</span></div>
-      <div class="flight-row"><span class="flight-lbl">Duration</span><span class="flight-val">~3h 30m direct from MIA; JFK has 1-stop via MIA or IAH</span></div>
-      <div class="flight-row"><span class="flight-lbl">Est. RT Price</span><span class="flight-val">$600–$900 per adult (Sep low season)</span></div>
-      <div class="flight-row"><span class="flight-lbl">Lap Infant</span><span class="flight-val">~10% of adult fare each way</span></div>
-      <div class="flight-row"><span class="flight-lbl">Departure</span><span class="flight-val">After 10 AM preferred</span></div>
+      <span class="flight-badge nonstop">JetBlue - Best Pick</span>
+      <div class="flight-row"><span class="flight-lbl">Route</span><span class="flight-val">JFK to BGI Nonstop</span></div>
+      <div class="flight-row"><span class="flight-lbl">Terminal</span><span class="flight-val">Terminal 5 JFK</span></div>
+      <div class="flight-row"><span class="flight-lbl">Departure</span><span class="flight-val">~9:00 AM daily - check specific date</span></div>
+      <div class="flight-row"><span class="flight-lbl">Duration</span><span class="flight-val">~4h 50m</span></div>
+      <div class="flight-row"><span class="flight-lbl">Frequency</span><span class="flight-val">Daily nonstop flights</span></div>
+      <div class="flight-row"><span class="flight-lbl">Est RT per adult</span><span class="flight-val">$400-$700 (Sep low season)</span></div>
+      <div class="flight-row"><span class="flight-lbl">Lap infant</span><span class="flight-val">~10% adult fare each way</span></div>
       <div class="btn-links">
-        <a class="btn btn-teal" href="https://www.google.com/flights#flt=JFK.BZE.*" target="_blank">Google Flights</a>
-        <a class="btn btn-blue" href="https://www.expedia.com/Flights-Search?leg1=from%3AJFK%2Cto%3ABZE" target="_blank">Expedia</a>
+        <a class="btn btn-teal" href="https://www.jetblue.com/en/flights-from-new-york-to-barbados" target="_blank">JetBlue.com</a>
+        <a class="btn btn-blue" href="https://www.google.com/flights" target="_blank">Google Flights</a>
       </div>
     </div>
     <div class="flight-card">
-      <span class="flight-badge onestop">1-Stop Backup</span>
-      <div class="flight-row"><span class="flight-lbl">Route</span><span class="flight-val">JFK → Houston IAH → BZE</span></div>
-      <div class="flight-row"><span class="flight-lbl">Airlines</span><span class="flight-val">United Airlines</span></div>
-      <div class="flight-row"><span class="flight-lbl">Duration</span><span class="flight-val">~8–10h total with layover</span></div>
-      <div class="flight-row"><span class="flight-lbl">Est. RT Price</span><span class="flight-val">$550–$800 per adult</span></div>
-      <div class="flight-row"><span class="flight-lbl">Note</span><span class="flight-val">Sep = low season, good fares available</span></div>
+      <span class="flight-badge alt">Also Nonstop: AA and Delta</span>
+      <div class="flight-row"><span class="flight-lbl">American Airlines</span><span class="flight-val">JFK to BGI nonstop Terminal 8</span></div>
+      <div class="flight-row"><span class="flight-lbl">AA Frequency</span><span class="flight-val">Multiple flights per week</span></div>
+      <div class="flight-row"><span class="flight-lbl">Delta</span><span class="flight-val">JFK to BGI nonstop Terminal 4</span></div>
+      <div class="flight-row"><span class="flight-lbl">Delta Frequency</span><span class="flight-val">Several times per week</span></div>
+      <div class="flight-row"><span class="flight-lbl">Est RT per adult</span><span class="flight-val">$450-$750 depending on airline</span></div>
+      <div class="flight-row"><span class="flight-lbl">Tip</span><span class="flight-val">Sep is cheapest month per Expedia data</span></div>
       <div class="btn-links">
-        <a class="btn btn-gray" href="https://www.kayak.com/flights/JFK-BZE" target="_blank">Kayak</a>
-        <a class="btn btn-gray" href="https://www.united.com" target="_blank">United.com</a>
+        <a class="btn btn-gray" href="https://www.aa.com/en-us/flights-from-new-york-to-barbados" target="_blank">AA.com</a>
+        <a class="btn btn-gray" href="https://www.delta.com" target="_blank">Delta.com</a>
+        <a class="btn btn-gray" href="https://www.kayak.com/flights/JFK-BGI" target="_blank">Kayak</a>
       </div>
     </div>
   </div>
-  <p style="color:var(--text3);font-size:13px;margin-top:14px">⚠️ Book flexible/refundable tickets in September — hurricane weather can disrupt flights. Prioritize airlines with easy rebooking policies.</p>
+  <p style="color:var(--text3);font-size:13px;margin-top:14px">3 airlines fly nonstop JFK to BGI - most options in the Caribbean. September is one of the cheapest months on this route per Expedia pricing data.</p>
 </div>
-
-<!-- CAR RENTAL -->
 <div class="section">
-  <div class="section-title">🚗 Car Rental at Belize City Airport (BZE)</div>
+  <div class="section-title">Car Rental at Grantley Adams Airport BGI</div>
   <div class="car-grid">
     <div class="car-card best">
-      <div style="color:var(--teal);font-weight:600;font-size:13px;margin-bottom:12px">⭐ Best Value</div>
-      <div class="car-row"><span class="car-lbl">Provider</span><span class="car-val">Crystal Auto Rental (Local)</span></div>
-      <div class="car-row"><span class="car-lbl">Vehicle</span><span class="car-val">Economy / Compact</span></div>
-      <div class="car-row"><span class="car-lbl">Est. Rate</span><span class="car-val">$45–$60/day</span></div>
-      <div class="car-row"><span class="car-lbl">Note</span><span class="car-val">Local rates beat international chains; 4WD recommended for jungle roads</span></div>
-      <div class="btn-links"><a class="btn btn-teal" href="https://www.crystalbelizerentacar.com" target="_blank">Book Now</a></div>
+      <div style="color:var(--teal);font-weight:600;font-size:13px;margin-bottom:12px">Best Value - Local</div>
+      <div class="car-row"><span class="car-lbl">Provider</span><span class="car-val">Stoutes Car Rentals</span></div>
+      <div class="car-row"><span class="car-lbl">Vehicle</span><span class="car-val">Small car / Compact</span></div>
+      <div class="car-row"><span class="car-lbl">Est Rate</span><span class="car-val">$50-$70 per day</span></div>
+      <div class="car-row"><span class="car-lbl">Note</span><span class="car-val">Trusted local company, airport pickup easy</span></div>
+      <div class="btn-links"><a class="btn btn-teal" href="https://www.stoutes.com" target="_blank">Stoutes.com</a></div>
     </div>
     <div class="car-card">
-      <div style="color:var(--blue);font-weight:600;font-size:13px;margin-bottom:12px">🚙 SUV / 4WD</div>
-      <div class="car-row"><span class="car-lbl">Provider</span><span class="car-val">Budget / Hertz at BZE</span></div>
-      <div class="car-row"><span class="car-lbl">Vehicle</span><span class="car-val">SUV / 4WD</span></div>
-      <div class="car-row"><span class="car-val">$80–$120/day</span></div>
-      <div class="car-row"><span class="car-lbl">Note</span><span class="car-val">Strongly recommended if visiting jungle/ruins — Sep roads flood</span></div>
-      <div class="btn-links"><a class="btn btn-blue" href="https://www.budget.com" target="_blank">Budget.com</a></div>
+      <div style="color:var(--blue);font-weight:600;font-size:13px;margin-bottom:12px">International Options</div>
+      <div class="car-row"><span class="car-lbl">Provider</span><span class="car-val">Hertz / Avis at BGI</span></div>
+      <div class="car-row"><span class="car-lbl">Est Rate</span><span class="car-val">$65-$100 per day</span></div>
+      <div class="car-row"><span class="car-lbl">Tip</span><span class="car-val">Book in advance - Sep off-peak good availability</span></div>
+      <div class="btn-links"><a class="btn btn-blue" href="https://www.hertz.com" target="_blank">Hertz.com</a></div>
     </div>
     <div class="car-card">
-      <div style="color:var(--text3);font-weight:600;font-size:13px;margin-bottom:12px">📋 Rental Tips</div>
-      <div class="car-row"><span class="car-lbl">Driving side</span><span class="car-val">Right (same as US)</span></div>
-      <div class="car-row"><span class="car-lbl">License</span><span class="car-val">US license valid up to 3 months</span></div>
-      <div class="car-row"><span class="car-lbl">Roads</span><span class="car-val">Cayes: no cars — water taxi or golf carts only</span></div>
-      <div class="car-row"><span class="car-lbl">Sep risk</span><span class="car-val">Inland flooding possible — check road conditions daily</span></div>
+      <div style="color:var(--text3);font-weight:600;font-size:13px;margin-bottom:12px">Driving Tips</div>
+      <div class="car-row"><span class="car-lbl">Drive side</span><span class="car-val">LEFT - UK style</span></div>
+      <div class="car-row"><span class="car-lbl">License</span><span class="car-val">US license valid plus local permit ~$10</span></div>
+      <div class="car-row"><span class="car-lbl">Roads</span><span class="car-val">Narrow, roundabouts everywhere, go slow</span></div>
+      <div class="car-row"><span class="car-lbl">Sep note</span><span class="car-val">Roads slippery after rain, take extra care</span></div>
     </div>
   </div>
+  <p style="color:var(--text3);font-size:13px;margin-top:12px">Barbados drives on the LEFT. If unfamiliar, consider taxis or cheap public buses ($0.75 per ride) as a stress-free alternative.</p>
 </div>
-
-<!-- HOTELS -->
 <div class="section">
-  <div class="section-title">🏨 Hotels, Resorts & Airbnb</div>
+  <div class="section-title">Hotels, Resorts and Airbnb</div>
   <div class="hotels-grid">
     <div class="hotel-card">
-      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" alt="Cayo Espanto Resort" class="hotel-img"
-           onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🏝️</span></div>'">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" alt="Sandy Lane Barbados" class="hotel-img" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>&#127958;</span></div>'">
       <div class="hotel-body">
         <div class="hotel-badge five">5-Star</div>
-        <div class="hotel-name">Cayo Espanto Private Island</div>
-        <div class="hotel-price">From $1,500+/night</div>
-        <div class="hotel-note">Entire private island, all-inclusive, butler service, ultra-exclusive</div>
+        <div class="hotel-name">Sandy Lane - St. James Platinum Coast</div>
+        <div class="hotel-price">From $800-$1,500+ per night</div>
+        <div class="hotel-note">One of the world's most luxurious resorts. Beachfront, 3 golf courses, Treehouse Kids Club (3+), world-class spa. Sep = 30-40% off peak rates.</div>
         <div class="btn-links">
-          <a class="btn btn-gray" href="https://www.expedia.com/Belize-Hotels.d210.Travel-Guide-Hotels" target="_blank">Expedia</a>
-          <a class="btn btn-gray" href="https://www.google.com/search?q=Cayo+Espanto+Belize" target="_blank">Google</a>
+          <a class="btn btn-gray" href="https://www.expedia.com/Barbados-Hotels.d211.Travel-Guide-Hotels" target="_blank">Expedia</a>
+          <a class="btn btn-gray" href="https://www.sandylane.com" target="_blank">Website</a>
         </div>
       </div>
     </div>
     <div class="hotel-card">
-      <img src="https://images.unsplash.com/photo-1568430462989-44163eb1752f?w=600&q=80" alt="Victoria House Ambergris Caye" class="hotel-img"
-           onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌴</span></div>'">
+      <img src="https://images.unsplash.com/photo-1568430462989-44163eb1752f?w=600&q=80" alt="Sugar Bay Barbados" class="hotel-img" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>&#127796;</span></div>'">
       <div class="hotel-body">
-        <div class="hotel-badge five">5-Star</div>
-        <div class="hotel-name">Victoria House — Ambergris Caye</div>
-        <div class="hotel-price">$350–$600/night</div>
-        <div class="hotel-note">Beachfront, overwater bungalows, family-friendly, stunning reef views</div>
+        <div class="hotel-badge four">4-Star All-Inclusive</div>
+        <div class="hotel-name">Sugar Bay Barbados - Southwest Coast</div>
+        <div class="hotel-price">$250-$420 per night all-inclusive</div>
+        <div class="hotel-note">Best for families with babies: creche for ages 4 months-3 years, kids club, kids pool, beachfront. Babysitting available. Movie nights. #1 pick for your family.</div>
         <div class="btn-links">
-          <a class="btn btn-gray" href="https://www.expedia.com/Ambergris-Caye-Hotels.d553248635.Travel-Guide-Hotels" target="_blank">Expedia</a>
-          <a class="btn btn-gray" href="https://www.victoria-house.com" target="_blank">Website</a>
+          <a class="btn btn-gray" href="https://www.expedia.com/Barbados-Hotels.d211.Travel-Guide-Hotels" target="_blank">Expedia</a>
+          <a class="btn btn-gray" href="https://www.sugarbaybarbados.com" target="_blank">Website</a>
         </div>
       </div>
     </div>
     <div class="hotel-card">
-      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Chaa Creek Resort" class="hotel-img"
-           onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌿</span></div>'">
+      <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=600&q=80" alt="Hilton Barbados Resort" class="hotel-img" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>&#127944;</span></div>'">
       <div class="hotel-body">
-        <div class="hotel-badge four">4-Star</div>
-        <div class="hotel-name">Chaa Creek — San Ignacio (Cayo)</div>
-        <div class="hotel-price">$200–$400/night</div>
-        <div class="hotel-note">Eco-luxury jungle resort, 365-acre private reserve, great for infants inland</div>
+        <div class="hotel-badge four">4.5-Star</div>
+        <div class="hotel-name">Hilton Barbados Resort - Bridgetown</div>
+        <div class="hotel-price">$200-$380 per night</div>
+        <div class="hotel-note">On 2 white sand beaches, kids pool, Kidz Paradise Club, babysitting. Sep = great value. Hilton Honors points-friendly.</div>
         <div class="btn-links">
+          <a class="btn btn-gray" href="https://www.hilton.com/en/hotels/bgibhhi-hilton-barbados-resort/" target="_blank">Hilton.com</a>
           <a class="btn btn-gray" href="https://www.expedia.com" target="_blank">Expedia</a>
-          <a class="btn btn-gray" href="https://www.chaacreek.com" target="_blank">Website</a>
         </div>
       </div>
     </div>
     <div class="hotel-card">
-      <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80" alt="Airbnb Belize pool" class="hotel-img"
-           onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🏊</span></div>'">
+      <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80" alt="Airbnb villa Barbados" class="hotel-img" onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>&#127968;</span></div>'">
       <div class="hotel-body">
         <div class="hotel-badge airbnb">Airbnb</div>
-        <div class="hotel-name">Airbnb — Pool Villa, Placencia</div>
-        <div class="hotel-price">$120–$280/night</div>
-        <div class="hotel-note">Full kitchen, private pool, baby-friendly. Low season = best deals. Look in Placencia or Hopkins.</div>
+        <div class="hotel-name">Airbnb Villa - West or South Coast</div>
+        <div class="hotel-price">$100-$250 per night</div>
+        <div class="hotel-note">Full kitchen great for baby food, private pool, washer/dryer. Sep = lowest prices of the year. Search Holetown or St. Lawrence Gap area.</div>
         <div class="btn-links">
-          <a class="btn btn-gray" href="https://www.airbnb.com/s/Placencia--Belize/homes?amenities%5B%5D=7&amenities%5B%5D=46" target="_blank">Airbnb Pool+Kitchen</a>
+          <a class="btn btn-gray" href="https://www.airbnb.com/s/Barbados/homes?amenities%5B%5D=7&amenities%5B%5D=46" target="_blank">Airbnb Pool and Kitchen</a>
         </div>
       </div>
     </div>
   </div>
-  <p style="color:var(--text3);font-size:13px;margin-top:14px">💡 September = low season — expect 20–40% discounts vs peak. Always confirm hurricane cancellation policies before booking.</p>
+  <p style="color:var(--text3);font-size:13px;margin-top:14px">Sugar Bay is the top pick for your family - it has a dedicated creche for babies 4 months to 3 years old. September rates are often 40-50% below peak season.</p>
 </div>
-
-<!-- THINGS TO DO -->
 <div class="section">
-  <div class="section-title">🎯 Things To Do</div>
+  <div class="section-title">Things To Do</div>
   <div class="activities-grid">
-
     <div class="act-card">
-      <div class="slider-wrap" id="w1">
-        <div class="slider-track" id="t1">
-          <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=600&q=80" alt="Great Blue Hole"
-               onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>🌀</span></div>'">
-          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80" alt="Diving Belize"
-               onerror="this.style.display='none'">
-        </div>
-        <button class="slider-btn prev" onclick="slide('w1','t1',-1)">‹</button>
-        <button class="slider-btn next" onclick="slide('w1','t1',1)">›</button>
-        <div class="slide-count">1 / 2</div>
-      </div>
-      <div class="act-body">
-        <div class="act-name">Great Blue Hole — Scuba / Snorkel</div>
-        <div class="act-price">$250–$350/person (day trip)</div>
-        <div class="act-note">UNESCO World Heritage, world-famous 1,000-ft wide sinkhole. Adults only for diving; snorkeling from boat fine.</div>
-        <div class="btn-links">
-          <a class="btn btn-gray" href="https://www.google.com/search?q=Great+Blue+Hole+Belize+tour" target="_blank">Google</a>
-          <a class="btn btn-gray" href="https://www.youtube.com/results?search_query=Great+Blue+Hole+Belize" target="_blank">YouTube</a>
-        </div>
-      </div>
+      <div class="slider-wrap" id="w1"><div class="slider-track" id="t1"><img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=600&q=80" alt="Crane Beach" onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>&#127958;</span></div>'"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" alt="Beach" onerror="this.style.display='none'"></div><button class="slider-btn prev" onclick="slide('w1','t1',-1)">&#8249;</button><button class="slider-btn next" onclick="slide('w1','t1',1)">&#8250;</button><div class="slide-count">1 / 2</div></div>
+      <div class="act-body"><div class="act-name">Crane Beach - Best Family Beach</div><div class="act-price">Free access</div><div class="act-note">Voted one of the world's best beaches. Calm shallow pool on south side perfect for a 13-month-old. Pink coral sand, dramatic cliffs, baby carrier friendly paths.</div><div class="btn-links"><a class="btn btn-gray" href="https://www.google.com/search?q=Crane+Beach+Barbados" target="_blank">Google</a><a class="btn btn-gray" href="https://www.youtube.com/results?search_query=Crane+Beach+Barbados" target="_blank">YouTube</a></div></div>
     </div>
-
     <div class="act-card">
-      <div class="slider-wrap" id="w2">
-        <div class="slider-track" id="t2">
-          <img src="https://images.unsplash.com/photo-1534073828943-f801091bb18c?w=600&q=80" alt="Mayan Ruins"
-               onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>🏛️</span></div>'">
-        </div>
-        <button class="slider-btn prev" onclick="slide('w2','t2',-1)">‹</button>
-        <button class="slider-btn next" onclick="slide('w2','t2',1)">›</button>
-      </div>
-      <div class="act-body">
-        <div class="act-name">Caracol & Xunantunich Maya Ruins</div>
-        <div class="act-price">$5–$20 entrance / tour extra</div>
-        <div class="act-note">Belize's most impressive Maya sites. Xunantunich is baby-carrier friendly with stunning views. Sep = lush green, almost empty.</div>
-        <div class="btn-links">
-          <a class="btn btn-gray" href="https://www.google.com/search?q=Xunantunich+Belize" target="_blank">Google</a>
-          <a class="btn btn-gray" href="https://www.youtube.com/results?search_query=Caracol+Belize+ruins" target="_blank">YouTube</a>
-        </div>
-      </div>
+      <div class="slider-wrap" id="w2"><div class="slider-track" id="t2"><img src="https://images.unsplash.com/photo-1534073828943-f801091bb18c?w=600&q=80" alt="Harrison's Cave" onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>&#128336;</span></div>'"></div><button class="slider-btn prev" onclick="slide('w2','t2',-1)">&#8249;</button><button class="slider-btn next" onclick="slide('w2','t2',1)">&#8250;</button></div>
+      <div class="act-body"><div class="act-name">Harrison's Cave - Underground Wonder</div><div class="act-price">$30-$40 per adult, infants free</div><div class="act-note">Tram ride through spectacular stalactite caverns 160 ft underground. Climate-controlled and completely baby-friendly. Perfect rainy day activity.</div><div class="btn-links"><a class="btn btn-gray" href="https://www.google.com/search?q=Harrison%27s+Cave+Barbados" target="_blank">Google</a><a class="btn btn-gray" href="https://www.tiktok.com/search?q=Harrison%27s+Cave+Barbados" target="_blank">TikTok</a></div></div>
     </div>
-
     <div class="act-card">
-      <div class="slider-wrap" id="w3">
-        <div class="slider-track" id="t3">
-          <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=600&q=80" alt="Snorkeling reef"
-               onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>🐠</span></div>'">
-        </div>
-        <button class="slider-btn prev" onclick="slide('w3','t3',-1)">‹</button>
-        <button class="slider-btn next" onclick="slide('w3','t3',1)">›</button>
-      </div>
-      <div class="act-body">
-        <div class="act-name">Belize Barrier Reef Snorkeling</div>
-        <div class="act-price">$40–$80/person half-day</div>
-        <div class="act-note">2nd largest reef in the world. Shark Ray Alley and Hol Chan Marine Reserve accessible by boat. Baby stays on boat.</div>
-        <div class="btn-links">
-          <a class="btn btn-gray" href="https://www.google.com/search?q=Belize+Barrier+Reef+snorkel+tour" target="_blank">Google</a>
-          <a class="btn btn-gray" href="https://www.tiktok.com/search?q=Belize+snorkeling" target="_blank">TikTok</a>
-        </div>
-      </div>
+      <div class="slider-wrap" id="w3"><div class="slider-track" id="t3"><img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80" alt="Sea Turtles" onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>&#128034;</span></div>'"></div><button class="slider-btn prev" onclick="slide('w3','t3',-1)">&#8249;</button><button class="slider-btn next" onclick="slide('w3','t3',1)">&#8250;</button></div>
+      <div class="act-body"><div class="act-name">Sea Turtle Snorkeling - Carlisle Bay</div><div class="act-price">$40-$65 per person, baby on boat</div><div class="act-note">Sea turtles feed in calm bay year-round. One parent snorkels while other stays with baby on boat. Hawksbill and leatherback turtles commonly spotted.</div><div class="btn-links"><a class="btn btn-gray" href="https://www.google.com/search?q=sea+turtle+snorkel+Barbados" target="_blank">Google</a><a class="btn btn-gray" href="https://www.youtube.com/results?search_query=Barbados+turtle+snorkeling" target="_blank">YouTube</a></div></div>
     </div>
-
     <div class="act-card">
-      <div class="slider-wrap" id="w4">
-        <div class="slider-track" id="t4">
-          <img src="https://images.unsplash.com/photo-1619546813926-a78fa6372cd2?w=600&q=80" alt="ATM Cave Belize"
-               onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>🕯️</span></div>'">
-        </div>
-        <button class="slider-btn prev" onclick="slide('w4','t4',-1)">‹</button>
-        <button class="slider-btn next" onclick="slide('w4','t4',1)">›</button>
-      </div>
-      <div class="act-body">
-        <div class="act-name">ATM Cave (Actun Tunichil Muknal)</div>
-        <div class="act-price">$90–$120/person guided</div>
-        <div class="act-note">One of National Geographic's Top 10 sacred places. Swim and wade through a Maya underworld cave. Adults only — no infants.</div>
-        <div class="btn-links">
-          <a class="btn btn-gray" href="https://www.google.com/search?q=ATM+Cave+Belize" target="_blank">Google</a>
-          <a class="btn btn-gray" href="https://www.youtube.com/results?search_query=ATM+Cave+Belize" target="_blank">YouTube</a>
-        </div>
-      </div>
+      <div class="slider-wrap" id="w4"><div class="slider-track" id="t4"><img src="https://images.unsplash.com/photo-1619546813926-a78fa6372cd2?w=600&q=80" alt="Mount Gay Rum" onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>&#127867;</span></div>'"></div><button class="slider-btn prev" onclick="slide('w4','t4',-1)">&#8249;</button><button class="slider-btn next" onclick="slide('w4','t4',1)">&#8250;</button></div>
+      <div class="act-body"><div class="act-name">Mount Gay Rum Distillery Tour</div><div class="act-price">$25-$40 per adult, baby free</div><div class="act-note">World's oldest rum distillery est. 1703. Guided tour and tasting. Baby can come in carrier. Barbados is the birthplace of rum - fascinating history.</div><div class="btn-links"><a class="btn btn-gray" href="https://www.google.com/search?q=Mount+Gay+Rum+Distillery+Barbados" target="_blank">Google</a><a class="btn btn-gray" href="https://www.tiktok.com/search?q=Mount+Gay+rum+Barbados" target="_blank">TikTok</a></div></div>
     </div>
-
     <div class="act-card">
-      <div class="slider-wrap" id="w5">
-        <div class="slider-track" id="t5">
-          <img src="https://images.unsplash.com/photo-1627483297886-49710ae1fc22?w=600&q=80" alt="River tubing Belize"
-               onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>🛶</span></div>'">
-        </div>
-        <button class="slider-btn prev" onclick="slide('w5','t5',-1)">‹</button>
-        <button class="slider-btn next" onclick="slide('w5','t5',1)">›</button>
-      </div>
-      <div class="act-body">
-        <div class="act-name">Cave Tubing — Caves Branch</div>
-        <div class="act-price">$60–$90/person</div>
-        <div class="act-note">Float through ancient Maya ceremonial caves on inner tubes. Sep rivers are full and fast — lush and dramatic. Minimum age usually 5+.</div>
-        <div class="btn-links">
-          <a class="btn btn-gray" href="https://www.google.com/search?q=Belize+cave+tubing" target="_blank">Google</a>
-          <a class="btn btn-gray" href="https://www.tiktok.com/search?q=Belize+cave+tubing" target="_blank">TikTok</a>
-        </div>
-      </div>
+      <div class="slider-wrap" id="w5"><div class="slider-track" id="t5"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Botanical Gardens" onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>&#127803;</span></div>'"></div><button class="slider-btn prev" onclick="slide('w5','t5',-1)">&#8249;</button><button class="slider-btn next" onclick="slide('w5','t5',1)">&#8250;</button></div>
+      <div class="act-body"><div class="act-name">Andromeda Botanic Gardens</div><div class="act-price">~$15 per adult, under 5 free</div><div class="act-note">6-acre tropical garden overlooking east coast. Stroller-friendly paths, incredible flora, monkeys and herons visible. Sep = lush green peak.</div><div class="btn-links"><a class="btn btn-gray" href="https://www.google.com/search?q=Andromeda+Botanic+Gardens+Barbados" target="_blank">Google</a><a class="btn btn-gray" href="https://www.tiktok.com/search?q=Barbados+gardens" target="_blank">TikTok</a></div></div>
     </div>
-
     <div class="act-card">
-      <div class="slider-wrap" id="w6">
-        <div class="slider-track" id="t6">
-          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Wildlife Belize"
-               onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>🦜</span></div>'">
-        </div>
-        <button class="slider-btn prev" onclick="slide('w6','t6',-1)">‹</button>
-        <button class="slider-btn next" onclick="slide('w6','t6',1)">›</button>
-      </div>
-      <div class="act-body">
-        <div class="act-name">Wildlife & Birding — Cockscomb Basin</div>
-        <div class="act-price">$5 entrance + tour $50–$80</div>
-        <div class="act-note">World's first jaguar sanctuary. Sep = nesting season — incredible birding. Baby carrier + rain jacket essential.</div>
-        <div class="btn-links">
-          <a class="btn btn-gray" href="https://www.google.com/search?q=Cockscomb+Basin+Wildlife+Sanctuary+Belize" target="_blank">Google</a>
-          <a class="btn btn-gray" href="https://www.youtube.com/results?search_query=Cockscomb+Belize+jaguar" target="_blank">YouTube</a>
-        </div>
-      </div>
+      <div class="slider-wrap" id="w6"><div class="slider-track" id="t6"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Oistins Fish Fry" onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>&#127863;</span></div>'"></div><button class="slider-btn prev" onclick="slide('w6','t6',-1)">&#8249;</button><button class="slider-btn next" onclick="slide('w6','t6',1)">&#8250;</button></div>
+      <div class="act-body"><div class="act-name">Oistins Fish Fry - Friday Night</div><div class="act-price">$5-$15 per plate, baby free</div><div class="act-note">Barbados' most famous local experience. Grilled flying fish, macaroni pie, rum punch, live music. Fridays are biggest. Outdoor, family-friendly, totally authentic.</div><div class="btn-links"><a class="btn btn-gray" href="https://www.google.com/search?q=Oistins+Fish+Fry+Barbados" target="_blank">Google</a><a class="btn btn-gray" href="https://www.tiktok.com/search?q=Oistins+fish+fry" target="_blank">TikTok</a></div></div>
     </div>
-
     <div class="act-card">
-      <div class="slider-wrap" id="w7">
-        <div class="slider-track" id="t7">
-          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80" alt="Manatees Belize"
-               onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>🐾</span></div>'">
-        </div>
-        <button class="slider-btn prev" onclick="slide('w7','t7',-1)">‹</button>
-        <button class="slider-btn next" onclick="slide('w7','t7',1)">›</button>
-      </div>
-      <div class="act-body">
-        <div class="act-name">Manatee Watching — Gales Point</div>
-        <div class="act-price">$50–$80/person guided</div>
-        <div class="act-note">September = peak manatee season in Belize. Gentle giants visible from boats — baby-friendly boat tour.</div>
-        <div class="btn-links">
-          <a class="btn btn-gray" href="https://www.google.com/search?q=Belize+manatee+tour" target="_blank">Google</a>
-          <a class="btn btn-gray" href="https://www.tiktok.com/search?q=Belize+manatee" target="_blank">TikTok</a>
-        </div>
-      </div>
+      <div class="slider-wrap" id="w7"><div class="slider-track" id="t7"><img src="https://images.unsplash.com/photo-1627483297886-49710ae1fc22?w=600&q=80" alt="Catamaran Cruise" onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>&#9973;</span></div>'"></div><button class="slider-btn prev" onclick="slide('w7','t7',-1)">&#8249;</button><button class="slider-btn next" onclick="slide('w7','t7',1)">&#8250;</button></div>
+      <div class="act-body"><div class="act-name">Catamaran Sunset Cruise</div><div class="act-price">$80-$120 per adult, baby discounted</div><div class="act-note">Sail the calm west coast at sunset, spot turtles, enjoy open bar. Baby-friendly boats available. Calm Caribbean Sea, very gentle ride - great with an infant.</div><div class="btn-links"><a class="btn btn-gray" href="https://www.google.com/search?q=catamaran+cruise+Barbados" target="_blank">Google</a><a class="btn btn-gray" href="https://www.tiktok.com/search?q=Barbados+catamaran" target="_blank">TikTok</a></div></div>
     </div>
-
     <div class="act-card">
-      <div class="slider-wrap" id="w8">
-        <div class="slider-track" id="t8">
-          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" alt="Caye Caulker beach"
-               onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>🏖️</span></div>'">
-        </div>
-        <button class="slider-btn prev" onclick="slide('w8','t8',-1)">‹</button>
-        <button class="slider-btn next" onclick="slide('w8','t8',1)">›</button>
-      </div>
-      <div class="act-body">
-        <div class="act-name">Caye Caulker — "Go Slow" Island Life</div>
-        <div class="act-price">Free (water taxi ~$20 RT)</div>
-        <div class="act-note">Laid-back island with no cars, soft sandy streets, baby-friendly. The Split beach is perfect for shade + shallow water play.</div>
-        <div class="btn-links">
-          <a class="btn btn-gray" href="https://www.google.com/search?q=Caye+Caulker+Belize" target="_blank">Google</a>
-          <a class="btn btn-gray" href="https://www.tiktok.com/search?q=Caye+Caulker+Belize" target="_blank">TikTok</a>
-        </div>
-      </div>
+      <div class="slider-wrap" id="w8"><div class="slider-track" id="t8"><img src="https://images.unsplash.com/photo-1568430462989-44163eb1752f?w=600&q=80" alt="Bridgetown" onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>&#127963;</span></div>'"></div><button class="slider-btn prev" onclick="slide('w8','t8',-1)">&#8249;</button><button class="slider-btn next" onclick="slide('w8','t8',1)">&#8250;</button></div>
+      <div class="act-body"><div class="act-name">Bridgetown UNESCO Historic District</div><div class="act-price">Free to walk, tours ~$20</div><div class="act-note">UNESCO World Heritage Site. Colonial architecture, vibrant harbor, duty-free shopping, Parliament Buildings. Flat walkable streets - stroller-friendly.</div><div class="btn-links"><a class="btn btn-gray" href="https://www.google.com/search?q=Bridgetown+Barbados+things+to+do" target="_blank">Google</a><a class="btn btn-gray" href="https://www.tiktok.com/search?q=Bridgetown+Barbados" target="_blank">TikTok</a></div></div>
     </div>
-
     <div class="act-card">
-      <div class="slider-wrap" id="w9">
-        <div class="slider-track" id="t9">
-          <img src="https://images.unsplash.com/photo-1568430462989-44163eb1752f?w=600&q=80" alt="Ambergris Caye"
-               onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>🌅</span></div>'">
-        </div>
-        <button class="slider-btn prev" onclick="slide('w9','t9',-1)">‹</button>
-        <button class="slider-btn next" onclick="slide('w9','t9',1)">›</button>
-      </div>
-      <div class="act-body">
-        <div class="act-name">Ambergris Caye — San Pedro Town</div>
-        <div class="act-price">Golf cart rental $35–$50/day</div>
-        <div class="act-note">Belize's most popular island, vibrant dining and nightlife. Sep = quiet and affordable. Baby-friendly restaurants everywhere.</div>
-        <div class="btn-links">
-          <a class="btn btn-gray" href="https://www.google.com/search?q=Ambergris+Caye+Belize+things+to+do" target="_blank">Google</a>
-          <a class="btn btn-gray" href="https://www.tiktok.com/search?q=Ambergris+Caye" target="_blank">TikTok</a>
-        </div>
-      </div>
+      <div class="slider-wrap" id="w9"><div class="slider-track" id="t9"><img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=600&q=80" alt="Bathsheba" onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>&#127754;</span></div>'"></div><button class="slider-btn prev" onclick="slide('w9','t9',-1)">&#8249;</button><button class="slider-btn next" onclick="slide('w9','t9',1)">&#8250;</button></div>
+      <div class="act-body"><div class="act-name">Bathsheba East Coast Rock Pools</div><div class="act-price">Free</div><div class="act-note">Dramatic Atlantic coastline with iconic mushroom-shaped boulders. Natural tide pools safe for baby to splash in. Sep = lush green backdrop. Scenic drive from west coast.</div><div class="btn-links"><a class="btn btn-gray" href="https://www.google.com/search?q=Bathsheba+Barbados" target="_blank">Google</a><a class="btn btn-gray" href="https://www.youtube.com/results?search_query=Bathsheba+Barbados" target="_blank">YouTube</a></div></div>
     </div>
-
     <div class="act-card">
-      <div class="slider-wrap" id="w10">
-        <div class="slider-track" id="t10">
-          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Jungle waterfall Belize"
-               onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>💧</span></div>'">
-        </div>
-        <button class="slider-btn prev" onclick="slide('w10','t10',-1)">‹</button>
-        <button class="slider-btn next" onclick="slide('w10','t10',1)">›</button>
-      </div>
-      <div class="act-body">
-        <div class="act-name">Big Rock Falls — San Ignacio</div>
-        <div class="act-price">Free / small park fee</div>
-        <div class="act-note">Stunning waterfall swim. September = full flow, incredibly lush. Baby stays with one parent on shore — hike is moderate.</div>
-        <div class="btn-links">
-          <a class="btn btn-gray" href="https://www.google.com/search?q=Big+Rock+Falls+Belize" target="_blank">Google</a>
-          <a class="btn btn-gray" href="https://www.youtube.com/results?search_query=Big+Rock+Falls+Belize" target="_blank">YouTube</a>
-        </div>
-      </div>
+      <div class="slider-wrap" id="w10"><div class="slider-track" id="t10"><img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=600&q=80" alt="Animal Flower Cave" onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>&#127754;</span></div>'"></div><button class="slider-btn prev" onclick="slide('w10','t10',-1)">&#8249;</button><button class="slider-btn next" onclick="slide('w10','t10',1)">&#8250;</button></div>
+      <div class="act-body"><div class="act-name">Animal Flower Cave - North Point</div><div class="act-price">~$10 per adult, babies free</div><div class="act-note">Sea cave with natural swimming pool at island's northernmost tip. Sea anemones in pools. Views are breathtaking. Baby carrier needed on steps.</div><div class="btn-links"><a class="btn btn-gray" href="https://www.google.com/search?q=Animal+Flower+Cave+Barbados" target="_blank">Google</a><a class="btn btn-gray" href="https://www.tiktok.com/search?q=Animal+Flower+Cave+Barbados" target="_blank">TikTok</a></div></div>
     </div>
-
     <div class="act-card">
-      <div class="slider-wrap" id="w11">
-        <div class="slider-track" id="t11">
-          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Belize Carnival September"
-               onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>🎭</span></div>'">
-        </div>
-        <button class="slider-btn prev" onclick="slide('w11','t11',-1)">‹</button>
-        <button class="slider-btn next" onclick="slide('w11','t11',1)">›</button>
-      </div>
-      <div class="act-body">
-        <div class="act-name">Belize Carnival — September 10 Week</div>
-        <div class="act-price">Free to watch</div>
-        <div class="act-note">Annual Carnival takes place in September — music, costume parades, dancing. September 10 is St. George's Caye Day national holiday.</div>
-        <div class="btn-links">
-          <a class="btn btn-gray" href="https://www.google.com/search?q=Belize+Carnival+September+2026" target="_blank">Google</a>
-          <a class="btn btn-gray" href="https://www.tiktok.com/search?q=Belize+Carnival" target="_blank">TikTok</a>
-        </div>
-      </div>
+      <div class="slider-wrap" id="w11"><div class="slider-track" id="t11"><img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80" alt="Paynes Bay" onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>&#127958;</span></div>'"></div><button class="slider-btn prev" onclick="slide('w11','t11',-1)">&#8249;</button><button class="slider-btn next" onclick="slide('w11','t11',1)">&#8250;</button></div>
+      <div class="act-body"><div class="act-name">Paynes Bay - Best Baby Beach</div><div class="act-price">Free, beach chair rental ~$10</div><div class="act-note">Calm shallow turquoise water on the Platinum Coast. No waves, soft sand, crystal clear water. Ideal for babies and toddlers. A must with a 13-month-old.</div><div class="btn-links"><a class="btn btn-gray" href="https://www.google.com/search?q=Paynes+Bay+Barbados" target="_blank">Google</a><a class="btn btn-gray" href="https://www.tiktok.com/search?q=Paynes+Bay+Barbados" target="_blank">TikTok</a></div></div>
     </div>
-
     <div class="act-card">
-      <div class="slider-wrap" id="w12">
-        <div class="slider-track" id="t12">
-          <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=600&q=80" alt="Zip lining Belize"
-               onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>🌳</span></div>'">
-        </div>
-        <button class="slider-btn prev" onclick="slide('w12','t12',-1)">‹</button>
-        <button class="slider-btn next" onclick="slide('w12','t12',1)">›</button>
-      </div>
-      <div class="act-body">
-        <div class="act-name">Rainforest Zip-lining & Canopy Tours</div>
-        <div class="act-price">$60–$100/person</div>
-        <div class="act-note">Several operators near San Ignacio and Placencia. Sep = lush jungle views, often empty. Min age applies for zip lines — adults only activity.</div>
-        <div class="btn-links">
-          <a class="btn btn-gray" href="https://www.google.com/search?q=Belize+zip+line+tours" target="_blank">Google</a>
-          <a class="btn btn-gray" href="https://www.tiktok.com/search?q=Belize+zip+line" target="_blank">TikTok</a>
-        </div>
-      </div>
+      <div class="slider-wrap" id="w12"><div class="slider-track" id="t12"><img src="https://images.unsplash.com/photo-1534073828943-f801091bb18c?w=600&q=80" alt="Wildlife Reserve" onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>&#128018;</span></div>'"></div><button class="slider-btn prev" onclick="slide('w12','t12',-1)">&#8249;</button><button class="slider-btn next" onclick="slide('w12','t12',1)">&#8250;</button></div>
+      <div class="act-body"><div class="act-name">Barbados Wildlife Reserve</div><div class="act-price">~$15 per adult, under 2 free</div><div class="act-note">Walk freely among green monkeys, deer, tortoises, parrots, and peacocks in a mahogany forest. Extremely baby-friendly - animals roam loose on paved paths.</div><div class="btn-links"><a class="btn btn-gray" href="https://www.google.com/search?q=Barbados+Wildlife+Reserve" target="_blank">Google</a><a class="btn btn-gray" href="https://www.youtube.com/results?search_query=Barbados+Wildlife+Reserve+monkeys" target="_blank">YouTube</a></div></div>
     </div>
-
   </div>
 </div>
-
-<!-- RESTAURANTS -->
 <div class="section">
-  <div class="section-title">🍽️ Restaurants</div>
+  <div class="section-title">Restaurants</div>
   <div class="resto-grid">
-    <div class="resto-card">
-      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Palapa Bar Ambergris"
-           style="width:100%;height:160px;object-fit:cover"
-           onerror="this.parentElement.innerHTML='<div class=slide-fallback style=height:160px><span>🍤</span></div>'+this.nextElementSibling.outerHTML">
-      <div class="resto-body">
-        <div class="resto-name">Palapa Bar & Grill — Ambergris Caye</div>
-        <div class="resto-price">$$ — Mid-Range</div>
-        <div class="resto-note">Iconic over-water bar and restaurant. Fresh seafood, lobster tacos, great rum punch. Casual and baby-friendly.</div>
-        <div class="btn-links">
-          <a class="btn btn-gray" href="https://www.google.com/search?q=Palapa+Bar+Ambergris+Caye+Belize" target="_blank">Google</a>
-          <a class="btn btn-gray" href="https://www.tripadvisor.com/Restaurant_Review-g291735-Palapa_Bar-Reviews-Ambergris_Caye.html" target="_blank">TripAdvisor</a>
-        </div>
-      </div>
-    </div>
-    <div class="resto-card">
-      <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=600&q=80" alt="Elvi's Kitchen"
-           style="width:100%;height:160px;object-fit:cover"
-           onerror="this.style.display='none'">
-      <div class="resto-body">
-        <div class="resto-name">Elvi's Kitchen — San Pedro</div>
-        <div class="resto-price">$$ — Mid-Range</div>
-        <div class="resto-note">Belize institution since 1974. Coconut shrimp, snapper, and stewed chicken. Open-air with sand floors. Very family-friendly.</div>
-        <div class="btn-links">
-          <a class="btn btn-gray" href="https://www.google.com/search?q=Elvi's+Kitchen+Belize" target="_blank">Google</a>
-          <a class="btn btn-gray" href="https://www.tripadvisor.com" target="_blank">TripAdvisor</a>
-        </div>
-      </div>
-    </div>
-    <div class="resto-card">
-      <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=600&q=80" alt="Ko-Ox Han-Nah San Ignacio"
-           style="width:100%;height:160px;object-fit:cover"
-           onerror="this.style.display='none'">
-      <div class="resto-body">
-        <div class="resto-name">Ko-Ox Han-Nah — San Ignacio</div>
-        <div class="resto-price">$ — Budget Friendly</div>
-        <div class="resto-note">Best local Belizean food inland. Rice and beans, stewed chicken, tamales. Authentic and baby-friendly seating.</div>
-        <div class="btn-links">
-          <a class="btn btn-gray" href="https://www.google.com/search?q=Ko-Ox+Han-Nah+San+Ignacio+Belize" target="_blank">Google</a>
-          <a class="btn btn-gray" href="https://www.tripadvisor.com" target="_blank">TripAdvisor</a>
-        </div>
-      </div>
-    </div>
-    <div class="resto-card">
-      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" alt="Placencia restaurant beach"
-           style="width:100%;height:160px;object-fit:cover"
-           onerror="this.style.display='none'">
-      <div class="resto-body">
-        <div class="resto-name">Tutti Frutti — Caye Caulker</div>
-        <div class="resto-price">$ — Very Affordable</div>
-        <div class="resto-note">Legendary lobster ceviche, fresh fish tacos, tropical fruit smoothies. Tiny but iconic. Locals' go-to on the caye.</div>
-        <div class="btn-links">
-          <a class="btn btn-gray" href="https://www.google.com/search?q=Tutti+Frutti+Caye+Caulker+Belize" target="_blank">Google</a>
-          <a class="btn btn-gray" href="https://www.tripadvisor.com" target="_blank">TripAdvisor</a>
-        </div>
-      </div>
-    </div>
-    <div class="resto-card">
-      <img src="https://images.unsplash.com/photo-1619546813926-a78fa6372cd2?w=600&q=80" alt="Fine dining Belize"
-           style="width:100%;height:160px;object-fit:cover"
-           onerror="this.style.display='none'">
-      <div class="resto-body">
-        <div class="resto-name">Chaa Creek Restaurant — San Ignacio</div>
-        <div class="resto-price">$$$ — Upscale</div>
-        <div class="resto-note">Jungle-view fine dining, locally sourced farm-to-table cuisine. Best dinner experience inland. Resort-level service.</div>
-        <div class="btn-links">
-          <a class="btn btn-gray" href="https://www.google.com/search?q=Chaa+Creek+restaurant+Belize" target="_blank">Google</a>
-          <a class="btn btn-gray" href="https://www.chaacreek.com/dining" target="_blank">Website</a>
-        </div>
-      </div>
-    </div>
-    <div class="resto-card">
-      <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80" alt="Coconut beach bar"
-           style="width:100%;height:160px;object-fit:cover"
-           onerror="this.style.display='none'">
-      <div class="resto-body">
-        <div class="resto-name">Street Food — Rice & Beans Stands</div>
-        <div class="resto-price">$ — $3–$8 per plate</div>
-        <div class="resto-note">Belizean street food: stewed chicken + rice + beans + plantain. Safe if bought from busy, popular stands. Sept = great local food culture.</div>
-        <div class="btn-links">
-          <a class="btn btn-gray" href="https://www.google.com/search?q=Belize+street+food" target="_blank">Google</a>
-          <a class="btn btn-gray" href="https://www.tiktok.com/search?q=Belize+food" target="_blank">TikTok</a>
-        </div>
-      </div>
-    </div>
+    <div class="resto-card"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="The Tides" style="width:100%;height:160px;object-fit:cover" onerror="this.style.display='none'"><div class="resto-body"><div class="resto-name">The Tides - Holetown</div><div class="resto-price">Upscale Beachfront</div><div class="resto-note">Romantic open-air restaurant on Platinum Coast. Fresh Caribbean seafood, flying fish, lobster. Baby-friendly and gorgeous setting.</div><div class="btn-links"><a class="btn btn-gray" href="https://www.google.com/search?q=The+Tides+Restaurant+Barbados" target="_blank">Google</a><a class="btn btn-gray" href="https://www.tripadvisor.com" target="_blank">TripAdvisor</a></div></div></div>
+    <div class="resto-card"><img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=600&q=80" alt="Oistins" style="width:100%;height:160px;object-fit:cover" onerror="this.style.display='none'"><div class="resto-body"><div class="resto-name">Oistins Fish Fry Market</div><div class="resto-price">Budget Street Food</div><div class="resto-note">Friday nights - grilled flying fish, macaroni pie, rum punch, live music. Outdoor picnic tables, totally family-friendly.</div><div class="btn-links"><a class="btn btn-gray" href="https://www.google.com/search?q=Oistins+Fish+Fry+Barbados" target="_blank">Google</a><a class="btn btn-gray" href="https://www.tripadvisor.com" target="_blank">TripAdvisor</a></div></div></div>
+    <div class="resto-card"><img src="https://images.unsplash.com/photo-1619546813926-a78fa6372cd2?w=600&q=80" alt="East coast cafe" style="width:100%;height:160px;object-fit:cover" onerror="this.style.display='none'"><div class="resto-body"><div class="resto-name">Surfers Bay Cafe - Bathsheba</div><div class="resto-price">Casual Local Dining</div><div class="resto-note">Incredible east coast views, fresh catch of the day, flying fish cutters. Barefoot vibe, very welcoming to families with babies.</div><div class="btn-links"><a class="btn btn-gray" href="https://www.google.com/search?q=Bathsheba+restaurant+Barbados" target="_blank">Google</a><a class="btn btn-gray" href="https://www.tripadvisor.com" target="_blank">TripAdvisor</a></div></div></div>
+    <div class="resto-card"><img src="https://images.unsplash.com/photo-1627483297886-49710ae1fc22?w=600&q=80" alt="Lobster Alive" style="width:100%;height:160px;object-fit:cover" onerror="this.style.display='none'"><div class="resto-body"><div class="resto-name">Lobster Alive - Bridgetown</div><div class="resto-price">Seafood Specialist</div><div class="resto-note">Famous Sunday lunch on the waterfront. Live music, lobster from the tank, steel pan entertainment. Hugely family-friendly atmosphere.</div><div class="btn-links"><a class="btn btn-gray" href="https://www.google.com/search?q=Lobster+Alive+Barbados" target="_blank">Google</a><a class="btn btn-gray" href="https://www.tripadvisor.com" target="_blank">TripAdvisor</a></div></div></div>
+    <div class="resto-card"><img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80" alt="Champers" style="width:100%;height:160px;object-fit:cover" onerror="this.style.display='none'"><div class="resto-body"><div class="resto-name">Champers Wine Bar and Restaurant</div><div class="resto-price">Upscale Clifftop Dining</div><div class="resto-note">Perched on a cliff above the sea in Hastings. One of Barbados most romantic restaurants. Caribbean cuisine with excellent wine list.</div><div class="btn-links"><a class="btn btn-gray" href="https://www.google.com/search?q=Champers+Barbados" target="_blank">Google</a><a class="btn btn-gray" href="https://www.tripadvisor.com" target="_blank">TripAdvisor</a></div></div></div>
+    <div class="resto-card"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" alt="Local food" style="width:100%;height:160px;object-fit:cover" onerror="this.style.display='none'"><div class="resto-body"><div class="resto-name">Cuz's Fish Shack and Rum Shops</div><div class="resto-price">Budget - Very Affordable</div><div class="resto-note">Cuz's legendary marlin sandwiches near Hilton. Local rum shops serve cheap food and Banks beer. Authentic Bajan experience at street level.</div><div class="btn-links"><a class="btn btn-gray" href="https://www.google.com/search?q=Cuz%27s+Fish+Shack+Barbados" target="_blank">Google</a><a class="btn btn-gray" href="https://www.tiktok.com/search?q=Barbados+local+food" target="_blank">TikTok</a></div></div></div>
   </div>
 </div>
-
-<!-- FOOD COSTS -->
 <div class="section">
-  <div class="section-title">🛒 Food Costs at a Glance</div>
+  <div class="section-title">Food Costs at a Glance</div>
   <div class="card" style="padding:0;overflow:hidden">
     <table class="food-table">
-      <thead><tr><th>Item</th><th>USD</th><th>BZD</th><th>Notes</th></tr></thead>
+      <thead><tr><th>Item</th><th>USD</th><th>BDS</th><th>Notes</th></tr></thead>
       <tbody>
-        <tr><td>Street plate (rice, beans, chicken)</td><td>$3–$5</td><td>BZ$6–10</td><td>Most filling affordable meal</td></tr>
-        <tr><td>Local restaurant lunch</td><td>$8–$15</td><td>BZ$16–30</td><td>Per person, with drink</td></tr>
-        <tr><td>Mid-range dinner (2 adults)</td><td>$30–$55</td><td>BZ$60–110</td><td>Includes drinks</td></tr>
-        <tr><td>Upscale dinner (2 adults)</td><td>$70–$120</td><td>BZ$140–240</td><td>Resort dining</td></tr>
-        <tr><td>Lobster dish (in season)</td><td>$18–$35</td><td>BZ$36–70</td><td>Sep = lobster season!</td></tr>
-        <tr><td>Beer / Belikin</td><td>$2–$4</td><td>BZ$4–8</td><td>Belize's national beer</td></tr>
-        <tr><td>Rum punch cocktail</td><td>$5–$8</td><td>BZ$10–16</td><td>At beach bars</td></tr>
-        <tr><td>Bottled water</td><td>$1–$2</td><td>BZ$2–4</td><td>Always buy bottled</td></tr>
-        <tr><td>Daily food budget (2 adults)</td><td>$50–$100</td><td>BZ$100–200</td><td>Mid-range estimate</td></tr>
+        <tr><td>Flying fish cutter sandwich</td><td>$3-$6</td><td>BDS$6-12</td><td>Bajan staple - iconic</td></tr>
+        <tr><td>Oistins fish plate</td><td>$8-$15</td><td>BDS$16-30</td><td>Best value meal on island</td></tr>
+        <tr><td>Local restaurant lunch per person</td><td>$10-$18</td><td>BDS$20-36</td><td>With drink</td></tr>
+        <tr><td>Mid-range dinner 2 adults</td><td>$40-$70</td><td>BDS$80-140</td><td>Waterfront dining</td></tr>
+        <tr><td>Upscale dinner 2 adults</td><td>$80-$150</td><td>BDS$160-300</td><td>Sandy Lane level</td></tr>
+        <tr><td>Grilled lobster</td><td>$25-$45</td><td>BDS$50-90</td><td>Excellent and affordable</td></tr>
+        <tr><td>Banks Beer</td><td>$2-$4</td><td>BDS$4-8</td><td>Barbados national beer</td></tr>
+        <tr><td>Rum punch cocktail</td><td>$5-$10</td><td>BDS$10-20</td><td>Try Mount Gay rum</td></tr>
+        <tr><td>Tap water</td><td>Free</td><td>Free</td><td>Safe to drink unlike most Caribbean islands</td></tr>
+        <tr><td>Daily food budget 2 adults</td><td>$60-$120</td><td>BDS$120-240</td><td>Mid-range eating daily</td></tr>
       </tbody>
     </table>
   </div>
 </div>
-
-<!-- INSIDER TIPS -->
 <div class="section">
-  <div class="section-title">💡 Insider Tips</div>
+  <div class="section-title">Insider Tips</div>
   <div class="tips-grid">
-    <div class="tip-card"><div class="tip-icon">🦟</div><div class="tip-title">Mosquito Protection is Non-Negotiable</div><div class="tip-text">DEET 30%+ for adults. Use Picaridin-based repellent on baby clothing and gear — NOT directly on baby's skin. Dengue risk is real in Sep.</div></div>
-    <div class="tip-card"><div class="tip-icon">🌀</div><div class="tip-title">Monitor NOAA Daily</div><div class="tip-text">Download the NOAA app and Windy before departure. Check forecasts every morning in September. Have an inland retreat plan ready (San Ignacio is safe).</div></div>
-    <div class="tip-card"><div class="tip-icon">📱</div><div class="tip-title">Get a Local SIM Card</div><div class="tip-text">Belize Telemedia (BTL) sells affordable SIM cards at the airport. $20 USD gets you data for a week. Cell coverage is decent on the cayes and towns.</div></div>
-    <div class="tip-card"><div class="tip-icon">💵</div><div class="tip-title">USD Accepted Everywhere</div><div class="tip-text">BZD is fixed at exactly 2:1 USD — you'll always get BZ$2 per US$1. USD is accepted almost everywhere. Change is often given in BZD.</div></div>
-    <div class="tip-card"><div class="tip-icon">🐊</div><div class="tip-title">Respect Wildlife Warnings</div><div class="tip-text">Belize has crocodiles in lagoons and rivers — do NOT swim in non-designated areas. Sep rains push crocs toward populated areas.</div></div>
-    <div class="tip-card"><div class="tip-icon">⛵</div><div class="tip-title">Water Taxis Can Cancel</div><div class="tip-text">In September storms, water taxi service between mainland and cayes suspends. Always have a mainland backup plan and never travel to an island during storm warning.</div></div>
-    <div class="tip-card"><div class="tip-icon">🏥</div><div class="tip-title">Medical Evacuation Insurance is Essential</div><div class="tip-text">Belize has no advanced trauma care. Serious illness requires medevac to Houston or Miami. Get MedJetAssist or similar evacuation coverage.</div></div>
-    <div class="tip-card"><div class="tip-icon">🎪</div><div class="tip-title">Carnival is September 10 Week</div><div class="tip-text">The annual Carnival and St. George's Caye Day (Sep 10) national holiday make September culturally vibrant. Belize City and Belmopan host the biggest celebrations.</div></div>
-    <div class="tip-card"><div class="tip-icon">🦞</div><div class="tip-title">Lobster Season Active</div><div class="tip-text">Lobster season in Belize runs June to February. September is prime time — order lobster everywhere, it's abundant, fresh, and reasonably priced.</div></div>
-    <div class="tip-card"><div class="tip-icon">☔</div><div class="tip-title">Rain Is Morning + Overnight</div><div class="tip-text">Typical September pattern: rain in early morning and overnight; afternoons often clear. Schedule outdoor activities for 10 AM–3 PM for best weather windows.</div></div>
-    <div class="tip-card"><div class="tip-icon">🌿</div><div class="tip-title">Inland Is Safer from Storms</div><div class="tip-text">San Ignacio (Cayo District) is the go-to inland retreat. Higher elevation, Maya ruins, jungle lodges, and river activities — plus hurricane-safe location.</div></div>
-    <div class="tip-card"><div class="tip-icon">💳</div><div class="tip-title">Cash-First Destination</div><div class="tip-text">Many smaller restaurants, tour operators, and markets are cash-only. ATMs exist in San Pedro and Belize City but can be unreliable. Bring $400–$600 USD cash.</div></div>
+    <div class="tip-card"><div class="tip-icon">&#127944;</div><div class="tip-title">Swim West Coast Only</div><div class="tip-text">The calm Caribbean west side (Paynes Bay, Brownes Beach) is safe for babies. The Atlantic east side has dangerous riptides - scenic to look at, never swim there.</div></div>
+    <div class="tip-card"><div class="tip-icon">&#128652;</div><div class="tip-title">Buses Are Cheap</div><div class="tip-text">Government buses cost ~$0.75 per ride and cover the whole island. If left-side driving feels stressful, buses are a fun and reliable alternative.</div></div>
+    <div class="tip-card"><div class="tip-icon">&#128167;</div><div class="tip-title">Tap Water Is Safe</div><div class="tip-text">Barbados has one of the best water quality records in the Caribbean. Tap water is completely safe - a big plus with a baby. No bottled water stress.</div></div>
+    <div class="tip-card"><div class="tip-icon">&#128018;</div><div class="tip-title">Green Monkeys Everywhere</div><div class="tip-text">Wild green monkeys roam freely on the east coast and wildlife reserve. Keep your baby at a safe distance - they can snatch food and may bite.</div></div>
+    <div class="tip-card"><div class="tip-icon">&#128247;</div><div class="tip-title">Cover Up in Town</div><div class="tip-text">No beachwear in town, shops, or restaurants. Pack a light breathable cover-up or shirt for off-beach exploring. Barbados has a conservative dress code in public.</div></div>
+    <div class="tip-card"><div class="tip-icon">&#127783;</div><div class="tip-title">Rain Stops Fast</div><div class="tip-text">September showers usually last 20-30 minutes then sunshine returns. Bring a light poncho and wait it out. Mornings are almost always the clearest part of the day.</div></div>
+    <div class="tip-card"><div class="tip-icon">&#129432;</div><div class="tip-title">Dengue Risk - Use Repellent</div><div class="tip-text">Dengue mosquitoes are active especially in wet season. DEET for adults; Picaridin spray on baby's clothing. Extra vigilant at dawn and dusk.</div></div>
+    <div class="tip-card"><div class="tip-icon">&#128181;</div><div class="tip-title">USD Widely Accepted</div><div class="tip-text">USD accepted almost everywhere at the fixed 2:1 BDS rate. ATMs dispense BDS dollars. Both currencies work everywhere on the island.</div></div>
+    <div class="tip-card"><div class="tip-icon">&#128400;</div><div class="tip-title">Bajans Are Famously Friendly</div><div class="tip-text">Barbadians are warm, helpful, and proud of their island. Always greet people with good morning or good afternoon before any conversation - it's expected and appreciated.</div></div>
+    <div class="tip-card"><div class="tip-icon">&#127929;</div><div class="tip-title">Sunday Is Social Day</div><div class="tip-text">Sundays in Barbados are lively - Lobster Alive lunch, rum shops gathering, relaxed island pace. Lobster Alive Sunday lunch with live music is unmissable.</div></div>
+    <div class="tip-card"><div class="tip-icon">&#128737;</div><div class="tip-title">No Hurricane Since 1955</div><div class="tip-text">Barbados sits at the southeastern edge of the Caribbean hurricane zone. Storms historically veer north before reaching the island. Lowest hurricane risk in the region.</div></div>
+    <div class="tip-card"><div class="tip-icon">&#127925;</div><div class="tip-title">Rihanna's Homeland</div><div class="tip-text">Barbados is Rihanna's birthplace and they are very proud of it. A national holiday was named in her honor. Look for Clara's ice cream near Oistins - her childhood favorite.</div></div>
   </div>
 </div>
-
-<!-- INFANT TRAVEL NOTES -->
 <div class="section">
-  <div class="section-title">👶 Infant Travel Notes</div>
+  <div class="section-title">Infant Travel Notes</div>
   <div class="infant-card">
     <h3>Your daughter will be approximately 13 months old in September 2026</h3>
     <ul style="color:var(--text2);font-size:14px;padding-left:16px;line-height:2">
-      <li><strong>Lap infant status:</strong> Under 24 months — no separate seat needed on flights (~10% adult fare each way)</li>
-      <li><strong>Documents needed:</strong> Birth certificate required at Belize immigration; if only one parent travels, bring notarized consent letter</li>
-      <li><strong>Bug protection:</strong> Use Picaridin on her clothing only — DEET is not safe for infants under 2. Keep her fully covered during peak mosquito hours (dawn/dusk).</li>
-      <li><strong>Hydration + heat:</strong> September is hot and humid. Carry water constantly; watch for heat signs in infant (excessive fussiness, no wet diapers).</li>
-      <li><strong>Malaria precaution:</strong> Consult her pediatrician before travel — infant malaria protection options are very limited; avoiding jungle interiors at dawn/dusk is safest.</li>
-      <li><strong>Medical care:</strong> Bring a full pediatric first aid kit, infant fever/pain medication, oral rehydration salts. Advanced infant care is unavailable in Belize.</li>
-      <li><strong>Baby gear:</strong> Pack a baby carrier/soft carrier (better than a stroller on uneven cayes and jungle paths). Most resorts provide cribs on request.</li>
-      <li><strong>Hurricane plan:</strong> In September, always have a solid evacuation plan. Never be stranded on a caye with an infant during a storm watch — move inland immediately.</li>
-      <li><strong>Baby-friendly areas:</strong> Ambergris Caye (golf carts, flat ground), Placencia (calm lagoon side), Chaa Creek eco-resort. Avoid remote jungle lodges without solid access.</li>
+      <li>Lap infant: Under 24 months, no seat needed on flights (~10% adult fare each way)</li>
+      <li>Documents: Birth certificate required at immigration; if solo parent bring notarized consent letter</li>
+      <li>Best beaches for baby: Paynes Bay (calmest water), Brownes Beach (free), Crane Beach south pool (shallow and protected)</li>
+      <li>Tap water safe to drink: One of very few Caribbean islands where this is true - huge win for mixing baby food and formula</li>
+      <li>No malaria risk in Barbados: Much simpler pediatric precautions than other Caribbean destinations</li>
+      <li>Bug protection: Picaridin spray on clothing not DEET directly on skin. Long sleeves and pants at dawn and dusk.</li>
+      <li>Sugar Bay creche: If staying at Sugar Bay, dedicated creche for babies 4 months to 3 years with trained staff. Gives you and your wife proper beach time.</li>
+      <li>Stroller: Bridgetown and west coast towns are stroller-friendly. East coast rougher - baby carrier preferred.</li>
+      <li>Sun protection: Barbados sun is intense. Baby SPF 50+, long-sleeve rash guard, shade breaks every 30-40 minutes.</li>
+      <li>Healthcare: Queen Elizabeth Hospital in Bridgetown is the best hospital in the region for a Caribbean island - genuine reassurance if anything goes wrong.</li>
     </ul>
   </div>
 </div>
-
-<!-- COST ESTIMATE -->
 <div class="section">
-  <div class="section-title">💰 Full Trip Cost Estimate (7 nights, 2 Adults + Lap Infant)</div>
+  <div class="section-title">Full Trip Cost Estimate - 7 Nights, 2 Adults + Lap Infant</div>
   <div class="cost-grid">
-    <div class="cost-card"><div class="cost-label">Flights (2 adults RT)</div><div class="cost-val">$1,200–$1,800</div><div class="cost-note">JFK to BZE, 1-stop; lap infant ~$200 extra</div></div>
-    <div class="cost-card"><div class="cost-label">Hotel / Airbnb</div><div class="cost-val">$840–$2,800</div><div class="cost-note">$120–$400/night × 7 nights, Sep discounts</div></div>
-    <div class="cost-card"><div class="cost-label">Car Rental</div><div class="cost-val">$315–$840</div><div class="cost-note">$45–$120/day × 7 days; 4WD recommended</div></div>
-    <div class="cost-card"><div class="cost-label">Food (2 adults)</div><div class="cost-val">$350–$700</div><div class="cost-note">~$50–$100/day mid-range eating</div></div>
-    <div class="cost-card"><div class="cost-label">Tours & Activities</div><div class="cost-val">$400–$700</div><div class="cost-note">Reef, ruins, cave tubing, wildlife tours</div></div>
-    <div class="cost-card"><div class="cost-label">Water taxis</div><div class="cost-val">$60–$120</div><div class="cost-note">Mainland to Cayes round trips</div></div>
-    <div class="cost-card"><div class="cost-label">Travel Insurance</div><div class="cost-val">$150–$300</div><div class="cost-note">MANDATORY in September; include medevac coverage</div></div>
-    <div class="cost-card"><div class="cost-label">Misc / tips / shopping</div><div class="cost-val">$200–$400</div><div class="cost-note">Cash for tips, souvenirs, pharmacy</div></div>
+    <div class="cost-card"><div class="cost-label">Flights 2 adults RT</div><div class="cost-val">$800-$1,400</div><div class="cost-note">JFK to BGI nonstop; infant ~$150-200 extra</div></div>
+    <div class="cost-card"><div class="cost-label">Hotel / Airbnb</div><div class="cost-val">$700-$2,800</div><div class="cost-note">$100-$400 per night x 7; Sep 40-50% off peak</div></div>
+    <div class="cost-card"><div class="cost-label">Car Rental</div><div class="cost-val">$350-$700</div><div class="cost-note">$50-$100 per day x 7; or buses at $0.75 per ride</div></div>
+    <div class="cost-card"><div class="cost-label">Food 2 adults</div><div class="cost-val">$420-$840</div><div class="cost-note">~$60-$120 per day mid-range eating</div></div>
+    <div class="cost-card"><div class="cost-label">Tours and Activities</div><div class="cost-val">$300-$600</div><div class="cost-note">Cave, turtles, catamaran, rum distillery</div></div>
+    <div class="cost-card"><div class="cost-label">Travel Insurance</div><div class="cost-val">$120-$250</div><div class="cost-note">Always buy, covers weather and medical</div></div>
+    <div class="cost-card"><div class="cost-label">Misc / tips / shopping</div><div class="cost-val">$150-$300</div><div class="cost-note">Duty-free rum, tips, beach gear</div></div>
+    <div class="cost-card"><div class="cost-label">Sep Savings vs Peak</div><div class="cost-val">Save $1,000+</div><div class="cost-note">Hotels avg 40-50% cheaper than Dec-Apr</div></div>
   </div>
   <div class="total-card">
-    <div><div class="total-label">Estimated Total (budget)</div><div class="total-val">$3,500 – $7,600</div></div>
-    <div style="color:var(--text3);font-size:13px;max-width:320px">Low end = Airbnb + budget meals + limited tours. High end = 4-5 star resort + fine dining + full activity slate. September low season = significant savings vs dry season.</div>
+    <div><div class="total-label">Estimated Total - Budget to Mid-Range</div><div class="total-val">$2,840 - $6,890</div></div>
+    <div style="color:var(--text3);font-size:13px;max-width:320px">Low end: Airbnb plus local food plus selective tours. High end: Sandy Lane plus fine dining plus full excursion schedule. September is the best value month of the year.</div>
   </div>
 </div>
-
-<!-- CHECKLIST -->
 <div class="section">
-  <div class="section-title">✅ Pre-Departure Checklist</div>
+  <div class="section-title">Pre-Departure Checklist</div>
   <div class="checklist">
-    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))">
-      <div class="check-box"></div><div class="check-label">Buy travel insurance with hurricane + medevac coverage</div>
-    </div>
-    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))">
-      <div class="check-box"></div><div class="check-label">Book flexible / refundable flights and hotel</div>
-    </div>
-    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))">
-      <div class="check-box"></div><div class="check-label">Confirm notarized consent letter if 1 parent traveling with infant</div>
-    </div>
-    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))">
-      <div class="check-box"></div><div class="check-label">All passports valid 6+ months past return date</div>
-    </div>
-    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))">
-      <div class="check-box"></div><div class="check-label">Visit travel medicine doctor (malaria, Hep A, Typhoid, Zika guidance)</div>
-    </div>
-    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))">
-      <div class="check-box"></div><div class="check-label">Pediatrician consult for infant travel to Belize</div>
-    </div>
-    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))">
-      <div class="check-box"></div><div class="check-label">Download NOAA + Windy apps for hurricane tracking</div>
-    </div>
-    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))">
-      <div class="check-box"></div><div class="check-label">Pack DEET 30%+ (adults), Picaridin (for infant clothing)</div>
-    </div>
-    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))">
-      <div class="check-box"></div><div class="check-label">Bring all prescription medications + extras for delays</div>
-    </div>
-    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))">
-      <div class="check-box"></div><div class="check-label">Infant first aid kit: fever reducer, ORS sachets, thermometer</div>
-    </div>
-    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))">
-      <div class="check-box"></div><div class="check-label">Baby carrier / soft carrier (stroller impractical in Belize)</div>
-    </div>
-    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))">
-      <div class="check-box"></div><div class="check-label">Request crib at hotel/Airbnb in advance</div>
-    </div>
-    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))">
-      <div class="check-box"></div><div class="check-label">Bring $400–$600 USD cash for cash-only vendors</div>
-    </div>
-    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))">
-      <div class="check-box"></div><div class="check-label">Register with STEP program (U.S. Embassy notifications)</div>
-    </div>
-    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))">
-      <div class="check-box"></div><div class="check-label">Pack rain jacket + waterproof bags for September rain</div>
-    </div>
-    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))">
-      <div class="check-box"></div><div class="check-label">Confirm hurricane cancellation policy at all bookings</div>
-    </div>
-    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))">
-      <div class="check-box"></div><div class="check-label">Know your inland storm retreat: San Ignacio, Chaa Creek</div>
-    </div>
-    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))">
-      <div class="check-box"></div><div class="check-label">Save U.S. Embassy Belize contact: +(501) 822-4011</div>
-    </div>
+    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))"><div class="check-box"></div><div class="check-label">Book nonstop JFK to BGI flight on JetBlue, AA, or Delta</div></div>
+    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))"><div class="check-box"></div><div class="check-label">Buy travel insurance with weather and medical coverage</div></div>
+    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))"><div class="check-box"></div><div class="check-label">Passports valid 6+ months past return date</div></div>
+    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))"><div class="check-box"></div><div class="check-label">Baby birth certificate for immigration</div></div>
+    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))"><div class="check-box"></div><div class="check-label">Notarized consent letter if solo parent traveling with infant</div></div>
+    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))"><div class="check-box"></div><div class="check-label">Visit travel medicine doctor (Hep A, Typhoid, Zika advice)</div></div>
+    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))"><div class="check-box"></div><div class="check-label">Pediatrician consult before travel</div></div>
+    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))"><div class="check-box"></div><div class="check-label">Pack DEET 30%+ for adults; Picaridin for baby clothing</div></div>
+    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))"><div class="check-box"></div><div class="check-label">Baby SPF 50+ sunscreen and rash guard</div></div>
+    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))"><div class="check-box"></div><div class="check-label">Infant first aid kit, fever reducer, thermometer</div></div>
+    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))"><div class="check-box"></div><div class="check-label">Baby carrier (better than stroller on east coast)</div></div>
+    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))"><div class="check-box"></div><div class="check-label">Request crib at hotel or Airbnb before arrival</div></div>
+    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))"><div class="check-box"></div><div class="check-label">Light cover-up for in-town modesty dress code</div></div>
+    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))"><div class="check-box"></div><div class="check-label">Pack lightweight rain poncho for brief showers</div></div>
+    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))"><div class="check-box"></div><div class="check-label">Register with STEP program for U.S. Embassy alerts</div></div>
+    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))"><div class="check-box"></div><div class="check-label">Save U.S. Embassy Barbados number: +1 246-227-4000</div></div>
+    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))"><div class="check-box"></div><div class="check-label">Book Sugar Bay creche in advance if staying there</div></div>
+    <div class="check-item" onclick="toggle(this.querySelector('.check-box'))"><div class="check-box"></div><div class="check-label">Reserve Friday Oistins Fish Fry and Sunday Lobster Alive</div></div>
   </div>
 </div>
-
-</div><!-- /container -->
-
+</div>
 <footer>
-  <div>🇧🇿 Belize Travel Guide — September 2026 &nbsp;|&nbsp; 2 Adults + 1 Infant (13 months)</div>
-  <div style="margin-top:6px">Prices and advisories current as of March 2026. Always verify before travel.</div>
+  <div>Barbados Travel Guide - September 2026 | 2 Adults + 1 Infant (13 months)</div>
+  <div style="margin-top:6px">Prices and advisories current as of March 2026. Always verify before travel. No direct hurricane hit on Barbados since 1955.</div>
 </footer>
-
 <script>
-// CURRENCY CONVERTER
-const RATE = 2.00;
-const SYMBOL = 'BZ$';
-const CURRENCY_NAME = 'Belize Dollar (BZD)';
-const input = document.getElementById('usd-input');
-const result = document.getElementById('local-result');
-const rateNote = document.getElementById('rate-note');
-function convert() {
-  const val = parseFloat(input.value) || 0;
-  result.textContent = SYMBOL + (val * RATE).toFixed(2);
-}
-rateNote.textContent = '1 USD = ' + RATE + ' ' + CURRENCY_NAME;
-input.addEventListener('input', convert);
-function setAmt(v) { input.value = v; convert(); }
+const RATE=2.00,SYMBOL='BDS$',CURRENCY_NAME='Barbadian Dollar (BBD)';
+const input=document.getElementById('usd-input');
+const result=document.getElementById('local-result');
+const rateNote=document.getElementById('rate-note');
+function convert(){const v=parseFloat(input.value)||0;result.textContent=SYMBOL+(v*RATE).toFixed(2);}
+rateNote.textContent='1 USD = '+RATE+' '+CURRENCY_NAME;
+input.addEventListener('input',convert);
+function setAmt(v){input.value=v;convert();}
 convert();
-
-// IMAGE SLIDERS
-const sliderState = {};
-function slide(wrapId, trackId, dir) {
-  const wrap = document.getElementById(wrapId);
-  const track = document.getElementById(trackId);
-  const total = track.children.length;
-  if (!sliderState[wrapId]) sliderState[wrapId] = 0;
-  sliderState[wrapId] = (sliderState[wrapId] + dir + total) % total;
-  const idx = sliderState[wrapId];
-  track.style.transform = 'translateX(-' + (idx * 100) + '%)';
-  const dotsEl = wrap.querySelector('.slider-dots');
-  if (dotsEl) dotsEl.querySelectorAll('.slider-dot').forEach((d,i) => d.classList.toggle('active', i===idx));
-  const countEl = wrap.querySelector('.slide-count');
-  if (countEl) countEl.textContent = (idx+1) + ' / ' + total;
+const sliderState={};
+function slide(wrapId,trackId,dir){
+  const wrap=document.getElementById(wrapId);
+  const track=document.getElementById(trackId);
+  const total=track.children.length;
+  if(!sliderState[wrapId])sliderState[wrapId]=0;
+  sliderState[wrapId]=(sliderState[wrapId]+dir+total)%total;
+  const idx=sliderState[wrapId];
+  track.style.transform='translateX(-'+(idx*100)+'%)';
+  const countEl=wrap.querySelector('.slide-count');
+  if(countEl)countEl.textContent=(idx+1)+' / '+total;
 }
-
-// CHECKLIST
-function toggle(el) {
-  el.classList.toggle('done');
-  el.nextElementSibling.classList.toggle('done');
-}
+function toggle(el){el.classList.toggle('done');el.nextElementSibling.classList.toggle('done');}
 </script>
 </body>
 </html>
