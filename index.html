@@ -2,583 +2,973 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>🌸 NYC Cherry Blossom 2026 — Travel Guide</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🇯🇲 Jamaica – Montego Bay Travel Guide | May 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#0f1117;--bg2:#161b27;--bg3:#1e2535;--bg4:#252d3d;
-  --border:#2a3347;--border2:#374057;
-  --text:#e8eaf0;--text2:#a8b0c8;--text3:#6b7596;
-  --teal:#1fb89a;--teal-dim:#0e6b5a;--teal-glow:rgba(31,184,154,0.15);
-  --amber:#f59e0b;--amber-dim:#78490a;
-  --green:#22c55e;--green-dim:#14532d;--green-glow:rgba(34,197,94,0.12);
-  --red:#ef4444;--red-dim:#7f1d1d;
-  --blue:#60a5fa;--blue-dim:#1e3a5f;
-  --purple:#a78bfa;--purple-dim:#3b1f6e;
-  --pink:#f472b6;--pink-dim:#831843;
-  --radius:12px;--radius-sm:8px;
+:root {
+  --bg:#0f1117; --bg2:#161b27; --bg3:#1e2535; --bg4:#252d3d;
+  --border:#2a3347; --border2:#374057;
+  --text:#e8eaf0; --text2:#a8b0c8; --text3:#6b7596;
+  --teal:#1fb89a; --teal-dim:#0e6b5a; --teal-glow:rgba(31,184,154,0.15);
+  --amber:#f59e0b; --amber-dim:#78490a;
+  --green:#22c55e; --green-dim:#14532d; --green-glow:rgba(34,197,94,0.12);
+  --red:#ef4444; --red-dim:#7f1d1d;
+  --blue:#60a5fa; --blue-dim:#1e3a5f;
+  --purple:#a78bfa; --purple-dim:#3b1f6e;
+  --radius:12px; --radius-sm:8px;
 }
-*{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.6}
-a{color:var(--teal);text-decoration:none}a:hover{text-decoration:underline}
-.container{max-width:1100px;margin:0 auto;padding:0 20px}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.6;}
+a{color:var(--teal);text-decoration:none;}
+a:hover{text-decoration:underline;}
 
 /* HERO */
-.hero{background:linear-gradient(135deg,#0a0e1a 0%,#1a0a2e 50%,#0a1a2e 100%);padding:64px 20px 48px;text-align:center;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(244,114,182,0.18) 0%,transparent 65%)}
-.hero-emoji{font-size:64px;display:block;margin-bottom:16px;filter:drop-shadow(0 0 20px rgba(244,114,182,0.5))}
-.hero h1{font-family:'Playfair Display',serif;font-size:clamp(28px,5vw,52px);font-weight:700;background:linear-gradient(135deg,#f9a8d4,#f472b6,#e879f9);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:8px}
-.hero-sub{font-size:18px;color:var(--text2);margin-bottom:20px}
-.hero-tags{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-.tag{background:var(--bg3);border:1px solid var(--border);border-radius:20px;padding:5px 14px;font-size:13px;color:var(--text2)}
-.tag.pink{border-color:var(--pink);color:var(--pink)}
-.tag.teal{border-color:var(--teal);color:var(--teal)}
-.tag.amber{border-color:var(--amber);color:var(--amber)}
+.hero{background:linear-gradient(135deg,#0a2a1e 0%,#0f1117 50%,#1a1025 100%);padding:60px 24px 48px;text-align:center;border-bottom:1px solid var(--border);}
+.hero-flag{font-size:64px;margin-bottom:16px;display:block;}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(28px,5vw,52px);font-weight:700;color:#fff;margin-bottom:8px;}
+.hero-sub{font-size:18px;color:var(--text2);margin-bottom:24px;}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;}
+.tag{background:var(--bg3);border:1px solid var(--border2);border-radius:20px;padding:5px 14px;font-size:13px;color:var(--text2);}
+.tag.green{background:var(--green-dim);border-color:var(--green);color:var(--green);}
+.tag.teal{background:var(--teal-dim);border-color:var(--teal);color:var(--teal);}
+.tag.amber{background:var(--amber-dim);border-color:var(--amber);color:var(--amber);}
+
+/* LAYOUT */
+.container{max-width:1100px;margin:0 auto;padding:0 20px;}
+.section{padding:40px 0;}
+.section-title{font-family:'Playfair Display',serif;font-size:22px;font-weight:600;color:#fff;margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid var(--border);}
 
 /* SAFE BANNER */
-.safe-banner{background:var(--green-glow);border:1px solid var(--green);border-radius:var(--radius);padding:16px 24px;margin:24px 0;display:flex;align-items:center;gap:14px}
-.safe-dot{width:14px;height:14px;border-radius:50%;background:var(--green);flex-shrink:0;box-shadow:0 0 10px var(--green)}
-.safe-banner p{font-size:14px;color:var(--text2)}
-.safe-banner strong{color:var(--green)}
+.safe-banner{background:var(--green-dim);border:1px solid var(--green);border-radius:var(--radius);padding:20px 24px;display:flex;align-items:flex-start;gap:16px;margin:24px 0;}
+.safe-banner.amber-banner{background:var(--amber-dim);border-color:var(--amber);}
+.banner-icon{font-size:28px;flex-shrink:0;}
+.banner-title{font-size:17px;font-weight:600;color:var(--green);margin-bottom:4px;}
+.amber-banner .banner-title{color:var(--amber);}
+.banner-text{font-size:14px;color:var(--text2);line-height:1.6;}
 
-/* URGENT BLOOM BANNER */
-.bloom-alert{background:linear-gradient(135deg,rgba(244,114,182,0.15),rgba(167,139,250,0.1));border:1px solid var(--pink);border-radius:var(--radius);padding:20px 24px;margin:24px 0}
-.bloom-alert h3{color:var(--pink);font-size:16px;margin-bottom:8px;display:flex;align-items:center;gap:8px}
-.bloom-alert p{font-size:14px;color:var(--text2);line-height:1.7}
-.bloom-progress{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
-.stage{background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:6px 12px;font-size:12px;color:var(--text3)}
-.stage.done{border-color:var(--green);color:var(--green);background:var(--green-glow)}
-.stage.current{border-color:var(--pink);color:var(--pink);background:rgba(244,114,182,0.1)}
+/* CURRENCY CONVERTER */
+.converter-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:24px;}
+.converter-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap;}
+.converter-input-wrap{flex:1;min-width:150px;}
+.converter-input-wrap label{display:block;font-size:12px;color:var(--text3);margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em;}
+.converter-input-wrap input{width:100%;background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius-sm);padding:12px 16px;color:var(--text);font-size:16px;font-family:'DM Sans',sans-serif;}
+.converter-arrow{font-size:20px;color:var(--teal);margin-top:20px;}
+.converter-result{flex:1;min-width:150px;}
+.converter-result label{display:block;font-size:12px;color:var(--text3);margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em;}
+.result-display{background:var(--teal-glow);border:1px solid var(--teal);border-radius:var(--radius-sm);padding:12px 16px;font-size:18px;font-weight:600;color:var(--teal);}
+.quick-btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;}
+.quick-btn{background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius-sm);padding:6px 14px;font-size:13px;color:var(--text2);cursor:pointer;}
+.quick-btn:hover{border-color:var(--teal);color:var(--teal);}
+.rate-note{font-size:12px;color:var(--text3);margin-top:10px;}
 
-/* SECTION HEADERS */
-.section{padding:40px 0}
-.section-header{display:flex;align-items:center;gap:12px;margin-bottom:24px}
-.section-header h2{font-family:'Playfair Display',serif;font-size:24px;font-weight:600}
-.section-icon{font-size:24px}
-.divider{height:1px;background:var(--border);margin:8px 0 0}
+/* SNAPSHOT GRID */
+.snap-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;}
+.snap-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:18px;}
+.snap-label{font-size:12px;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;}
+.snap-value{font-size:18px;font-weight:600;color:#fff;}
+.snap-note{font-size:12px;color:var(--text2);margin-top:4px;}
 
-/* CARDS GRID */
-.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-@media(max-width:768px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}}
-@media(max-width:900px){.grid-4{grid-template-columns:repeat(2,1fr)}}
+/* WEATHER */
+.weather-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;margin-bottom:16px;}
+.weather-day{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:14px;text-align:center;}
+.w-date{font-size:12px;color:var(--text3);margin-bottom:6px;}
+.w-icon{font-size:24px;margin-bottom:6px;}
+.w-temp{font-size:16px;font-weight:600;color:#fff;}
+.w-rain{font-size:11px;color:var(--text3);margin-top:4px;}
+.verdict-badge{display:inline-flex;align-items:center;gap:8px;background:var(--green-dim);border:1px solid var(--green);border-radius:20px;padding:8px 18px;font-size:14px;color:var(--green);font-weight:500;}
 
-.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:20px;transition:border-color .2s}
-.card:hover{border-color:var(--border2)}
-.card h3{font-size:15px;font-weight:600;margin-bottom:8px;color:var(--text)}
-.card p,.card li{font-size:13.5px;color:var(--text2);line-height:1.65}
-.card ul{padding-left:16px}
-.card.highlight{border-color:var(--pink)}
-.card.teal-card{border-color:var(--teal)}
+/* ADVISORY CARDS */
+.advisory-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:22px;margin-bottom:14px;}
+.advisory-header{display:flex;align-items:center;gap:12px;margin-bottom:12px;}
+.advisory-icon{font-size:22px;}
+.advisory-title{font-size:16px;font-weight:600;color:#fff;}
+.advisory-level{font-size:12px;padding:3px 10px;border-radius:10px;font-weight:500;}
+.level-2{background:var(--amber-dim);color:var(--amber);border:1px solid var(--amber);}
+.level-1{background:var(--green-dim);color:var(--green);border:1px solid var(--green);}
+.advisory-body{font-size:14px;color:var(--text2);line-height:1.7;}
+.advisory-body ul{padding-left:18px;margin-top:8px;}
+.advisory-body li{margin-bottom:5px;}
 
-/* TRACKER SECTION */
-.tracker-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-@media(max-width:600px){.tracker-grid{grid-template-columns:1fr}}
-.tracker-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:22px;transition:border-color .2s}
-.tracker-card:hover{border-color:var(--pink)}
-.tracker-card h3{font-size:15px;font-weight:600;margin-bottom:6px;display:flex;align-items:center;gap:8px}
-.tracker-link{display:inline-flex;align-items:center;gap:6px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:7px 14px;font-size:13px;color:var(--teal);margin-top:10px;text-decoration:none;transition:border-color .2s}
-.tracker-link:hover{border-color:var(--teal);text-decoration:none}
+/* ENTRY */
+.entry-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;}
+.entry-item{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;}
+.entry-label{font-size:12px;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;}
+.entry-value{font-size:14px;color:var(--text);font-weight:500;}
 
-/* BLOOM TIMELINE */
-.timeline{position:relative;padding-left:24px}
-.timeline::before{content:'';position:absolute;left:8px;top:0;bottom:0;width:2px;background:var(--border)}
-.tl-item{position:relative;margin-bottom:20px}
-.tl-dot{position:absolute;left:-20px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--border);border:2px solid var(--border2)}
-.tl-dot.pink{background:var(--pink);border-color:var(--pink);box-shadow:0 0 8px rgba(244,114,182,0.5)}
-.tl-dot.teal{background:var(--teal);border-color:var(--teal)}
-.tl-dot.amber{background:var(--amber);border-color:var(--amber)}
-.tl-date{font-size:12px;color:var(--text3);margin-bottom:3px;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
-.tl-item h4{font-size:14px;color:var(--text);margin-bottom:4px}
-.tl-item p{font-size:13px;color:var(--text2)}
+/* FLIGHTS */
+.flights-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+@media(max-width:640px){.flights-grid{grid-template-columns:1fr;}}
+.flight-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:20px;position:relative;}
+.flight-card.featured{border-color:var(--teal);}
+.flight-badge{position:absolute;top:-10px;left:16px;background:var(--teal);color:#fff;font-size:11px;font-weight:600;padding:3px 10px;border-radius:10px;}
+.flight-airline{font-size:16px;font-weight:600;color:#fff;margin-bottom:4px;}
+.flight-route{font-size:13px;color:var(--text3);margin-bottom:12px;}
+.flight-row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border);font-size:13px;}
+.flight-row:last-of-type{border-bottom:none;}
+.flight-lbl{color:var(--text3);}
+.flight-val{color:var(--text2);text-align:right;}
+.flight-links{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap;}
+.btn-link{background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius-sm);padding:7px 14px;font-size:12px;color:var(--teal);cursor:pointer;text-decoration:none;display:inline-block;}
+.btn-link:hover{background:var(--teal-glow);border-color:var(--teal);}
+.btn-link.primary{background:var(--teal-dim);border-color:var(--teal);color:#fff;}
 
-/* SPOTS SLIDER */
-.slider-wrap{position:relative;border-radius:var(--radius);overflow:hidden;background:var(--bg3)}
-.slider-viewport{overflow:hidden;border-radius:var(--radius) var(--radius) 0 0}
-.slider-track{display:flex;transition:transform .35s ease}
-.slide{min-width:100%;position:relative}
-.slide img{width:100%;height:220px;object-fit:cover;display:block}
-.slide-fallback{height:220px;display:flex;align-items:center;justify-content:center;background:var(--bg3);font-size:48px}
-.slider-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.6);border:none;color:#fff;width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:16px;z-index:2;display:flex;align-items:center;justify-content:center}
-.slider-btn.prev{left:8px}.slider-btn.next{right:8px}
-.slider-info{padding:16px}
-.slider-info h3{font-size:15px;font-weight:600;margin-bottom:4px}
-.slider-info p{font-size:13px;color:var(--text2);margin-bottom:10px}
-.slider-links{display:flex;gap:8px;flex-wrap:wrap}
-.sl-btn{font-size:11.5px;padding:5px 10px;border-radius:5px;border:1px solid var(--border);color:var(--text2);background:var(--bg4);text-decoration:none;transition:border-color .2s}
-.sl-btn:hover{border-color:var(--teal);color:var(--teal);text-decoration:none}
-.slide-count{position:absolute;bottom:8px;right:10px;background:rgba(0,0,0,.6);color:#fff;font-size:11px;padding:3px 7px;border-radius:10px}
-.slider-dots{display:flex;gap:5px;justify-content:center;padding:8px 0}
-.slider-dot{width:7px;height:7px;border-radius:50%;background:var(--border);cursor:pointer;transition:background .2s}
-.slider-dot.active{background:var(--pink)}
+/* CAR RENTAL */
+.car-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;}
+@media(max-width:640px){.car-grid{grid-template-columns:1fr;}}
+.car-card{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px;}
+.car-card.best{border-color:var(--teal);}
+.car-title{font-size:15px;font-weight:600;color:#fff;margin-bottom:12px;}
+.car-row{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:7px 0;border-bottom:1px solid var(--border);}
+.car-row:last-child{border-bottom:none;}
+.car-lbl{font-size:12.5px;color:var(--text3);flex-shrink:0;}
+.car-val{font-size:13px;color:var(--text2);text-align:right;line-height:1.45;}
 
-/* SPOTS GRID */
-.spots-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-@media(max-width:700px){.spots-grid{grid-template-columns:1fr}}
+/* HOTELS */
+.hotels-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;}
+.hotel-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;}
+.hotel-card.top-pick{border-color:var(--teal);}
+.hotel-img{width:100%;height:180px;object-fit:cover;}
+.hotel-body{padding:18px;}
+.hotel-badge{display:inline-block;font-size:11px;font-weight:600;padding:3px 10px;border-radius:10px;margin-bottom:8px;}
+.badge-top{background:var(--teal-dim);color:var(--teal);border:1px solid var(--teal);}
+.badge-value{background:var(--blue-dim);color:var(--blue);border:1px solid var(--blue);}
+.badge-luxury{background:var(--purple-dim);color:var(--purple);border:1px solid var(--purple);}
+.hotel-name{font-size:16px;font-weight:600;color:#fff;margin-bottom:6px;}
+.hotel-price{font-size:14px;color:var(--teal);font-weight:500;margin-bottom:8px;}
+.hotel-note{font-size:13px;color:var(--text2);margin-bottom:12px;line-height:1.5;}
+.hotel-links{display:flex;gap:8px;flex-wrap:wrap;}
+.slide-fallback{width:100%;height:180px;background:var(--bg3);display:flex;align-items:center;justify-content:center;font-size:40px;}
 
-/* TIPS */
-.tips-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-@media(max-width:700px){.tips-grid{grid-template-columns:1fr}}
-.tip-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:16px}
-.tip-card .tip-icon{font-size:22px;margin-bottom:8px}
-.tip-card h4{font-size:13.5px;color:var(--text);font-weight:600;margin-bottom:4px}
-.tip-card p{font-size:12.5px;color:var(--text2)}
+/* ACTIVITIES */
+.activities-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;}
+.activity-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;}
+.slider-wrap{position:relative;overflow:hidden;height:180px;}
+.slider-track{display:flex;height:100%;transition:transform .4s ease;}
+.slider-track img{width:100%;height:180px;object-fit:cover;flex-shrink:0;}
+.slider-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.6);border:none;color:#fff;width:28px;height:28px;border-radius:50%;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;}
+.slider-btn.prev{left:8px;}
+.slider-btn.next{right:8px;}
+.slider-dots{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);display:flex;gap:4px;}
+.slider-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.4);cursor:pointer;border:none;}
+.slider-dot.active{background:#fff;}
+.slide-count{position:absolute;top:8px;right:10px;background:rgba(0,0,0,.6);color:#fff;font-size:11px;padding:2px 8px;border-radius:10px;}
+.activity-body{padding:16px;}
+.activity-name{font-size:15px;font-weight:600;color:#fff;margin-bottom:4px;}
+.activity-price{font-size:13px;color:var(--teal);margin-bottom:6px;}
+.activity-note{font-size:13px;color:var(--text2);margin-bottom:10px;line-height:1.5;}
+.activity-links{display:flex;gap:6px;flex-wrap:wrap;}
+.act-link{font-size:11px;background:var(--bg3);border:1px solid var(--border2);border-radius:var(--radius-sm);padding:4px 10px;color:var(--text2);}
+
+/* RESTAURANTS */
+.rest-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;}
+.rest-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;}
+.rest-body{padding:16px;}
+.rest-name{font-size:15px;font-weight:600;color:#fff;margin-bottom:4px;}
+.rest-price{font-size:12px;color:var(--amber);margin-bottom:6px;}
+.rest-note{font-size:13px;color:var(--text2);margin-bottom:10px;line-height:1.5;}
+.rest-links{display:flex;gap:6px;flex-wrap:wrap;}
+
+/* FOOD COSTS TABLE */
+.food-table{width:100%;border-collapse:collapse;}
+.food-table th{background:var(--bg3);color:var(--text3);font-size:12px;text-transform:uppercase;letter-spacing:.05em;padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);}
+.food-table td{padding:10px 14px;font-size:14px;color:var(--text2);border-bottom:1px solid var(--border);}
+.food-table tr:last-child td{border-bottom:none;}
+
+/* INSIDER TIPS */
+.tips-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;}
+.tip-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;}
+.tip-icon{font-size:20px;margin-bottom:8px;}
+.tip-title{font-size:14px;font-weight:600;color:#fff;margin-bottom:4px;}
+.tip-text{font-size:13px;color:var(--text2);line-height:1.5;}
 
 /* INFANT */
-.infant-card{background:var(--bg2);border:1px solid var(--pink);border-radius:var(--radius);padding:22px}
-.infant-card h3{color:var(--pink);margin-bottom:12px;font-size:16px;font-weight:600}
+.infant-card{background:var(--bg2);border:1px solid var(--teal);border-radius:var(--radius);padding:24px;}
+.infant-header{display:flex;align-items:center;gap:12px;margin-bottom:14px;}
+.infant-title{font-size:17px;font-weight:600;color:var(--teal);}
+.infant-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;}
+.infant-item{background:var(--bg3);border-radius:var(--radius-sm);padding:12px;}
+.infant-item-title{font-size:13px;font-weight:600;color:#fff;margin-bottom:4px;}
+.infant-item-text{font-size:12px;color:var(--text2);}
+
+/* COST ESTIMATE */
+.cost-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-bottom:16px;}
+.cost-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;}
+.cost-label{font-size:12px;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;}
+.cost-value{font-size:18px;font-weight:600;color:#fff;}
+.cost-note{font-size:12px;color:var(--text2);margin-top:4px;}
+.total-card{background:var(--teal-dim);border:1px solid var(--teal);border-radius:var(--radius);padding:20px;text-align:center;}
+.total-label{font-size:14px;color:var(--text2);margin-bottom:6px;}
+.total-value{font-size:30px;font-weight:700;color:#fff;}
+.total-note{font-size:13px;color:var(--teal);margin-top:6px;}
 
 /* CHECKLIST */
-.checklist{list-style:none}
-.checklist li{display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-bottom:1px solid var(--border)}
-.checklist li:last-child{border-bottom:none}
-.cl-box{width:18px;height:18px;border:2px solid var(--border2);border-radius:4px;flex-shrink:0;cursor:pointer;margin-top:2px;transition:all .2s}
-.cl-box.done{background:var(--teal);border-color:var(--teal)}
-.cl-text{font-size:13.5px;color:var(--text2);cursor:pointer}
-.cl-text.done{text-decoration:line-through;color:var(--text3)}
-
-/* BADGE */
-.badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
-.badge.pink{background:var(--pink-dim);color:var(--pink);border:1px solid var(--pink)}
-.badge.teal{background:var(--teal-dim);color:var(--teal)}
-.badge.amber{background:var(--amber-dim);color:var(--amber)}
-.badge.green{background:var(--green-dim);color:var(--green)}
-.badge.purple{background:var(--purple-dim);color:var(--purple)}
-
-/* WEATHER STRIPS */
-.weather-strip{display:grid;grid-template-columns:100px 1fr auto;gap:12px;align-items:center;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 16px;margin-bottom:10px}
-.wx-date{font-size:13px;color:var(--text3);font-weight:600}
-.wx-desc{font-size:13px;color:var(--text2)}
-.wx-temp{font-size:16px;font-weight:600;color:var(--text);text-align:right}
+.checklist{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px;}
+.check-item{display:flex;align-items:flex-start;gap:10px;padding:10px 14px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius-sm);cursor:pointer;}
+.check-box{width:18px;height:18px;border:2px solid var(--border2);border-radius:4px;flex-shrink:0;margin-top:2px;transition:all .2s;cursor:pointer;}
+.check-box.done{background:var(--teal);border-color:var(--teal);}
+.check-text{font-size:13px;color:var(--text2);}
+.check-text.done{text-decoration:line-through;color:var(--text3);}
 
 /* FOOTER */
-footer{background:var(--bg2);border-top:1px solid var(--border);padding:30px 20px;text-align:center;color:var(--text3);font-size:13px;margin-top:60px}
-footer span{color:var(--pink)}
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:30px 24px;text-align:center;color:var(--text3);font-size:13px;}
+footer strong{color:var(--teal);}
 </style>
 </head>
 <body>
 
 <!-- HERO -->
 <div class="hero">
-  <span class="hero-emoji">🌸</span>
-  <h1>NYC Cherry Blossom Guide 2026</h1>
-  <p class="hero-sub">Brooklyn Botanic Garden · Central Park · Roosevelt Island · and more</p>
+  <span class="hero-flag">🇯🇲</span>
+  <h1>Jamaica – Montego Bay Travel Guide</h1>
+  <p class="hero-sub">May 2026 &nbsp;|&nbsp; Montego Bay, Jamaica</p>
   <div class="hero-tags">
-    <span class="tag pink">🌸 Peak: Mid-April 2026</span>
-    <span class="tag teal">2 Adults + 1 Infant (8 months)</span>
-    <span class="tag amber">⏱ 5–7 Day Window Only!</span>
-    <span class="tag">🗽 New York City, NY</span>
+    <span class="tag green">Safe to Visit</span>
+    <span class="tag teal">2 Adults + 1 Lap Infant</span>
+    <span class="tag">Baby: 8–9 months old</span>
+    <span class="tag amber">Level 2 Advisory</span>
+    <span class="tag">JFK Nonstop ~4h 10min</span>
+    <span class="tag">All-Inclusive Available</span>
   </div>
 </div>
 
 <div class="container">
 
-  <!-- BLOOM ALERT -->
-  <div class="bloom-alert">
-    <h3>🚨 Real-Time 2026 Bloom Status — Act Fast!</h3>
-    <p>
-      As of <strong>March 30, 2026</strong>, NYC's cherry blossoms are in <strong>Pre-Bloom / Early Bloom</strong> stage — the main collection hasn't peaked yet. 
-      Washington D.C. hit peak bloom on <strong>March 26</strong>, and NYC typically follows <strong>2–3 weeks later</strong>. That puts NYC's 
-      <strong>Yoshino peak around April 5–15</strong> and <strong>Kwanzan (fluffy pink) peak in mid-to-late April</strong>. 
-      Brooklyn Botanic Garden's last update (March 27) confirmed the main collection hasn't started yet — but it's coming soon. Check trackers daily!
-    </p>
-    <div class="bloom-progress">
-      <span class="stage done">✓ Pre-bloom</span>
-      <span class="stage done">✓ First Buds</span>
-      <span class="stage current">⟶ Early Bloom (NOW)</span>
-      <span class="stage">Peak Bloom</span>
-      <span class="stage">Post-Peak</span>
+<!-- SAFE BANNER -->
+<div class="section">
+  <div class="safe-banner amber-banner">
+    <span class="banner-icon">🟡</span>
+    <div>
+      <div class="banner-title">AMBER — Level 2: Exercise Increased Caution</div>
+      <div class="banner-text">Jamaica's advisory was downgraded from Level 3 to Level 2 on January 17, 2026. Montego Bay and major resort areas are fully open and operational. Crime risk exists outside tourist zones — stay within resort grounds at night, avoid public buses, and stick to arranged excursions. All-inclusive resorts in Rose Hall and the Hip Strip are generally very safe for families. Confirm your specific resort's status before booking as some western areas are still recovering from Hurricane Melissa (Oct 2025).</div>
     </div>
   </div>
-
-  <!-- TRACKERS -->
-  <div class="section">
-    <div class="section-header">
-      <span class="section-icon">📡</span>
-      <h2>Official Bloom Trackers — Bookmark These Now</h2>
-    </div>
-    <div class="tracker-grid">
-      <div class="tracker-card highlight">
-        <h3>🌸 BBG CherryWatch <span class="badge pink">Most Detailed</span></h3>
-        <p style="font-size:13px;color:var(--text2);margin-top:6px">Brooklyn Botanic Garden's <strong>CherryWatch</strong> is an interactive map tracking 150+ individual cherry trees with daily bloom status updates (Pre-bloom → First Bloom → Peak → Post-Peak). The most comprehensive tracker in NYC. Last updated March 27, 2026.</p>
-        <a class="tracker-link" href="https://www.bbg.org/collections/cherries" target="_blank">🔗 Open BBG CherryWatch Map →</a>
-      </div>
-      <div class="tracker-card">
-        <h3>🌿 Central Park Conservancy Tracker</h3>
-        <p style="font-size:13px;color:var(--text2);margin-top:6px">The Central Park Conservancy launched their interactive cherry blossom tracker — color-coded by zone (pre-peak / peak / post-peak) across 6 key locations including Cherry Hill, Reservoir, Sheep Meadow, and more. Sign up for their Spring Guide to get the tracker link.</p>
-        <a class="tracker-link" href="https://www.centralparknyc.org/central-park-cherry-blossom-trees" target="_blank">🔗 Open Central Park Tracker →</a>
-      </div>
-      <div class="tracker-card">
-        <h3>📷 NYC Photographer's Live Instagram Updates</h3>
-        <p style="font-size:13px;color:var(--text2);margin-top:6px">NYC photographer Nire Donahue posts <strong>daily bloom updates</strong> on her Instagram channel once the season gets moving. She tracks every cherry blossom cluster across the 5 boroughs and has nailed peak predictions for several years. Her 2026 Yoshino prediction is around <strong>April 12</strong>.</p>
-        <a class="tracker-link" href="https://niredonahue.com/best-places-to-see-cherry-blossoms-nyc/" target="_blank">🔗 Bloom Guide + Instagram →</a>
-      </div>
-      <div class="tracker-card">
-        <h3>🌡️ International Bloom Prediction Competition</h3>
-        <p style="font-size:13px;color:var(--text2);margin-top:6px">Scientists, researchers & citizen scientists from around the world predict NYC peak bloom. The 2026 consensus average puts <strong>NYC peak at April 6</strong>. DC peaked March 26 — NYC typically follows 2–3 weeks behind, making mid-April most likely.</p>
-        <a class="tracker-link" href="https://competition.statistics.gmu.edu/" target="_blank">🔗 See 2026 Predictions →</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- BLOOM TIMELINE -->
-  <div class="section">
-    <div class="section-header">
-      <span class="section-icon">🗓</span>
-      <h2>2026 NYC Cherry Blossom Timeline</h2>
-    </div>
-    <div class="card">
-      <div class="timeline">
-        <div class="tl-item">
-          <div class="tl-dot done"></div>
-          <div class="tl-date">Late March 2026</div>
-          <h4>Okame Cherry Blossoms — First to Bloom 🌸</h4>
-          <p>The rosy-pink Okame variety blooms first in NYC. Spotted at the Bridle Path (west side of the Reservoir) in Central Park, and at Flushing Meadows-Corona Park near the Unisphere. Usually the first to pop — late March to early April.</p>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot pink"></div>
-          <div class="tl-date">~April 5–15, 2026 ← YOU ARE HERE</div>
-          <h4>Yoshino Cherry Blossoms — The Famous White-Pink Clouds ⭐</h4>
-          <p>The iconic white/light-pink Yoshinos are the most celebrated. NYC peak expected around April 5–15 based on DC's March 26 peak and historical 2-week lag. Check trackers daily — this window is only 5–7 days!</p>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot teal"></div>
-          <div class="tl-date">~April 14–30, 2026</div>
-          <h4>Kwanzan / Kanzan — The Fluffy Deep-Pink Pompoms 💗</h4>
-          <p>The showstopping double-petaled Kwanzan bloom later and last a bit longer. Brooklyn Botanic Garden's Cherry Esplanade is famous for these. BBG's Hanami Nights events (April 21–24) are timed for Kwanzan peak. Best late April bet!</p>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot amber"></div>
-          <div class="tl-date">May 3 & May 10, 2026</div>
-          <h4>BBG Weekends in Bloom Events 🎉</h4>
-          <p>Even if peak blossoms are gone, BBG hosts spring bloom events on May 3 and 10. The garden also features magnolias, tree peonies, wisteria, crabapples, and irises throughout spring.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SPOTS -->
-  <div class="section">
-    <div class="section-header">
-      <span class="section-icon">📍</span>
-      <h2>Best Cherry Blossom Spots in NYC</h2>
-    </div>
-    <div class="spots-grid">
-
-      <!-- BBG -->
-      <div id="spot-bbg" class="slider-wrap">
-        <div class="slider-viewport">
-          <div class="slider-track" id="track-bbg">
-            <div class="slide">
-              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Cherry blossoms pink spring"
-                   onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌸</span></div>'">
-              <span class="slide-count">1 / 2</span>
-            </div>
-            <div class="slide">
-              <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80" alt="Spring garden"
-                   onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌿</span></div>'">
-            </div>
-          </div>
-        </div>
-        <button class="slider-btn prev" onclick="slide('spot-bbg','track-bbg',-1)">‹</button>
-        <button class="slider-btn next" onclick="slide('spot-bbg','track-bbg',1)">›</button>
-        <div class="slider-info">
-          <h3>🌸 Brooklyn Botanic Garden <span class="badge pink">Best in NYC</span></h3>
-          <p>The crown jewel of NYC cherry blossom viewing. Over 200 cherry trees including the famous Cherry Esplanade — a tunnel of deep-pink Kwanzan blossoms. Also features the Japanese Hill-and-Pond Garden. Has its own <strong>CherryWatch live tracker</strong>. Hosts Hanami Nights (April 21–24) — a magical evening event under the lit blossoms. <br><br>
-          <strong>Admission:</strong> $22 adults, $16 seniors/students, free under 12 (great for baby!)<br>
-          <strong>Hours:</strong> Tue–Thu 8am–8:30pm, Fri–Sun 8am–6pm, Closed Mondays<br>
-          <strong>Subway:</strong> Prospect Park (B/Q) or Eastern Parkway (2/3)</p>
-          <div class="slider-links">
-            <a class="sl-btn" href="https://www.bbg.org/collections/cherries" target="_blank">🌸 CherryWatch Tracker</a>
-            <a class="sl-btn" href="https://www.bbg.org" target="_blank">🌿 BBG Website</a>
-            <a class="sl-btn" href="https://maps.google.com/?q=Brooklyn+Botanic+Garden" target="_blank">📍 Google Maps</a>
-            <a class="sl-btn" href="https://www.youtube.com/results?search_query=Brooklyn+Botanic+Garden+cherry+blossom" target="_blank">▶ YouTube</a>
-          </div>
-        </div>
-        <div class="slider-dots">
-          <div class="slider-dot active" onclick="slide('spot-bbg','track-bbg',0)"></div>
-          <div class="slider-dot" onclick="slide('spot-bbg','track-bbg',1)"></div>
-        </div>
-      </div>
-
-      <!-- CENTRAL PARK -->
-      <div id="spot-cp" class="slider-wrap">
-        <div class="slider-viewport">
-          <div class="slider-track" id="track-cp">
-            <div class="slide">
-              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Central Park spring"
-                   onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌳</span></div>'">
-              <span class="slide-count">1 / 2</span>
-            </div>
-            <div class="slide">
-              <img src="https://images.unsplash.com/photo-1527489377706-5bf97e608852?w=600&q=80" alt="Central Park"
-                   onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🗽</span></div>'">
-            </div>
-          </div>
-        </div>
-        <button class="slider-btn prev" onclick="slide('spot-cp','track-cp',-1)">‹</button>
-        <button class="slider-btn next" onclick="slide('spot-cp','track-cp',1)">›</button>
-        <div class="slider-info">
-          <h3>🌳 Central Park <span class="badge teal">Most Iconic</span></h3>
-          <p>Hundreds of cherry trees spread across the park between 72nd and 96th Streets. The <strong>Central Park Conservancy</strong> runs a real-time bloom tracker — color-coded by zone. Top spots: <strong>Cherry Hill</strong> (most popular, frames the San Remo building), <strong>JKO Reservoir</strong> (east & west sides), <strong>Pilgrim Hill</strong>, <strong>Great Lawn</strong>, and <strong>Sheep Meadow</strong>.<br><br>
-          Varieties: Kwanzan, Higan, Yoshino, Okame — staggered season means multiple chances to catch bloom.<br>
-          <strong>Admission:</strong> Free 🎉<br>
-          <strong>Tip:</strong> Arrive before 8am for empty frames + golden light</p>
-          <div class="slider-links">
-            <a class="sl-btn" href="https://www.centralparknyc.org/central-park-cherry-blossom-trees" target="_blank">🌸 Live Tracker</a>
-            <a class="sl-btn" href="https://www.centralpark.com/things-to-do/attractions/map-of-cherry-blossom-trees-in-central-park/" target="_blank">🗺 Tree Map</a>
-            <a class="sl-btn" href="https://maps.google.com/?q=Cherry+Hill+Central+Park" target="_blank">📍 Cherry Hill</a>
-            <a class="sl-btn" href="https://www.youtube.com/results?search_query=Central+Park+cherry+blossom" target="_blank">▶ YouTube</a>
-          </div>
-        </div>
-        <div class="slider-dots">
-          <div class="slider-dot active"></div>
-          <div class="slider-dot"></div>
-        </div>
-      </div>
-
-      <!-- ROOSEVELT ISLAND -->
-      <div id="spot-ri" class="slider-wrap">
-        <div class="slider-viewport">
-          <div class="slider-track" id="track-ri">
-            <div class="slide">
-              <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600&q=80" alt="Roosevelt Island NYC skyline"
-                   onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🏙️</span></div>'">
-              <span class="slide-count">1 / 2</span>
-            </div>
-            <div class="slide">
-              <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=600&q=80" alt="New York skyline river"
-                   onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌆</span></div>'">
-            </div>
-          </div>
-        </div>
-        <button class="slider-btn prev" onclick="slide('spot-ri','track-ri',-1)">‹</button>
-        <button class="slider-btn next" onclick="slide('spot-ri','track-ri',1)">›</button>
-        <div class="slider-info">
-          <h3>🚡 Roosevelt Island <span class="badge purple">Hidden Gem</span></h3>
-          <p>A small island in the East River between Manhattan and Queens. The waterfront promenade is lined with Yoshino, Kwanzan, and Okame cherry trees with <strong>open Manhattan skyline views</strong>. The largest concentration of Kwanzan trees is on <strong>Cherry Tree Walk (West Loop Road)</strong> near Cornell Tech on the south end. <strong>Take the iconic tram</strong> from 59th St & 2nd Ave — a 4-minute ride 250 feet above the East River. Arrive at sunrise for the famous tree-tunnel shot without crowds. <br><br><strong>Admission:</strong> Free (Tram: $2.90 OMNY/MetroCard each way)</p>
-          <div class="slider-links">
-            <a class="sl-btn" href="https://maps.google.com/?q=Roosevelt+Island+Cherry+Blossom" target="_blank">📍 Google Maps</a>
-            <a class="sl-btn" href="https://rioc.ny.gov" target="_blank">🏝 Roosevelt Island</a>
-            <a class="sl-btn" href="https://www.youtube.com/results?search_query=Roosevelt+Island+cherry+blossom" target="_blank">▶ YouTube</a>
-          </div>
-        </div>
-        <div class="slider-dots">
-          <div class="slider-dot active"></div>
-          <div class="slider-dot"></div>
-        </div>
-      </div>
-
-      <!-- MORE SPOTS BONUS -->
-      <div id="spot-more" class="slider-wrap">
-        <div class="slider-viewport">
-          <div class="slider-track" id="track-more">
-            <div class="slide">
-              <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80" alt="NYC spring"
-                   onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🗽</span></div>'">
-              <span class="slide-count">1 / 2</span>
-            </div>
-            <div class="slide">
-              <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&q=80" alt="New York City"
-                   onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🌆</span></div>'">
-            </div>
-          </div>
-        </div>
-        <button class="slider-btn prev" onclick="slide('spot-more','track-more',-1)">‹</button>
-        <button class="slider-btn next" onclick="slide('spot-more','track-more',1)">›</button>
-        <div class="slider-info">
-          <h3>🗺 Bonus Spots to Explore <span class="badge amber">Bonus</span></h3>
-          <p><strong>Flushing Meadows-Corona Park (Queens):</strong> Okame trees near the Unisphere — first to bloom in NYC! Iconic photo with the giant steel globe.<br><br>
-          <strong>New York Botanical Garden (Bronx):</strong> 500+ trees across 250 acres, bloom season March–May. Their own tracker launches later in spring.<br><br>
-          <strong>Sakura Park (Upper Manhattan):</strong> Near Columbia University — historically significant, gifted by Japan in 1912.<br><br>
-          <strong>Washington Square Park:</strong> Great for magnolias + Yoshinos, especially near the iconic arch. Best in early April.</p>
-          <div class="slider-links">
-            <a class="sl-btn" href="https://maps.google.com/?q=Flushing+Meadows+Corona+Park" target="_blank">📍 Flushing Meadows</a>
-            <a class="sl-btn" href="https://www.nybg.org/garden/cherries/" target="_blank">🌸 NYBG Cherries</a>
-            <a class="sl-btn" href="https://maps.google.com/?q=Sakura+Park+Manhattan" target="_blank">📍 Sakura Park</a>
-          </div>
-        </div>
-        <div class="slider-dots">
-          <div class="slider-dot active"></div>
-          <div class="slider-dot"></div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- EVENTS -->
-  <div class="section">
-    <div class="section-header">
-      <span class="section-icon">🎉</span>
-      <h2>2026 Cherry Blossom Events — Don't Miss</h2>
-    </div>
-    <div class="grid-2">
-      <div class="card highlight">
-        <h3>🌸 BBG Hanami Nights</h3>
-        <p><strong>April 21–24, 2026 | 5–8:30 PM | Ticketed</strong><br>Experience the Cherry Esplanade lit up after dark — one of the most magical spring events in NYC. Japanese cultural traditions meet Brooklyn. Buy tickets early, they sell out!</p>
-        <br><a href="https://www.bbg.org" target="_blank" class="tracker-link" style="margin-top:0">🎟 Get Tickets →</a>
-      </div>
-      <div class="card">
-        <h3>🎶 BBG April 14 Evening Event</h3>
-        <p><strong>Tuesday April 14 | 7–10 PM (doors 6:30 PM) | Ticketed</strong><br>Special evening event at BBG during the cherry blossom season. Check BBG's website for full program details — often includes live music and Japanese cultural performances.</p>
-        <br><a href="https://www.bbg.org" target="_blank" class="tracker-link" style="margin-top:0">📅 BBG Calendar →</a>
-      </div>
-      <div class="card">
-        <h3>🌿 BBG Weekends in Bloom</h3>
-        <p><strong>Sundays May 3 & May 10 | 10:30 AM–4 PM</strong><br>Even after peak cherry blossom, the garden continues to shine with spring blooms — magnolias, peonies, wisteria, and more. Free with garden admission.</p>
-      </div>
-      <div class="card">
-        <h3>🌸 Central Park Cherry Blossom Tours</h3>
-        <p>The Central Park Conservancy offers expert-guided cherry blossom walking tours during peak season. A knowledgeable guide takes you to all the best spots and explains the varieties. Great with a stroller!</p>
-        <br><a href="https://www.centralparknyc.org" target="_blank" class="tracker-link" style="margin-top:0">📍 Tour Info →</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- WEATHER -->
-  <div class="section">
-    <div class="section-header">
-      <span class="section-icon">🌤</span>
-      <h2>Expected NYC Spring Weather — April 2026</h2>
-    </div>
-    <div class="weather-strip"><div class="wx-date">Early April</div><div class="wx-desc">🌤 Partly cloudy, occasional showers possible — typical NYC spring. Highs 50–60°F.</div><div class="wx-temp">50–60°F</div></div>
-    <div class="weather-strip"><div class="wx-date">Mid April</div><div class="wx-desc">🌸 Peak blossom period. Mix of sun and clouds. Comfortable walking weather. Highs 55–65°F.</div><div class="wx-temp">55–65°F</div></div>
-    <div class="weather-strip"><div class="wx-date">Late April</div><div class="wx-desc">🌞 Warming up, mostly pleasant. Kwanzan season. Perfect for strollers and outdoor time.</div><div class="wx-temp">60–70°F</div></div>
-    <div class="card" style="margin-top:14px;border-color:var(--amber)">
-      <p>⚡ <strong>Rain & Wind Warning:</strong> A single rainy or windy day can knock petals off in hours. Monitor weather daily during your trip and visit blossoms <strong>before</strong> any forecasted rain. Morning visits are safest — blossoms hold better in cool, calm, cloudy conditions.</p>
-    </div>
-  </div>
-
-  <!-- TIPS -->
-  <div class="section">
-    <div class="section-header">
-      <span class="section-icon">💡</span>
-      <h2>Insider Tips — Cherry Blossom Hunting NYC</h2>
-    </div>
-    <div class="tips-grid">
-      <div class="tip-card">
-        <div class="tip-icon">⏰</div>
-        <h4>Arrive at Sunrise</h4>
-        <p>Roosevelt Island, Cherry Hill, and Gantry Plaza are dramatically different before 8 AM. After sunrise: beat the crowds and get clean frames.</p>
-      </div>
-      <div class="tip-card">
-        <div class="tip-icon">📡</div>
-        <h4>Check Trackers Daily</h4>
-        <p>BBG's CherryWatch and the Central Park tracker update frequently. Peak can shift overnight — check every morning during your trip.</p>
-      </div>
-      <div class="tip-card">
-        <div class="tip-icon">🌧</div>
-        <h4>Go Before Rain</h4>
-        <p>Wind and rain are the enemy. One storm can end peak bloom. If rain is forecast for tomorrow, go today — no exceptions.</p>
-      </div>
-      <div class="tip-card">
-        <div class="tip-icon">📅</div>
-        <h4>Weekdays Are Better</h4>
-        <p>BBG and Cherry Hill are extremely crowded on peak weekends. Go Tuesday–Thursday morning for the best experience with your baby stroller.</p>
-      </div>
-      <div class="tip-card">
-        <div class="tip-icon">🗓</div>
-        <h4>Stagger Your Visits</h4>
-        <p>Yoshino peaks first (early April), Kwanzan peaks later (mid-late April). Plan 2 separate visits to catch both. NYC is forgiving — multiple opportunities!</p>
-      </div>
-      <div class="tip-card">
-        <div class="tip-icon">🚡</div>
-        <h4>Take the Roosevelt Island Tram</h4>
-        <p>Don't miss the 4-minute tram ride from 59th St & 2nd Ave — it's an NYC bucket-list experience and delivers you right to the cherry trees.</p>
-      </div>
-      <div class="tip-card">
-        <div class="tip-icon">📸</div>
-        <h4>Best Photo Spots</h4>
-        <p>Cherry Hill (San Remo building backdrop), Roosevelt Island (skyline + tram), JKO Reservoir east side, Washington Square Park arch with magnolias.</p>
-      </div>
-      <div class="tip-card">
-        <div class="tip-icon">🎟</div>
-        <h4>Book BBG Tickets Early</h4>
-        <p>Hanami Nights (April 21–24) and BBG evening events sell out fast. Buy tickets 2–3 weeks in advance. Regular admission is walk-in or online.</p>
-      </div>
-      <div class="tip-card">
-        <div class="tip-icon">🌸</div>
-        <h4>Follow the Staggered Season</h4>
-        <p>Early April: Okame & Yoshino. Mid-April: Yoshino peak. Late April: Kwanzan. The 5-week season gives you multiple shots at catching something beautiful.</p>
-      </div>
-      <div class="tip-card">
-        <div class="tip-icon">🏙</div>
-        <h4>Prospect Park + BBG Combo</h4>
-        <p>BBG is right next to Prospect Park (Brooklyn). Do both in one day — Prospect Park is free and also has cherry trees throughout.</p>
-      </div>
-      <div class="tip-card">
-        <div class="tip-icon">📱</div>
-        <h4>Instagram Channel for Live Updates</h4>
-        <p>Follow NYC photographer Nire Donahue's Instagram channel for daily status updates during bloom season — fastest real-time conditions anywhere.</p>
-      </div>
-      <div class="tip-card">
-        <div class="tip-icon">🎋</div>
-        <h4>Sakura Matsuri Festival</h4>
-        <p>BBG's annual Sakura Matsuri celebrates Japanese cherry blossom culture with traditional music, dance, and food. Check BBG's 2026 date announcement.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- INFANT NOTES -->
-  <div class="section">
-    <div class="infant-card">
-      <h3>👶 Infant Travel Notes — Your Daughter (8 months at April 2026)</h3>
-      <div class="grid-2" style="gap:14px;margin-top:0">
-        <div>
-          <p style="font-size:13.5px;color:var(--text2);line-height:1.7">
-            <strong>Stroller-Friendly:</strong> All NYC cherry blossom spots are stroller-accessible. Central Park, BBG, and Roosevelt Island all have paved paths.<br><br>
-            <strong>BBG Tip:</strong> Rent a wagon or bring a carrier — BBG's paths can get crowded. Baby carrier is great for photos under the blossoms!<br><br>
-            <strong>Roosevelt Island Tram:</strong> Strollers are welcome on the tram — it's a smooth, short ride and very exciting even for infants.
-          </p>
-        </div>
-        <div>
-          <p style="font-size:13.5px;color:var(--text2);line-height:1.7">
-            <strong>Weather:</strong> April NYC can be chilly in the morning (50s°F). Dress baby in layers — hat, light jacket. Afternoons warm up to 60–65°F.<br><br>
-            <strong>Feeding/Diaper:</strong> BBG has restroom facilities. Central Park has restrooms near all major areas. Roosevelt Island has limited facilities — pack extra.<br><br>
-            <strong>Best visit time:</strong> Mid-morning (9–11am) after morning feed — baby is usually happiest and parks are less crowded than afternoons.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CHECKLIST -->
-  <div class="section">
-    <div class="section-header">
-      <span class="section-icon">✅</span>
-      <h2>Cherry Blossom Trip Checklist</h2>
-    </div>
-    <div class="card">
-      <ul class="checklist">
-        <li><div class="cl-box" onclick="toggle(this)"></div><span class="cl-text" onclick="toggle(this.previousElementSibling)">Bookmark BBG CherryWatch tracker (bbg.org/collections/cherries) — check daily</span></li>
-        <li><div class="cl-box" onclick="toggle(this)"></div><span class="cl-text" onclick="toggle(this.previousElementSibling)">Sign up for Central Park Conservancy Spring Guide to get their bloom tracker</span></li>
-        <li><div class="cl-box" onclick="toggle(this)"></div><span class="cl-text" onclick="toggle(this.previousElementSibling)">Buy BBG Hanami Nights tickets (April 21–24) — they sell out!</span></li>
-        <li><div class="cl-box" onclick="toggle(this)"></div><span class="cl-text" onclick="toggle(this.previousElementSibling)">Book NYC hotel near Brooklyn or Central Park for easy morning access</span></li>
-        <li><div class="cl-box" onclick="toggle(this)"></div><span class="cl-text" onclick="toggle(this.previousElementSibling)">Check NYC weather 3 days before planned visit — go BEFORE any rain forecast</span></li>
-        <li><div class="cl-box" onclick="toggle(this)"></div><span class="cl-text" onclick="toggle(this.previousElementSibling)">Plan Roosevelt Island tram ride (59th St & 2nd Ave) — stroller welcome</span></li>
-        <li><div class="cl-box" onclick="toggle(this)"></div><span class="cl-text" onclick="toggle(this.previousElementSibling)">Bring baby carrier / layers (50–65°F April mornings)</span></li>
-        <li><div class="cl-box" onclick="toggle(this)"></div><span class="cl-text" onclick="toggle(this.previousElementSibling)">Follow Instagram bloom updates (Nire Donahue NYC channel)</span></li>
-        <li><div class="cl-box" onclick="toggle(this)"></div><span class="cl-text" onclick="toggle(this.previousElementSibling)">Plan two separate visits — early April (Yoshino) + late April (Kwanzan)</span></li>
-        <li><div class="cl-box" onclick="toggle(this)"></div><span class="cl-text" onclick="toggle(this.previousElementSibling)">Set weekday BBG visit — avoid peak weekend crowds for stroller ease</span></li>
-        <li><div class="cl-box" onclick="toggle(this)"></div><span class="cl-text" onclick="toggle(this.previousElementSibling)">Arrive at Cherry Hill / Roosevelt Island before 8am for best photos</span></li>
-        <li><div class="cl-box" onclick="toggle(this)"></div><span class="cl-text" onclick="toggle(this.previousElementSibling)">Check if BBG Sakura Matsuri dates are announced for 2026</span></li>
-      </ul>
-    </div>
-  </div>
-
 </div>
 
+<!-- CURRENCY CONVERTER -->
+<div class="section">
+  <h2 class="section-title">💱 Currency Converter</h2>
+  <div class="converter-card">
+    <div class="converter-row">
+      <div class="converter-input-wrap">
+        <label>US Dollars (USD)</label>
+        <input type="number" id="usd-input" placeholder="100" value="100">
+      </div>
+      <span class="converter-arrow">→</span>
+      <div class="converter-result">
+        <label>Jamaican Dollar (JMD)</label>
+        <div class="result-display" id="local-result">J$15,800.00</div>
+      </div>
+    </div>
+    <div class="quick-btns">
+      <button class="quick-btn" onclick="setAmt(20)">$20</button>
+      <button class="quick-btn" onclick="setAmt(50)">$50</button>
+      <button class="quick-btn" onclick="setAmt(100)">$100</button>
+      <button class="quick-btn" onclick="setAmt(200)">$200</button>
+      <button class="quick-btn" onclick="setAmt(500)">$500</button>
+    </div>
+    <div class="rate-note" id="rate-note">1 USD = 158 Jamaican Dollar (JMD) — Note: USD widely accepted at resorts and tourist areas</div>
+  </div>
+</div>
+
+<!-- TRIP SNAPSHOT -->
+<div class="section">
+  <h2 class="section-title">📋 Trip Snapshot</h2>
+  <div class="snap-grid">
+    <div class="snap-card"><div class="snap-label">Destination</div><div class="snap-value">Montego Bay</div><div class="snap-note">Jamaica, Caribbean</div></div>
+    <div class="snap-card"><div class="snap-label">Best Travel Window</div><div class="snap-value">May 5–12</div><div class="snap-note">Cheapest midweek fares</div></div>
+    <div class="snap-card"><div class="snap-label">Flight Time</div><div class="snap-value">~4h 10min</div><div class="snap-note">JFK → MBJ nonstop</div></div>
+    <div class="snap-card"><div class="snap-label">Baby Age at Travel</div><div class="snap-value">8–9 months</div><div class="snap-note">Lap infant, flies free</div></div>
+    <div class="snap-card"><div class="snap-label">Round Trip Flights</div><div class="snap-value">~$700–$900</div><div class="snap-note">2 adults, economy nonstop</div></div>
+    <div class="snap-card"><div class="snap-label">All-Inclusive Rate</div><div class="snap-value">$250–$550/night</div><div class="snap-note">Per room, meals included</div></div>
+    <div class="snap-card"><div class="snap-label">Hurricane Risk</div><div class="snap-value">Very Low</div><div class="snap-note">Season starts June 1</div></div>
+    <div class="snap-card"><div class="snap-label">Language</div><div class="snap-value">English</div><div class="snap-note">Jamaican Creole locally</div></div>
+  </div>
+</div>
+
+<!-- WEATHER -->
+<div class="section">
+  <h2 class="section-title">🌤 Weather — May 5–12, 2026</h2>
+  <div class="weather-grid">
+    <div class="weather-day"><div class="w-date">Mon May 5</div><div class="w-icon">⛅</div><div class="w-temp">88°F / 78°F</div><div class="w-rain">Rain 20%</div></div>
+    <div class="weather-day"><div class="w-date">Tue May 6</div><div class="w-icon">☀️</div><div class="w-temp">89°F / 79°F</div><div class="w-rain">Rain 15%</div></div>
+    <div class="weather-day"><div class="w-date">Wed May 7</div><div class="w-icon">☀️</div><div class="w-temp">90°F / 79°F</div><div class="w-rain">Rain 10%</div></div>
+    <div class="weather-day"><div class="w-date">Thu May 8</div><div class="w-icon">⛅</div><div class="w-temp">89°F / 78°F</div><div class="w-rain">Rain 25%</div></div>
+    <div class="weather-day"><div class="w-date">Fri May 9</div><div class="w-icon">🌦</div><div class="w-temp">88°F / 78°F</div><div class="w-rain">Rain 35%</div></div>
+    <div class="weather-day"><div class="w-date">Sat May 10</div><div class="w-icon">⛅</div><div class="w-temp">89°F / 79°F</div><div class="w-rain">Rain 20%</div></div>
+    <div class="weather-day"><div class="w-date">Sun May 11</div><div class="w-icon">☀️</div><div class="w-temp">90°F / 79°F</div><div class="w-rain">Rain 15%</div></div>
+    <div class="weather-day"><div class="w-date">Mon May 12</div><div class="w-icon">⛅</div><div class="w-temp">88°F / 78°F</div><div class="w-rain">Rain 20%</div></div>
+  </div>
+  <div class="verdict-badge">✅ Weather Verdict: Excellent — 8 hours of sunshine daily, warm Caribbean sea 81°F, any brief showers are short tropical bursts typically under 30 minutes</div>
+</div>
+
+<!-- ADVISORIES -->
+<div class="section">
+  <h2 class="section-title">🛡 U.S. State Dept Travel Advisory</h2>
+  <div class="advisory-card">
+    <div class="advisory-header">
+      <span class="advisory-icon">🇺🇸</span>
+      <span class="advisory-title">Jamaica — Updated January 17, 2026</span>
+      <span class="advisory-level level-2">Level 2 — Exercise Increased Caution</span>
+    </div>
+    <div class="advisory-body">
+      Downgraded from Level 3 after Hurricane Melissa recovery. Tourist areas in Montego Bay (Hip Strip and Rose Hall) and Negril are fully operational. Crime risk exists in non-tourist areas.
+      <ul>
+        <li>Avoid public buses and driving between cities at night</li>
+        <li>Do not wander into non-tourist neighborhoods after dark</li>
+        <li>Stick to arranged resort excursions, not street-level tours</li>
+        <li>Keep a low profile and avoid flashy jewelry</li>
+        <li>Some areas in western Jamaica still recovering from Hurricane Melissa — confirm resort availability before booking</li>
+        <li>Certain parishes (St James inner city areas) carry Level 4 — Do Not Travel designations</li>
+      </ul>
+      U.S. Embassy Kingston: +1 876-702-6000
+    </div>
+  </div>
+
+  <h2 class="section-title" style="margin-top:30px;">🏥 CDC Health Advisory</h2>
+  <div class="advisory-card">
+    <div class="advisory-header">
+      <span class="advisory-icon">💉</span>
+      <span class="advisory-title">Jamaica Health Notices</span>
+      <span class="advisory-level level-2">Standard Precautions</span>
+    </div>
+    <div class="advisory-body">
+      No special vaccinations required for U.S. citizens. Recommended vaccines:
+      <ul>
+        <li>Routine vaccines up to date (MMR, Tdap, flu, COVID)</li>
+        <li>Hepatitis A — recommended for all travelers</li>
+        <li>Hepatitis B — recommended</li>
+        <li>Typhoid — if eating outside resort</li>
+        <li>Dengue fever risk is present — use DEET repellent, especially at dawn/dusk</li>
+        <li>Drink bottled water only — hotel tap water is safe at major resorts but use caution otherwise</li>
+      </ul>
+      <strong>For your infant:</strong> Consult your pediatrician before travel. No special vaccines required for infants at this age beyond routine schedule. Bring infant-grade DEET-free insect repellent and sunscreen.
+    </div>
+  </div>
+</div>
+
+<!-- ENTRY REQUIREMENTS -->
+<div class="section">
+  <h2 class="section-title">📄 Entry Requirements for U.S. Citizens</h2>
+  <div class="entry-grid">
+    <div class="entry-item"><div class="entry-label">Passport</div><div class="entry-value">Valid U.S. passport required. Must be valid for duration of stay.</div></div>
+    <div class="entry-item"><div class="entry-label">Visa</div><div class="entry-value">No visa required for U.S. citizens. Tourist stays up to 90 days.</div></div>
+    <div class="entry-item"><div class="entry-label">Immigration Form</div><div class="entry-value">Complete Jamaica immigration form (C5) online before arrival for faster processing at MBJ.</div></div>
+    <div class="entry-item"><div class="entry-label">Infant Travel</div><div class="entry-value">Both parents traveling together — bring baby's U.S. passport and birth certificate. No additional consent needed when both parents present.</div></div>
+    <div class="entry-item"><div class="entry-label">Return Ticket</div><div class="entry-value">Proof of onward or return travel required. Have your return flight confirmation accessible.</div></div>
+    <div class="entry-item"><div class="entry-label">Airport Departure Tax</div><div class="entry-value">Included in airline ticket price. No separate payment needed at airport.</div></div>
+  </div>
+</div>
+
+<!-- FLIGHTS -->
+<div class="section">
+  <h2 class="section-title">✈️ Flights — JFK to MBJ (Montego Bay)</h2>
+  <div class="flights-grid">
+    <div class="flight-card featured">
+      <div class="flight-badge">BEST PICK — NONSTOP</div>
+      <div class="flight-airline">JetBlue Airways</div>
+      <div class="flight-route">JFK (T5) → MBJ — Nonstop</div>
+      <div class="flight-row"><span class="flight-lbl">Flight Time</span><span class="flight-val">~4h 10min</span></div>
+      <div class="flight-row"><span class="flight-lbl">Frequency</span><span class="flight-val">Multiple daily</span></div>
+      <div class="flight-row"><span class="flight-lbl">Best Departure</span><span class="flight-val">10:00 AM – 1:00 PM</span></div>
+      <div class="flight-row"><span class="flight-lbl">Round Trip (2 adults)</span><span class="flight-val">~$700–$900</span></div>
+      <div class="flight-row"><span class="flight-lbl">Lap Infant (each way)</span><span class="flight-val">~10% adult fare ≈ $35–$45</span></div>
+      <div class="flight-row"><span class="flight-lbl">Cheapest Days</span><span class="flight-val">Tue/Wed departures</span></div>
+      <div class="flight-row"><span class="flight-lbl">Includes</span><span class="flight-val">Free WiFi, free snacks, live TV</span></div>
+      <div class="flight-links">
+        <a href="https://www.jetblue.com/en/book/flights/from/JFK/to/MBJ" target="_blank" class="btn-link primary">Book JetBlue</a>
+        <a href="https://www.kayak.com/flights/JFK-MBJ/2026-05-06/2026-05-12" target="_blank" class="btn-link">Compare on KAYAK</a>
+      </div>
+    </div>
+    <div class="flight-card">
+      <div class="flight-airline">Delta Air Lines / American Airlines</div>
+      <div class="flight-route">JFK → MBJ — Nonstop backup options</div>
+      <div class="flight-row"><span class="flight-lbl">Flight Time</span><span class="flight-val">~4h 10–20min</span></div>
+      <div class="flight-row"><span class="flight-lbl">Frequency</span><span class="flight-val">Daily (Delta + AA)</span></div>
+      <div class="flight-row"><span class="flight-lbl">Round Trip (2 adults)</span><span class="flight-val">~$700–$1,000</span></div>
+      <div class="flight-row"><span class="flight-lbl">Delta Perk</span><span class="flight-val">62% on-time rate (most reliable)</span></div>
+      <div class="flight-row"><span class="flight-lbl">AA Perk</span><span class="flight-val">Often cheapest RT fares ~$515</span></div>
+      <div class="flight-row"><span class="flight-lbl">Best for</span><span class="flight-val">Price flexibility / backup dates</span></div>
+      <div class="flight-links">
+        <a href="https://www.delta.com/us/en/flight-search/search?cacheKeySuffix=&paxCount=2&origin=JFK&destination=MBJ" target="_blank" class="btn-link">Book Delta</a>
+        <a href="https://www.aa.com/booking/flights/search" target="_blank" class="btn-link">Book AA</a>
+        <a href="https://www.google.com/flights#flt=JFK.MBJ.2026-05-06*MBJ.JFK.2026-05-12;c:USD;e:1;sd:1;t:f" target="_blank" class="btn-link">Google Flights</a>
+      </div>
+    </div>
+  </div>
+  <div style="margin-top:14px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;font-size:13px;color:var(--text2);">
+    💡 <strong style="color:#fff;">Date flexibility tip:</strong> May is the cheapest month to fly JFK–MBJ all year. Aim for Tuesday or Wednesday departures. Book 4–6 weeks in advance for best rates. Use Google Flights' calendar view to compare prices across all May dates. Your baby (8–9 months) flies as a lap infant — bring birth certificate to confirm age at check-in.
+  </div>
+</div>
+
+<!-- CAR RENTAL -->
+<div class="section">
+  <h2 class="section-title">🚗 Car Rental at MBJ</h2>
+  <div class="car-grid">
+    <div class="car-card best">
+      <div class="car-title">🏆 Island Car Rentals</div>
+      <div class="car-row"><span class="car-lbl">Type</span><span class="car-val">Economy / SUV</span></div>
+      <div class="car-row"><span class="car-lbl">Rate</span><span class="car-val">~$45–$75/day</span></div>
+      <div class="car-row"><span class="car-lbl">5-day total</span><span class="car-val">~$225–$375</span></div>
+      <div class="car-row"><span class="car-lbl">Note</span><span class="car-val">Most recommended local agency. Book ahead.</span></div>
+      <div class="car-row"><span class="car-lbl">Book</span><span class="car-val"><a href="https://www.islandcarrentals.com" target="_blank">islandcarrentals.com</a></span></div>
+    </div>
+    <div class="car-card">
+      <div class="car-title">Budget / Avis (Airport)</div>
+      <div class="car-row"><span class="car-lbl">Type</span><span class="car-val">Economy</span></div>
+      <div class="car-row"><span class="car-lbl">Rate</span><span class="car-val">~$55–$90/day</span></div>
+      <div class="car-row"><span class="car-lbl">5-day total</span><span class="car-val">~$275–$450</span></div>
+      <div class="car-row"><span class="car-lbl">Note</span><span class="car-val">International chains, easier insurance claim process</span></div>
+      <div class="car-row"><span class="car-lbl">Book</span><span class="car-val"><a href="https://www.budget.com" target="_blank">budget.com</a></span></div>
+    </div>
+    <div class="car-card">
+      <div class="car-title">💡 Skip Car Rental?</div>
+      <div class="car-row"><span class="car-lbl">Resort Transfers</span><span class="car-val">Most resorts offer free airport transfers</span></div>
+      <div class="car-row"><span class="car-lbl">Day Trips</span><span class="car-val">Book through resort concierge</span></div>
+      <div class="car-row"><span class="car-lbl">Taxi</span><span class="car-val">JUTA taxis are official, metered. Airport to Rose Hall ~$25</span></div>
+      <div class="car-row"><span class="car-lbl">With a baby</span><span class="car-val">Car rental requires own car seat. Resort transfers easier.</span></div>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:13px;color:var(--text2);background:var(--bg2);border:1px solid var(--border);padding:14px;border-radius:var(--radius);">⚠️ Jamaican road rules: Drive on the LEFT. Roads can be narrow and winding outside tourist corridors. If staying all-inclusive at Rose Hall or Hip Strip, you likely will not need a car at all — resort is self-contained and excursions are arranged.</div>
+</div>
+
+<!-- HOTELS -->
+<div class="section">
+  <h2 class="section-title">🏨 Hotels — All-Inclusive Resorts, Montego Bay</h2>
+  <div class="hotels-grid">
+
+    <div class="hotel-card top-pick">
+      <img src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=600&q=80" alt="Hyatt Ziva Rose Hall" class="hotel-img"
+           onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🏨</span></div>'">
+      <div class="hotel-body">
+        <span class="hotel-badge badge-top">TOP PICK</span>
+        <div class="hotel-name">Hyatt Ziva Rose Hall</div>
+        <div class="hotel-price">~$350–$500/night all-inclusive</div>
+        <div class="hotel-note">Rated 8.8/10. Kids club, multiple pools, supervised childcare, 12+ restaurants. 5-star all-inclusive with baby-friendly suites including cribs. Free airport shuttle. Connecting rooms available for families.</div>
+        <div class="hotel-links">
+          <a href="https://www.hyatt.com/en-US/hotel/jamaica/hyatt-ziva-rose-hall/mobzr" target="_blank" class="btn-link primary">Hyatt.com</a>
+          <a href="https://www.expedia.com/Montego-Bay-Hotels-Hyatt-Ziva-Rose-Hall.h15730.Hotel-Information" target="_blank" class="btn-link">Expedia</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hotel-card top-pick">
+      <img src="https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=600&q=80" alt="Jewel Grande Montego Bay" class="hotel-img"
+           onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🏨</span></div>'">
+      <div class="hotel-body">
+        <span class="hotel-badge badge-luxury">LUXURY BOUTIQUE</span>
+        <div class="hotel-name">Jewel Grande Montego Bay</div>
+        <div class="hotel-price">~$400–$600/night all-inclusive</div>
+        <div class="hotel-note">7 restaurants, 2 swim-up bars, 2 scenic pools overlooking the ocean. Boutique feel — fewer rooms, more personal service. Wellness-focused. Great for couples traveling with an infant. Marriott Bonvoy points eligible.</div>
+        <div class="hotel-links">
+          <a href="https://www.marriott.com/en-us/hotels/mbjai-jewel-grande-montego-bay-resort-and-spa/overview/" target="_blank" class="btn-link primary">Marriott</a>
+          <a href="https://www.expedia.com/Montego-Bay-Hotels-Jewel-Grande-Montego-Bay.h23889087.Hotel-Information" target="_blank" class="btn-link">Expedia</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hotel-card">
+      <img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&q=80" alt="Royalton Blue Waters" class="hotel-img"
+           onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🏨</span></div>'">
+      <div class="hotel-body">
+        <span class="hotel-badge badge-value">GREAT VALUE</span>
+        <div class="hotel-name">Royalton Blue Waters Montego Bay</div>
+        <div class="hotel-price">~$280–$420/night all-inclusive</div>
+        <div class="hotel-note">Autograph Collection by Marriott. 228 suites, lazy river, pirate-themed water park, 11 restaurants. Diamond Club upgrade available. Weekly White Party. Bonvoy points eligible. Baby-friendly with cribs on request.</div>
+        <div class="hotel-links">
+          <a href="https://all-inclusive.marriott.com/royalton-blue-waters-montego-bay" target="_blank" class="btn-link primary">Marriott</a>
+          <a href="https://www.expedia.com/Montego-Bay-Hotels-Royalton-Blue-Waters.h12777261.Hotel-Information" target="_blank" class="btn-link">Expedia</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hotel-card">
+      <img src="https://images.unsplash.com/photo-1469521669194-babb45599def?w=600&q=80" alt="Dreams Rose Hall" class="hotel-img"
+           onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🏨</span></div>'">
+      <div class="hotel-body">
+        <span class="hotel-badge badge-value">FAMILY FAVORITE</span>
+        <div class="hotel-name">Dreams Rose Hall Resort &amp; Spa</div>
+        <div class="hotel-price">~$250–$380/night all-inclusive</div>
+        <div class="hotel-note">Rated 8.6/10. Free water park, kids club, playground, arcade. Babysitting services available. Multiple pools including children's pool. Excellent for families with infants — staff known for being accommodating with young children.</div>
+        <div class="hotel-links">
+          <a href="https://www.dreamsresorts.com/dreams-rose-hall/" target="_blank" class="btn-link primary">Dreams Resorts</a>
+          <a href="https://www.expedia.com/Montego-Bay-Hotels-Dreams-Rose-Hall-Resort-Spa.h1579012.Hotel-Information" target="_blank" class="btn-link">Expedia</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hotel-card">
+      <img src="https://images.unsplash.com/photo-1567521464027-f127ff144326?w=600&q=80" alt="Iberostar Rose Hall Beach" class="hotel-img"
+           onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🏨</span></div>'">
+      <div class="hotel-body">
+        <span class="hotel-badge badge-value">SOLID CHOICE</span>
+        <div class="hotel-name">Iberostar Rose Hall Beach</div>
+        <div class="hotel-price">~$260–$390/night all-inclusive</div>
+        <div class="hotel-note">Star Camp kids program (ages 4–17). Babysitting services. Private beach. 2 pools, water park. 5-star all-inclusive. One of the most popular resorts on TripAdvisor for Montego Bay families. Book early — fills fast in May.</div>
+        <div class="hotel-links">
+          <a href="https://www.iberostar.com/en/hotels/montego-bay/iberostar-rose-hall-beach/" target="_blank" class="btn-link primary">Iberostar</a>
+          <a href="https://www.expedia.com/Montego-Bay-Hotels-Iberostar-Rose-Hall-Beach.h1254714.Hotel-Information" target="_blank" class="btn-link">Expedia</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hotel-card">
+      <img src="https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?w=600&q=80" alt="Airbnb option Jamaica" class="hotel-img"
+           onerror="this.parentElement.innerHTML='<div class=slide-fallback><span>🏡</span></div>'">
+      <div class="hotel-body">
+        <span class="hotel-badge badge-value">AIRBNB OPTION</span>
+        <div class="hotel-name">Private Villa — Rose Hall Area</div>
+        <div class="hotel-price">~$180–$350/night (private pool + kitchen)</div>
+        <div class="hotel-note">Good for a family that wants kitchen access for baby food prep. Many villas in the Rose Hall corridor offer private pools, beach access, and staff. Less convenient than all-inclusive but more space and privacy for a baby.</div>
+        <div class="hotel-links">
+          <a href="https://www.airbnb.com/s/Montego-Bay--Jamaica/homes?refinement_paths%5B%5D=%2Fhomes&amenities%5B%5D=7&checkin=2026-05-05&checkout=2026-05-12" target="_blank" class="btn-link primary">Search Airbnb</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- THINGS TO DO -->
+<div class="section">
+  <h2 class="section-title">🎯 Things To Do — Montego Bay</h2>
+  <div class="activities-grid">
+
+    <!-- Dunn's River Falls -->
+    <div class="activity-card">
+      <div class="slider-wrap" id="w1">
+        <div class="slider-track" id="t1">
+          <img src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=600&q=80" alt="Dunn's River Falls"
+               onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>🌊</span></div>'">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" alt="waterfall Jamaica"
+               onerror="this.style.display='none'">
+        </div>
+        <button class="slider-btn prev" onclick="slide('w1','t1',-1)">‹</button>
+        <button class="slider-btn next" onclick="slide('w1','t1',1)">›</button>
+        <div class="slider-dots"><button class="slider-dot active"></button><button class="slider-dot"></button></div>
+        <div class="slide-count">1 / 2</div>
+      </div>
+      <div class="activity-body">
+        <div class="activity-name">Dunn's River Falls</div>
+        <div class="activity-price">~$25/adult • Free under 3</div>
+        <div class="activity-note">Jamaica's most iconic waterfall — climb terraced cascades hand-in-hand in a human chain. Located in Ocho Rios (~1.5 hrs from MBJ). Worth the drive. Baby too young to climb but can be worn in a carrier for photos.</div>
+        <div class="activity-links">
+          <a href="https://www.google.com/search?q=Dunn%27s+River+Falls+Jamaica&tbm=isch" target="_blank" class="act-link">📷 Photos</a>
+          <a href="https://www.youtube.com/results?search_query=Dunns+River+Falls+Jamaica" target="_blank" class="act-link">▶ YouTube</a>
+          <a href="https://www.tiktok.com/search?q=dunns+river+falls+jamaica" target="_blank" class="act-link">🎵 TikTok</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Doctor's Cave Beach -->
+    <div class="activity-card">
+      <div class="slider-wrap" id="w2">
+        <div class="slider-track" id="t2">
+          <img src="https://images.unsplash.com/photo-1503917988258-f87a78e3c995?w=600&q=80" alt="Doctor's Cave Beach"
+               onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>🏖️</span></div>'">
+          <img src="https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?w=600&q=80" alt="Caribbean beach"
+               onerror="this.style.display='none'">
+        </div>
+        <button class="slider-btn prev" onclick="slide('w2','t2',-1)">‹</button>
+        <button class="slider-btn next" onclick="slide('w2','t2',1)">›</button>
+        <div class="slider-dots"><button class="slider-dot active"></button><button class="slider-dot"></button></div>
+        <div class="slide-count">1 / 2</div>
+      </div>
+      <div class="activity-body">
+        <div class="activity-name">Doctor's Cave Beach</div>
+        <div class="activity-price">~$6 entry • Lockers available</div>
+        <div class="activity-note">MoBay's most famous public beach. Calm, crystal-clear turquoise water perfect for babies. Shallow entry, white sand, beach chairs available. Snack bars and vendors on site. Walking distance from the Hip Strip.</div>
+        <div class="activity-links">
+          <a href="https://www.google.com/search?q=Doctors+Cave+Beach+Montego+Bay&tbm=isch" target="_blank" class="act-link">📷 Photos</a>
+          <a href="https://www.youtube.com/results?search_query=doctors+cave+beach+montego+bay" target="_blank" class="act-link">▶ YouTube</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Martha Brae River Rafting -->
+    <div class="activity-card">
+      <div class="slider-wrap" id="w3">
+        <div class="slider-track" id="t3">
+          <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&q=80" alt="river rafting Jamaica"
+               onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>🚣</span></div>'">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="lush tropics"
+               onerror="this.style.display='none'">
+        </div>
+        <button class="slider-btn prev" onclick="slide('w3','t3',-1)">‹</button>
+        <button class="slider-btn next" onclick="slide('w3','t3',1)">›</button>
+        <div class="slider-dots"><button class="slider-dot active"></button><button class="slider-dot"></button></div>
+        <div class="slide-count">1 / 2</div>
+      </div>
+      <div class="activity-body">
+        <div class="activity-name">Martha Brae River Rafting</div>
+        <div class="activity-price">~$75/raft (holds 2) • Baby sits with you</div>
+        <div class="activity-note">Float down a scenic river on a bamboo raft with a guide. Incredibly relaxing and baby-friendly. About 30 minutes from Montego Bay. One of the most romantic and serene experiences in Jamaica. Book through your resort concierge.</div>
+        <div class="activity-links">
+          <a href="https://www.google.com/search?q=Martha+Brae+River+Rafting+Jamaica&tbm=isch" target="_blank" class="act-link">📷 Photos</a>
+          <a href="https://www.youtube.com/results?search_query=martha+brae+river+rafting+jamaica" target="_blank" class="act-link">▶ YouTube</a>
+          <a href="https://www.tiktok.com/search?q=martha+brae+rafting+jamaica" target="_blank" class="act-link">🎵 TikTok</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rose Hall Great House -->
+    <div class="activity-card">
+      <div class="slider-wrap" id="w4">
+        <div class="slider-track" id="t4">
+          <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600&q=80" alt="historic mansion Jamaica"
+               onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>🏚️</span></div>'">
+          <img src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=600&q=80" alt="old plantation house"
+               onerror="this.style.display='none'">
+        </div>
+        <button class="slider-btn prev" onclick="slide('w4','t4',-1)">‹</button>
+        <button class="slider-btn next" onclick="slide('w4','t4',1)">›</button>
+        <div class="slider-dots"><button class="slider-dot active"></button><button class="slider-dot"></button></div>
+        <div class="slide-count">1 / 2</div>
+      </div>
+      <div class="activity-body">
+        <div class="activity-name">Rose Hall Great House</div>
+        <div class="activity-price">~$35/adult • Free under 2</div>
+        <div class="activity-note">Historic 18th-century plantation home with guided tours. The legend of Annie Palmer "White Witch of Rose Hall" is fascinating Jamaican folklore. Daytime tours are informative and family-friendly. Night tours are more theatrical.</div>
+        <div class="activity-links">
+          <a href="https://www.google.com/search?q=Rose+Hall+Great+House+Jamaica&tbm=isch" target="_blank" class="act-link">📷 Photos</a>
+          <a href="https://www.youtube.com/results?search_query=rose+hall+great+house+jamaica+tour" target="_blank" class="act-link">▶ YouTube</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Catamaran Cruise -->
+    <div class="activity-card">
+      <div class="slider-wrap" id="w5">
+        <div class="slider-track" id="t5">
+          <img src="https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?w=600&q=80" alt="catamaran Jamaica"
+               onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>⛵</span></div>'">
+          <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80" alt="snorkeling Caribbean"
+               onerror="this.style.display='none'">
+        </div>
+        <button class="slider-btn prev" onclick="slide('w5','t5',-1)">‹</button>
+        <button class="slider-btn next" onclick="slide('w5','t5',1)">›</button>
+        <div class="slider-dots"><button class="slider-dot active"></button><button class="slider-dot"></button></div>
+        <div class="slide-count">1 / 2</div>
+      </div>
+      <div class="activity-body">
+        <div class="activity-name">Catamaran Sunset Cruise</div>
+        <div class="activity-price">~$75–$100/adult • Infants free</div>
+        <div class="activity-note">Sail along Montego Bay coastline at sunset with open bar, snorkeling stop, and reggae music. Most boats are family-friendly with life vests for infants. Book through resort — they use reputable operators like Dreamer Catamaran.</div>
+        <div class="activity-links">
+          <a href="https://www.google.com/search?q=catamaran+cruise+montego+bay+jamaica&tbm=isch" target="_blank" class="act-link">📷 Photos</a>
+          <a href="https://www.youtube.com/results?search_query=catamaran+sunset+cruise+montego+bay" target="_blank" class="act-link">▶ YouTube</a>
+          <a href="https://www.tiktok.com/search?q=catamaran+montego+bay" target="_blank" class="act-link">🎵 TikTok</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Montego Bay Marine Park Snorkeling -->
+    <div class="activity-card">
+      <div class="slider-wrap" id="w6">
+        <div class="slider-track" id="t6">
+          <img src="https://images.unsplash.com/photo-1544551763-92ab472cad5d?w=600&q=80" alt="snorkeling reef"
+               onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>🤿</span></div>'">
+          <img src="https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=600&q=80" alt="Caribbean reef"
+               onerror="this.style.display='none'">
+        </div>
+        <button class="slider-btn prev" onclick="slide('w6','t6',-1)">‹</button>
+        <button class="slider-btn next" onclick="slide('w6','t6',1)">›</button>
+        <div class="slider-dots"><button class="slider-dot active"></button><button class="slider-dot"></button></div>
+        <div class="slide-count">1 / 2</div>
+      </div>
+      <div class="activity-body">
+        <div class="activity-name">Montego Bay Marine Park Snorkeling</div>
+        <div class="activity-price">~$30–$50 guided tour</div>
+        <div class="activity-note">Protected marine sanctuary with vibrant coral reefs and tropical fish. Glass-bottom boat tours available if you prefer not to snorkel. Calm, clear waters great for beginners. Book through your resort or at Doctor's Cave Beach.</div>
+        <div class="activity-links">
+          <a href="https://www.google.com/search?q=Montego+Bay+Marine+Park+snorkeling&tbm=isch" target="_blank" class="act-link">📷 Photos</a>
+          <a href="https://www.youtube.com/results?search_query=montego+bay+snorkeling+jamaica" target="_blank" class="act-link">▶ YouTube</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pelican Bar -->
+    <div class="activity-card">
+      <div class="slider-wrap" id="w7">
+        <div class="slider-track" id="t7">
+          <img src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=600&q=80" alt="Jamaica bar"
+               onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>🦩</span></div>'">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="ocean Jamaica"
+               onerror="this.style.display='none'">
+        </div>
+        <button class="slider-btn prev" onclick="slide('w7','t7',-1)">‹</button>
+        <button class="slider-btn next" onclick="slide('w7','t7',1)">›</button>
+        <div class="slider-dots"><button class="slider-dot active"></button><button class="slider-dot"></button></div>
+        <div class="slide-count">1 / 2</div>
+      </div>
+      <div class="activity-body">
+        <div class="activity-name">Pelican Bar (Parottee Beach)</div>
+        <div class="activity-price">~$50/person boat + drinks (full day trip)</div>
+        <div class="activity-note">One of Jamaica's most unique spots — a wooden bar built on a sandbar in the middle of the sea, reachable only by boat. Rum punch, fresh fish, reggae. A true Jamaican bucket list experience. About 1.5 hrs from MoBay. Baby can come if in a life vest.</div>
+        <div class="activity-links">
+          <a href="https://www.google.com/search?q=Pelican+Bar+Jamaica&tbm=isch" target="_blank" class="act-link">📷 Photos</a>
+          <a href="https://www.youtube.com/results?search_query=pelican+bar+jamaica" target="_blank" class="act-link">▶ YouTube</a>
+          <a href="https://www.tiktok.com/search?q=pelican+bar+jamaica" target="_blank" class="act-link">🎵 TikTok</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Local Jerk Chicken Experience -->
+    <div class="activity-card">
+      <div class="slider-wrap" id="w8">
+        <div class="slider-track" id="t8">
+          <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&q=80" alt="Jamaican food"
+               onerror="this.parentElement.parentElement.innerHTML='<div class=slide-fallback><span>🍗</span></div>'">
+          <img src="https://images.unsplash.com/photo-1469521669194-babb45599def?w=600&q=80" alt="jerk chicken"
+               onerror="this.style.display='none'">
+        </div>
+        <button class="slider-btn prev" onclick="slide('w8','t8',-1)">‹</button>
+        <button class="slider-btn next" onclick="slide('w8','t8',1)">›</button>
+        <div class="slider-dots"><button class="slider-dot active"></button><button class="slider-dot"></button></div>
+        <div class="slide-count">1 / 2</div>
+      </div>
+      <div class="activity-body">
+        <div class="activity-name">Scotchies Jerk Centre Experience</div>
+        <div class="activity-price">~$15–$25/person</div>
+        <div class="activity-note">The most authentic jerk experience in MoBay. Pimento wood-smoked jerk chicken, pork, and festival bread. Outdoor open-air setting. Safe, family-friendly. A cultural food experience that is a must-do in Jamaica. Book a taxi from your resort.</div>
+        <div class="activity-links">
+          <a href="https://www.google.com/search?q=Scotchies+Jerk+Centre+Montego+Bay&tbm=isch" target="_blank" class="act-link">📷 Photos</a>
+          <a href="https://www.youtube.com/results?search_query=scotchies+jerk+montego+bay" target="_blank" class="act-link">▶ YouTube</a>
+          <a href="https://www.tiktok.com/search?q=scotchies+jerk+jamaica" target="_blank" class="act-link">🎵 TikTok</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- RESTAURANTS -->
+<div class="section">
+  <h2 class="section-title">🍽 Restaurants — Montego Bay</h2>
+  <div class="rest-grid">
+
+    <div class="rest-card">
+      <img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&q=80" alt="restaurant dining"
+           style="width:100%;height:150px;object-fit:cover;"
+           onerror="this.parentElement.innerHTML+=''; this.style.display='none'">
+      <div class="rest-body">
+        <div class="rest-name">Scotchies Jerk Centre</div>
+        <div class="rest-price">$ — Local casual (under $15/person)</div>
+        <div class="rest-note">The gold standard for authentic Jamaican jerk. Pimento wood pit-smoked. Order the combo plate with festival bread and rice and peas. Worth every penny. Near the Hip Strip.</div>
+        <div class="rest-links">
+          <a href="https://www.google.com/maps/search/Scotchies+Jerk+Centre+Montego+Bay" target="_blank" class="act-link">📍 Google Maps</a>
+          <a href="https://www.tripadvisor.com/Restaurant_Review-g147138-d1020534-Reviews-Scotchies_Jerk_Centre-Montego_Bay_Saint_James_Parish_Jamaica.html" target="_blank" class="act-link">⭐ TripAdvisor</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="rest-card">
+      <img src="https://images.unsplash.com/photo-1567521464027-f127ff144326?w=600&q=80" alt="seafood restaurant"
+           style="width:100%;height:150px;object-fit:cover;"
+           onerror="this.style.display='none'">
+      <div class="rest-body">
+        <div class="rest-name">The Pelican Grill</div>
+        <div class="rest-price">$$ — Mid-range (around $20–$40/person)</div>
+        <div class="rest-note">MoBay institution since 1969. Jamaican classics — curried goat, steamed fish, jerk lobster. Beautiful waterfront setting on the Hip Strip. Family-friendly, high chairs available. Arrive before 7 PM to beat the wait.</div>
+        <div class="rest-links">
+          <a href="https://www.google.com/maps/search/The+Pelican+Grill+Montego+Bay" target="_blank" class="act-link">📍 Google Maps</a>
+          <a href="https://www.tripadvisor.com/Restaurant_Review-g147138-d319785-Reviews-The_Pelican_Grill-Montego_Bay_Saint_James_Parish_Jamaica.html" target="_blank" class="act-link">⭐ TripAdvisor</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="rest-card">
+      <img src="https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=600&q=80" alt="fine dining Jamaica"
+           style="width:100%;height:150px;object-fit:cover;"
+           onerror="this.style.display='none'">
+      <div class="rest-body">
+        <div class="rest-name">The Sugar Mill Restaurant</div>
+        <div class="rest-price">$$$ — Upscale ($50–$80/person)</div>
+        <div class="rest-note">Romantic open-air restaurant set in a 200-year-old sugar mill ruins. Outstanding Jamaican cuisine with international flair. Perfect for a special dinner. Reservations essential. Located at Half Moon resort, walkable from Rose Hall.</div>
+        <div class="rest-links">
+          <a href="https://www.google.com/maps/search/Sugar+Mill+Restaurant+Montego+Bay+Jamaica" target="_blank" class="act-link">📍 Google Maps</a>
+          <a href="https://www.tripadvisor.com/Restaurant_Review-g147138-d291476-Reviews-The_Sugar_Mill_Restaurant-Montego_Bay_Saint_James_Parish_Jamaica.html" target="_blank" class="act-link">⭐ TripAdvisor</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="rest-card">
+      <img src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=600&q=80" alt="beachside dining"
+           style="width:100%;height:150px;object-fit:cover;"
+           onerror="this.style.display='none'">
+      <div class="rest-body">
+        <div class="rest-name">Marguerites Seafood by the Sea</div>
+        <div class="rest-price">$$$ — Upscale seafood ($45–$75/person)</div>
+        <div class="rest-note">Best seafood in MoBay — fresh lobster, shrimp, and fish right on the waterfront. Romantic sunset setting. Known for the flambé tableside desserts. Book ahead on weekends. Very popular with tourists and locals alike.</div>
+        <div class="rest-links">
+          <a href="https://www.google.com/maps/search/Marguerites+Seafood+Montego+Bay" target="_blank" class="act-link">📍 Google Maps</a>
+          <a href="https://www.tripadvisor.com/Restaurant_Review-g147138-d319782-Reviews-Marguerites_Seafood_by_the_Sea-Montego_Bay_Saint_James_Parish_Jamaica.html" target="_blank" class="act-link">⭐ TripAdvisor</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="rest-card">
+      <img src="https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?w=600&q=80" alt="local Jamaican food"
+           style="width:100%;height:150px;object-fit:cover;"
+           onerror="this.style.display='none'">
+      <div class="rest-body">
+        <div class="rest-name">Pork Pit</div>
+        <div class="rest-price">$ — Street casual (under $12/person)</div>
+        <div class="rest-note">Open-air jerk pit right on Gloucester Avenue (Hip Strip). Jerk pork is the star of the show — order by the pound. Local crowd, authentic vibes. Open late. Sit on picnic benches with a Red Stripe and watch the street scene. Cash preferred.</div>
+        <div class="rest-links">
+          <a href="https://www.google.com/maps/search/Pork+Pit+Montego+Bay+Jamaica" target="_blank" class="act-link">📍 Google Maps</a>
+          <a href="https://www.tripadvisor.com/Restaurant_Review-g147138-d319790-Reviews-Pork_Pit-Montego_Bay_Saint_James_Parish_Jamaica.html" target="_blank" class="act-link">⭐ TripAdvisor</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="rest-card">
+      <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&q=80" alt="breakfast Jamaica"
+           style="width:100%;height:150px;object-fit:cover;"
+           onerror="this.style.display='none'">
+      <div class="rest-body">
+        <div class="rest-name">Houseboat Grill</div>
+        <div class="rest-price">$$$ — Upscale ($40–$70/person)</div>
+        <div class="rest-note">Literally dine on a floating houseboat in Montego Bay harbour. Unique, romantic, and memorable. Excellent international menu — fresh catch, pasta, steaks. Arrive by boat taxi from the Hip Strip. Reservations required. Baby-friendly with advance notice.</div>
+        <div class="rest-links">
+          <a href="https://www.google.com/maps/search/Houseboat+Grill+Montego+Bay" target="_blank" class="act-link">📍 Google Maps</a>
+          <a href="https://www.tripadvisor.com/Restaurant_Review-g147138-d319794-Reviews-Houseboat_Grill-Montego_Bay_Saint_James_Parish_Jamaica.html" target="_blank" class="act-link">⭐ TripAdvisor</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOD COSTS -->
+<div class="section">
+  <h2 class="section-title">💰 Food Costs at a Glance (2 Adults)</h2>
+  <table class="food-table">
+    <thead><tr><th>Meal Type</th><th>Where</th><th>Cost Per Meal</th><th>Daily Total</th></tr></thead>
+    <tbody>
+      <tr><td>Street food (jerk, patties)</td><td>Hip Strip vendors</td><td>$8–$15/person</td><td>~$30–$50</td></tr>
+      <tr><td>Local casual restaurant</td><td>Scotchies, Pork Pit</td><td>$12–$20/person</td><td>~$40–$70</td></tr>
+      <tr><td>Mid-range restaurant</td><td>Pelican Grill, local spots</td><td>$25–$40/person</td><td>~$70–$110</td></tr>
+      <tr><td>Upscale / waterfront</td><td>Sugar Mill, Marguerites</td><td>$50–$80/person</td><td>~$130–$200</td></tr>
+      <tr><td>All-inclusive resort</td><td>Your hotel</td><td>Included in rate</td><td>$0 extra</td></tr>
+      <tr><td>Red Stripe beer (local)</td><td>Any bar</td><td>$2–$4/bottle</td><td>—</td></tr>
+      <tr><td>Rum punch (tourist bar)</td><td>Hip Strip</td><td>$8–$12</td><td>—</td></tr>
+    </tbody>
+  </table>
+  <p style="margin-top:12px;font-size:13px;color:var(--text2);">💡 All-inclusive resort recommendation means food budget outside the resort is just for excursion days when you want a local experience (2–3 meals out of a 7-day trip). Budget ~$150–$200 extra for food outside the resort over the full week.</p>
+</div>
+
+<!-- INSIDER TIPS -->
+<div class="section">
+  <h2 class="section-title">💡 Insider Tips — Montego Bay</h2>
+  <div class="tips-grid">
+    <div class="tip-card"><div class="tip-icon">✈️</div><div class="tip-title">Fly Tuesday or Wednesday</div><div class="tip-text">May midweek JFK–MBJ flights are consistently cheapest. Avoid Friday–Sunday departures which run $50–$150 more per person.</div></div>
+    <div class="tip-card"><div class="tip-icon">🏨</div><div class="tip-title">Book Rose Hall Area</div><div class="tip-text">Rose Hall resorts are 15 minutes from MBJ airport. Newer properties, quieter than the Hip Strip, and still have all amenities on-site.</div></div>
+    <div class="tip-card"><div class="tip-icon">👶</div><div class="tip-title">Request Crib in Advance</div><div class="tip-text">Email your resort directly to request a crib, pack-n-play, and baby-safe room setup before arrival. Most resorts provide this free of charge.</div></div>
+    <div class="tip-card"><div class="tip-icon">💵</div><div class="tip-title">USD is King</div><div class="tip-text">USD is accepted almost everywhere in MoBay tourist zones. No need to exchange much cash. Bring $100–$200 in small bills for tips and street food.</div></div>
+    <div class="tip-card"><div class="tip-icon">🚕</div><div class="tip-title">Use JUTA Taxis Only</div><div class="tip-text">JUTA taxis are the official licensed tourist taxis. Red license plates. Ask your resort to arrange them. Never take unmarked taxis off the street.</div></div>
+    <div class="tip-card"><div class="tip-icon">🌞</div><div class="tip-title">Book Excursions Through Resort</div><div class="tip-text">Resort concierge uses vetted, insured operators. Slightly more expensive but safer and more reliable than booking random operators on the street.</div></div>
+    <div class="tip-card"><div class="tip-icon">🏖️</div><div class="tip-title">Stay Within Your Resort's Zone</div><div class="tip-text">The Rose Hall resort corridor is self-contained and very safe. Stick to the resort strip, arranged excursions, and well-known tourist spots during the day.</div></div>
+    <div class="tip-card"><div class="tip-icon">🎵</div><div class="tip-title">Reggae Sundays</div><div class="tip-text">Many resorts host live reggae and cultural nights on Sundays. Check with your resort for their weekly entertainment schedule. Great authentic experience without leaving the property.</div></div>
+    <div class="tip-card"><div class="tip-icon">☀️</div><div class="tip-title">Sun is Intense in May</div><div class="tip-text">Caribbean UV is extremely strong even on cloudy days. Reapply SPF 50+ every 90 minutes. For the baby, use baby-specific mineral sunscreen and shade them between 10 AM–3 PM.</div></div>
+    <div class="tip-card"><div class="tip-icon">🦟</div><div class="tip-title">Mosquito Protection</div><div class="tip-text">Use DEET-based repellent for adults at dawn and dusk. For the baby use DEET-free picaridin or citronella-based repellent. Pack lightweight long sleeves for evenings.</div></div>
+    <div class="tip-card"><div class="tip-icon">📱</div><div class="tip-title">Get WhatsApp Before You Go</div><div class="tip-text">Jamaican businesses, taxis, and excursion operators primarily communicate via WhatsApp. Having it installed makes logistics much easier on the ground.</div></div>
+    <div class="tip-card"><div class="tip-icon">🍋</div><div class="tip-title">Try the Local Rum</div><div class="tip-text">Appleton Estate and Wray & Nephew are Jamaica's top rums — available everywhere for a fraction of US prices. Pick up a bottle at the airport duty-free on the way home.</div></div>
+  </div>
+</div>
+
+<!-- INFANT NOTES -->
+<div class="section">
+  <h2 class="section-title">👶 Infant Travel Notes</h2>
+  <div class="infant-card">
+    <div class="infant-header">
+      <span style="font-size:28px;">👶</span>
+      <div class="infant-title">Your daughter will be 8–9 months old at travel time — Lap Infant Status</div>
+    </div>
+    <div class="infant-grid">
+      <div class="infant-item"><div class="infant-item-title">Flight Seat</div><div class="infant-item-text">Flies as lap infant free of charge. She is under 24 months so no purchased seat required. Bring her U.S. passport and birth certificate.</div></div>
+      <div class="infant-item"><div class="infant-item-title">Infant Fare</div><div class="infant-item-text">On international flights, lap infant fare is approximately 10% of adult base fare (~$35–$45 each way). Confirm with your airline at booking.</div></div>
+      <div class="infant-item"><div class="infant-item-title">Crib at Resort</div><div class="infant-item-text">Request a travel crib / pack-n-play from the resort before arrival. All major Montego Bay all-inclusives provide these free of charge with advance notice.</div></div>
+      <div class="infant-item"><div class="infant-item-title">Baby Food &amp; Formula</div><div class="infant-item-text">Bring all formula, pouches, and purees from home. TSA allows baby food through security in any quantity. Jamaican resorts may not carry specific US brands.</div></div>
+      <div class="infant-item"><div class="infant-item-title">Beach Safety</div><div class="infant-item-text">Shade her between 10 AM–3 PM. Use mineral sunscreen SPF 50+ for babies. Keep her out of direct sun as much as possible. The calm resort beach water is safe for splashing.</div></div>
+      <div class="infant-item"><div class="infant-item-title">Stroller Advice</div><div class="infant-item-text">Bring a lightweight umbrella stroller. Montego Bay resort paths are paved. A baby carrier/wrap is also very useful for excursions where strollers are impractical (river rafting, etc.).</div></div>
+      <div class="infant-item"><div class="infant-item-title">Health Precautions</div><div class="infant-item-text">Consult pediatrician before travel. No special vaccines required for infants at this age. Use only bottled water for mixing formula. Bring infant Tylenol, gas drops, and first aid kit.</div></div>
+      <div class="infant-item"><div class="infant-item-title">Sleep Schedule</div><div class="infant-item-text">Jamaica is in Eastern Standard Time (same as New York in winter, 1 hour behind in summer depending on DST). Minimal time zone adjustment needed from Brooklyn.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- COST ESTIMATE -->
+<div class="section">
+  <h2 class="section-title">📊 Full Trip Cost Estimate — 7 Nights (2 Adults + 1 Infant)</h2>
+  <div class="cost-grid">
+    <div class="cost-card"><div class="cost-label">Flights (2 adults RT)</div><div class="cost-value">~$800</div><div class="cost-note">JFK–MBJ nonstop, economy, midweek May</div></div>
+    <div class="cost-card"><div class="cost-label">Infant Flight Fee</div><div class="cost-value">~$80</div><div class="cost-note">~10% adult fare each way, lap infant</div></div>
+    <div class="cost-card"><div class="cost-label">Hotel (all-inclusive)</div><div class="cost-value">~$2,100–$2,800</div><div class="cost-note">$300–$400/night x 7 nights, Dreams or Royalton level</div></div>
+    <div class="cost-card"><div class="cost-label">Excursions</div><div class="cost-value">~$300–$450</div><div class="cost-note">Catamaran, Dunn's Falls, Martha Brae, day tour</div></div>
+    <div class="cost-card"><div class="cost-label">Food Outside Resort</div><div class="cost-value">~$150–$250</div><div class="cost-note">3 meals outside resort over the week</div></div>
+    <div class="cost-card"><div class="cost-label">Airport Transfers</div><div class="cost-value">~$0–$60</div><div class="cost-note">Many resorts offer free transfer; JUTA taxi is ~$25–$30 each way</div></div>
+    <div class="cost-card"><div class="cost-label">Tips &amp; Misc</div><div class="cost-value">~$150</div><div class="cost-note">Resort staff gratuity, vendors, souvenirs, cash for excursions</div></div>
+    <div class="cost-card"><div class="cost-label">Travel Insurance</div><div class="cost-value">~$100–$150</div><div class="cost-note">Strongly recommended with a baby — covers flight cancel, medical, evacuation</div></div>
+  </div>
+  <div class="total-card">
+    <div class="total-label">Estimated Total for 7 Nights, 2 Adults + Lap Infant</div>
+    <div class="total-value">~$3,700 – $4,700</div>
+    <div class="total-note">All-inclusive means no surprise food bills. Flights + resort are the major costs. Book hotel package deals on Expedia or directly with the resort to save $200–$400.</div>
+  </div>
+</div>
+
+<!-- PRE-DEPARTURE CHECKLIST -->
+<div class="section">
+  <h2 class="section-title">✅ Pre-Departure Checklist</h2>
+  <div class="checklist" id="checklist">
+    <div class="check-item"><div class="check-box" id="cb1" onclick="toggle('cb1','ct1')"></div><div class="check-text" id="ct1">Book flights — JFK to MBJ (aim for Tuesday/Wednesday midweek)</div></div>
+    <div class="check-item"><div class="check-box" id="cb2" onclick="toggle('cb2','ct2')"></div><div class="check-text" id="ct2">Book all-inclusive resort — Hyatt Ziva, Dreams, or Royalton</div></div>
+    <div class="check-item"><div class="check-box" id="cb3" onclick="toggle('cb3','ct3')"></div><div class="check-text" id="ct3">Request crib/pack-n-play from resort (email directly)</div></div>
+    <div class="check-item"><div class="check-box" id="cb4" onclick="toggle('cb4','ct4')"></div><div class="check-text" id="ct4">Ensure valid U.S. passports for both adults and infant</div></div>
+    <div class="check-item"><div class="check-box" id="cb5" onclick="toggle('cb5','ct5')"></div><div class="check-text" id="ct5">Complete Jamaica C5 immigration form online before travel</div></div>
+    <div class="check-item"><div class="check-box" id="cb6" onclick="toggle('cb6','ct6')"></div><div class="check-text" id="ct6">Purchase travel insurance (cover all 3 travelers including infant)</div></div>
+    <div class="check-item"><div class="check-box" id="cb7" onclick="toggle('cb7','ct7')"></div><div class="check-text" id="ct7">Pack baby formula, food pouches, and all medications from home</div></div>
+    <div class="check-item"><div class="check-box" id="cb8" onclick="toggle('cb8','ct8')"></div><div class="check-text" id="ct8">Pack SPF 50+ mineral baby sunscreen and DEET-free repellent</div></div>
+    <div class="check-item"><div class="check-box" id="cb9" onclick="toggle('cb9','ct9')"></div><div class="check-text" id="ct9">Book excursions through resort concierge: catamaran, Dunn's Falls, Martha Brae</div></div>
+    <div class="check-item"><div class="check-box" id="cb10" onclick="toggle('cb10','ct10')"></div><div class="check-text" id="ct10">Download the JetBlue or airline app for mobile boarding passes</div></div>
+    <div class="check-item"><div class="check-box" id="cb11" onclick="toggle('cb11','ct11')"></div><div class="check-text" id="ct11">Confirm resort airport transfer or pre-book JUTA taxi</div></div>
+    <div class="check-item"><div class="check-box" id="cb12" onclick="toggle('cb12','ct12')"></div><div class="check-text" id="ct12">Enroll in STEP (Smart Traveler Enrollment Program) at travel.state.gov</div></div>
+    <div class="check-item"><div class="check-box" id="cb13" onclick="toggle('cb13','ct13')"></div><div class="check-text" id="ct13">Pack lightweight umbrella stroller or baby carrier for excursions</div></div>
+    <div class="check-item"><div class="check-box" id="cb14" onclick="toggle('cb14','ct14')"></div><div class="check-text" id="ct14">Bring $100–$200 USD cash in small bills for tips and street vendors</div></div>
+    <div class="check-item"><div class="check-box" id="cb15" onclick="toggle('cb15','ct15')"></div><div class="check-text" id="ct15">Check pediatrician — no extra vaccines needed, confirm infant is cleared for travel</div></div>
+    <div class="check-item"><div class="check-box" id="cb16" onclick="toggle('cb16','ct16')"></div><div class="check-text" id="ct16">Pack infant Tylenol, gas drops, teething gel, diaper rash cream</div></div>
+    <div class="check-item"><div class="check-box" id="cb17" onclick="toggle('cb17','ct17')"></div><div class="check-text" id="ct17">Install WhatsApp for communicating with local taxis and operators</div></div>
+    <div class="check-item"><div class="check-box" id="cb18" onclick="toggle('cb18','ct18')"></div><div class="check-text" id="ct18">Note U.S. Embassy Kingston number: +1 876-702-6000</div></div>
+  </div>
+</div>
+
+</div><!-- end container -->
+
 <footer>
-  <p>🌸 <span>NYC Cherry Blossom Guide 2026</span> · Brooklyn Botanic Garden · Central Park · Roosevelt Island<br>
-  Built with ❤️ for 2 adults + 1 baby (8 months) · Peak season: April 2026<br>
-  Live trackers: <a href="https://www.bbg.org/collections/cherries" target="_blank">BBG CherryWatch</a> · <a href="https://www.centralparknyc.org/central-park-cherry-blossom-trees" target="_blank">Central Park Tracker</a></p>
+  <strong>🇯🇲 Jamaica — Montego Bay</strong> &nbsp;|&nbsp; May 2026 &nbsp;|&nbsp; 2 Adults + 1 Lap Infant &nbsp;|&nbsp; Built with ❤️ by Claude for Arif
+  <br><span style="margin-top:8px;display:block;">Always verify current travel advisories, prices, and entry requirements before booking. This guide reflects data current as of March 2026.</span>
 </footer>
 
 <script>
-// Slider
+// Currency converter
+const RATE = 158;
+const SYMBOL = 'J$';
+const CURRENCY_NAME = 'Jamaican Dollar (JMD)';
+const input = document.getElementById('usd-input');
+const result = document.getElementById('local-result');
+const rateNote = document.getElementById('rate-note');
+function convert() {
+  const val = parseFloat(input.value) || 0;
+  result.textContent = SYMBOL + (val * RATE).toFixed(2);
+}
+rateNote.textContent = '1 USD = ' + RATE + ' ' + CURRENCY_NAME + ' — Note: USD widely accepted at resorts and tourist areas';
+input.addEventListener('input', convert);
+function setAmt(v) { input.value = v; convert(); }
+convert();
+
+// Image sliders
 const sliderState = {};
 function slide(wrapId, trackId, dir) {
   const wrap = document.getElementById(wrapId);
@@ -593,11 +983,20 @@ function slide(wrapId, trackId, dir) {
   const countEl = wrap.querySelector('.slide-count');
   if (countEl) countEl.textContent = `${idx+1} / ${total}`;
 }
+document.querySelectorAll('.slider-dot').forEach(dot => {
+  dot.addEventListener('click', function() {
+    const wrap = this.closest('.slider-wrap');
+    const track = wrap.querySelector('.slider-track');
+    const allDots = wrap.querySelectorAll('.slider-dot');
+    const targetIdx = Array.from(allDots).indexOf(this);
+    slide(wrap.id, track.id, targetIdx - (sliderState[wrap.id] || 0));
+  });
+});
 
 // Checklist
-function toggle(el) {
-  el.classList.toggle('done');
-  el.nextElementSibling.classList.toggle('done');
+function toggle(boxId, textId) {
+  document.getElementById(boxId).classList.toggle('done');
+  document.getElementById(textId).classList.toggle('done');
 }
 </script>
 </body>
