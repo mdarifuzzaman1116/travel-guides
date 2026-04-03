@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wheel Strategy Growth Calculator</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0a0c0f;
+    --surface: #111318;
+    --surface2: #181c22;
+    --border: #232830;
+    --accent: #00e5a0;
+    --accent2: #ffb347;
+    --danger: #ff5a5a;
+    --text: #e8eaf0;
+    --muted: #6b7280;
+    --mono: 'DM Mono', monospace;
+    --serif: 'Playfair Display', Georgia, serif;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--mono);
+    min-height: 100vh;
+    padding: 24px 16px 60px;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 36px;
+    position: relative;
+  }
+
+  .header::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 40px;
+    background: var(--accent);
+    margin: 0 auto 16px;
+  }
+
+  .header h1 {
+    font-family: var(--serif);
+    font-size: clamp(1.6rem, 5vw, 2.4rem);
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+    color: var(--text);
+  }
+
+  .header h1 span { color: var(--accent); }
+
+  .header p {
+    color: var(--muted);
+    font-size: 0.78rem;
+    margin-top: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 16px;
+  }
+
+  .card-title {
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .card-title::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  .input-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .input-group.full { grid-column: 1 / -1; }
+
+  label {
+    font-size: 0.7rem;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  input[type="number"], select {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 0.92rem;
+    padding: 10px 12px;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.2s;
+    -webkit-appearance: none;
+  }
+
+  input[type="number"]:focus, select:focus {
+    border-color: var(--accent);
+  }
+
+  input[type="range"] {
+    width: 100%;
+    accent-color: var(--accent);
+    height: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .range-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .range-val {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--accent);
+    white-space: nowrap;
+    min-width: 56px;
+    text-align: right;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    background: var(--accent);
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: opacity 0.2s, transform 0.1s;
+  }
+
+  .btn:active { transform: scale(0.98); opacity: 0.9; }
+
+  /* Results */
+  .result-hero {
+    background: linear-gradient(135deg, #0d1f18 0%, #111318 100%);
+    border: 1px solid #1a3328;
+    border-radius: 12px;
+    padding: 28px 24px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .result-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+
+  .result-big {
+    font-family: var(--serif);
+    font-size: clamp(2.2rem, 8vw, 3.2rem);
+    font-weight: 900;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .result-sub {
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .stat-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+  }
+
+  .stat-val {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  .stat-val.green { color: var(--accent); }
+  .stat-val.amber { color: var(--accent2); }
+
+  .stat-lbl {
+    font-size: 0.65rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  /* Scenarios */
+  .scenario-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .scenario-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--surface2);
+    border-radius: 8px;
+    padding: 12px 14px;
+    border-left: 3px solid transparent;
+    font-size: 0.82rem;
+  }
+
+  .scenario-row.pessimistic { border-color: var(--danger); }
+  .scenario-row.base { border-color: var(--accent); }
+  .scenario-row.optimistic { border-color: var(--accent2); }
+
+  .scenario-name { color: var(--muted); }
+  .scenario-rate { color: var(--text); font-weight: 500; }
+  .scenario-years { color: var(--accent); font-weight: 500; }
+
+  /* Chart */
+  .chart-wrap {
+    margin-top: 4px;
+    overflow-x: auto;
+  }
+
+  canvas {
+    display: block;
+    max-width: 100%;
+  }
+
+  .milestone-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.8rem;
+  }
+
+  .milestone-row:last-child { border-bottom: none; }
+  .milestone-val { color: var(--accent); font-weight: 500; }
+  .milestone-yr { color: var(--muted); }
+
+  .tag {
+    font-size: 0.6rem;
+    background: #1a3328;
+    color: var(--accent);
+    padding: 2px 6px;
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .disclaimer {
+    font-size: 0.65rem;
+    color: var(--muted);
+    text-align: center;
+    margin-top: 28px;
+    line-height: 1.6;
+    padding: 0 8px;
+  }
+
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Wheel Strategy<br><span>Growth Calculator</span></h1>
+  <p>Compound Growth to $1M &amp; Beyond</p>
+</div>
+
+<!-- Inputs -->
+<div class="card">
+  <div class="card-title">Portfolio Parameters</div>
+
+  <div class="input-row">
+    <div class="input-group">
+      <label>Starting Balance ($)</label>
+      <input type="number" id="startBalance" value="115000" step="1000">
+    </div>
+    <div class="input-group">
+      <label>Target Goal ($)</label>
+      <input type="number" id="targetGoal" value="1000000" step="10000">
+    </div>
+  </div>
+
+  <div class="input-group full" style="margin-bottom:14px;">
+    <label>Annual Return Rate</label>
+    <div class="range-row">
+      <input type="range" id="annualRate" min="5" max="100" value="57" step="1">
+      <span class="range-val" id="annualRateVal">57%</span>
+    </div>
+    <div style="font-size:0.65rem;color:var(--muted);margin-top:4px;">
+      Your 2025 annualized rate (18.98% in ~4 months) = ~57% annually
+    </div>
+  </div>
+
+  <div class="input-row">
+    <div class="input-group">
+      <label>Annual Contribution ($)</label>
+      <input type="number" id="annualContrib" value="0" step="1000">
+    </div>
+    <div class="input-group">
+      <label>Start Year</label>
+      <input type="number" id="startYear" value="2026" min="2020" max="2040">
+    </div>
+  </div>
+
+  <button class="btn" onclick="calculate()">Calculate Growth</button>
+</div>
+
+<!-- Results (hidden until calculated) -->
+<div id="results" class="hidden">
+
+  <div class="result-hero">
+    <div class="result-label">Time to Reach Goal</div>
+    <div class="result-big" id="yearsToGoal">--</div>
+    <div class="result-sub" id="targetYearText">--</div>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-box">
+      <div class="stat-val green" id="statFinalValue">--</div>
+      <div class="stat-lbl">Value at Goal Year</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-val amber" id="statTotalGain">--</div>
+      <div class="stat-lbl">Total Gain</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-val" id="statYear5">--</div>
+      <div class="stat-lbl">Value in 5 Years</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-val" id="statYear10">--</div>
+      <div class="stat-lbl">Value in 10 Years</div>
+    </div>
+  </div>
+
+  <!-- Scenario Comparison -->
+  <div class="card">
+    <div class="card-title">Scenario Comparison</div>
+    <div class="scenario-grid" id="scenarios"></div>
+  </div>
+
+  <!-- Milestones -->
+  <div class="card">
+    <div class="card-title">Milestones</div>
+    <div id="milestones"></div>
+  </div>
+
+  <!-- Chart -->
+  <div class="card">
+    <div class="card-title">Growth Curve</div>
+    <div class="chart-wrap">
+      <canvas id="growthChart" height="220"></canvas>
+    </div>
+  </div>
+
+</div>
+
+<div class="disclaimer">
+  This calculator assumes all gains are reinvested (compounded annually).<br>
+  Past performance does not guarantee future results. Wheel strategy returns vary with market conditions.
+</div>
+
+<script>
+const fmt = (n) => n >= 1e6
+  ? '$' + (n/1e6).toFixed(2) + 'M'
+  : '$' + Math.round(n).toLocaleString();
+
+const fmtFull = (n) => '$' + Math.round(n).toLocaleString();
+
+document.getElementById('annualRate').addEventListener('input', function() {
+  document.getElementById('annualRateVal').textContent = this.value + '%';
+});
+
+function calculate() {
+  const start = parseFloat(document.getElementById('startBalance').value) || 115000;
+  const goal = parseFloat(document.getElementById('targetGoal').value) || 1000000;
+  const rate = parseFloat(document.getElementById('annualRate').value) / 100;
+  const contrib = parseFloat(document.getElementById('annualContrib').value) || 0;
+  const startYear = parseInt(document.getElementById('startYear').value) || 2026;
+
+  // Grow year by year
+  let value = start;
+  let years = 0;
+  const history = [{ year: startYear, value }];
+
+  while (value < goal && years < 100) {
+    value = value * (1 + rate) + contrib;
+    years++;
+    history.push({ year: startYear + years, value });
+  }
+
+  // Display
+  document.getElementById('results').classList.remove('hidden');
+
+  document.getElementById('yearsToGoal').textContent = years + (years === 1 ? ' Year' : ' Years');
+  document.getElementById('targetYearText').textContent =
+    `Reaching ${fmt(goal)} by ${startYear + years} · Starting ${fmt(start)} in ${startYear}`;
+
+  const finalValue = history[years]?.value || value;
+  document.getElementById('statFinalValue').textContent = fmt(finalValue);
+  document.getElementById('statTotalGain').textContent = fmt(finalValue - start - contrib * years);
+
+  const val5 = history[Math.min(5, history.length - 1)]?.value;
+  const val10 = history[Math.min(10, history.length - 1)]?.value;
+  document.getElementById('statYear5').textContent = fmt(val5);
+  document.getElementById('statYear10').textContent = fmt(val10);
+
+  // Scenarios
+  const scenarios = [
+    { name: 'Conservative', rate: 0.20, cls: 'pessimistic' },
+    { name: 'Your 2025 Rate', rate: rate, cls: 'base' },
+    { name: 'Optimistic', rate: Math.min(rate * 1.3, 1.5), cls: 'optimistic' },
+  ];
+
+  const scenHtml = scenarios.map(s => {
+    let v = start, y = 0;
+    while (v < goal && y < 100) { v = v * (1 + s.rate) + contrib; y++; }
+    return `<div class="scenario-row ${s.cls}">
+      <span class="scenario-name">${s.name}</span>
+      <span class="scenario-rate">${(s.rate*100).toFixed(0)}%/yr</span>
+      <span class="scenario-years">${y} yrs &rarr; ${startYear + y}</span>
+    </div>`;
+  }).join('');
+  document.getElementById('scenarios').innerHTML = scenHtml;
+
+  // Milestones
+  const milestones = [250000, 500000, 750000, 1000000, 2000000, 5000000];
+  const milHtml = milestones.map(m => {
+    let v = start, y = 0;
+    while (v < m && y < 100) { v = v * (1 + rate) + contrib; y++; }
+    if (y >= 100) return '';
+    const isGoal = m === goal;
+    return `<div class="milestone-row">
+      <span class="milestone-val">${fmt(m)}</span>
+      ${isGoal ? '<span class="tag">Goal</span>' : ''}
+      <span class="milestone-yr">${y} yrs &middot; ${startYear + y}</span>
+    </div>`;
+  }).filter(Boolean).join('');
+  document.getElementById('milestones').innerHTML = milHtml || '<div style="color:var(--muted);font-size:0.8rem;">No milestones in range.</div>';
+
+  // Chart
+  drawChart(history, goal);
+
+  document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+}
+
+function drawChart(history, goal) {
+  const canvas = document.getElementById('growthChart');
+  canvas.width = canvas.parentElement.clientWidth - 2;
+  const ctx = canvas.getContext('2d');
+  const W = canvas.width, H = canvas.height;
+  const pad = { top: 20, right: 16, bottom: 36, left: 56 };
+
+  const maxY = Math.max(...history.map(h => h.value), goal) * 1.05;
+  const minY = 0;
+
+  const px = (i) => pad.left + (i / (history.length - 1)) * (W - pad.left - pad.right);
+  const py = (v) => pad.top + (1 - (v - minY) / (maxY - minY)) * (H - pad.top - pad.bottom);
+
+  ctx.clearRect(0, 0, W, H);
+
+  // Grid lines
+  ctx.strokeStyle = '#1e2530';
+  ctx.lineWidth = 1;
+  const ticks = 4;
+  for (let i = 0; i <= ticks; i++) {
+    const v = minY + (maxY - minY) * (i / ticks);
+    const y = py(v);
+    ctx.beginPath();
+    ctx.moveTo(pad.left, y);
+    ctx.lineTo(W - pad.right, y);
+    ctx.stroke();
+    ctx.fillStyle = '#4b5563';
+    ctx.font = '10px DM Mono, monospace';
+    ctx.textAlign = 'right';
+    ctx.fillText(fmt(v), pad.left - 6, y + 3);
+  }
+
+  // Goal line
+  ctx.strokeStyle = '#ffb34755';
+  ctx.setLineDash([4, 4]);
+  ctx.lineWidth = 1.5;
+  ctx.beginPath();
+  ctx.moveTo(pad.left, py(goal));
+  ctx.lineTo(W - pad.right, py(goal));
+  ctx.stroke();
+  ctx.setLineDash([]);
+
+  ctx.fillStyle = '#ffb347';
+  ctx.font = '9px DM Mono, monospace';
+  ctx.textAlign = 'left';
+  ctx.fillText('Goal', pad.left + 4, py(goal) - 4);
+
+  // Area fill
+  const grad = ctx.createLinearGradient(0, pad.top, 0, H - pad.bottom);
+  grad.addColorStop(0, '#00e5a040');
+  grad.addColorStop(1, '#00e5a005');
+
+  ctx.beginPath();
+  ctx.moveTo(px(0), py(history[0].value));
+  history.forEach((h, i) => ctx.lineTo(px(i), py(h.value)));
+  ctx.lineTo(px(history.length - 1), H - pad.bottom);
+  ctx.lineTo(px(0), H - pad.bottom);
+  ctx.closePath();
+  ctx.fillStyle = grad;
+  ctx.fill();
+
+  // Line
+  ctx.beginPath();
+  ctx.strokeStyle = '#00e5a0';
+  ctx.lineWidth = 2.5;
+  ctx.lineJoin = 'round';
+  history.forEach((h, i) => {
+    if (i === 0) ctx.moveTo(px(i), py(h.value));
+    else ctx.lineTo(px(i), py(h.value));
+  });
+  ctx.stroke();
+
+  // X-axis labels (every N years)
+  const step = Math.max(1, Math.floor(history.length / 6));
+  ctx.fillStyle = '#4b5563';
+  ctx.font = '9px DM Mono, monospace';
+  ctx.textAlign = 'center';
+  history.forEach((h, i) => {
+    if (i % step === 0 || i === history.length - 1) {
+      ctx.fillText(h.year, px(i), H - pad.bottom + 14);
+    }
+  });
+}
+
+// Auto-calculate on load
+calculate();
+</script>
+</body>
+</html>
